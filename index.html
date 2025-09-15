@@ -408,94 +408,133 @@
         </div>
     </div>
 
-    <section class="pt-28 sm:pt-32 md:pt-40 px-4 sm:px-8 md:px-16 lg:px-20 pb-10 md:pb-20 flex flex-col md:flex-row justify-center items-center md:items-start gap-12 
+    <section class="relative bg-cover bg-center text-white pt-24 md:pt-28
+            flex flex-col md:flex-row justify-center items-center md:items-start gap-12 
             bg-[url('images/bg-garage.webp')] bg-cover bg-center relative min-h-screen">
 
         <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="absolute inset-0 bg-black/70"></div>
 
         <!-- Left Side: Text + Badges -->
-        <div class="relative z-10 flex flex-col text-center md:text-left justify-center h-full space-y-6 md:space-y-8 max-w-xl">
+        <div class="relative z-10 flex flex-col text-center md:text-left justify-center h-full 
+            space-y-6 md:space-y-8 max-w-xl">
 
             <!-- Headline -->
             <h1 class="font-extrabold text-3xl sm:text-4xl md:text-5xl leading-snug text-white">
-            <span class="text-[#DC143C]">Professional</span> Locksmith Services in South Bend, IN
+                <span class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+                    Professional
+                </span> Locksmith Services in South Bend, IN
             </h1>
 
-            <!-- Subtext -->
-            <p class="text-base sm:text-lg text-[#F5F5F5]">
-            24/7 Emergency Mobile Service - Licensed & Insured
-            </p>
+            <!-- Subtext as Oblong -->
+            <div class="flex justify-center md:justify-start">
+                <span
+                    class="inline-block bg-white/10 border border-[#FF4500]/50 text-white rounded-full px-6 py-2 
+                    text-sm md:text-base shadow-md backdrop-blur">
+                    24/7 Emergency Mobile Service • Licensed & Insured
+                </span>
+            </div>
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto md:mx-0">
-            <a href="tel:+5743187797" 
-                class="flex items-center justify-center gap-2 bg-[#FF4500] hover:bg-[#E65C00] transition-all duration-300 rounded-lg px-5 py-3 font-semibold text-white text-base transform hover:scale-105">
-                <span class="material-icons text-lg">call</span>
-                <span>Call Now</span>
-            </a>
-            <a href="services.html" 
-                class="flex items-center justify-center gap-2 border border-[#FF4500] rounded-lg px-5 py-3 font-semibold text-[#ffffff] text-base hover:bg-[#FF4500] hover:text-white transition-all duration-300 transform hover:scale-105">
-                <span>Get Help Now</span>
-            </a>
+                <a href="tel:+5743187797"
+                    class="flex items-center justify-center gap-2 bg-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] 
+                    transition-all duration-300 rounded-lg px-6 py-3 font-semibold text-white text-base 
+                    transform hover:scale-105 shadow-lg">
+                    <span class="material-icons text-lg">call</span>
+                    <span>Call Now</span>
+                </a>
+                <a href="services.html"
+                    class="flex items-center justify-center gap-2 border border-[#FF4500] rounded-lg px-6 py-3 
+                    font-semibold text-white text-base hover:bg-[#FF4500] hover:text-white 
+                    transition-all duration-300 transform hover:scale-105 shadow-md">
+                    <span>Get Help Now</span>
+                </a>
             </div>
 
             <!-- Trust Badges -->
-            <div class="flex flex-wrap justify-center md:justify-start gap-3 mt-5">
-            <div class="trust-badge bg-white/10 p-3 rounded-lg text-white backdrop-blur flex flex-col items-center text-sm w-28">
-                <span class="material-icons text-2xl text-[#DC143C] mb-1 animate-float">schedule</span>
-                <p class="text-[#ffffff] text-xs">Licensed</p>
-            </div>
-            <div class="trust-badge bg-white/10 p-3 rounded-lg text-white backdrop-blur flex flex-col items-center text-sm w-28">
-                <span class="material-icons text-2xl text-[#DC143C] mb-1 animate-float">shield</span>
-                <p class="text-[#ffffff] text-xs">Insured</p>
-            </div>
-            <div class="trust-badge bg-white/10 p-3 rounded-lg text-white backdrop-blur flex flex-col items-center text-sm w-28">
-                <span class="material-icons text-2xl text-[#DC143C] mb-1 animate-float">star</span>
-                <p class="text-[#ffffff] text-xs">Certified</p>
-            </div>
+            <div class="flex flex-wrap justify-center md:justify-start gap-6 mt-6">
+                <!-- Licensed -->
+                <div
+                    class="trust-badge relative bg-white/10 p-5 rounded-2xl text-white backdrop-blur-lg 
+                    flex flex-col items-center w-28 shadow-md border border-white/20 
+                    hover:scale-110 hover:shadow-xl hover:bg-gradient-to-br hover:from-[#DC143C]/10 hover:to-[#FF4500]/10 
+                    transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-full bg-gradient-to-br from-[#DC143C] to-[#FF4500] 
+                        flex items-center justify-center shadow-lg mb-2">
+                        <span class="material-icons text-white text-2xl">schedule</span>
+                    </div>
+                    <p class="text-xs font-semibold tracking-wide uppercase">Licensed</p>
+                </div>
+
+                <!-- Insured -->
+                <div
+                    class="trust-badge relative bg-white/10 p-5 rounded-2xl text-white backdrop-blur-lg 
+                    flex flex-col items-center w-28 shadow-md border border-white/20 
+                    hover:scale-110 hover:shadow-xl hover:bg-gradient-to-br hover:from-[#DC143C]/10 hover:to-[#FF4500]/10 
+                    transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-full bg-gradient-to-br from-[#DC143C] to-[#FF4500] 
+                        flex items-center justify-center shadow-lg mb-2">
+                        <span class="material-icons text-white text-2xl">shield</span>
+                    </div>
+                    <p class="text-xs font-semibold tracking-wide uppercase">Insured</p>
+                </div>
+
+                <!-- Certified -->
+                <div
+                    class="trust-badge relative bg-white/10 p-5 rounded-2xl text-white backdrop-blur-lg 
+                    flex flex-col items-center w-28 shadow-md border border-white/20 
+                    hover:scale-110 hover:shadow-xl hover:bg-gradient-to-br hover:from-[#DC143C]/10 hover:to-[#FF4500]/10 
+                    transition-all duration-300">
+                    <div
+                        class="w-12 h-12 rounded-full bg-gradient-to-br from-[#DC143C] to-[#FF4500] 
+                        flex items-center justify-center shadow-lg mb-2">
+                        <span class="material-icons text-white text-2xl">star</span>
+                    </div>
+                    <p class="text-xs font-semibold tracking-wide uppercase">Certified</p>
+                </div>
             </div>
         </div>
 
-        <!-- Right Side: Form -->
-        <div class="relative z-10 flex-shrink-0 w-full max-w-sm md:max-w-md">
-            <div class="bg-[#F5F5F5] border border-[#DC143C] rounded-2xl shadow-lg p-4 flex flex-col justify-between mt-8 md:mt-0" style="max-height: 95vh;">
-            <div>
-                <h2 class="text-xl font-semibold text-center text-[#1C1C1C] mb-1">Request Service</h2>
-                <p class="text-sm text-center text-[#666666] mb-3">Get a response from our team</p>
-
-                <form id="serviceForm" class="space-y-2">
-                <input type="text" name="name" placeholder="Your Name" required class="w-full px-3 py-2 border border-[#DC143C] rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC143C] bg-white text-[#1C1C1C] text-sm">
-                <input type="email" name="email" placeholder="Your Email" required class="w-full px-3 py-2 border border-[#DC143C] rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC143C] bg-white text-[#1C1C1C] text-sm">
-                <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-3 py-2 border border-[#DC143C] rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC143C] bg-white text-[#1C1C1C] text-sm">
-                <input type="text" name="address" placeholder="Service Address" required class="w-full px-3 py-2 border border-[#DC143C] rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC143C] bg-white text-[#1C1C1C] text-sm">
-                <select name="service" required class="w-full px-3 py-2 border border-[#FF6B81] rounded-md text-sm text-[#1C1C1C] bg-white focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-                    <option value="">Select Service Needed</option>
+        <!-- Quick Booking Form -->
+        <div class="relative z-10 bg-white rounded-2xl shadow-xl p-8 text-[#1C1C1C] w-full max-w-sm md:max-w-md">
+            <h3 class="text-2xl font-bold mb-4">Book a Locksmith Now</h3>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name"
+                    class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]" />
+                <input type="email" placeholder="Email Address"
+                    class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]" />
+                <select
+                    class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]">
                     <option>Emergency Locksmith</option>
                     <option>Residential Locksmith</option>
                     <option>Commercial Locksmith</option>
-                    <option>Automotive Locksmith</option>
+                    <option>Auto Locksmith</option>
                 </select>
-                <textarea name="notes" placeholder="Additional Notes..." rows="2" class="w-full px-3 py-2 border border-[#DC143C] rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC143C] bg-white text-[#1C1C1C] text-sm"></textarea>
-                <button type="submit" class="w-full bg-[#DC143C] hover:bg-[#E25C6F] text-white font-semibold py-2 rounded-md transition-all duration-300 transform hover:scale-105">
+                <textarea placeholder="Service Details" rows="3"
+                    class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"></textarea>
+                <button type="submit"
+                    class="w-full py-3 bg-[#DC143C] text-white font-semibold rounded-lg hover:bg-[#B01030] transition">
                     Request Service
                 </button>
-                </form>
-            </div>
-            </div>
+            </form>
         </div>
     </section>
 
      <!-- 24/7 Emergency Response Available -->
-    <section class="bg-[#ffffff] text-[#1C1C1C] py-16 px-4 md:px-8 relative">
+    <section class="bg-white text-[#1C1C1C] py-16 px-4 md:px-8 relative">
 
         <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 
             <!-- Left Side: Text -->
             <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-4 md:space-y-6 max-w-xl">
-                <h2 class="text-3xl md:text-5xl font-bold text-[#DC143C] leading-snug">
+                <h2 class="text-3xl md:text-5xl font-bold leading-snug
+                        bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
                     24/7 Emergency Response Available
                 </h2>
+
                 <p class="text-lg md:text-xl text-[#666666] font-medium">
                     Our team responds quickly to any lockout or urgent locksmith need.
                 </p>
@@ -519,205 +558,236 @@
     </section>
 
     <!-- Services Overview -->
-    <section class="bg-[#F5F5F5] py-12 md:py-16">
-        <div class="container mx-auto px-4">
+    <section class="bg-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-6">
             <!-- Header -->
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4">
-                    <span class="text-[#DC143C]">Professional Locksmith Services</span>
-                </h2>
-                <p class="text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-                    <span class="text-[#DC143C] font-semibold">Expert security solutions</span>
-                    <span class="text-[#666666]"> for all your residential, commercial, and automotive needs</span>
-                </p>
+            <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+                Professional Locksmith Services
+            </h2>
+
+            <p class="text-base md:text-lg leading-relaxed max-w-2xl mx-auto text-[#444]">
+                <span
+                class="text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text font-semibold">Expert
+                security solutions</span>
+                <span> for all your residential, commercial, and automotive needs</span>
+            </p>
             </div>
 
             <!-- Service Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Emergency Locksmith -->
-                <div class="service-card bg-[#FFFFFF] rounded-xl border-2 border-[#DC143C] hover:border-[#E25C6F] hover:bg-[#E25C6F]/10 shadow-lg p-6 flex flex-col items-center text-center transition-all duration-300">
-                    <div class="mb-4 p-3 bg-[#DC143C]/20 rounded-full">
-                        <span class="material-icons text-[#DC143C] text-4xl">home</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl text-[#1C1C1C] font-bold mb-2">Emergency Locksmith</h3>
-                    <p class="text-[#666666] text-center mb-4 leading-relaxed text-sm">
-                        24/7 professional emergency locksmith services. Licensed and insured experts available around the clock.
-                    </p>
-                    <ul class="text-xs space-y-2 mb-4 w-full">
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">directions_car</span> Car Lockout
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">home</span> House Lockout
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">business</span> Business Lockout
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">store</span> Storage Unit Lockout
-                        </li>
-                    </ul>
-                    <a href="../services/emergency-locksmith.html" class="mt-auto bg-[#DC143C] hover:bg-[#E25C6F] text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 shadow hover:shadow-md">
-                        Learn More
-                    </a>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <!-- Residential Locksmith -->
-                <div class="service-card bg-[#FFFFFF] rounded-xl border-2 border-[#DC143C] hover:border-[#E25C6F] hover:bg-[#E25C6F]/10 shadow-lg p-6 flex flex-col items-center text-center transition-all duration-300">
-                    <div class="mb-4 p-3 bg-[#DC143C]/20 rounded-full">
-                        <span class="material-icons text-[#DC143C] text-4xl">home</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl text-[#1C1C1C] font-bold mb-2">Residential Locksmith</h3>
-                    <p class="text-[#666666] text-center mb-4 leading-relaxed text-sm">
-                        Expert residential locksmith services for all your home security needs.
-                    </p>
-                    <ul class="text-xs space-y-2 mb-4 w-full">
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">lock</span> Lock Replacement
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">vpn_key</span> Lock Rekey
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">build</span> Lock Repair
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">lock</span> Gate Locks
-                        </li>
-                    </ul>
-                    <a href="../services/residential-locksmith.html" class="mt-auto bg-[#DC143C] hover:bg-[#E25C6F] text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 shadow hover:shadow-md">
-                        Learn More
-                    </a>
+            <!-- Emergency Locksmith -->
+            <div
+                class="group rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-full bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+                <div
+                    class="mb-4 p-4 rounded-full bg-gradient-to-r from-[#DC143C]/20 to-[#FF4500]/20 group-hover:scale-110 transform transition duration-300">
+                    <span
+                    class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">home</span>
                 </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#1C1C1C] mb-2">Emergency Locksmith</h3>
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                    24/7 professional emergency locksmith services. Licensed and insured experts available around the clock.
+                </p>
+                <ul class="text-xs space-y-2 mb-6 w-full text-left">
+                    <li class="flex items-center gap-2 text-gray-700">
+                    <span class="material-icons text-sm text-[#DC143C]">directions_car</span> Car Lockout
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                    <span class="material-icons text-sm text-[#DC143C]">home</span> House Lockout
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                    <span class="material-icons text-sm text-[#DC143C]">business</span> Business Lockout
+                    </li>
+                    <li class="flex items-center gap-2 text-gray-700">
+                    <span class="material-icons text-sm text-[#DC143C]">store</span> Storage Unit Lockout
+                    </li>
+                </ul>
+                <a href="../services/emergency-locksmith.html"
+                    class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
+                    Learn More
+                </a>
+                </div>
+            </div>
 
-                <!-- Commercial Locksmith -->
-                <div class="service-card bg-[#FFFFFF] rounded-xl border-2 border-[#DC143C] hover:border-[#E25C6F] hover:bg-[#E25C6F]/10 shadow-lg p-6 flex flex-col items-center text-center transition-all duration-300">
-                    <div class="mb-4 p-3 bg-[#DC143C]/20 rounded-full">
-                        <span class="material-icons text-[#DC143C] text-4xl">business</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl text-[#1C1C1C] font-bold mb-2">Commercial Locksmith</h3>
-                    <p class="text-[#666666] text-center mb-4 leading-relaxed text-sm">
-                        Commercial security solutions by certified technicians. Expert systems for business protection.
-                    </p>
-                    <ul class="text-xs space-y-2 mb-4 w-full">
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">lock</span> Lock Replacement
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">vpn_key</span> Master Key Systems
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">security</span> Access Control
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">exit_to_app</span> Emergency Exit Devices
-                        </li>
-                    </ul>
-                    <a href="../services/commercial-locksmith.html" class="mt-auto bg-[#DC143C] hover:bg-[#E25C6F] text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 shadow hover:shadow-md">
-                        Learn More
-                    </a>
+            <!-- Residential Locksmith -->
+            <div
+                class="group rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-full bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+                <div
+                    class="mb-4 p-4 rounded-full bg-gradient-to-r from-[#DC143C]/20 to-[#FF4500]/20 group-hover:scale-110 transform transition duration-300">
+                    <span
+                    class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">home</span>
                 </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#1C1C1C] mb-2">Residential Locksmith</h3>
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                    Expert residential locksmith services for all your home security needs.
+                </p>
+                <ul class="text-xs space-y-2 mb-6 w-full text-left">
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">lock</span> Lock Replacement</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">vpn_key</span> Lock Rekey</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">build</span> Lock Repair</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">lock</span> Gate Locks</li>
+                </ul>
+                <a href="../services/residential-locksmith.html"
+                    class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
+                    Learn More
+                </a>
+                </div>
+            </div>
 
-                <!-- Auto Locksmith -->
-                <div class="service-card bg-[#FFFFFF] rounded-xl border-2 border-[#DC143C] hover:border-[#E25C6F] hover:bg-[#E25C6F]/10 shadow-lg p-6 flex flex-col items-center text-center transition-all duration-300">
-                    <div class="mb-4 p-3 bg-[#DC143C]/20 rounded-full">
-                        <span class="material-icons text-[#DC143C] text-4xl">directions_car</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl text-[#1C1C1C] font-bold mb-2">Auto Locksmith</h3>
-                    <p class="text-[#666666] text-center mb-4 leading-relaxed text-sm">
-                        Automotive locksmith services by certified technicians. Expert solutions for all vehicle security needs.
-                    </p>
-                    <ul class="text-xs space-y-2 mb-4 w-full">
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">car_repair</span> Car Key Replacement
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">settings_remote</span> Key Fob Programming
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">key</span> Car Key Duplicate
-                        </li>
-                        <li class="flex items-center gap-2 text-[#666666]">
-                            <span class="material-icons text-[#DC143C] text-base">build</span> Ignition Repair
-                        </li>
-                    </ul>
-                    <a href="../services/auto-locksmith.html" class="mt-auto bg-[#DC143C] hover:bg-[#E25C6F] text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 shadow hover:shadow-md">
-                        Learn More
-                    </a>
+            <!-- Commercial Locksmith -->
+            <div
+                class="group rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-full bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+                <div
+                    class="mb-4 p-4 rounded-full bg-gradient-to-r from-[#DC143C]/20 to-[#FF4500]/20 group-hover:scale-110 transform transition duration-300">
+                    <span
+                    class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">business</span>
                 </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#1C1C1C] mb-2">Commercial Locksmith</h3>
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                    Commercial security solutions by certified technicians. Expert systems for business protection.
+                </p>
+                <ul class="text-xs space-y-2 mb-6 w-full text-left">
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">lock</span> Lock Replacement</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">vpn_key</span> Master Key Systems</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">security</span> Access Control</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">exit_to_app</span> Emergency Exit Devices</li>
+                </ul>
+                <a href="../services/commercial-locksmith.html"
+                    class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
+                    Learn More
+                </a>
+                </div>
+            </div>
+
+            <!-- Auto Locksmith -->
+            <div
+                class="group rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-full bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+                <div
+                    class="mb-4 p-4 rounded-full bg-gradient-to-r from-[#DC143C]/20 to-[#FF4500]/20 group-hover:scale-110 transform transition duration-300">
+                    <span
+                    class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">directions_car</span>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#1C1C1C] mb-2">Auto Locksmith</h3>
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                    Automotive locksmith services by certified technicians. Expert solutions for all vehicle security needs.
+                </p>
+                <ul class="text-xs space-y-2 mb-6 w-full text-left">
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">car_repair</span> Car Key Replacement</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">settings_remote</span> Key Fob Programming</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">key</span> Car Key Duplicate</li>
+                    <li class="flex items-center gap-2 text-gray-700"><span
+                        class="material-icons text-sm text-[#DC143C]">build</span> Ignition Repair</li>
+                </ul>
+                <a href="../services/auto-locksmith.html"
+                    class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
+                    Learn More
+                </a>
+                </div>
+            </div>
             </div>
         </div>
     </section>
 
     <!-- Why Choose I Locksmith -->
-    <section class="py-12 px-4 sm:px-8 md:px-16 bg-[#FFFFFF]">
+    <section class="py-12 px-4 sm:px-8 md:px-16 bg-white">
         <div class="max-w-7xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#1C1C1C] mb-4 leading-snug">
-                    Why Choose <span class="text-[#DC143C]">I Locksmith</span>
-                </h2>
-                <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
-                    Mobile service convenience, licensed & insured technicians, customer satisfaction guarantee, and trusted service in South Bend since 2010.
-                </p>
+            
+            <h2 class="text-3xl md:text-5xl font-bold text-[#1C1C1C] mb-4 leading-snug">
+                Why Choose <span class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">I Locksmith</span>
+            </h2>
+            <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
+                Mobile service convenience, licensed & insured technicians, customer satisfaction guarantee, and trusted
+                service in South Bend since 2010.
+            </p>
             </div>
 
             <!-- Feature Cards -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                <!-- Mobile Service -->
-                <div class="feature-card bg-[#FFFFFF] rounded-xl p-6 shadow-lg flex flex-col items-center text-center hover:border-[#DC143C] border-2 transition-all duration-300">
-                    <div class="icon-container p-4 rounded-full mb-4 bg-[#FF4500]/20">
-                        <span class="material-icons text-[#FF4500] text-5xl">directions_car</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Mobile Service Convenience</h3>
-                    <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
-                        Our technicians come to you anywhere in the South Bend area, saving you time and hassle.
-                    </p>
+            <!-- Mobile Service -->
+            <div
+                class="group rounded-xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div class="bg-white rounded-xl p-6 flex flex-col items-center text-center h-full">
+                <div class="p-4 rounded-full mb-4 bg-[#DC143C]/20 group-hover:scale-110 transform transition duration-300">
+                    <span class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">directions_car</span>
                 </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Mobile Service Convenience</h3>
+                <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
+                    Our technicians come to you anywhere in the South Bend area, saving you time and hassle.
+                </p>
+                </div>
+            </div>
 
-                <!-- Licensed & Insured -->
-                <div class="feature-card bg-[#FFFFFF] rounded-xl p-6 shadow-lg flex flex-col items-center text-center hover:border-[#DC143C] border-2 transition-all duration-300">
-                    <div class="icon-container p-4 rounded-full mb-4 bg-[#DC143C]/20">
-                        <span class="material-icons text-[#DC143C] text-5xl">verified</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Licensed & Insured</h3>
-                    <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
-                        Our professional team is fully licensed, insured, and certified for your peace of mind.
-                    </p>
+            <!-- Licensed & Insured -->
+            <div
+                class="group rounded-xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div class="bg-white rounded-xl p-6 flex flex-col items-center text-center h-full">
+                <div class="p-4 rounded-full mb-4 bg-[#DC143C]/20 group-hover:scale-110 transform transition duration-300">
+                    <span class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">verified</span>
                 </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Licensed & Insured</h3>
+                <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
+                    Our professional team is fully licensed, insured, and certified for your peace of mind.
+                </p>
+                </div>
+            </div>
 
-                <!-- Customer Satisfaction -->
-                <div class="feature-card bg-[#FFFFFF] rounded-xl p-6 shadow-lg flex flex-col items-center text-center hover:border-[#DC143C] border-2 transition-all duration-300">
-                    <div class="icon-container p-4 rounded-full mb-4 bg-[#DC143C]/20">
-                        <span class="material-icons text-[#DC143C] text-5xl">star</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Customer Satisfaction Guarantee</h3>
-                    <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
-                        We ensure every customer is happy with our service and workmanship.
-                    </p>
+            <!-- Customer Satisfaction -->
+            <div
+                class="group rounded-xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div class="bg-white rounded-xl p-6 flex flex-col items-center text-center h-full">
+                <div class="p-4 rounded-full mb-4 bg-[#DC143C]/20 group-hover:scale-110 transform transition duration-300">
+                    <span class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">star</span>
                 </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Customer Satisfaction Guarantee</h3>
+                <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
+                    We ensure every customer is happy with our service and workmanship.
+                </p>
+                </div>
+            </div>
 
-                <!-- Serving South Bend -->
-                <div class="feature-card bg-[#FFFFFF] rounded-xl p-6 shadow-lg flex flex-col items-center text-center hover:border-[#DC143C] border-2 transition-all duration-300">
-                    <div class="icon-container p-4 rounded-full mb-4 bg-[#FF4500]/20">
-                        <span class="material-icons text-[#FF4500] text-5xl">location_on</span>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Serving South Bend</h3>
-                    <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
-                        Trusted locksmith service in South Bend since 2010, providing fast and reliable solutions.
-                    </p>
+            <!-- Serving South Bend -->
+            <div
+                class="group rounded-xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[3px] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div class="bg-white rounded-xl p-6 flex flex-col items-center text-center h-full">
+                <div class="p-4 rounded-full mb-4 bg-[#DC143C]/20 group-hover:scale-110 transform transition duration-300">
+                    <span class="material-icons text-4xl text-transparent bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text">location_on</span>
                 </div>
+                <h3 class="text-lg md:text-xl font-bold text-[#DC143C] mb-2 leading-snug">Serving South Bend</h3>
+                <p class="text-[#1C1C1C] text-sm md:text-base leading-relaxed">
+                    Trusted locksmith service in South Bend since 2010, providing fast and reliable solutions.
+                </p>
+                </div>
+            </div>
+
             </div>
         </div>
     </section>
 
     <!-- Service Areas -->
-    <section class="py-12 px-4 sm:px-8 md:px-16 bg-[#F5F5F5]">
+    <section class="py-12 px-4 sm:px-8 md:px-16 bg-white">
         <div class="max-w-7xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-[#DC143C] mb-4 leading-snug">
+                <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
                     Service Areas
                 </h2>
                 <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
@@ -727,128 +797,184 @@
 
             <!-- Map & Cities -->
             <div class="grid md:grid-cols-2 gap-8 items-center">
-
-                <!-- Interactive Map Placeholder -->
-                <div class="bg-[#F5F5F5] h-64 md:h-96 rounded-xl flex items-center justify-center shadow-md border border-[#DC143C]">
-                    <span class="text-[#DC143C] font-semibold">Interactive Map Placeholder</span>
+                <!-- Interactive Map -->
+                <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-md border border-[#DC143C]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17929396.532733865!2d-80.7612819!3d42.8882251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bcd9f81b1d%3A0x7e102fcecb32ec72!2sIndiana%2C%20USA!5e1!3m2!1sen!2sph!4v1757943457692!5m2!1sen!2sph" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
 
                 <!-- Covered Cities List -->
                 <div class="flex flex-col justify-center">
-                    <h3 class="text-xl md:text-2xl font-bold text-[#DC143C] mb-4">Covered Cities</h3>
-                    <ul class="list-disc list-inside text-[#1C1C1C] text-sm md:text-base space-y-2 mb-6">
-                    </ul>
+                    <h3 class="text-xl md:text-2xl font-bold text-[#DC143C] mb-6">Covered Cities</h3>
 
-                    <a href="service-areas.html" class="inline-block bg-[#DC143C] hover:bg-[#FF4500] text-white font-semibold py-3 px-6 rounded-lg text-base transition-all duration-300 shadow hover:shadow-md">
-                        See All Service Areas
-                    </a>
+                <div class="space-y-4 text-sm md:text-base">
+                    <!-- City Item -->
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-[#DC143C] text-lg">location_on</span>
+                        <span class="text-[#1C1C1C] font-medium">South Bend</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-[#DC143C] text-lg">location_on</span>
+                        <span class="text-[#1C1C1C] font-medium">Mishawaka</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-[#DC143C] text-lg">location_on</span>
+                        <span class="text-[#1C1C1C] font-medium">Granger</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-[#DC143C] text-lg">location_on</span>
+                        <span class="text-[#1C1C1C] font-medium">Elkhart</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="material-icons text-[#DC143C] text-lg">location_on</span>
+                        <span class="text-[#1C1C1C] font-medium">Notre Dame</span>
+                    </div>
                 </div>
 
+                <!-- CTA Button -->
+                <a href="service-areas.html"
+                    class="mt-8 inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2.5 px-6 rounded-lg text-sm md:text-base transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
+                    See All Service Areas
+                </a>
+                </div>
             </div>
         </div>
     </section>
 
-     <section class="bg-[#FFFFFF] py-20 px-4 sm:px-6">
+    <section class="bg-white py-20 px-4 sm:px-6">
         <div class="container mx-auto text-center max-w-6xl">
             <!-- Header -->
-        <div class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-[#DC143C] mb-4 leading-tight">
-                    What our Client Says
-                </h2>
-                <p class="text-base md:text-lg text-[#666666] mb-6 max-w-3xl mx-auto leading-relaxed">
-                    Don't just take our word for it — here's what our satisfied customers have to say.
-                </p>
+            <div class="mb-12">
+            <h2
+                class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+                What our Client Says
+            </h2>
+            <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
+                Don't just take our word for it — here's what our satisfied customers have to say.
+            </p>
             </div>
 
-            <div class="flex flex-col lg:flex-row justify-center gap-8 mb-12">
-                <!-- Review 1 -->
-                <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl border-[3px] border-[#DC143C] hover:bg-[#FFFFFF] hover:border-[#FF4500] w-full lg:w-96 backdrop-blur-sm transition-all duration-300">
-                    <div class="flex items-center mb-6">
-                        <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">
-                            PM
-                        </div>
-                        <div class="text-left">
-                            <p class="text-lg font-bold text-[#1C1C1C]">Patricia Martinez</p>
-                            <p class="text-sm text-[#666666] flex items-center mt-1">
-                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span>
-                                Weehawken, NJ
-                            </p>
-                        </div>
+            <!-- Cards container -->
+            <div class="flex flex-wrap justify-center items-stretch gap-8 mb-12">
+            
+            <!-- Review 1 -->
+            <div
+                class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible flex w-full sm:w-80 md:w-96">
+                <div
+                class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl w-full h-full flex flex-col backdrop-blur-sm transition-all duration-300 relative">
+                
+                <!-- Avatar + Name -->
+                <div class="flex items-center mb-6">
+                    <div
+                    class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">
+                    PM
                     </div>
-                    
-                    <div class="mb-6 relative">
-                        <div class="absolute -top-2 -left-2 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                            <span class="material-icons text-2xl quote-icon text-[#DC143C]">format_quote</span>
-                        </div>
-                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 ml-4">
-                            <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
-                                Excellent service installing smart locks in my home. Very knowledgeable about home automation and security integration.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-1">
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                        </div>
-                        <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                            <span class="text-[#DC143C] font-semibold text-sm">Smart Lock Installation</span>
-                        </div>
+                    <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Patricia Martinez</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                        <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>
+                        Weehawken, NJ
+                    </p>
                     </div>
                 </div>
 
-                <!-- Review 2 -->
-                <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl border-[3px] border-[#DC143C] hover:bg-[#FFFFFF] hover:border-[#FF4500] w-full lg:w-96 backdrop-blur-sm transition-all duration-300">
-                    <div class="flex items-center mb-6">
-                        <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">
-                            AJ
-                        </div>
-                        <div class="text-left">
-                            <p class="text-lg font-bold text-[#1C1C1C]">Alex Johnson</p>
-                            <p class="text-sm text-[#666666] flex items-center mt-1">
-                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span>
-                                North Bergen, NJ
-                            </p>
-                        </div>
+                <!-- Quote -->
+                <div class="mb-6 relative flex-grow">
+                    <div
+                    class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
                     </div>
-                    
-                    <div class="mb-6 relative">
-                        <div class="absolute -top-2 -left-2 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                            <span class="material-icons text-2xl quote-icon text-[#DC143C]">format_quote</span>
-                        </div>
-                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 ml-4">
-                            <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
-                                Had my car key replaced in North Bergen. Quick service and fair pricing. The new key works perfectly!
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-1">
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] star-icon text-lg">star</span>
-                        </div>
-                        <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                            <span class="text-[#DC143C] font-semibold text-sm">Car Key Replacement</span>
-                        </div>
+                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                        Excellent service installing smart locks in my home. Very knowledgeable about home automation and
+                        security integration.
+                    </p>
                     </div>
                 </div>
+
+                <!-- Stars + Tag -->
+                <div class="flex justify-between items-center mt-auto">
+                    <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm">Smart Lock Installation</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div
+                class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible flex w-full sm:w-80 md:w-96">
+                <div
+                class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl w-full h-full flex flex-col backdrop-blur-sm transition-all duration-300 relative">
+                
+                <!-- Avatar + Name -->
+                <div class="flex items-center mb-6">
+                    <div
+                    class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">
+                    AJ
+                    </div>
+                    <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Alex Johnson</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                        <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>
+                        North Bergen, NJ
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Quote -->
+                <div class="mb-6 relative flex-grow">
+                    <div
+                    class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                        Had my car key replaced in North Bergen. Quick service and fair pricing. The new key works perfectly!
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Stars + Tag -->
+                <div class="flex justify-between items-center mt-auto">
+                    <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm">Car Key Replacement</span>
+                    </div>
+                </div>
+                </div>
+            </div>
             </div>
 
             <!-- Read More Link -->
             <div class="flex justify-center">
-            <a href="reviews.html" class="call-button flex items-center justify-center space-x-2 
-                    bg-[#DC143C] hover:bg-[#FF4500] text-white
-                    transition-all duration-300 rounded-xl px-6 py-3 
-                    font-bold text-base shadow-lg">
-                <span class="material-icons text-xl">menu_book</span>
+            <a href="reviews.html"
+                class="call-button flex items-center justify-center space-x-2 bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white transition-all duration-300 rounded-xl px-6 py-3 font-bold text-base shadow-lg">
+                <span class="material-icons text-xl" aria-hidden="true">menu_book</span>
                 <span>Read All Our Reviews</span>
             </a>
             </div>
@@ -858,32 +984,38 @@
     <section class="bg-[#F5F5F5] py-20 px-4 sm:px-6">
         <div class="container mx-auto text-center max-w-4xl">
             <!-- Header -->
-            <h2 class="text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-4 leading-snug">
-                Need a I Locksmith Right Now?
+            <h2
+            class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+            Need a Locksmith Right Now?
             </h2>
-            <p class="text-base md:text-lg text-[#666666] mb-8">
-                Fast, reliable, and professional locksmith services you can trust. We guarantee satisfaction and peace of mind.
+            <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed mb-8">
+            Fast, reliable, and professional locksmith services you can trust. We guarantee satisfaction and peace of mind.
             </p>
 
             <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-                <!-- Call Now Button -->
-                <a href="tel:+5743187797" class="flex items-center justify-center bg-[#FF4500] hover:bg-[#DC143C] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg">
-                    <span class="material-icons mr-2">call</span>
-                    Call Now
-                </a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <!-- Call Now Button -->
+            <a href="tel:+5743187797"
+                class="flex items-center justify-center bg-[#FF4500] hover:bg-[#E65C00] text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg">
+                <span class="material-icons mr-2">call</span>
+                Call Now
+            </a>
 
-                <!-- Book Service Button -->
-                <a href="book-service.html" class="flex items-center justify-center bg-[#DC143C] hover:bg-[#FF4500] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg">
-                    <span class="material-icons mr-2">calendar_today</span>
-                    Book Service
-                </a>
+            <!-- Book Service Button -->
+            <a href="book-service.html"
+                class="flex items-center justify-center bg-[#DC143C] hover:bg-[#E25C6F] text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg">
+                <span class="material-icons mr-2">calendar_today</span>
+                Book Service
+            </a>
             </div>
 
             <!-- Service Guarantee -->
-            <p class="text-sm md:text-base text-[#1C1C1C]">
+            <div class="flex justify-center">
+            <span
+                class="inline-block bg-white border border-[#DC143C]/30 text-[#1C1C1C] text-sm md:text-base rounded-full px-8 py-3 shadow-md">
                 Licensed, insured, and experienced professionals – your security is our top priority.
-            </p>
+            </span>
+            </div>
         </div>
     </section>
 
