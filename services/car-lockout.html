@@ -54,6 +54,46 @@
         #mobileMenu .fixed.top-0.left-0 {
             z-index: 10001 !important; /* content above overlay */
         }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in { animation: fadeIn 1s ease forwards; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-600 { animation-delay: 0.6s; }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #DC143C 0%, #FF4500 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(220, 20, 60, 0.15);
+        }
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
@@ -409,51 +449,331 @@
         </div>
     </div>
 
-    <!-- Car Lockout Hero Section - Centered -->
-    <section class="min-h-screen flex items-center justify-center text-white px-4 sm:px-6 lg:px-12 relative overflow-hidden bg-cover bg-center"
-            style="background-image: url('../images/car-lockout-hero.webp');">
+<!-- Car Lockout Hero Section - Mobile-Optimized -->
+<section class="min-h-screen flex items-center justify-center text-white px-4 sm:px-6 lg:px-12 relative overflow-hidden bg-cover bg-center"
+         style="background-image: url('./images/car-lockout.webp');">
 
-        <!-- Dark overlay -->
-        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <!-- Dark overlay with smooth gradient -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50 backdrop-blur-sm"></div>
 
-        <div class="relative z-10 max-w-4xl w-full text-center space-y-6">
-            <!-- Hero Text -->
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                <span class="text-[#DC143C]">Car Lockout Service in South Bend, IN</span>
-            </h1>
-            <p class="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto">
-                Fast and reliable <strong>car lockout South Bend</strong> solutions. Locked out of your car? Our <strong>auto locksmith South Bend</strong> experts provide 24/7 <strong>car unlock service</strong> to get you back on the road quickly and safely.
+    <div class="relative z-10 max-w-4xl w-full text-center space-y-6">
+        <!-- Hero Text -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight md:leading-tight animate-fade-in">
+            <span class="text-[#DC143C]">Car Lockout Service in South Bend, IN</span>
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-xl sm:max-w-2xl mx-auto animate-fade-in delay-200 leading-relaxed">
+            Fast and reliable <strong>car lockout South Bend</strong> solutions. Locked out of your car? Our 
+            <strong>auto locksmith South Bend</strong> experts provide 24/7 <strong>car unlock service</strong> 
+            to get you back on the road quickly and safely.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-4 animate-fade-in delay-400 w-full">
+            <a href="tel:5743187797" 
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FF4500] hover:bg-[#E65C00] px-6 py-3 sm:py-4 rounded-full text-white font-bold text-base sm:text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-xl text-center">
+                <span class="material-icons animate-pulse text-base sm:text-lg">call</span> Emergency Call: 574-318-7797
+            </a>
+            <a href="../book.html" 
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent border-2 border-[#DC143C] hover:bg-[#E25C6F] hover:text-white px-6 py-3 sm:py-4 rounded-full text-white font-bold text-base sm:text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-xl text-center">
+                <span class="material-icons animate-pulse text-base sm:text-lg">event</span> Book Service
+            </a>
+        </div>
+
+        <!-- Feature Badges -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-6 animate-fade-in delay-600">
+            <span class="flex items-center gap-1 sm:gap-2 bg-black/40 backdrop-blur-md text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C] hover:bg-black/60 transition-all duration-300">
+                <span class="material-icons text-[#DC143C] text-xs sm:text-base">verified</span> Licensed & Insured
+            </span>
+            <span class="flex items-center gap-1 sm:gap-2 bg-black/40 backdrop-blur-md text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C] hover:bg-black/60 transition-all duration-300">
+                <span class="material-icons text-[#DC143C] text-xs sm:text-base">schedule</span> Available 24/7
+            </span>
+            <span class="flex items-center gap-1 sm:gap-2 bg-black/40 backdrop-blur-md text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C] hover:bg-black/60 transition-all duration-300">
+                <span class="material-icons text-[#DC143C] text-xs sm:text-base">speed</span> Fast Response
+            </span>
+            <span class="flex items-center gap-1 sm:gap-2 bg-black/40 backdrop-blur-md text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C] hover:bg-black/60 transition-all duration-300">
+                <span class="material-icons text-[#DC143C] text-xs sm:text-base">engineering</span> Certified Technicians
+            </span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section 2: Service Description -->
+    <section class="bg-white py-20 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <!-- Section Heading -->
+            <div class="text-center space-y-4">
+                <div class="text-center space-y-4">
+                    <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
+                        Our Car Lockout Services
+                    </h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full mb-12"></div>
+            
+            <p class="text-gray-700 text-lg sm:text-xl max-w-3xl mx-auto">
+                We provide professional and fast car lockout solutions for all vehicles. Our experts get you back on the road safely and efficiently.
             </p>
-
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="tel:5743187797" 
-                class="inline-flex items-center justify-center gap-2 bg-[#FF4500] hover:bg-[#E65C00] px-6 py-4 rounded-full text-white font-bold text-lg sm:text-xl transition-all duration-300 hover:scale-105 shadow-lg">
-                    <span class="material-icons animate-pulse">call</span> Emergency Call: 574-318-7797
-                </a>
-                <a href="../book.html" 
-                class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-[#DC143C] hover:bg-[#E25C6F] hover:text-white px-6 py-4 rounded-full text-white font-bold text-lg sm:text-xl transition-all duration-300 hover:scale-105 shadow-lg">
-                    <span class="material-icons animate-pulse">event</span> Book Service
-                </a>
             </div>
 
-            <!-- Feature Badges -->
-            <div class="flex flex-wrap justify-center gap-3 mt-6">
-                <span class="flex items-center gap-1 bg-black/40 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C]">
-                    <span class="material-icons text-[#DC143C] text-sm">verified</span> Licensed & Insured
-                </span>
-                <span class="flex items-center gap-1 bg-black/40 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C]">
-                    <span class="material-icons text-[#DC143C] text-sm">schedule</span> Available 24/7
-                </span>
-                <span class="flex items-center gap-1 bg-black/40 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C]">
-                    <span class="material-icons text-[#DC143C] text-sm">speed</span> Fast Response
-                </span>
-                <span class="flex items-center gap-1 bg-black/40 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C]">
-                    <span class="material-icons text-[#DC143C] text-sm">engineering</span> Certified Technicians
-                </span>
+            <!-- Row 1 -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center text-white">
+                <div class="flex items-center justify-center w-12 h-12 bg-white/20 text-white border-2 border-white rounded-full animate-bounce rounded-full mb-4 mx-auto">
+                <span class="material-icons animate-bounce">directions_car</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Emergency Lockout Assistance</h3>
+                <p class="text-white text-sm">Quick response to get you back on the road safely in case of lockouts.</p>
+            </div>
+
+            <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center text-white">
+                <div class="flex items-center justify-center w-12 h-12 bg-white/20 text-white border-2 border-white rounded-full animate-bounce rounded-full mb-4 mx-auto">
+                <span class="material-icons animate-bounce">vpn_key</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Key Replacement</h3>
+                <p class="text-white text-sm">Lost or broken key? We provide replacements for all vehicle makes and models.</p>
+            </div>
+
+            <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center text-white">
+                <div class="flex items-center justify-center w-12 h-12 bg-white/20 text-white border-2 border-white rounded-full animate-bounce rounded-full mb-4 mx-auto">
+                <span class="material-icons animate-bounce">lock_open</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Trunk & Ignition Services</h3>
+                <p class="text-white text-sm">Trunk unlocking, ignition key retrieval, and broken key extraction done safely and efficiently.</p>
+            </div>
+            </div>
+
+            <!-- Row 2 (Centered) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
+            <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center text-white w-full sm:w-auto">
+                <div class="flex items-center justify-center w-12 h-12 bg-white/20 text-white rounded-full border-2 border-white rounded-full animate-bounce mb-4 mx-auto">
+                <span class="material-icons ">security</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Advanced Vehicle Security</h3>
+                <p class="text-white text-sm">Keyless entry, push-to-start, high-security locks, smart keys, and electronic locks handled professionally.</p>
+            </div>
+
+            <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center text-white w-full sm:w-auto">
+                <div class="flex items-center justify-center w-12 h-12 bg-white/20 text-white border-2 border-white rounded-full animate-bounce rounded-full mb-4 mx-auto">
+                <span class="material-icons ">build</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Door Lock Repair</h3>
+                <p class="text-white text-sm">Repair locks after attempted break-ins to secure your vehicle and restore functionality.</p>
+            </div>
             </div>
         </div>
     </section>
+
+    <!-- Section 3: Common Car Lockout Scenarios -->
+    <section class="bg-gray-50 py-20 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <!-- Section Heading -->
+            <div class="text-center space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
+                Common Car Lockout Scenarios
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full mb-12"></div>
+                <p class="text-gray-700 text-lg sm:text-xl max-w-3xl mx-auto">
+                    We provide professional and fast car lockout solutions for all vehicles. Our experts get you back on the road safely and efficiently.
+                </p>
+            </div>
+
+            <!-- Scenario Cards Grid -->
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Keys Locked Inside -->
+                <div class="rounded-xl p-[2px] bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] transform transition duration-300 shadow-lg hover:shadow-2xl overflow-hidden">
+                    <div class="bg-white rounded-xl p-6 h-full">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-icons text-4xl text-[#DC143C] animate-bounce">key</span>
+                            <h3 class="text-xl sm:text-2xl font-semibold text-[#DC143C]">Keys Locked Inside</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            The most common scenario – we'll safely unlock your door without damage to retrieve your keys from inside.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Broken Key in Lock -->
+                <div class="rounded-xl p-[2px] bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] transform transition duration-300 shadow-lg hover:shadow-2xl overflow-hidden">
+                    <div class="bg-white rounded-xl p-6 h-full">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-icons text-4xl text-[#DC143C] animate-bounce">construction</span>
+                            <h3 class="text-xl sm:text-2xl font-semibold text-[#DC143C]">Broken Key in Lock</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            If your key has broken off in the door lock or ignition, we can extract it without damaging the lock mechanism.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lost Car Keys -->
+                <div class="rounded-xl p-[2px] bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] transform transition duration-300 shadow-lg hover:shadow-2xl overflow-hidden">
+                    <div class="bg-white rounded-xl p-6 h-full">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-icons text-4xl text-[#DC143C] animate-bounce">search</span>
+                            <h3 class="text-xl sm:text-2xl font-semibold text-[#DC143C]">Lost Car Keys</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            We can get you back into your vehicle and provide key replacement services if needed.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Frozen Locks -->
+                <div class="rounded-xl p-[2px] bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] transform transition duration-300 shadow-lg hover:shadow-2xl overflow-hidden">
+                    <div class="bg-white rounded-xl p-6 h-full">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="material-icons text-4xl text-[#DC143C] animate-bounce">ac_unit</span>
+                            <h3 class="text-xl sm:text-2xl font-semibold text-[#DC143C]">Frozen Locks</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            During cold weather, car locks can freeze. We use special techniques to thaw and unlock frozen vehicle locks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 4: Service Process (DC143C Background Cards) -->
+    <section class="bg-white py-20 px-6 lg:px-12">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold text-[#DC143C] mb-4">Our Car Lockout Process</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full mb-12"></div>
+            <p class="text-gray-700 text-lg sm:text-xl max-w-3xl mx-auto mb-12">
+                We provide professional and fast car lockout solutions for all vehicles. Our experts get you back on the road safely and efficiently.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Step 1 -->
+                <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="flex items-center justify-center w-14 h-14 mx-auto mb-4 border-2 border-white rounded-full text-white animate-bounce">
+                        <!-- Phone Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3.6 7.59a1 1 0 01-.36 1.41l-2.64 1.32a16 16 0 007.24 7.24l1.32-2.64a1 1 0 011.41-.36L19 19v2a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Contact Us</h3>
+                    <p class="text-white text-sm">Call our emergency number or book online. Provide your location and details about your situation.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="flex items-center justify-center w-14 h-14 mx-auto mb-4 border-2 border-white rounded-full text-white animate-bounce">
+                        <!-- Clock Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Quick Response</h3>
+                    <p class="text-white text-sm">Our technician arrives promptly with all necessary equipment to handle your car lockout.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-[#DC143C] border-2 border-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="flex items-center justify-center w-14 h-14 mx-auto mb-4 border-2 border-white rounded-full text-white animate-bounce">
+                        <!-- Shield Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l9 4-9 16-9-16 9-4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Professional Solution</h3>
+                    <p class="text-white text-sm">We resolve your issue quickly and efficiently, with upfront pricing and professional workmanship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Prevention Tips -->
+    <section class="bg-[#F5F5F5] py-20 px-6 lg:px-12">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
+                Prevention Tips
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full mb-12"></div>
+            <p class="text-gray-700 text-lg sm:text-xl max-w-3xl mx-auto mb-12">
+                Follow these expert prevention tips to avoid car lockouts and ensure your vehicle's keys and locks stay in perfect working condition.
+            </p>
+
+            <!-- Row 1 -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+                <!-- Card 1 -->
+                <div class="bg-white border-2 border-[#FF4500] p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-left">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-12 h-12 flex items-center justify-center border-2 border-[#DC143C] rounded-full animate-bounce">
+                            <!-- Key Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#DC143C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v10m-2-2h4m-4-2h4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#DC143C] mb-2">Avoid Future Lockouts</h3>
+                    <p class="text-gray-600">Always check your keys before leaving the vehicle to prevent accidental lockouts.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border-2 border-[#FF4500] p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-left">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-12 h-12 flex items-center justify-center border-2 border-[#DC143C] rounded-full animate-bounce">
+                            <!-- Wrench Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#DC143C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828l-4.95-4.95M12 15v2m0 4h.01M6.343 6.343l4.95 4.95" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#DC143C] mb-2">Key Maintenance Advice</h3>
+                    <p class="text-gray-600">Keep keys dry and free from damage; replace worn-out keys promptly to avoid issues.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border-2 border-[#FF4500] p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-left">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-12 h-12 flex items-center justify-center border-2 border-[#DC143C] rounded-full animate-bounce">
+                            <!-- Keyring Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#DC143C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5v14" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#DC143C] mb-2">Spare Key Recommendations</h3>
+                    <p class="text-gray-600">Keep a spare key in a secure location or with a trusted friend or family member.</p>
+                </div>
+            </div>
+
+            <!-- Row 2 (Centered) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
+                <!-- Card 4 -->
+                <div class="bg-white border-2 border-[#FF4500] p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-left w-full sm:w-auto">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-12 h-12 flex items-center justify-center border-2 border-[#DC143C] rounded-full animate-bounce">
+                            <!-- Smartphone Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#DC143C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4h10v16H7z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#DC143C] mb-2">Consider Keyless Entry Backup</h3>
+                    <p class="text-gray-600">Modern keyless systems often allow smartphone access or remote unlock features.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white border-2 border-[#FF4500] p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-left w-full sm:w-auto">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-12 h-12 flex items-center justify-center border-2 border-[#DC143C] rounded-full animate-bounce">
+                            <!-- Shield Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#DC143C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l9 4-9 16-9-16 9-4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#DC143C] mb-2">Routine Lock Checks</h3>
+                    <p class="text-gray-600">Occasionally check door and trunk locks for smooth operation and signs of wear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer class="bg-[#FFFFFF] text-[#1C1C1C] pt-16 pb-8 px-6 md:px-12 border-t border-[#F5F5F5]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
