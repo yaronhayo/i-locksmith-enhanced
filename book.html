@@ -54,6 +54,12 @@
         #mobileMenu .fixed.top-0.left-0 {
             z-index: 10001 !important; /* content above overlay */
         }
+        .focus\:ring-gradient-red:focus {
+            --tw-ring-color: linear-gradient(to right, #DC143C, #FF4500, #FFA500);
+        }
+        .accent-gradient-red:checked {
+            accent-color: #FF4500;
+        }
     </style>
 </head>
 <body>
@@ -413,223 +419,304 @@
     <section class="relative pt-24 pb-16 min-h-screen w-full overflow-hidden">
         <!-- Background Image + Blur Overlay -->
         <div class="absolute inset-0">
-            <img src="../images/book.webp" alt="Hero Background" class="w-full h-full object-cover filter blur-sm">
+            <img src="./images/booking.webp" alt="Hero Background" class="w-full h-full object-cover">
+            <!-- Black overlay for opacity effect -->
+            <div class="absolute inset-0 bg-black opacity-70"></div>
         </div>
 
-        <!-- Content -->
-        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-            <div class="mb-6">
-                <span class="inline-flex items-center px-3 py-1 rounded-full bg-[#FFAF1E] bg-opacity-20 text-[#FFAF1E] text-xs font-semibold">
-                    <span class="material-icons text-xs mr-1">verified</span>
-                    Licensed & Insured Professional Service
-                </span>
-            </div>
-            
-            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4 leading-snug">
-                Book Your <span class="text-[#FFAF1E]">Locksmith Service</span> Online
-            </h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Schedule your locksmith service quickly and securely. Available 24/7 for all your emergency and non-emergency security needs.
-            </p>
+            <!-- Content -->
+            <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+                <div class="mb-6">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-opacity-20 text-transparent font-semibold bg-clip-text">
+                        <span class="material-icons text-xs mr-1" style="color:inherit;">verified</span>
+                        Licensed & Insured Professional Service
+                    </span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 leading-snug">
+                    Book Your <span class="bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent"> I Locksmith Service</span> Online
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Fast, secure, and convenient scheduling with I Locksmith South Bend
+                </p>
 
-            <!-- Feature Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <!-- Card 1 -->
-                <div class="bg-black bg-opacity-50 backdrop-blur-sm border border-yellow-700 rounded-2xl p-6 hover:border-[#FFAF1E] transition-all duration-300 group">
-                    <div class="flex justify-center mb-4">
-                        <div class="w-12 h-12 bg-[#FFAF1E] bg-opacity-20 rounded-full flex items-center justify-center group-hover:bg-opacity-30 transition-all duration-300">
-                            <span class="material-icons text-[#FFAF1E] text-xl">access_time</span>
+                <!-- Feature Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <!-- Card 1 -->
+                    <div class="bg-black bg-opacity-50 border border-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] rounded-2xl p-6 hover:border-transparent hover:bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] transition-all duration-300 group">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-opacity-20 rounded-full flex items-center justify-center group-hover:bg-opacity-30 transition-all duration-300">
+                                <span class="material-icons text-white text-xl">access_time</span>
+                            </div>
                         </div>
+                        <h3 class="text-lg font-bold text-white mb-2">24/7 Availability</h3>
+                        <p class="text-gray-300 text-sm">Emergency service available around the clock, every day of the year</p>
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-2">24/7 Availability</h3>
-                    <p class="text-gray-300 text-sm">Emergency service available around the clock, every day of the year</p>
+
+                    <!-- Card 2 -->
+                    <div class="bg-black bg-opacity-50 border border-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] rounded-2xl p-6 hover:border-transparent hover:bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] transition-all duration-300 group">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-opacity-20 rounded-full flex items-center justify-center group-hover:bg-opacity-30 transition-all duration-300">
+                                <span class="material-icons text-white text-xl">verified</span>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Licensed & Insured</h3>
+                        <p class="text-gray-300 text-sm">Fully certified professionals with comprehensive insurance coverage</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-black bg-opacity-50 border border-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] rounded-2xl p-6 hover:border-transparent hover:bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] transition-all duration-300 group">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-opacity-20 rounded-full flex items-center justify-center group-hover:bg-opacity-30 transition-all duration-300">
+                                <span class="material-icons text-white text-xl">star</span>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">5-Star Service</h3>
+                        <p class="text-gray-300 text-sm">Consistently rated excellent by our satisfied customers</p>
+                    </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="bg-black bg-opacity-50 backdrop-blur-sm border border-yellow-700 rounded-2xl p-6 hover:border-[#FFAF1E] transition-all duration-300 group">
-                    <div class="flex justify-center mb-4">
-                        <div class="w-12 h-12 bg-[#FFAF1E] bg-opacity-20 rounded-full flex items-center justify-center group-hover:bg-opacity-30 transition-all duration-300">
-                            <span class="material-icons text-[#FFAF1E] text-xl">verified</span>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Licensed & Insured</h3>
-                    <p class="text-gray-300 text-sm">Fully certified professionals with comprehensive insurance coverage</p>
+                <!-- CTA Button -->
+                <div class="flex justify-center">
+                    <a href="#booking-form" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] hover:from-[#FF4500] hover:to-[#FFA500] text-black font-bold rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#FF4500]/25">
+                        <span class="material-icons mr-2">keyboard_arrow_down</span>
+                        Start Booking Now
+                    </a>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="bg-black bg-opacity-50 backdrop-blur-sm border border-yellow-700 rounded-2xl p-6 hover:border-[#FFAF1E] transition-all duration-300 group">
-                    <div class="flex justify-center mb-4">
-                        <div class="w-12 h-12 bg-[#FFAF1E] bg-opacity-20 rounded-full flex items-center justify-center group-hover:bg-opacity-30 transition-all duration-300">
-                            <span class="material-icons text-[#FFAF1E] text-xl">star</span>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">5-Star Service</h3>
-                    <p class="text-gray-300 text-sm">Consistently rated excellent by our satisfied customers</p>
-                </div>
-            </div>
-
-            <!-- CTA Button -->
-            <div class="flex justify-center">
-                <a href="#booking-form" class="inline-flex items-center px-6 py-3 bg-[#FFAF1E] hover:bg-[#FFB84D] text-black font-bold rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#FFAF1E]/25">
-                    <span class="material-icons mr-2">keyboard_arrow_down</span>
-                    Start Booking Now
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Booking Header -->
-  <section class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Book Your Locksmith Service Online</h1>
-      <p class="text-lg md:text-xl">Fast, secure, and convenient scheduling with I Locksmith South Bend</p>
-    </div>
-  </section>
+    <!-- Professional Booking Form Interface -->
+    <section class="py-20 bg-gray-50" id="booking-form">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white/90 backdrop-blur-sm p-16 md:p-16 rounded-3xl shadow-2xl border border-white/50">
+ 
+            <!-- Header -->
+            <h2 class="text-xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                Schedule Your Service
+            </h2>
 
-  <!-- Booking Form Interface -->
-  <section class="py-20">
-    <div class="max-w-4xl mx-auto px-6 bg-white rounded-3xl shadow-lg p-8">
-      <h2 class="text-3xl font-bold mb-8 text-center">Schedule Your Service</h2>
-      <form class="space-y-6">
 
-        <!-- Service Category -->
-        <div>
-          <label class="block font-semibold mb-2">Service Category</label>
-          <select class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-            <option>Residential Locksmith</option>
-            <option>Commercial Locksmith</option>
-            <option>Automotive Locksmith</option>
-          </select>
+            <form class="space-y-8">
+
+                <!-- Service Category -->
+                <div class="relative">
+                <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Service Category</label>
+                <select class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
+                    <option>Emergency Locksmith</option>
+                    <option>Residential Locksmith</option>
+                    <option>Commercial Locksmith</option>
+                    <option>Automotive Locksmith</option>
+                </select>
+                </div>
+
+                <!-- Specific Service -->
+                <div class="relative">
+                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Specific Service Type</label>
+                    <select class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
+                        <option>Car Lockout</option>
+                        <option>House Lockout</option>
+                        <option>Business Lockout</option>
+                        <option>Storage Unit Lockout</option>
+                        <option>Lock Replacement</option>
+                        <option>Lock Rekey</option>
+                        <option>Lock Repair</option>
+                        <option>Gate Locks</option>
+                        <option>Emergency Exit Devices</option>
+                        <option>Master Key Systems</option>
+                        <option>Access Control</option>
+                        <option>Car Key Replacement</option>
+                        <option>Car Fob Programming</option>
+                        <option>Car Key Duplicate</option>
+                        <option>Car Key Cutting</option>
+                        <option>Ignition Lock Cylinder</option>
+                    </select>
+                </div>
+
+                <!-- Service Type -->
+                <div class="flex gap-8 items-center">
+                <span class="font-semibold text-gray-700">Service Type:</span>
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="service_type" value="Emergency" class="accent-gradient-red">
+                    Emergency
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="service_type" value="Scheduled" class="accent-gradient-red">
+                    Scheduled
+                </label>
+                </div>
+
+                <!-- Date & Time -->
+                <div class="grid md:grid-cols-2 gap-6">
+                <div class="relative">
+                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Preferred Date</label>
+                    <input type="date" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
+                </div>
+                <div class="relative">
+                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Preferred Time</label>
+                    <input type="time" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
+                </div>
+                </div>
+
+                <!-- Address -->
+                <div class="relative">
+                <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Service Address</label>
+                <input type="text" placeholder="Street, City, Zip" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
+                </div>
+
+                <!-- Contact Info -->
+                <div class="grid md:grid-cols-2 gap-6">
+                <div class="relative">
+                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Full Name</label>
+                    <input type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
+                </div>
+                <div class="relative">
+                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Phone Number</label>
+                    <input type="tel" placeholder="(574) 318-7797" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
+                </div>
+                </div>
+
+                <!-- Notes -->
+                <div class="relative">
+                <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Special Requirements / Notes</label>
+                <textarea placeholder="Additional information..." rows="4" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                <button type="submit" class="bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white px-12 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    Book Service
+                </button>
+                </div>
+
+            </form>
+            </div>
         </div>
+    </section>
 
-        <!-- Specific Service -->
-        <div>
-          <label class="block font-semibold mb-2">Specific Service Type</label>
-          <select class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-            <option>Lockout</option>
-            <option>Lock Installation</option>
-            <option>Rekeying</option>
-            <option>Key Duplication</option>
-            <option>Security Upgrade</option>
-          </select>
+    <!-- Service Options Display -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">Service Options</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+
+            <!-- Card 1 -->
+            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
+                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
+                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">flash_on</span>
+                <h3 class="text-xl font-semibold mb-2">Emergency Response</h3>
+                <p class="text-gray-600">Immediate dispatch for urgent lockouts and security emergencies.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
+                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
+                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">today</span>
+                <h3 class="text-xl font-semibold mb-2">Same-Day Service</h3>
+                <p class="text-gray-600">Fast, same-day service for standard locksmith tasks.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
+                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
+                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">schedule</span>
+                <h3 class="text-xl font-semibold mb-2">Scheduled Appointments</h3>
+                <p class="text-gray-600">Plan your service in advance at a convenient time.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
+                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
+                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">add_task</span>
+                <h3 class="text-xl font-semibold mb-2">Service Add-Ons</h3>
+                <p class="text-gray-600">Additional lock, key, or security services available upon request.</p>
+                </div>
+            </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Service Type: Emergency vs Scheduled -->
-        <div>
-          <label class="block font-semibold mb-2">Service Type</label>
-          <div class="flex gap-6">
-            <label class="flex items-center gap-2">
-              <input type="radio" name="service_type" value="Emergency" class="text-[#DC143C]">
-              Emergency
-            </label>
-            <label class="flex items-center gap-2">
-              <input type="radio" name="service_type" value="Scheduled" class="text-[#DC143C]">
-              Scheduled
-            </label>
-          </div>
+    <!-- Booking Confirmation -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Gradient Border Wrapper -->
+            <div class="p-1 rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] shadow-2xl">
+            
+                <!-- Inner Card -->
+                <div class="bg-white rounded-3xl p-12 text-center">
+                    
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                    <span class="material-icons text-[#DC143C] text-4xl">check_circle</span>
+                    Booking Confirmation
+                    </h2>
+                    
+                    <p class="text-gray-700 mb-8 text-lg">
+                    Once you submit your booking, you will receive a confirmation with all details:
+                    </p>
+                    
+                    <ul class="text-left text-gray-700 mb-8 space-y-4">
+                    <li class="flex items-start gap-3">
+                        <span class="material-icons text-[#FF4500] mt-1">schedule</span>
+                        Service summary and scheduled date/time
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-icons text-[#FF4500] mt-1">person</span>
+                        Contact details of your assigned locksmith
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-icons text-[#FF4500] mt-1">info</span>
+                        What to expect during the visit
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-icons text-[#FF4500] mt-1">edit_note</span>
+                        Cancellation or modification instructions
+                    </li>
+                    </ul>
+                    
+                    <p class="text-gray-600 flex items-center justify-center gap-2 text-sm md:text-base">
+                    <span class="material-icons text-gray-400">support_agent</span>
+                    You can always contact us for changes or urgent assistance.
+                    </p>
+                    
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Date & Time Preferences -->
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <label class="block font-semibold mb-2">Preferred Date</label>
-            <input type="date" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-          </div>
-          <div>
-            <label class="block font-semibold mb-2">Preferred Time</label>
-            <input type="time" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-          </div>
+    <section class="bg-[#F5F5F5] py-20 px-4 sm:px-6">
+        <div class="container mx-auto text-center max-w-4xl">
+            <!-- Header -->
+            <h2
+            class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+            Need Immediate Help?
+            </h2>
+            <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed mb-8">
+            Call our emergency hotline for fast response locksmith services in South Bend.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <!-- Call Now Button -->
+            <a href="tel:+5743187797"
+                class="flex items-center justify-center bg-[#FF4500] hover:bg-[#E65C00] text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg">
+                <span class="material-icons mr-2">call</span>
+                Call Now
+            </a>
+            </div>
+
+            <!-- Service Guarantee -->
+            <div class="flex justify-center">
+            <span
+                class="inline-block bg-white border border-[#DC143C]/30 text-[#1C1C1C] text-sm md:text-base rounded-full px-8 py-3 shadow-md">
+                Licensed, insured, and experienced professionals – your security is our top priority.
+            </span>
+            </div>
         </div>
-
-        <!-- Location Information -->
-        <div>
-          <label class="block font-semibold mb-2">Service Address</label>
-          <input type="text" placeholder="Street, City, Zip" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-        </div>
-
-        <!-- Contact Details -->
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <label class="block font-semibold mb-2">Full Name</label>
-            <input type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-          </div>
-          <div>
-            <label class="block font-semibold mb-2">Phone Number</label>
-            <input type="tel" placeholder="(574) 318-7797" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-          </div>
-        </div>
-
-        <!-- Special Requirements/Notes -->
-        <div>
-          <label class="block font-semibold mb-2">Special Requirements / Notes</label>
-          <textarea placeholder="Additional information..." rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#DC143C]"></textarea>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="text-center">
-          <button type="submit" class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white px-8 py-3 rounded-full font-semibold shadow hover:shadow-lg transition">Book Service</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- Service Options Display -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10">Service Options</h2>
-      <div class="grid md:grid-cols-4 gap-8">
-
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-          <span class="material-icons text-[#DC143C] text-5xl mb-4">flash_on</span>
-          <h3 class="text-xl font-semibold mb-2">Emergency Response</h3>
-          <p class="text-gray-600">Immediate dispatch for urgent lockouts and security emergencies.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-          <span class="material-icons text-[#DC143C] text-5xl mb-4">today</span>
-          <h3 class="text-xl font-semibold mb-2">Same-Day Service</h3>
-          <p class="text-gray-600">Fast, same-day service for standard locksmith tasks.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-          <span class="material-icons text-[#DC143C] text-5xl mb-4">schedule</span>
-          <h3 class="text-xl font-semibold mb-2">Scheduled Appointments</h3>
-          <p class="text-gray-600">Plan your service in advance at a convenient time.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-          <span class="material-icons text-[#DC143C] text-5xl mb-4">add_task</span>
-          <h3 class="text-xl font-semibold mb-2">Service Add-Ons</h3>
-          <p class="text-gray-600">Additional lock, key, or security services available upon request.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Booking Confirmation -->
-  <section class="py-20">
-    <div class="max-w-4xl mx-auto px-6 bg-white rounded-3xl shadow-lg p-8 text-center">
-      <h2 class="text-3xl font-bold mb-6">Booking Confirmation</h2>
-      <p class="text-gray-700 mb-4">Once you submit your booking, you will receive a confirmation with all details:</p>
-      <ul class="text-left text-gray-700 mb-6 space-y-2">
-        <li>✔ Service summary and scheduled date/time</li>
-        <li>✔ Contact details of your assigned locksmith</li>
-        <li>✔ What to expect during the visit</li>
-        <li>✔ Cancellation or modification instructions</li>
-      </ul>
-      <p class="text-gray-600">You can always contact us for changes or urgent assistance.</p>
-    </div>
-  </section>
-
-  <!-- Emergency Alternative -->
-  <section class="py-20 bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Immediate Help?</h2>
-      <p class="mb-6">Call our emergency hotline for fast response locksmith services in South Bend.</p>
-      <a href="tel:5743187797" class="inline-block bg-white text-[#DC143C] font-semibold px-8 py-4 rounded-full shadow hover:shadow-lg transition text-lg">Call Now: 574-318-7797</a>
-    </div>
-  </section>
+    </section>
 
     <footer class="bg-[#FFFFFF] text-[#1C1C1C] pt-16 pb-8 px-6 md:px-12 border-t border-[#F5F5F5]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
