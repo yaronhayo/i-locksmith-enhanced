@@ -440,268 +440,338 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center text-white px-4 sm:px-6 lg:px-12 pt-28 md:pt-32 relative overflow-hidden bg-cover bg-center"
-            style="background-image: url('./images/servicesareas.webp');">
+    <section class="relative bg-cover bg-center text-white py-28"
+         style="background-image: url('./images/servicesareas.webp');">
 
-        <!-- Dark lightly blurred overlay -->
-        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-        
-        <div class="relative z-10 max-w-3xl mx-auto text-center animate-fadeInUp">
-            <!-- H1 -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-snug sm:leading-tight tracking-tight">
-                <span class="text-[#DC143C] drop-shadow-md">Locksmith Service Coverage in South Bend</span>
-            </h1>
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0 bg-black/70"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <!-- Breadcrumb -->
+                <nav class="text-sm mb-6">
+                    <ol class="flex items-center space-x-2">
+                        <li><a href="/" class="hover:underline">Home</a></li>
+                        <li><span class="mx-1">/</span></li>
+                        <li class="text-gray-200">Locksmith Service Areas</li>
+                    </ol>
+                </nav>
 
-            <!-- Decorative Divider -->
-            <div class="w-24 h-1 bg-[#DC143C] mx-auto mb-6 rounded-full"></div>
-            
-            <!-- Supporting paragraph with keywords -->
-            <p class="text-base sm:text-lg md:text-xl mb-8 text-gray-200 max-w-xl mx-auto leading-relaxed">
-                At <strong>I Locksmith</strong>, we proudly serve South Bend and the surrounding communities.  
-                Our mobile locksmith team brings fast, professional, and reliable service directly to your location,  
-                with quick response times and complete locksmith solutions for homes, businesses, and vehicles.
-            </p>
+            <!-- Header Content -->
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
+                        Locksmith Service 
+                        <span class="text-4xl md:text-5xl font-bold leading-snug 
+                                    bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] 
+                                    bg-clip-text text-transparent">
+                            Coverage in South Bend, IN
+                        </span>
+                    </h1>
+
+                    <!-- Supporting paragraph with keywords -->
+                    <p class="text-base sm:text-lg md:text-xl mb-8 text-gray-200 max-w-xl mx-auto leading-relaxed">
+                        At <strong>I Locksmith</strong>, we proudly serve South Bend and the surrounding communities.  
+                        Our mobile locksmith team brings fast, professional, and reliable service directly to your location,  
+                        with quick response times and complete locksmith solutions for homes, businesses, and vehicles.
+                    </p>
+                </div>
+
+            <!-- Quick Booking Form -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 text-black">
+                <h3 class="text-2xl font-bold mb-4">Book a Locksmith Now</h3>
+                <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"/>
+                <input type="tel" placeholder="Phone Number" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"/>
+                <select class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]">
+                    <option>Emergency Locksmith</option>
+                    <option>Residential Locksmith</option>
+                    <option>Commercial Locksmith</option>
+                    <option>Auto Locksmith</option>
+                </select>
+                <textarea placeholder="Service Details" rows="3" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"></textarea>
+                <button type="submit" class="w-full py-3 bg-[#DC143C] text-white font-semibold rounded-lg hover:bg-[#B01030] transition">
+                    Request Service
+                </button>
+                </form>
+            </div>
+            </div>
         </div>
     </section>
 
     <!-- Service Area Overview -->
     <section class="bg-gradient-to-br from-white to-[#F5F5F5] py-20">
-        <div class="max-w-6xl mx-auto px-6 text-center">
+    <div class="max-w-6xl mx-auto px-6 text-center">
 
-            <!-- Heading -->
-            <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
-            Service Area Overview
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto mb-10 rounded-full"></div>
+        <!-- Heading -->
+        <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
+        Service Area Overview
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto mb-10 rounded-full"></div>
 
-            <!-- Intro -->
-            <p class="text-lg md:text-xl text-[#666666] max-w-3xl mx-auto mb-12 leading-relaxed">
-            At <strong>I Locksmith</strong>, we bring our expertise directly to your location.  
-            With <strong>fully equipped service vehicles</strong>, we deliver residential, automotive,  
-            and commercial locksmith services across the greater <strong>South Bend area</strong>.
-            </p>
+        <!-- Intro -->
+        <p class="text-lg md:text-xl text-[#666666] max-w-3xl mx-auto mb-12 leading-relaxed">
+        At <strong>I Locksmith</strong>, we bring our expertise directly to your location.  
+        With <strong>fully equipped service vehicles</strong>, we deliver residential, automotive,  
+        and commercial locksmith services across the greater <strong>South Bend area</strong>.
+        </p>
 
-            <!-- Features List -->
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-            
-            <!-- Response Time -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                <i data-lucide="clock" class="w-12 h-12 text-[#DC143C] mb-4"></i>
-                <h3 class="text-xl font-semibold mb-2 text-[#1C1C1C]">Emergency Response</h3>
-                <p class="text-[#666666] leading-relaxed">
+        <!-- Features List -->
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+
+        <!-- Emergency Response -->
+        <div class="rounded-2xl p-[3px] bg-gradient-to-r from-[#DC143C] to-[#FF4500]">
+            <div class="p-6 bg-white rounded-2xl shadow-lg text-center hover:-translate-y-2 transition-transform duration-300">
+            <div class="flex items-center justify-center w-16 h-16 bg-[#DC143C]/10 text-[#DC143C] rounded-full mb-4 mx-auto text-2xl">
+                <span class="material-icons text-3xl">access_time</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-[#1C1C1C]">Emergency Response</h3>
+            <p class="text-[#666666] leading-relaxed">
                 Average arrival time of <strong>30 minutes or less</strong> for emergencies in South Bend.
-                </p>
+            </p>
             </div>
+        </div>
 
-            <!-- Appointments -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                <i data-lucide="calendar" class="w-12 h-12 text-[#DC143C] mb-4"></i>
-                <h3 class="text-xl font-semibold mb-2 text-[#1C1C1C]">Flexible Scheduling</h3>
-                <p class="text-[#666666] leading-relaxed">
+        <!-- Flexible Scheduling -->
+        <div class="rounded-2xl p-[3px] bg-gradient-to-r from-[#DC143C] to-[#FF4500]">
+            <div class="p-6 bg-white rounded-2xl shadow-lg text-center hover:-translate-y-2 transition-transform duration-300">
+            <div class="flex items-center justify-center w-16 h-16 bg-[#DC143C]/10 text-[#DC143C] rounded-full mb-4 mx-auto text-2xl">
+                <span class="material-icons text-3xl">calendar_today</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-[#1C1C1C]">Flexible Scheduling</h3>
+            <p class="text-[#666666] leading-relaxed">
                 Book <strong>standard appointments</strong> Monday through Saturday at your convenience.
-                </p>
+            </p>
             </div>
+        </div>
 
-            <!-- 24/7 Coverage -->
-            <div class="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
-                <i data-lucide="shield" class="w-12 h-12 text-[#DC143C] mb-4"></i>
-                <h3 class="text-xl font-semibold mb-2 text-[#1C1C1C]">24/7 Availability</h3>
-                <p class="text-[#666666] leading-relaxed">
+        <!-- 24/7 Availability -->
+        <div class="rounded-2xl p-[3px] bg-gradient-to-r from-[#DC143C] to-[#FF4500]">
+            <div class="p-6 bg-white rounded-2xl shadow-lg text-center hover:-translate-y-2 transition-transform duration-300">
+            <div class="flex items-center justify-center w-16 h-16 bg-[#DC143C]/10 text-[#DC143C] rounded-full mb-4 mx-auto text-2xl">
+                <span class="material-icons text-3xl">support_agent</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-2 text-[#1C1C1C]">24/7 Availability</h3>
+            <p class="text-[#666666] leading-relaxed">
                 Count on us for <strong>round-the-clock emergency locksmith coverage</strong>, every day of the year.
-                </p>
+            </p>
             </div>
-
-            </div>
+        </div>
         </div>
     </section>
 
     <!-- Interactive Service Area Map -->
     <section class="bg-[#F5F5F5] py-16">
         <div class="max-w-6xl mx-auto px-6 text-center">
+
             <!-- Heading -->
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-snug sm:leading-tight tracking-tight">
-                <span class="text-[#DC143C] drop-shadow-md">Interactive Service Area Map</span>
+            <span class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">Interactive Service Area Map</span>
             </h1>
-
-            <!-- Decorative Divider -->
             <div class="w-24 h-1 bg-[#DC143C] mx-auto mb-6 rounded-full"></div>
 
-            <!-- Google Maps Embed -->
-            <div class="w-full h-[500px] rounded-lg shadow-md overflow-hidden">
-            <iframe
+            <!-- Google Maps Embed with Gradient Border -->
+            <div class="relative rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] shadow-lg hover:shadow-2xl transition duration-300">
+            <div class="rounded-2xl overflow-hidden">
+                <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17929396.52388705!2d-80.7612819058832!3d42.888225130435956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bcd9f81b1d%3A0x7e102fcecb32ec72!2sIndiana%2C%20USA!5e1!3m2!1sen!2sph!4v1757860374511!5m2!1sen!2sph"
                 width="100%"
-                height="100%"
+                height="500"
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                </iframe>
+            </div>
             </div>
         </div>
     </section>
 
+    <!-- Service Area Grid -->
+    <section class="bg-gradient-to-br from-white to-[#F5F5F5] py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
 
- <!-- Service Area Grid -->
-<section class="bg-gradient-to-br from-white to-[#F5F5F5] py-20">
-  <div class="max-w-7xl mx-auto px-6 text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+            Cities We Serve
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto mb-12 rounded-full"></div>
 
-    <!-- Heading -->
-    <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
-      Cities We Serve
-    </h2>
-    <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto mb-12 rounded-full"></div>
+            <!-- Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-    <!-- Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- South Bend -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/south-bend.webp" alt="South Bend" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">South Bend</h3>
+                    <p class="text-[#666666] mb-4">Our home base—fastest response for residential, commercial, and auto locksmith needs.</p>
+                    <a href="./service-areas/locksmith-south-bend-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
 
-      <!-- South Bend -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/south-bend.jpg" alt="South Bend" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">South Bend</h3>
-          <p class="text-[#666666] mb-4">Our home base—fastest response for residential, commercial, and auto locksmith needs.</p>
-          <a href="/service-areas/south-bend.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+            <!-- Mishawaka -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/mishawaka.webp" alt="Mishawaka" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Mishawaka</h3>
+                    <p class="text-[#666666] mb-4">Trusted locksmiths for rekeying, lockouts, and advanced business lock solutions.</p>
+                    <a href="./service-areas/locksmith-mishawaka-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Granger -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/granger.webp" alt="Granger" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Granger</h3>
+                    <p class="text-[#666666] mb-4">Premium mobile locksmith service for suburban homes, vehicles, and local businesses.</p>
+                    <a href="./service-areas/locksmith-granger-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Elkhart -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/elkhart.webp" alt="Elkhart" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Elkhart</h3>
+                    <p class="text-[#666666] mb-4">Fast response for automotive lockouts and commercial locksmithing across Elkhart.</p>
+                    <a href="./service-areas/locksmith-elkhart-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Goshen -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/goshen.webp" alt="Goshen" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Goshen</h3>
+                    <p class="text-[#666666] mb-4">Complete locksmith services for residential homes, offices, and vehicles in Goshen.</p>
+                    <a href="./service-areas/locksmith-goshen-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Osceola -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/osceola.webp" alt="Osceola" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Osceola</h3>
+                    <p class="text-[#666666] mb-4">Reliable locksmith support for homes, vehicles, and small businesses in Osceola.</p>
+                    <a href="./service-areas/locksmith-osceola-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- New Carlisle -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/new-carlisle.webp" alt="New Carlisle" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">New Carlisle</h3>
+                    <p class="text-[#666666] mb-4">Emergency and scheduled locksmith services for residents and businesses in New Carlisle.</p>
+                    <a href="./service-areas/locksmith-new-carlisle-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- North Liberty -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/north-liberty.webp" alt="North Liberty" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">North Liberty</h3>
+                    <p class="text-[#666666] mb-4">24/7 locksmith coverage with reliable response times in North Liberty.</p>
+                    <a href="./service-areas/locksmith-north-liberty-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Wakarusa -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                <img src="./images/wakarusa.webp" alt="Wakarusa" class="h-40 w-full object-cover">
+                <div class="p-6 text-left">
+                    <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Wakarusa</h3>
+                    <p class="text-[#666666] mb-4">Serving Wakarusa with professional locksmith services for home, auto, and business.</p>
+                    <a href="./service-areas/locksmith-wakarusa-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                </div>
+                </div>
+            </div>
+
+            <!-- Bremen -->
+            <div class="rounded-2xl p-[2px] bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md w-full h-full hover:-translate-y-2 transition-transform duration-300">
+                    <img src="./images/bremen.webp" alt="Bremen" class="h-40 w-full object-cover">
+                    <div class="p-6 text-left">
+                        <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Bremen</h3>
+                        <p class="text-[#666666] mb-4">Complete locksmith support for Bremen residents and businesses with mobile service.</p>
+                        <a href="./service-areas/locksmith-bremen-indiana.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Mishawaka -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/mishawaka.jpg" alt="Mishawaka" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Mishawaka</h3>
-          <p class="text-[#666666] mb-4">Trusted locksmiths for rekeying, lockouts, and advanced business lock solutions.</p>
-          <a href="/service-areas/mishawaka.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
+    <!-- Coverage Details -->
+    <section class="bg-[#F5F5F5] py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <!-- Section Heading -->
+            <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-4">
+                Coverage Details
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto mb-12 rounded-full"></div>
+
+            <!-- Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Card 1: Service Radius -->
+            <div class="p-[2px] rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-md hover:-translate-y-2 transition-transform duration-300">
+                <span class="material-icons text-[#DC143C] text-5xl mb-4">location_on</span>
+                <h3 class="text-2xl font-semibold text-[#1C1C1C] mb-2">Service Radius</h3>
+                <p class="text-[#666666] leading-relaxed">
+                    Primary coverage within a <strong>20-mile radius</strong> of South Bend, with extended reach up to <strong>40 miles</strong>.
+                </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Service Availability -->
+            <div class="p-[2px] rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-md hover:-translate-y-2 transition-transform duration-300">
+                <span class="material-icons text-[#DC143C] text-5xl mb-4">schedule</span>
+                <h3 class="text-2xl font-semibold text-[#1C1C1C] mb-2">Service Availability</h3>
+                <p class="text-[#666666] leading-relaxed">
+                    <strong>24/7 emergency services</strong> available across all zones, with scheduled appointments Mon–Sat.
+                </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Special Notes -->
+            <div class="p-[2px] rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:shadow-xl transition duration-300">
+                <div class="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-md hover:-translate-y-2 transition-transform duration-300">
+                <span class="material-icons text-[#DC143C] text-5xl mb-4">info</span>
+                <h3 class="text-2xl font-semibold text-[#1C1C1C] mb-2">Special Notes</h3>
+                <p class="text-[#666666] leading-relaxed">
+                    Additional fees may apply for extended rural zones or out-of-range travel requests.
+                </p>
+                </div>
+            </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Granger -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/granger.jpg" alt="Granger" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Granger</h3>
-          <p class="text-[#666666] mb-4">Premium mobile locksmith service for suburban homes, vehicles, and local businesses.</p>
-          <a href="/service-areas/granger.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-      <!-- Elkhart -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/elkhart.jpg" alt="Elkhart" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Elkhart</h3>
-          <p class="text-[#666666] mb-4">Fast response for automotive lockouts and commercial locksmithing across Elkhart.</p>
-          <a href="/service-areas/elkhart.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-      <!-- Goshen -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/goshen.jpg" alt="Goshen" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Goshen</h3>
-          <p class="text-[#666666] mb-4">Complete locksmith services for residential homes, offices, and vehicles in Goshen.</p>
-          <a href="/service-areas/goshen.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-      <!-- Osceola -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/osceola.jpg" alt="Osceola" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Osceola</h3>
-          <p class="text-[#666666] mb-4">Reliable locksmith support for homes, vehicles, and small businesses in Osceola.</p>
-          <a href="/service-areas/osceola.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-      <!-- New Carlisle -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/new-carlisle.jpg" alt="New Carlisle" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">New Carlisle</h3>
-          <p class="text-[#666666] mb-4">Emergency and scheduled locksmith services for residents and businesses in New Carlisle.</p>
-          <a href="/service-areas/new-carlisle.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-      <!-- North Liberty -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/north-liberty.jpg" alt="North Liberty" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">North Liberty</h3>
-          <p class="text-[#666666] mb-4">24/7 locksmith coverage with reliable response times in North Liberty.</p>
-          <a href="/service-areas/north-liberty.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-      <!-- Wakarusa -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/wakarusa.jpg" alt="Wakarusa" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Wakarusa</h3>
-          <p class="text-[#666666] mb-4">Serving Wakarusa with professional locksmith services for home, auto, and business.</p>
-          <a href="/service-areas/wakarusa.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-      <!-- Bremen -->
-      <div class="bg-white shadow-md rounded-2xl overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition duration-300">
-        <img src="./images/bremen.jpg" alt="Bremen" class="h-40 w-full object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-2xl font-bold mb-2 text-[#1C1C1C]">Bremen</h3>
-          <p class="text-[#666666] mb-4">Complete locksmith support for Bremen residents and businesses with mobile service.</p>
-          <a href="/service-areas/bremen.html" class="inline-block bg-[#DC143C] text-white px-4 py-2 rounded-lg shadow hover:bg-red-700 transition">View City Page</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Coverage Details -->
-<section class="bg-[#F5F5F5] py-20">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-
-    <!-- Section Heading -->
-    <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-4">
-      Coverage Details
-    </h2>
-    <div class="w-24 h-1 gradient-bg mx-auto mb-12 rounded-full"></div>
-
-    <!-- Cards Grid -->
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- Card 1: Service Radius -->
-      <div class="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-        <span class="material-icons text-[#DC143C] text-5xl mb-4">location_on</span>
-        <h3 class="text-2xl font-semibold text-[#1C1C1C] mb-2">Service Radius</h3>
-        <p class="text-[#666666] leading-relaxed">
-          Primary coverage within a <strong>20-mile radius</strong> of South Bend, with extended reach up to <strong>40 miles</strong>.
-        </p>
-      </div>
-
-      <!-- Card 2: Service Availability -->
-      <div class="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-        <span class="material-icons text-[#DC143C] text-5xl mb-4">schedule</span>
-        <h3 class="text-2xl font-semibold text-[#1C1C1C] mb-2">Service Availability</h3>
-        <p class="text-[#666666] leading-relaxed">
-          <strong>24/7 emergency services</strong> available across all zones, with scheduled appointments Mon–Sat.
-        </p>
-      </div>
-
-      <!-- Card 3: Special Notes -->
-      <div class="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-        <span class="material-icons text-[#DC143C] text-5xl mb-4">info</span>
-        <h3 class="text-2xl font-semibold text-[#1C1C1C] mb-2">Special Notes</h3>
-        <p class="text-[#666666] leading-relaxed">
-          Additional fees may apply for extended rural zones or out-of-range travel requests.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
 

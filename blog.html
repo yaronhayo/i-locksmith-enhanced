@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title> Locksmith FAQ | Common Questions About I Locksmith Services in South Bend </title>
-    <meta name="description" content="Learn about I Locksmith - South Bend's trusted mobile locksmith service. Licensed, insured, and committed to fast, professional locksmith solutions.">
+    <title>Locksmith Blog | Security Tips & Lock Advice | I Locksmith South Bend </title>
     <link rel="icon" href="./images/i-locksmith-logo.webp" type="image/webp">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -53,35 +52,6 @@
 
         #mobileMenu .fixed.top-0.left-0 {
             z-index: 10001 !important; /* content above overlay */
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #DC143C 0%, #FF4500 100%);
-        }
-        .glass-effect {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .hover-lift {
-            transition: all 0.3s ease;
-        }
-        .hover-lift:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(220, 20, 60, 0.15);
-        }
-        .floating-animation {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 0.8s ease-in-out forwards;
-        }
-        @keyframes fadeIn {
-            to { opacity: 1; }
         }
     </style>
 </head>
@@ -438,166 +408,151 @@
         </div>
     </div>
 
-    <!-- Page Header with Booking Form -->
-    <section class="relative bg-cover bg-center text-white py-28"
-         style="background-image: url('./images/questions.webp');">
+    <!-- Blog Header -->
+  <section class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Locksmith Tips & Security Advice Blog</h1>
+      <p class="text-lg md:text-xl mb-8">Expert advice from South Bend's trusted mobile locksmith</p>
 
-        <!-- Dark overlay for readability -->
-        <div class="absolute inset-0 bg-black/70"></div>
-            <div class="max-w-7xl mx-auto px-6 relative z-10">
-                <!-- Breadcrumb -->
-                <nav class="text-sm mb-6">
-                    <ol class="flex items-center space-x-2">
-                        <li><a href="/" class="hover:underline">Home</a></li>
-                        <li><span class="mx-1">/</span></li>
-                        <li class="text-gray-200">Locksmith FAQs</li>
-                    </ol>
-                </nav>
+      <!-- Search Bar -->
+      <div class="max-w-xl mx-auto">
+        <input type="text" placeholder="Search blog posts..." 
+               class="w-full px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/70">
+      </div>
 
-            <!-- Header Content -->
-            <div class="grid lg:grid-cols-2 gap-10 items-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                        Frequently Asked Questions 
-                        <span class="text-4xl md:text-5xl font-bold leading-snug 
-                                    bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] 
-                                    bg-clip-text text-transparent">
-                            I Locksmith South Bend, IN
-                        </span>
-                    </h1>
-
-                    <p class="text-lg text-gray-100 leading-relaxed mb-8">
-                        Find answers to your most common locksmith questions. Whether you need help with <strong>emergency services</strong>, <strong>residential locks</strong>, <strong>commercial security</strong>, or <strong>auto locksmith solutions</strong>, we’ve got you covered. Use the search below to quickly find what you need.
-                    </p>
-                </div>
-
-            <!-- Quick Booking Form -->
-            <div class="bg-white rounded-2xl shadow-xl p-8 text-black">
-                <h3 class="text-2xl font-bold mb-4">Book a Locksmith Now</h3>
-                <form class="space-y-4">
-                <input type="text" placeholder="Your Name" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"/>
-                <input type="tel" placeholder="Phone Number" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"/>
-                <select class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]">
-                    <option>Emergency Locksmith</option>
-                    <option>Residential Locksmith</option>
-                    <option>Commercial Locksmith</option>
-                    <option>Auto Locksmith</option>
-                </select>
-                <textarea placeholder="Service Details" rows="3" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"></textarea>
-                <button type="submit" class="w-full py-3 bg-[#DC143C] text-white font-semibold rounded-lg hover:bg-[#B01030] transition">
-                    Request Service
-                </button>
-                </form>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section with Gradient Borders -->
-    <section class="bg-gradient-to-br from-white to-[#F5F5F5] py-20" x-data="{
-            category: 'all',
-            search: '',
-            faqs: [
-                { question: 'How quickly can you respond to an emergency lockout?', answer: 'Within 30 minutes for most emergencies.', cat: 'emergency' },
-                { question: 'Do you provide residential lock installation services?', answer: 'Yes, we install, repair, and replace locks for homes.', cat: 'residential' },
-                { question: 'Can you rekey commercial locks?', answer: 'Absolutely, we rekey and replace commercial locks.', cat: 'commercial' },
-                { question: 'Do you offer car key replacement?', answer: 'Yes, we provide auto locksmith services including key replacement.', cat: 'auto' },
-                { question: 'What are your general service hours?', answer: 'We operate 7 days a week, 8 AM - 8 PM.', cat: 'general' },
-                { question: 'Are your locksmiths licensed and insured?', answer: 'Yes, all our locksmiths are fully licensed and insured for your protection.', cat: 'general' },
-                { question: 'Do you provide 24/7 emergency services?', answer: 'Yes, we are available 24/7 for any lockout or emergency needs.', cat: 'emergency' },
-                { question: 'Can you help if I am locked out of my car?', answer: 'Absolutely, our mobile team can unlock most vehicles on-site.', cat: 'auto' },
-                { question: 'Do you offer lock upgrades for homes?', answer: 'Yes, we offer high-security lock installation for residential properties.', cat: 'residential' },
-                { question: 'Can you install master key systems for businesses?', answer: 'Yes, we can design and install master key systems for commercial buildings.', cat: 'commercial' }
-            ]
-        }" id="faq-section">
-    <div class="max-w-7xl mx-auto px-6">
-
-        <!-- Heading -->
-        <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6 text-center">
-        Frequently Asked Questions
-        </h2>
-
-        <!-- Decorative Divider -->
-        <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto mb-10 rounded-full"></div>
-
-        <!-- Search Bar -->
-        <div class="flex justify-center mb-8">
-        <input type="text" placeholder="Search FAQs..." x-model="search" 
-            class="w-full md:w-2/3 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] shadow-sm transition" />
-        </div>
-
-        <!-- Category Buttons -->
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <template x-for="cat in ['all','general','emergency','residential','commercial','auto']" :key="cat">
-                <button @click="category = cat"
-                :class="category === cat ? 'bg-[#DC143C] text-white border-transparent' : 'bg-white text-[#1C1C1C] border-gray-300'"
-                class="px-6 py-2 rounded-lg border hover:bg-[#DC143C] hover:text-white transition-all duration-300 capitalize">
-                <span x-text="cat === 'all' ? 'All' : cat.replace(/([a-z])([A-Z])/g, '$1 $2')"></span>
-                </button>
-            </template>
-        </div>
-
-        <!-- FAQ Items with Gradient Borders -->
-        <div class="max-w-4xl mx-auto space-y-4">
-        <template x-for="(faq, index) in faqs.filter(f => (category === 'all' || f.cat === category) && f.question.toLowerCase().includes(search.toLowerCase()))" :key="index">
-            <div x-data="{ open: false }" class="rounded-xl relative overflow-hidden">
-            <!-- Gradient Border Container -->
-            <div class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] p-[2px] rounded-xl">
-                <!-- Inner white content -->
-                <div class="bg-white rounded-lg shadow hover:shadow-lg transition relative overflow-hidden">
-                <button @click="open = !open" 
-                    class="w-full text-left px-6 py-4 flex justify-between items-center font-medium text-[#1C1C1C] hover:bg-[#FFEBEB] transition-all duration-300 border-b border-gray-200 rounded-t-lg">
-                    <span x-text="faq.question" class="text-lg md:text-xl"></span>
-                    <span class="material-icons text-[#DC143C]" x-text="open ? 'expand_less' : 'expand_more'"></span>
-                </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 max-h-0" x-transition:enter-end="opacity-100 max-h-96" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 max-h-96" x-transition:leave-end="opacity-0 max-h-0"
-                    class="px-6 py-4 text-gray-700 text-base md:text-lg bg-[#FFF8F8]">
-                    <p x-text="faq.answer"></p>
-                </div>
-                </div>
-            </div>
-            </div>
-        </template>
-
-        <template x-if="faqs.filter(f => (category === 'all' || f.cat === category) && f.question.toLowerCase().includes(search.toLowerCase())).length === 0">
-            <p class="text-center text-gray-500 py-4">No FAQs found.</p>
-        </template>
-        </div>
+      <!-- Categories Navigation -->
+      <div class="flex flex-wrap justify-center gap-4 mt-6">
+        <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Home Security Tips</button>
+        <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Commercial Security</button>
+        <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Auto Security & Keys</button>
+        <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Emergency Preparedness</button>
+        <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Lock Maintenance</button>
+        <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Locksmith Industry News</button>
+      </div>
     </div>
-    </section>
+  </section>
 
-    <!-- Still Need Help Section -->
-<section class="bg-[#DC143C] py-20">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-
-        <!-- Heading -->
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Still Need Help?
-        </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-white to-[#FF4500] mx-auto mb-10 rounded-full"></div>
-
-        <!-- Supporting Text -->
-        <p class="text-white mb-10 max-w-2xl mx-auto text-lg md:text-xl">
-            If you didn’t find the answer you were looking for, our team is ready to assist you. 
-            Reach out through our contact form or speak directly with a locksmith for quick support.
-        </p>
-
-        <!-- Action Buttons -->
-        <div class="flex flex-col md:flex-row justify-center gap-6">
-            <!-- Contact Form Button -->
-            <a href="contact.html" class="px-8 py-4 bg-white text-[#DC143C] rounded-lg font-semibold shadow hover:bg-[#FF4500] hover:text-white transition">
-                Contact Form
-            </a>
-
-            <!-- Phone Consultation Button -->
-            <a href="tel:+5743187797" class="px-8 py-4 bg-white text-[#DC143C] rounded-lg font-semibold shadow hover:bg-[#FF4500] hover:text-white transition">
-                Call Us: 574-318-7797
-            </a>
+  <!-- Featured Posts -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Featured Posts</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Post Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="./images/blog-featured1.jpg" alt="Post Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">5 Tips for Securing Your Home in South Bend</h3>
+            <p class="text-gray-600 text-sm mb-4">Read time: 3 min</p>
+            <p class="text-gray-700 mb-4">Practical strategies to improve your home's security and prevent break-ins.</p>
+            <a href="#" class="text-[#DC143C] font-semibold hover:underline">Read More →</a>
+          </div>
         </div>
 
-    </div>
-</section>
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="./images/blog-featured2.jpg" alt="Post Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Maintaining Your Locks for Longevity</h3>
+            <p class="text-gray-600 text-sm mb-4">Read time: 4 min</p>
+            <p class="text-gray-700 mb-4">Learn essential lock maintenance tips that keep your locks secure and functioning smoothly.</p>
+            <a href="#" class="text-[#DC143C] font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
 
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="./images/blog-featured3.jpg" alt="Post Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Emergency Locksmith Tips for Car Lockouts</h3>
+            <p class="text-gray-600 text-sm mb-4">Read time: 2 min</p>
+            <p class="text-gray-700 mb-4">Quick and practical advice to handle car lockouts safely and efficiently.</p>
+            <a href="#" class="text-[#DC143C] font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Categories -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10">Blog Categories</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <span class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold shadow hover:bg-white/90 cursor-pointer transition">Home Security Tips</span>
+        <span class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold shadow hover:bg-white/90 cursor-pointer transition">Commercial Security</span>
+        <span class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold shadow hover:bg-white/90 cursor-pointer transition">Auto Security & Keys</span>
+        <span class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold shadow hover:bg-white/90 cursor-pointer transition">Emergency Preparedness</span>
+        <span class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold shadow hover:bg-white/90 cursor-pointer transition">Lock Maintenance</span>
+        <span class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold shadow hover:bg-white/90 cursor-pointer transition">Locksmith Industry News</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Posts Grid -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Recent Posts</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Repeat for each post -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="./images/blog-recent1.jpg" alt="Post Thumbnail" class="w-full h-40 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold mb-2">Top 10 Home Security Devices for 2025</h3>
+            <p class="text-gray-500 text-sm mb-2">Jan 15, 2025 • Home Security Tips</p>
+            <p class="text-gray-700 mb-4">Discover the latest in smart locks, cameras, and security systems for your home.</p>
+            <a href="#" class="text-[#DC143C] font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="./images/blog-recent2.jpg" alt="Post Thumbnail" class="w-full h-40 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold mb-2">How to Rekey Your Locks Like a Pro</h3>
+            <p class="text-gray-500 text-sm mb-2">Jan 10, 2025 • Lock Maintenance</p>
+            <p class="text-gray-700 mb-4">Step-by-step guide to safely rekey your locks at home or office.</p>
+            <a href="#" class="text-[#DC143C] font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="./images/blog-recent3.jpg" alt="Post Thumbnail" class="w-full h-40 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold mb-2">Commercial Security: Protect Your Business</h3>
+            <p class="text-gray-500 text-sm mb-2">Jan 5, 2025 • Commercial Security</p>
+            <p class="text-gray-700 mb-4">Tips on alarms, locks, and access control to secure your business premises.</p>
+            <a href="#" class="text-[#DC143C] font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Add more posts as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white py-20">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Security Tips Delivered</h2>
+      <p class="mb-6">Subscribe to our monthly newsletter for the latest locksmith tips and home security advice.</p>
+      <form class="flex flex-col sm:flex-row gap-4 justify-center">
+        <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-full text-gray-800 w-full sm:w-auto flex-1 focus:outline-none">
+        <button type="submit" class="bg-white text-[#DC143C] font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Popular Tags -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Popular Tags</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Home Security</span>
+        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Locks</span>
+        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Auto Keys</span>
+        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Emergency</span>
+        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Maintenance</span>
+        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Industry News</span>
+      </div>
+    </div>
+  </section>
 
     <footer class="bg-[#FFFFFF] text-[#1C1C1C] pt-16 pb-8 px-6 md:px-12 border-t border-[#F5F5F5]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
@@ -731,5 +686,6 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 </body>
 </html>

@@ -446,29 +446,59 @@
             </div>
         </div>
     </div>
-    
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center text-white px-4 sm:px-6 lg:px-12 pt-28 md:pt-32 relative overflow-hidden bg-cover bg-center"
-            style="background-image: url('./images/about-us.webp');">
 
-        <!-- Dark lightly blurred overlay -->
-        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-        
-        <div class="relative z-10 max-w-3xl mx-auto text-center animate-fadeInUp">
-            <!-- H1 -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-snug sm:leading-tight tracking-tight">
-                <span class="text-[#DC143C] drop-shadow-md">About I Locksmith - South Bend's Trusted Mobile Locksmith Service</span>
-            </h1>
+    <!-- Page Header with Booking Form -->
+    <section class="relative bg-cover bg-center text-white py-28"
+         style="background-image: url('./images/about-us.webp');">
 
-            <!-- Decorative Divider -->
-            <div class="w-24 h-1 bg-[#DC143C] mx-auto mb-6 rounded-full"></div>
-            
-            <!-- Supporting paragraph with keywords -->
-            <p class="text-base sm:text-lg md:text-xl mb-8 text-gray-200 max-w-xl mx-auto leading-relaxed">
-                Learn more <strong>about I Locksmith</strong> — your reliable <em>South Bend locksmith company</em>. 
-                As a <em>licensed locksmith in South Bend</em>, we provide fast, professional, and affordable 
-                <em>mobile locksmith service</em> for homes, businesses, and vehicles across the community.
-            </p>
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0 bg-black/70"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <!-- Breadcrumb -->
+                <nav class="text-sm mb-6">
+                    <ol class="flex items-center space-x-2">
+                        <li><a href="/" class="hover:underline">Home</a></li>
+                        <li><span class="mx-1">/</span></li>
+                        <li class="text-gray-200">Locksmith About Us</li>
+                    </ol>
+                </nav>
+
+            <!-- Header Content -->
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        About I Locksmith
+                        <span class="text-4xl md:text-5xl font-bold leading-snug 
+                                    bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] 
+                                    bg-clip-text text-transparent">
+                         - South Bend's Trusted Mobile Locksmith Service
+                        </span>
+                    </h1>
+
+                    <p class="text-lg text-gray-100 leading-relaxed mb-8">
+                        Learn more about <strong>I Locksmith</strong> — your reliable South Bend locksmith company. As a licensed locksmith in South Bend, we provide fast, professional, and affordable mobile locksmith service for homes, businesses, and vehicles across the community.
+                    </p>
+                </div>
+
+            <!-- Quick Booking Form -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 text-black">
+                <h3 class="text-2xl font-bold mb-4">Book a Locksmith Now</h3>
+                <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"/>
+                <input type="tel" placeholder="Phone Number" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"/>
+                <select class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]">
+                    <option>Emergency Locksmith</option>
+                    <option>Residential Locksmith</option>
+                    <option>Commercial Locksmith</option>
+                    <option>Auto Locksmith</option>
+                </select>
+                <textarea placeholder="Service Details" rows="3" class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[#DC143C]"></textarea>
+                <button type="submit" class="w-full py-3 bg-[#DC143C] text-white font-semibold rounded-lg hover:bg-[#B01030] transition">
+                    Request Service
+                </button>
+                </form>
+            </div>
+            </div>
         </div>
     </section>
 
@@ -480,40 +510,49 @@
                 <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
                     Company Overview
                 </h2>
-                <div class="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid lg:grid-cols-3 gap-8">
-                <div class="group hover-lift bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10">
-                        <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <!-- Mission & Values -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-r from-[#DC143C] to-[#FF4500] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="target" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Mission & Values</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">Our mission is to deliver dependable locksmith solutions that keep South Bend residents and businesses secure, grounded in integrity and trust.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Our mission is to deliver dependable locksmith solutions that keep South Bend residents and businesses secure, grounded in integrity and trust.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.2s;">
-                        <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+
+                <!-- Service Philosophy -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-r from-[#DC143C] to-[#FF4500] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="handshake" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Service Philosophy</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">We believe in fast response, fair pricing, and professional service—ensuring every customer experience is positive and stress-free.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            We believe in fast response, fair pricing, and professional service—ensuring every customer experience is positive and stress-free.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.4s;">
-                        <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+
+                <!-- Community Commitment -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-r from-[#DC143C] to-[#FF4500] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="users" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Community Commitment</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">As a proud South Bend locksmith company, we are dedicated to serving our community with reliability, honesty, and care.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            As a proud South Bend locksmith company, we are dedicated to serving our community with reliability, honesty, and care.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -528,89 +567,110 @@
                 <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
                     Mobile Service Advantage
                 </h2>
-                <div class="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid lg:grid-cols-3 gap-8">
-                <div class="group hover-lift bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10">
-                        <div class="w-20 h-20 bg-gradient-to-r from-[#FF4500] to-[#DC143C] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <!-- Convenience & Benefits -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10 ">
+                        <div class="w-20 h-20 bg-gradient-to-r from-[#FF4500] to-[#DC143C] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg ">
                             <i data-lucide="truck" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Convenience & Benefits</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">Our <em class="text-[#DC143C] font-semibold">mobile locksmith service</em> comes to you—saving time, reducing stress, and providing immediate solutions on-site.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Our <em class="text-[#DC143C] font-semibold">mobile locksmith service</em> comes to you—saving time, reducing stress, and providing immediate solutions on-site.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.2s;">
+
+                <!-- Service Vehicle Capabilities -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
                         <div class="w-20 h-20 bg-gradient-to-r from-[#FF4500] to-[#DC143C] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="wrench" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Service Vehicle Capabilities</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">Equipped with advanced tools and key programming systems, our vans can handle everything from lockouts to rekeying instantly.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Equipped with advanced tools and key programming systems, our vans can handle everything from lockouts to rekeying instantly.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.4s;">
+
+                <!-- Coverage & Response Times -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
                         <div class="w-20 h-20 bg-gradient-to-r from-[#FF4500] to-[#DC143C] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="clock" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Coverage & Response Times</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">We proudly serve South Bend and nearby areas with rapid response times—available 24/7 for emergencies.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            We proudly serve South Bend and nearby areas with rapid response times—available 24/7 for emergencies.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Credentials & Licensing -->
     <section class="min-h-screen flex items-center bg-gradient-to-br from-white to-[#F5F5F5] py-20 relative">
         <div class="absolute inset-0 bg-gradient-to-r from-[#DC143C]/5 to-transparent"></div>
         <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+
             <div class="fade-in">
                 <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-8">
                     Credentials & Licensing
                 </h2>
-                <div class="w-24 h-1 gradient-bg mx-auto rounded-full mb-12"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full mb-12"></div>
             </div>
-            
-            <div class="bg-white/90 backdrop-blur-sm p-12 rounded-3xl shadow-2xl border border-white/50 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/5 to-[#FF4500]/5 opacity-50"></div>
+
+            <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-2xl bg-white/90 backdrop-blur-sm p-12 hover:shadow-3xl transition-transform transform hover:-translate-y-2">
+                <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/10 to-[#FF4500]/10 opacity-50"></div>
                 <div class="relative z-10">
+
+                    <!-- Icon -->
                     <div class="floating-animation mb-8">
-                        <div class="w-24 h-24 gradient-bg rounded-3xl flex items-center justify-center mx-auto shadow-xl">
-                            <i data-lucide="badge-check" class="w-12 h-12 text-white"></i>
+                        <div class="w-28 h-28 bg-gradient-to-r from-[#DC143C] to-[#FF4500] rounded-3xl flex items-center justify-center mx-auto shadow-xl">
+                            <i data-lucide="badge-check" class="w-14 h-14 text-white"></i>
                         </div>
                     </div>
-                    
-                    <p class="text-xl mb-8 text-[#666666] leading-relaxed max-w-3xl mx-auto">
+
+                    <!-- Description -->
+                    <p class="text-xl mb-8 text-gray-600 leading-relaxed max-w-3xl mx-auto">
                         As a <strong class="text-[#DC143C]">licensed locksmith in South Bend</strong>, we maintain full compliance with state requirements, backed by training, insurance, and professional memberships.
                     </p>
-                    
+
+                    <!-- Credentials List -->
                     <div class="grid md:grid-cols-2 gap-6 mb-10 max-w-2xl mx-auto">
-                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl">
-                            <div class="w-3 h-3 gradient-bg rounded-full"></div>
-                            <span class="text-[#666666]">Licensed by the state of Indiana</span>
+                        <!-- Licensed by the State -->
+                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl border border-[#FF4500]">
+                            <span class="material-icons text-[#DC143C] text-2xl">verified</span>
+                            <span class="text-gray-600">Licensed by the state of Indiana</span>
                         </div>
-                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl">
-                            <div class="w-3 h-3 gradient-bg rounded-full"></div>
-                            <span class="text-[#666666]">Fully insured for customer protection</span>
+
+                        <!-- Fully Insured -->
+                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl border border-[#FF4500]">
+                            <span class="material-icons text-[#DC143C] text-2xl">security</span>
+                            <span class="text-gray-600">Fully insured for customer protection</span>
                         </div>
-                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl">
-                            <div class="w-3 h-3 gradient-bg rounded-full"></div>
-                            <span class="text-[#666666]">Members of recognized locksmith associations</span>
+
+                        <!-- Recognized Associations -->
+                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl border border-[#FF4500]">
+                            <span class="material-icons text-[#DC143C] text-2xl">groups</span>
+                            <span class="text-gray-600">Members of recognized locksmith associations</span>
                         </div>
-                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl">
-                            <div class="w-3 h-3 gradient-bg rounded-full"></div>
-                            <span class="text-[#666666]">Certified locksmiths with ongoing training</span>
+
+                        <!-- Ongoing Training -->
+                        <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl border border-[#FF4500]">
+                            <span class="material-icons text-[#DC143C] text-2xl">school</span>
+                            <span class="text-gray-600">Certified locksmiths with ongoing training</span>
                         </div>
                     </div>
-                
                 </div>
             </div>
         </div>
@@ -624,40 +684,49 @@
                 <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
                     Service Guarantee
                 </h2>
-                <div class="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid lg:grid-cols-3 gap-8">
-                <div class="group hover-lift bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10">
-                        <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <!-- Quality Assurance -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-r from-[#DC143C] to-[#FF4500] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="shield-check" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Quality Assurance</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">We use top-grade tools and techniques to deliver reliable locksmith results every time.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            We use top-grade tools and techniques to deliver reliable locksmith results every time.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.2s;">
-                        <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+
+                <!-- Customer Satisfaction -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-r from-[#DC143C] to-[#FF4500] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="smile" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Customer Satisfaction</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">Your satisfaction is our promise—if something isn't right, we'll fix it until you're happy.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Your satisfaction is our promise—if something isn't right, we'll fix it until you're happy.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.4s;">
-                        <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+
+                <!-- Service Warranty -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#DC143C]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-r from-[#DC143C] to-[#FF4500] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="file-check-2" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Service Warranty</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">All services come with a warranty, giving you confidence and peace of mind in our work.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            All services come with a warranty, giving you confidence and peace of mind in our work.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -672,40 +741,49 @@
                 <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-6">
                     Community Involvement
                 </h2>
-                <div class="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full"></div>
             </div>
-            
+
             <div class="grid lg:grid-cols-3 gap-8">
-                <div class="group hover-lift bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10">
+                <!-- Local Partnerships -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
                         <div class="w-20 h-20 bg-gradient-to-r from-[#FF4500] to-[#DC143C] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="building-2" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Local Partnerships</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">We work with South Bend businesses and organizations to improve safety and security.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            We work with South Bend businesses and organizations to improve safety and security.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.2s;">
+
+                <!-- Community Service -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
                         <div class="w-20 h-20 bg-gradient-to-r from-[#FF4500] to-[#DC143C] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="heart-handshake" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Community Service</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">We volunteer locksmith expertise for local events and charitable initiatives in South Bend.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            We volunteer locksmith expertise for local events and charitable initiatives in South Bend.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="group hover-lift bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/50 text-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="floating-animation relative z-10" style="animation-delay: 0.4s;">
+
+                <!-- South Bend Commitment -->
+                <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FF4500] shadow-lg bg-white/90 backdrop-blur-sm p-10 text-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#FF4500]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
                         <div class="w-20 h-20 bg-gradient-to-r from-[#FF4500] to-[#DC143C] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <i data-lucide="map-pin" class="w-10 h-10 text-white"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">South Bend Commitment</h3>
-                        <p class="text-[#666666] leading-relaxed text-lg">As a local locksmith, we are invested in building lasting relationships with the South Bend community we serve.</p>
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            As a local locksmith, we are invested in building lasting relationships with the South Bend community we serve.
+                        </p>
                     </div>
                 </div>
             </div>
