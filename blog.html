@@ -409,43 +409,67 @@
         </div>
     </div>
 
-    <!-- Blog Header -->
+    <!-- Blog Header - Professional Enhanced Version -->
     <section class="relative w-full h-screen flex items-center justify-center text-white px-4 sm:px-6 lg:px-8"
             style="background-image: url('./images/blog.webp'); background-size: cover; background-position: center;">
-    
-        <!-- Dark overlay for readability -->
-        <div class="absolute inset-0 bg-black/70"></div>
-        <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70"></div>
+
+        <!-- Dark overlay + gradient for readability -->
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
 
         <!-- Content -->
-        <div class="relative max-w-6xl mx-auto text-center z-10">
+        <div class="relative max-w-6xl mx-auto text-center z-10 space-y-6">
+            <!-- Main Headline -->
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight md:leading-tight
                 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent
                 animate-fade-in">
-      Locksmith Tips & Security Advice Blog
-    </h1>
+                Locksmith Tips & Security Advice Blog
+            </h1>
 
-    <!-- Subheadline -->
-    <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-xl sm:max-w-2xl mx-auto
+            <!-- Subheadline -->
+            <p class="mt-2 sm:mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-xl sm:max-w-2xl mx-auto
                 animate-fade-in delay-200 leading-relaxed">
-      Expert advice from South Bend's trusted mobile locksmith
-    </p>
+                Expert advice from South Bend's trusted mobile locksmith
+            </p>
 
             <!-- Search Bar -->
-            <div class="max-w-xl mx-auto mb-6">
-            <input type="text" placeholder="Search blog posts..." 
-                    class="w-full px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#DC143C]">
-            </div>
+            <div class="max-w-xl mx-auto animate-fade-in delay-400">
+                <input id="blogSearch" type="text" placeholder="Search blog posts..."
+                    class="w-full px-5 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#FFFFFF] shadow-lg transition duration-300 hover:shadow-xl" />
+                </div>
+                <!-- Categories Navigation - Frosted Glass with Border -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-w-xl mx-auto animate-fade-in delay-600">
 
-            <!-- Categories Navigation -->
-            <div class="grid grid-cols-3 grid-rows-2 gap-4 mt-4 max-w-xl mx-auto">
-            <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Home Security Tips</button>
-            <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Commercial Security</button>
-            <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Auto Security & Keys</button>
-            <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Emergency Preparedness</button>
-            <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Lock Maintenance</button>
-            <button class="px-4 py-2 rounded-full bg-white text-[#DC143C] font-semibold hover:bg-white/90 transition">Locksmith Industry News</button>
-            </div>
+                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
+                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                        Home Security Tips
+                    </button>
+
+                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
+                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                        Commercial Security
+                    </button>
+
+                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
+                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                        Auto Security & Keys
+                    </button>
+
+                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
+                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                        Emergency Preparedness
+                    </button>
+
+                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
+                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                        Lock Maintenance
+                    </button>
+
+                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
+                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                        Locksmith Industry News
+                    </button>
+                </div>
         </div>
     </section>
 
@@ -464,7 +488,7 @@
             <!-- Post Card 1 -->
             <div class="rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1">
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 h-full">
-                <img src="./images/blog-featured1.jpg" alt="Post Image" class="w-full h-56 object-cover rounded-t-2xl">
+                <img src="./images/10-signs.webp" alt="Post Image" class="w-full h-56 object-cover rounded-t-2xl">
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-2">
                     <span class="text-sm font-semibold px-2 py-1 bg-[#DC143C]/20 text-[#DC143C] rounded-full">Home Security</span>
@@ -472,7 +496,7 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-2 hover:text-[#DC143C] transition-colors">10 Signs You Need to Replace Your Home Locks</h3>
                     <p class="text-gray-600 mb-4 text-sm">Learn when it's time to replace your locks to keep your home safe and secure.</p>
-                    <a href="#" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
+                    <a href="./blog-posts/10-signs-you-need-to-replace-your-home-locks.html" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
                 </div>
                 </div>
             </div>
@@ -480,7 +504,7 @@
             <!-- Post Card 2 -->
             <div class="rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1">
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 h-full">
-                <img src="./images/blog-featured2.jpg" alt="Post Image" class="w-full h-56 object-cover rounded-t-2xl">
+                <img src="./images/benefits.webp" alt="Post Image" class="w-full h-56 object-cover rounded-t-2xl">
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-2">
                     <span class="text-sm font-semibold px-2 py-1 bg-[#FF4500]/20 text-[#FF4500] rounded-full">Commercial Security</span>
@@ -488,7 +512,7 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-2 hover:text-[#FF4500] transition-colors">Master Key Systems: Benefits for Small Businesses</h3>
                     <p class="text-gray-600 mb-4 text-sm">Discover how master key systems can simplify access control for your business.</p>
-                    <a href="#" class="inline-block text-[#FF4500] font-semibold text-sm hover:underline transition">Read More →</a>
+                    <a href="./blog-posts/master-key-systems-benefits-small-businesses.html" class="inline-block text-[#FF4500] font-semibold text-sm hover:underline transition">Read More →</a>
                 </div>
                 </div>
             </div>
@@ -496,7 +520,7 @@
             <!-- Post Card 4 -->
             <div class="rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1">
                 <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 h-full">
-                <img src="./images/blog-featured4.jpg" alt="Post Image" class="w-full h-56 object-cover rounded-t-2xl">
+                <img src="./images/plan.webp" alt="Post Image" class="w-full h-56 object-cover rounded-t-2xl">
                 <div class="p-6">
                     <div class="flex items-center justify-between mb-2">
                     <span class="text-sm font-semibold px-2 py-1 bg-[#DC143C]/20 text-[#DC143C] rounded-full">Emergency Preparedness</span>
@@ -504,7 +528,7 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-2 hover:text-[#DC143C] transition-colors">Creating an Emergency Key Plan for Your Family</h3>
                     <p class="text-gray-600 mb-4 text-sm">Plan ahead to ensure your family can access your home safely during emergencies.</p>
-                    <a href="#" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
+                    <a href="./blog-posts/emergency-key-plan-family.html" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
                 </div>
                 </div>
             </div>
@@ -513,220 +537,350 @@
         </div>
     </section>
 
+    <!-- Blog Categories - Fully Enhanced with Gradient Border -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-2 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                Blog Categories
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] mx-auto rounded-full mb-12"></div>
 
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
+            <!-- Category Card Template -->
+            <!-- Home Security Category -->
+            <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-visible">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full p-6">
+                <h3 class="text-xl font-semibold mb-6 text-[#DC143C]">Home Security <span class="text-gray-400 text-sm">(8 Posts)</span></h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">1</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">10 Signs You Need to Replace Your Home Locks</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">2</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">How to Secure Your Home While on Vacation</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">3</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">Smart Locks vs Traditional Locks: Which is Right for You?</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">4</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">Home Security Checklist for South Bend Residents</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">5</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">How to Choose the Right Door Lock for Your Home</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">6</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">Winter Lock Maintenance Tips for Indiana Homeowners</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">7</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">Keyless Entry Systems: Pros and Cons</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">8</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">How to Secure Sliding Doors and Windows</p>
+                    </div>
+                </div>
+                </div>
+            </div>
 
+            <!-- Commercial Security Category -->
+            <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-visible">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full p-6">
+                <h3 class="text-xl font-semibold mb-6 text-[#FF4500]">Commercial Security <span class="text-gray-400 text-sm">(6 Posts)</span></h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">1</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">Master Key Systems: Benefits for Small Businesses</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">2</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">Office Security: Protecting Your Business After Hours</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">3</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">Access Control Systems for Modern Businesses</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">4</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">How to Choose Commercial Grade Locks</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">5</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">Employee Key Management Best Practices</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">6</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">Emergency Exit Requirements for Indiana Businesses</p>
+                    </div>
+                </div>
+                </div>
+            </div>
 
+            <!-- Auto Security Category -->
+            <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-visible">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full p-6">
+                <h3 class="text-xl font-semibold mb-6 text-[#FFA500]">Auto Security <span class="text-gray-400 text-sm">(6 Posts)</span></h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FFA500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FFA500] rounded-full font-bold">1</span>
+                    <p class="text-gray-700 group-hover:text-[#FFA500] text-sm">What to Do When Locked Out of Your Car</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FFA500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FFA500] rounded-full font-bold">2</span>
+                    <p class="text-gray-700 group-hover:text-[#FFA500] text-sm">Modern Car Key Technology: Transponders and Fobs Explained</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FFA500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FFA500] rounded-full font-bold">3</span>
+                    <p class="text-gray-700 group-hover:text-[#FFA500] text-sm">How to Prevent Car Theft in South Bend</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FFA500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FFA500] rounded-full font-bold">4</span>
+                    <p class="text-gray-700 group-hover:text-[#FFA500] text-sm">Signs Your Car Key Needs Replacement</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FFA500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FFA500] rounded-full font-bold">5</span>
+                    <p class="text-gray-700 group-hover:text-[#FFA500] text-sm">Ignition Problems: When to Call a Locksmith</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FFA500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FFA500] rounded-full font-bold">6</span>
+                    <p class="text-gray-700 group-hover:text-[#FFA500] text-sm">Spare Car Key Options: What You Need to Know</p>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-<!-- Blog Categories - Enhanced Version -->
-<section class="bg-gray-50 py-20">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-12 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
-      Blog Categories
-    </h2>
+            <!-- Emergency Preparedness Category -->
+            <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-visible">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full p-6">
+                <h3 class="text-xl font-semibold mb-6 text-[#DC143C]">Emergency Preparedness <span class="text-gray-400 text-sm">(4 Posts)</span></h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">1</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">Creating an Emergency Key Plan for Your Family</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">2</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">What to Include in Your Home Security Emergency Kit</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">3</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">How to Handle Lock Emergencies During Power Outages</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">4</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">Emergency Locksmith vs. DIY: When to Call Professionals</p>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Lock Maintenance Category -->
+            <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-visible">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full p-6">
+                <h3 class="text-xl font-semibold mb-6 text-[#FF4500]">Lock Maintenance <span class="text-gray-400 text-sm">(4 Posts)</span></h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">1</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">Seasonal Lock Maintenance: Keep Your Locks Working Smoothly</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">2</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">How to Clean and Lubricate Door Locks</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">3</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">Common Lock Problems and Simple Solutions</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#FF4500]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#FF4500] rounded-full font-bold">4</span>
+                    <p class="text-gray-700 group-hover:text-[#FF4500] text-sm">When Lock Repair Makes Sense vs. Replacement</p>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-      <!-- Home Security Category -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <h3 class="text-xl font-semibold mb-2 text-[#DC143C]">Home Security <span class="text-gray-500 text-sm">(8 Posts)</span></h3>
-        <ul class="text-gray-600 text-sm space-y-1">
-          <li>10 Signs You Need to Replace Your Home Locks</li>
-          <li>How to Secure Your Home While on Vacation</li>
-          <li>Smart Locks vs Traditional Locks: Which is Right for You?</li>
-          <li>Home Security Checklist for South Bend Residents</li>
-          <li>How to Choose the Right Door Lock for Your Home</li>
-          <li>Winter Lock Maintenance Tips for Indiana Homeowners</li>
-          <li>Keyless Entry Systems: Pros and Cons</li>
-          <li>How to Secure Sliding Doors and Windows</li>
-        </ul>
-      </div>
-
-      <!-- Commercial Security Category -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <h3 class="text-xl font-semibold mb-2 text-[#FF4500]">Commercial Security <span class="text-gray-500 text-sm">(6 Posts)</span></h3>
-        <ul class="text-gray-600 text-sm space-y-1">
-          <li>Master Key Systems: Benefits for Small Businesses</li>
-          <li>Office Security: Protecting Your Business After Hours</li>
-          <li>Access Control Systems for Modern Businesses</li>
-          <li>How to Choose Commercial Grade Locks</li>
-          <li>Employee Key Management Best Practices</li>
-          <li>Emergency Exit Requirements for Indiana Businesses</li>
-        </ul>
-      </div>
-
-      <!-- Auto Security Category -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <h3 class="text-xl font-semibold mb-2 text-[#FFA500]">Auto Security <span class="text-gray-500 text-sm">(6 Posts)</span></h3>
-        <ul class="text-gray-600 text-sm space-y-1">
-          <li>What to Do When Locked Out of Your Car</li>
-          <li>Modern Car Key Technology: Transponders and Fobs Explained</li>
-          <li>How to Prevent Car Theft in South Bend</li>
-          <li>Signs Your Car Key Needs Replacement</li>
-          <li>Ignition Problems: When to Call a Locksmith</li>
-          <li>Spare Car Key Options: What You Need to Know</li>
-        </ul>
-      </div>
-
-      <!-- Emergency Preparedness Category -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <h3 class="text-xl font-semibold mb-2 text-[#DC143C]">Emergency Preparedness <span class="text-gray-500 text-sm">(4 Posts)</span></h3>
-        <ul class="text-gray-600 text-sm space-y-1">
-          <li>Creating an Emergency Key Plan for Your Family</li>
-          <li>What to Include in Your Home Security Emergency Kit</li>
-          <li>How to Handle Lock Emergencies During Power Outages</li>
-          <li>Emergency Locksmith vs. DIY: When to Call Professionals</li>
-        </ul>
-      </div>
-
-      <!-- Lock Maintenance Category -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <h3 class="text-xl font-semibold mb-2 text-[#FF4500]">Lock Maintenance <span class="text-gray-500 text-sm">(4 Posts)</span></h3>
-        <ul class="text-gray-600 text-sm space-y-1">
-          <li>Seasonal Lock Maintenance: Keep Your Locks Working Smoothly</li>
-          <li>How to Clean and Lubricate Door Locks</li>
-          <li>Common Lock Problems and Simple Solutions</li>
-          <li>When Lock Repair Makes Sense vs. Replacement</li>
-        </ul>
-      </div>
-
-      <!-- Local/Community Category -->
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <h3 class="text-xl font-semibold mb-2 text-[#DC143C]">Local/Community <span class="text-gray-500 text-sm">(2 Posts)</span></h3>
-        <ul class="text-gray-600 text-sm space-y-1">
-          <li>A Guide to Home Security in South Bend Neighborhoods</li>
-          <li>Locksmith Services for Indiana's Seasonal Challenges</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Recent Posts Grid - Enhanced Version -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
-      Recent Posts
-    </h2>
-
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Post Card 1 -->
-      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <div class="relative">
-          <img src="./images/blog-recent1.jpg" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
-          <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#DC143C]/20 text-[#DC143C]">Home Security Tips</span>
-          <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 15, 2025</span>
+            <!-- Local/Community Category -->
+            <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] p-1 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-visible">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full p-6">
+                <h3 class="text-xl font-semibold mb-6 text-[#DC143C]">Local/Community <span class="text-gray-400 text-sm">(2 Posts)</span></h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">1</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">A Guide to Home Security in South Bend Neighborhoods</p>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 rounded-lg bg-gray-100 hover:bg-[#DC143C]/10 transition-colors">
+                    <span class="w-6 h-6 flex items-center justify-center text-white bg-[#DC143C] rounded-full font-bold">2</span>
+                    <p class="text-gray-700 group-hover:text-[#DC143C] text-sm">Locksmith Services for Indiana's Seasonal Challenges</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="p-6">
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-[#DC143C] transition-colors">What to Include in Your Home Security Emergency Kit</h3>
-          <p class="text-gray-700 text-sm mb-4 line-clamp-3">Discover the latest in smart locks, cameras, and security systems for your home.</p>
-          <a href="#" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
-        </div>
-      </div>
+    </section>
 
-      <!-- Post Card 2 -->
-      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <div class="relative">
-          <img src="./images/blog-recent2.jpg" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
-          <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FF4500]/20 text-[#FF4500]">Lock Maintenance</span>
-          <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 10, 2025</span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FF4500] transition-colors">Ignition Problems: When to Call a Locksmith</h3>
-          <p class="text-gray-700 text-sm mb-4 line-clamp-3">Step-by-step guide to safely rekey your locks at home or office.</p>
-          <a href="#" class="inline-block text-[#FF4500] font-semibold text-sm hover:underline transition">Read More →</a>
-        </div>
-      </div>
 
-      <!-- Post Card 3 -->
-      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <div class="relative">
-          <img src="./images/blog-recent3.jpg" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
-          <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FFA500]/20 text-[#FFA500]">Commercial Security</span>
-          <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 5, 2025</span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FFA500] transition-colors">Smart Locks vs Traditional Locks: Which is Right for You?</h3>
-          <p class="text-gray-700 text-sm mb-4 line-clamp-3">Tips on alarms, locks, and access control to secure your business premises.</p>
-          <a href="#" class="inline-block text-[#FFA500] font-semibold text-sm hover:underline transition">Read More →</a>
-        </div>
-      </div>
+    <!-- Recent Posts Grid - Fully Enhanced with Gradient Border (Fixed) -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-2 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                Recent Posts
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] mx-auto rounded-full mb-12"></div>
 
-      <!-- Post Card 4 -->
-      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <div class="relative">
-          <img src="./images/blog-recent1.jpg" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
-          <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#DC143C]/20 text-[#DC143C]">Home Security Tips</span>
-          <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 15, 2025</span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-[#DC143C] transition-colors">Emergency Locksmith vs. DIY: When to Call Professionals</h3>
-          <p class="text-gray-700 text-sm mb-4 line-clamp-3">Discover the latest in smart locks, cameras, and security systems for your home.</p>
-          <a href="#" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
-        </div>
-      </div>
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Post Card 5 -->
-      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <div class="relative">
-          <img src="./images/blog-recent2.jpg" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
-          <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FF4500]/20 text-[#FF4500]">Lock Maintenance</span>
-          <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 10, 2025</span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FF4500] transition-colors">Modern Car Key Technology: Transponders and Fobs Explained</h3>
-          <p class="text-gray-700 text-sm mb-4 line-clamp-3">Step-by-step guide to safely rekey your locks at home or office.</p>
-          <a href="#" class="inline-block text-[#FF4500] font-semibold text-sm hover:underline transition">Read More →</a>
-        </div>
-      </div>
+                <!-- Post Card 1 -->
+                <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] cursor-pointer transition-all duration-300 hover:shadow-2xl p-1 overflow-visible"
+                    data-title="What to Include in Your Home Security Emergency Kit"
+                    data-category="Home Security Tips">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full">
+                        <div class="relative">
+                            <img src="./images/recent-1.webp" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#DC143C]/20 text-[#DC143C]">Home Security Tips</span>
+                            <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 15, 2025</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 group-hover:text-[#DC143C] transition-colors">
+                                What to Include in Your Home Security Emergency Kit
+                            </h3>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-3">
+                                Discover the latest in smart locks, cameras, and security systems for your home.
+                            </p>
+                            <a href="./blog-posts/home-security-emergency-kit.html" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
+                        </div>
+                    </div>
+                </div>
 
-      <!-- Post Card 6 -->
-      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-        <div class="relative">
-          <img src="./images/blog-recent3.jpg" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
-          <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FFA500]/20 text-[#FFA500]">Commercial Security</span>
-          <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 5, 2025</span>
+                <!-- Post Card 2 -->
+                <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] cursor-pointer transition-all duration-300 hover:shadow-2xl p-1 overflow-visible"
+                    data-title="Ignition Problems: When to Call a Locksmith"
+                    data-category="Lock Maintenance">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full">
+                        <div class="relative">
+                            <img src="./images/recent-2.webp" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FF4500]/20 text-[#FF4500]">Lock Maintenance</span>
+                            <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 10, 2025</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FF4500] transition-colors">Ignition Problems: When to Call a Locksmith</h3>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-3">Step-by-step guide to safely rekey your locks at home or office.</p>
+                            <a href="./blog-posts/ignition-problems-when-to-call-locksmith.html" class="inline-block text-[#FF4500] font-semibold text-sm hover:underline transition">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Card 3 -->
+                <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] cursor-pointer transition-all duration-300 hover:shadow-2xl p-1 overflow-visible"
+                    data-title="Smart Locks vs Traditional Locks: Which is Right for You?"
+                    data-category="Commercial Security">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full">
+                        <div class="relative">
+                            <img src="./images/recent-3.webp" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FFA500]/20 text-[#FFA500]">Commercial Security</span>
+                            <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 5, 2025</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FFA500] transition-colors">Smart Locks vs Traditional Locks: Which is Right for You?</h3>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-3">Tips on alarms, locks, and access control to secure your business premises.</p>
+                            <a href="./blog-posts/smart-locks-vs-traditional-locks.html" class="inline-block text-[#FFA500] font-semibold text-sm hover:underline transition">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Card 4 -->
+                <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] cursor-pointer transition-all duration-300 hover:shadow-2xl p-1 overflow-visible"
+                    data-title="Emergency Locksmith vs. DIY: When to Call Professionals"
+                    data-category="Home Security Tips">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full">
+                        <div class="relative">
+                            <img src="./images/recent-4.webp" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#DC143C]/20 text-[#DC143C]">Home Security Tips</span>
+                            <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 15, 2025</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 group-hover:text-[#DC143C] transition-colors">Emergency Locksmith vs. DIY: When to Call Professionals</h3>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-3">Discover the latest in smart locks, cameras, and security systems for your home.</p>
+                            <a href="./blog-posts/emergency-locksmith-vs-diy.html" class="inline-block text-[#DC143C] font-semibold text-sm hover:underline transition">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Post Card 5 -->
+                <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] cursor-pointer transition-all duration-300 hover:shadow-2xl p-1 overflow-visible"
+                    data-title="Modern Car Key Technology: Transponders and Fobs Explained"
+                    data-category="Lock Maintenance">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full">
+                        <div class="relative">
+                            <img src="./images/recent-5.webp" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FF4500]/20 text-[#FF4500]">Lock Maintenance</span>
+                            <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 10, 2025</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FF4500] transition-colors">Modern Car Key Technology: Transponders and Fobs Explained</h3>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-3">Step-by-step guide to safely rekey your locks at home or office.</p>
+                            <a href="./blog-posts/modern-car-key-technology.html" class="inline-block text-[#FF4500] font-semibold text-sm hover:underline transition">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Card 6 -->
+                <div class="group relative rounded-2xl bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] cursor-pointer transition-all duration-300 hover:shadow-2xl p-1 overflow-visible"
+                    data-title="How to Choose Commercial Grade Locks"
+                    data-category="Commercial Security">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full h-full">
+                        <div class="relative">
+                            <img src="./images/recent-6.webp" alt="Post Thumbnail" class="w-full h-52 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full bg-[#FFA500]/20 text-[#FFA500]">Commercial Security</span>
+                            <span class="absolute top-4 right-4 text-xs text-gray-500 bg-white/70 px-2 py-1 rounded-full">Jan 5, 2025</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FFA500] transition-colors">How to Choose Commercial Grade Locks</h3>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-3">Tips on alarms, locks, and access control to secure your business premises.</p>
+                            <a href="./blog-posts/choose-commercial-grade-locks.html" class="inline-block text-[#FFA500] font-semibold text-sm hover:underline transition">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="p-6">
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-[#FFA500] transition-colors">How to Choose Commercial Grade Locks</h3>
-          <p class="text-gray-700 text-sm mb-4 line-clamp-3">Tips on alarms, locks, and access control to secure your business premises.</p>
-          <a href="#" class="inline-block text-[#FFA500] font-semibold text-sm hover:underline transition">Read More →</a>
+    </section>
+
+    <!-- Newsletter Signup - Enhanced -->
+    <section class="bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white py-20">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Get Security Tips Delivered</h2>
+            <p class="mb-8 text-lg md:text-xl">Subscribe to our monthly newsletter for the latest locksmith tips and home security advice.</p>
+            <form class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <input type="email" placeholder="Enter your email" class="px-5 py-3 rounded-full text-gray-800 w-full sm:w-80 flex-1 focus:outline-none focus:ring-2 focus:ring-white/50 transition" />
+            <button type="submit" class="bg-white text-[#DC143C] font-semibold px-6 py-3 rounded-full hover:bg-white/90 shadow-lg transition">Subscribe</button>
+            </form>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- Popular Tags - Enhanced -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-12 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+            Popular Tags
+            </h2>
+            <div class="flex flex-wrap justify-center gap-4">
+            <span class="px-5 py-2 bg-white rounded-full shadow-md text-[#DC143C] font-semibold hover:bg-gradient-to-r hover:from-[#DC143C] hover:via-[#FF4500] hover:to-[#FFA500] hover:text-white transition cursor-pointer">Home Security</span>
+            <span class="px-5 py-2 bg-white rounded-full shadow-md text-[#DC143C] font-semibold hover:bg-gradient-to-r hover:from-[#DC143C] hover:via-[#FF4500] hover:to-[#FFA500] hover:text-white transition cursor-pointer">Locks</span>
+            <span class="px-5 py-2 bg-white rounded-full shadow-md text-[#DC143C] font-semibold hover:bg-gradient-to-r hover:from-[#DC143C] hover:via-[#FF4500] hover:to-[#FFA500] hover:text-white transition cursor-pointer">Auto Keys</span>
+            <span class="px-5 py-2 bg-white rounded-full shadow-md text-[#DC143C] font-semibold hover:bg-gradient-to-r hover:from-[#DC143C] hover:via-[#FF4500] hover:to-[#FFA500] hover:text-white transition cursor-pointer">Emergency</span>
+            <span class="px-5 py-2 bg-white rounded-full shadow-md text-[#DC143C] font-semibold hover:bg-gradient-to-r hover:from-[#DC143C] hover:via-[#FF4500] hover:to-[#FFA500] hover:text-white transition cursor-pointer">Maintenance</span>
+            <span class="px-5 py-2 bg-white rounded-full shadow-md text-[#DC143C] font-semibold hover:bg-gradient-to-r hover:from-[#DC143C] hover:via-[#FF4500] hover:to-[#FFA500] hover:text-white transition cursor-pointer">Industry News</span>
+            </div>
+        </div>
+    </section>
 
-  <!-- Newsletter Signup -->
-  <section class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white py-20">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Security Tips Delivered</h2>
-      <p class="mb-6">Subscribe to our monthly newsletter for the latest locksmith tips and home security advice.</p>
-      <form class="flex flex-col sm:flex-row gap-4 justify-center">
-        <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-full text-gray-800 w-full sm:w-auto flex-1 focus:outline-none">
-        <button type="submit" class="bg-white text-[#DC143C] font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Popular Tags -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8">Popular Tags</h2>
-      <div class="flex flex-wrap justify-center gap-4">
-        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Home Security</span>
-        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Locks</span>
-        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Auto Keys</span>
-        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Emergency</span>
-        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Maintenance</span>
-        <span class="px-4 py-2 bg-white rounded-full shadow text-[#DC143C] font-semibold hover:bg-white/90 cursor-pointer transition">Industry News</span>
-      </div>
-    </div>
-  </section>
 
     <footer class="bg-[#FFFFFF] text-[#1C1C1C] pt-16 pb-8 px-6 md:px-12 border-t border-[#F5F5F5]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
@@ -860,6 +1014,28 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("blogSearch");
+        const posts = document.querySelectorAll("[data-title]"); // all posts with data-title
+
+        searchInput.addEventListener("input", function () {
+        const query = this.value.toLowerCase().trim();
+
+        posts.forEach(post => {
+            const title = post.getAttribute("data-title").toLowerCase();
+            const category = post.getAttribute("data-category").toLowerCase();
+
+            if (title.includes(query) || category.includes(query)) {
+            post.style.display = "block"; // show
+            } else {
+            post.style.display = "none"; // hide
+            }
+        });
+        });
+    });
+    </script>
 
 </body>
 </html>
