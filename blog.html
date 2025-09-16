@@ -409,69 +409,71 @@
         </div>
     </div>
 
-    <!-- Blog Header - Professional Enhanced Version -->
-    <section class="relative w-full h-screen flex items-center justify-center text-white px-4 sm:px-6 lg:px-8"
-            style="background-image: url('./images/blog.webp'); background-size: cover; background-position: center;">
+    <!-- Blog Header - Responsive Version -->
+    <section class="relative w-full min-h-screen flex items-center justify-center text-white px-4 sm:px-6 lg:px-8"
+        style="background-image: url('./images/blog.webp'); background-size: cover; background-position: center;">
 
-        <!-- Dark overlay + gradient for readability -->
+        <!-- Dark overlay + gradient -->
         <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
 
         <!-- Content -->
-        <div class="relative max-w-6xl mx-auto text-center z-10 space-y-6">
+        <div class="relative max-w-6xl mx-auto text-center z-10 space-y-6 px-2 sm:px-4">
+            
             <!-- Main Headline -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight md:leading-tight
-                bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent
-                animate-fade-in">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug sm:leading-tight 
+                bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent animate-fade-in">
                 Locksmith Tips & Security Advice Blog
             </h1>
 
             <!-- Subheadline -->
-            <p class="mt-2 sm:mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-xl sm:max-w-2xl mx-auto
+            <p class="mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-md sm:max-w-2xl mx-auto 
                 animate-fade-in delay-200 leading-relaxed">
                 Expert advice from South Bend's trusted mobile locksmith
             </p>
 
             <!-- Search Bar -->
-            <div class="max-w-xl mx-auto animate-fade-in delay-400">
+            <div class="max-w-md sm:max-w-xl mx-auto animate-fade-in delay-400 px-2">
                 <input id="blogSearch" type="text" placeholder="Search blog posts..."
-                    class="w-full px-5 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#FFFFFF] shadow-lg transition duration-300 hover:shadow-xl" />
-                </div>
-                <!-- Categories Navigation - Frosted Glass with Border -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 max-w-xl mx-auto animate-fade-in delay-600">
+                    class="w-full px-4 py-2 sm:px-5 sm:py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#FFFFFF] shadow-lg transition duration-300 hover:shadow-xl text-sm sm:text-base" />
+            </div>
 
-                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
-                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
-                        Home Security Tips
-                    </button>
+            <!-- Categories Navigation -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-6 max-w-md sm:max-w-xl mx-auto animate-fade-in delay-600">
+                
+                <button class="px-3 py-2 sm:px-5 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs sm:text-sm md:text-base text-[#FFFFFF] font-semibold 
+                    hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                    Home Security Tips
+                </button>
 
-                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
-                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
-                        Commercial Security
-                    </button>
+                <button class="px-3 py-2 sm:px-5 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs sm:text-sm md:text-base text-[#FFFFFF] font-semibold 
+                    hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                    Commercial Security
+                </button>
 
-                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
-                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
-                        Auto Security & Keys
-                    </button>
+                <button class="px-3 py-2 sm:px-5 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs sm:text-sm md:text-base text-[#FFFFFF] font-semibold 
+                    hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                    Auto Security & Keys
+                </button>
 
-                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
-                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
-                        Emergency Preparedness
-                    </button>
+                <button class="px-3 py-2 sm:px-5 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs sm:text-sm md:text-base text-[#FFFFFF] font-semibold 
+                    hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                    Emergency Preparedness
+                </button>
 
-                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
-                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
-                        Lock Maintenance
-                    </button>
+                <button class="px-3 py-2 sm:px-5 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs sm:text-sm md:text-base text-[#FFFFFF] font-semibold 
+                    hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                    Lock Maintenance
+                </button>
 
-                    <button class="px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-[#FFFFFF] font-semibold 
-                        hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
-                        Locksmith Industry News
-                    </button>
-                </div>
+                <button class="px-3 py-2 sm:px-5 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs sm:text-sm md:text-base text-[#FFFFFF] font-semibold 
+                    hover:bg-white/30 hover:text-white shadow-md transition transform hover:scale-105">
+                    Locksmith Industry News
+                </button>
+            </div>
         </div>
     </section>
+
 
     <!-- Featured Posts - Modern Version with Gradient Border -->
     <section class="py-20 bg-gray-50">
