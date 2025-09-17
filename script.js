@@ -150,14 +150,15 @@ class LocksmithNavigation {
   }
 
   setupScrollBehavior() {
-    // Keep nav visible; only toggle shadow for visual cue
-    const nav = document.querySelector('nav');
-    if (!nav) return;
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) nav.classList.add('shadow-lg');
-      else nav.classList.remove('shadow-lg');
-    }, {passive:true});
-  }
+  const nav = document.querySelector('nav');
+  if (!nav) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  }, { passive: true });
+}
+
 
   // ------------ Mobile menu open/close ------------
   toggleMobileMenu() {
