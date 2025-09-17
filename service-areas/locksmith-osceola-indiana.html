@@ -89,10 +89,11 @@
                 <!-- Logo Section -->
                 <div class="flex items-center space-x-3">
                 <!-- Logo Image -->
-                <img src="../images/i-locksmith-logo.webp" 
-                    alt="i-locksmith Logo" 
-                    class="h-12 w-auto object-contain">
-                </div>
+                <a href="../index.html">
+                    <img src="../images/i-locksmith-logo.webp" 
+                        alt="i-locksmith Logo" 
+                        class="h-12 w-auto object-contain cursor-pointer">
+                </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-8">
@@ -467,55 +468,89 @@
         <div class="relative max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-20 lg:gap-32">
             <!-- Increased gap from 12 → 20/32 -->
 
-            <!-- Left: Headline & Emergency Contact -->
-            <div class="lg:w-1/2 text-center lg:text-left text-white space-y-6">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+            <div class="relative max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-20">
+            <!-- Left: Headline & Emergency Contact (VERTICALLY CENTERED) -->
+            <div class="lg:w-1/2 text-center lg:text-left text-white space-y-4 lg:space-y-6">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug">
                     Professional Locksmith Services in 
                     <span class="bg-gradient-to-r from-[#DC143C] to-[#E65C00] bg-clip-text text-transparent">
                         Osceola, IN
                     </span>
                 </h1>
-                <p class="text-lg sm:text-xl">
+                <p class="text-base sm:text-lg md:text-xl">
                     Need help fast? Call our <span class="font-bold">24/7 emergency line: 574-318-7797</span>
                 </p>
-                <p class="text-base sm:text-lg">
+                <p class="text-sm sm:text-base md:text-lg text-gray-100">
                     Fast, reliable, and trusted locksmith services for your home, business, or vehicle.
                 </p>
             </div>
 
-            <!-- Right: Booking Form -->
-            <div class="lg:w-1/2 w-full flex justify-center lg:justify-end">
-                <form class="bg-[#F5F5F5] p-6 sm:p-8 rounded-2xl shadow-xl w-full max-w-md self-center lg:ml-12">
-                    <!-- Added lg:ml-12 to push the form slightly right -->
-                    <h2 class="text-2xl font-bold text-[#1C1C1C] mb-4 text-center">Book Your Service</h2>
-
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-1">Full Name</label>
-                        <input type="text" placeholder="Enter Full Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+            <!-- Quick Booking Form -->
+            <div class="relative z-10 bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 text-[#1C1C1C] w-full max-w-xl mt-6 lg:mt-0 mx-2 md:mx-0">
+                <h3 class="text-lg sm:text-xl font-bold mb-3 text-center">Book a Locksmith Now</h3>
+                <form id="booking-form" class="space-y-2" novalidate>
+                    <!-- Name & Phone Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Your Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"
+                                class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-1">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="text" id="phone" name="phone" placeholder="574-318-7797"
+                                class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        </div>
                     </div>
 
+                    <!-- Address -->
                     <div>
-                        <label class="block text-gray-700 font-medium mb-1">Email Address</label>
-                        <input type="email" placeholder="Enter Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        <label for="address" class="block text-sm font-medium mb-1">Service Address <span class="text-red-500">*</span></label>
+                        <input type="text" id="address" name="address" placeholder="219 N Dixie Way Ste 209, South Bend, IN 46637"
+                            class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
                     </div>
 
+                    <!-- Map Preview -->
                     <div>
-                        <label class="block text-gray-700 font-medium mb-1">Service Needed</label>
-                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
-                            <option>Emergency Locksmith</option>
-                            <option>Residential Lockout</option>
-                            <option>Commercial Lock Services</option>
-                            <option>Automotive Locksmith</option>
-                        </select>
+                        <label class="block text-sm font-medium mb-1">Map Preview</label>
+                        <div id="map" class="w-full h-24 rounded-lg border border-gray-300"></div>
                     </div>
 
-                    <div>
-                        <label class="block text-gray-700 font-medium mb-1">Phone Number</label>
-                        <input type="tel" placeholder="(555) 123-4567" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                    <!-- Service Type & Needed -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <label for="service_type" class="block text-sm font-medium mb-1">Service Type <span class="text-red-500">*</span></label>
+                            <select id="service_type" name="service_type" class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                                <option value="" disabled selected>Select Service Type</option>
+                                <option>Emergency Locksmith</option>
+                                <option>Residential Locksmith</option>
+                                <option>Commercial Locksmith</option>
+                                <option>Auto Locksmith</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="needed" class="block text-sm font-medium mb-1">When Needed? <span class="text-red-500">*</span></label>
+                            <select id="needed" name="needed" class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                                <option value="" disabled selected>Select Time Frame</option>
+                                <option>ASAP</option>
+                                <option>Same Day</option>
+                                <option>Within a few days</option>
+                                <option>In a few weeks</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <button type="submit" class="w-full bg-[#DC143C] text-white font-semibold py-3 rounded-lg hover:bg-[#E25C6F] transition-colors mt-4">
-                        Book Now
+                    <!-- Additional Notes -->
+                    <div>
+                        <label for="notes" class="block text-sm font-medium mb-1">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="1" placeholder="Any extra details..."
+                            class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full py-2 bg-[#DC143C] text-white font-semibold rounded-lg hover:bg-[#B01030] transition text-sm">
+                        Request Service
                     </button>
                 </form>
             </div>
@@ -949,6 +984,7 @@
         </div>
     </footer>
 
+    <script src="validation.js"></script>
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 

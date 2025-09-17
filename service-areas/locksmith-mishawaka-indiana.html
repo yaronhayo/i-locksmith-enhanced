@@ -89,10 +89,11 @@
                 <!-- Logo Section -->
                 <div class="flex items-center space-x-3">
                 <!-- Logo Image -->
-                <img src="../images/i-locksmith-logo.webp" 
-                    alt="i-locksmith Logo" 
-                    class="h-12 w-auto object-contain">
-                </div>
+                <a href="../index.html">
+                    <img src="../images/i-locksmith-logo.webp" 
+                        alt="i-locksmith Logo" 
+                        class="h-12 w-auto object-contain cursor-pointer">
+                </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-8">
@@ -522,60 +523,99 @@
         </div>
     </section>
 
-    <!-- Local Service Overview Section -->
-    <section class="bg-gradient-to-br from-white to-[#F5F5F5] py-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-y-1"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold text-[#1C1C1C] mb-6 leading-tight">
-                    Local Service 
-                    <span class="bg-gradient-to-r from-[#DC143C] to-[#E65C00] bg-clip-text text-transparent">
-                        Overview
-                    </span>
-                </h2>
+    <!-- Local Hero with Booking Section -->
+    <section class="relative bg-cover bg-center bg-no-repeat pt-32 pb-16" style="background-image: url('./images/mishawaka.webp');">
+        <!-- Overlay for readability -->
+        <div class="absolute inset-0 bg-black/70"></div>
 
-                <div class="w-24 h-1 bg-[#DC143C] mx-auto mb-8"></div>
-                <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                    We provide fast, reliable, and professional locksmith services throughout Mishawaka. Our team responds quickly to emergencies and scheduled appointments.
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-stretch gap-20 lg:gap-32">
+            <!-- Increased gap from 12 → 20/32 -->
+
+            <div class="relative max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-20">
+            <!-- Left: Headline & Emergency Contact (VERTICALLY CENTERED) -->
+            <div class="lg:w-1/2 text-center lg:text-left text-white space-y-4 lg:space-y-6">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug">
+                    Professional Locksmith Services in 
+                    <span class="bg-gradient-to-r from-[#DC143C] to-[#E65C00] bg-clip-text text-transparent">
+                        Mishawaka, IN
+                    </span>
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl">
+                    Need help fast? Call our <span class="font-bold">24/7 emergency line: 574-318-7797</span>
+                </p>
+                <p class="text-sm sm:text-base md:text-lg text-gray-100">
+                    Fast, reliable, and trusted locksmith services for your home, business, or vehicle.
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-8">
-                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg card-hover border-4 border-[#DC143C]">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-[#DC143C]/10 p-4 rounded-full mr-4">
-                            <span class="text-[#DC143C] material-icons text-3xl">access_time</span>
+            <!-- Quick Booking Form -->
+            <div class="relative z-10 bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 text-[#1C1C1C] w-full max-w-xl mt-6 lg:mt-0 mx-2 md:mx-0">
+                <h3 class="text-lg sm:text-xl font-bold mb-3 text-center">Book a Locksmith Now</h3>
+                <form id="booking-form" class="space-y-2" novalidate>
+                    <!-- Name & Phone Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Your Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"
+                                class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
                         </div>
-                        <h3 class="text-xl font-bold text-[#1C1C1C]">Quick Response</h3>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-1">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="text" id="phone" name="phone" placeholder="574-318-7797"
+                                class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        </div>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        <strong class="text-[#DC143C]">Response Time:</strong> Typically 20-30 minutes from our store location.
-                    </p>
-                </div>
 
-                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg card-hover border-4 border-[#DC143C]">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-[#DC143C]/10 p-4 rounded-full mr-4">
-                            <span class="text-[#DC143C] material-icons text-3xl">place</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#1C1C1C]">Full Coverage</h3>
+                    <!-- Address -->
+                    <div>
+                        <label for="address" class="block text-sm font-medium mb-1">Service Address <span class="text-red-500">*</span></label>
+                        <input type="text" id="address" name="address" placeholder="219 N Dixie Way Ste 209, South Bend, IN 46637"
+                            class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        <strong class="text-[#DC143C]">Coverage Area:</strong> Complete service within South Bend city limits.
-                    </p>
-                </div>
 
-                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg card-hover border-4 border-[#DC143C]">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-[#DC143C]/10 p-4 rounded-full mr-4">
-                            <span class="text-[#DC143C] material-icons text-3xl">build</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-[#1C1C1C]">All Services</h3>
+                    <!-- Map Preview -->
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Map Preview</label>
+                        <div id="map" class="w-full h-24 rounded-lg border border-gray-300"></div>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Complete locksmith services: residential, commercial, and automotive solutions.
-                    </p>
-                </div>
+
+                    <!-- Service Type & Needed -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div>
+                            <label for="service_type" class="block text-sm font-medium mb-1">Service Type <span class="text-red-500">*</span></label>
+                            <select id="service_type" name="service_type" class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                                <option value="" disabled selected>Select Service Type</option>
+                                <option>Emergency Locksmith</option>
+                                <option>Residential Locksmith</option>
+                                <option>Commercial Locksmith</option>
+                                <option>Auto Locksmith</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="needed" class="block text-sm font-medium mb-1">When Needed? <span class="text-red-500">*</span></label>
+                            <select id="needed" name="needed" class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                                <option value="" disabled selected>Select Time Frame</option>
+                                <option>ASAP</option>
+                                <option>Same Day</option>
+                                <option>Within a few days</option>
+                                <option>In a few weeks</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div>
+                        <label for="notes" class="block text-sm font-medium mb-1">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="1" placeholder="Any extra details..."
+                            class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full py-2 bg-[#DC143C] text-white font-semibold rounded-lg hover:bg-[#B01030] transition text-sm">
+                        Request Service
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -944,6 +984,7 @@
         </div>
     </footer>
 
+    <script src="validation.js"></script>
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
