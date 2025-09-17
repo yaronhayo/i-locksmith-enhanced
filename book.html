@@ -88,6 +88,7 @@
                         alt="i-locksmith Logo" 
                         class="h-12 w-auto object-contain cursor-pointer">
                 </a>
+                </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-8">
@@ -295,7 +296,7 @@
                 <img src="./images/i-locksmith-logo.webp" 
                     alt="i-locksmith Logo" 
                     class="h-10 object-contain">
-            </div>
+            
 
             <!-- Mobile Menu Items -->
             <div class="p-4 space-y-4">
@@ -517,8 +518,8 @@
 
                 <!-- CTA Button -->
                 <div class="flex justify-center">
-                    <a href="#booking-form" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] hover:from-[#FF4500] hover:to-[#FFA500] text-black font-bold rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#FF4500]/25">
-                        <span class="material-icons mr-2">keyboard_arrow_down</span>
+                    <a href="#booking-form" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] hover:from-[#FF4500] hover:to-[#FFA500] text-white font-bold rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#FF4500]/25">
+                        <span class="material-icons text-white mr-2">keyboard_arrow_down</span>
                         Start Booking Now
                     </a>
                 </div>
@@ -526,113 +527,89 @@
         </div>
     </section>
 
-    <!-- Professional Booking Form Interface -->
+    <!-- Quick Booking Form Section (Wider Version) -->
     <section class="py-20 bg-gray-50" id="booking-form">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-white/90 backdrop-blur-sm p-16 md:p-16 rounded-3xl shadow-2xl border border-white/50">
- 
-            <!-- Header -->
-            <h2 class="text-xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
-                Schedule Your Service
-            </h2>
+        <div class="max-w-6xl mx-auto px-6 flex justify-center"> <!-- Increased max-w -->
+            <div class="flex-1 relative z-10 bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/50 p-8 sm:p-10 md:p-12 text-[#1C1C1C] w-full max-w-3xl"> <!-- Wider max-w -->
+                
+                <!-- Header -->
+                <h3 class="text-xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                    Book a Locksmith Now
+                </h3>
 
+                <form class="space-y-4" novalidate>
+                    
+                    <!-- Name & Phone Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Your Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"
+                                class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-1">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="text" id="phone" name="phone" placeholder="(574) 318-7797"
+                                class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        </div>
+                    </div>
 
-            <form class="space-y-8">
+                    <!-- Address -->
+                    <div>
+                        <label for="address" class="block text-sm font-medium mb-1">Service Address <span class="text-red-500">*</span></label>
+                        <input type="text" id="address" name="address" placeholder="Street, City, Zip"
+                            class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                    </div>
 
-                <!-- Service Category -->
-                <div class="relative">
-                <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Service Category</label>
-                <select class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
-                    <option>Emergency Locksmith</option>
-                    <option>Residential Locksmith</option>
-                    <option>Commercial Locksmith</option>
-                    <option>Automotive Locksmith</option>
-                </select>
-                </div>
+                    <!-- Map Preview -->
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Map Preview</label>
+                        <div id="map" class="w-full h-32 rounded-lg border border-gray-300"></div> <!-- Slightly taller map -->
+                    </div>
 
-                <!-- Specific Service -->
-                <div class="relative">
-                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Specific Service Type</label>
-                    <select class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
-                        <option>Car Lockout</option>
-                        <option>House Lockout</option>
-                        <option>Business Lockout</option>
-                        <option>Storage Unit Lockout</option>
-                        <option>Lock Replacement</option>
-                        <option>Lock Rekey</option>
-                        <option>Lock Repair</option>
-                        <option>Gate Locks</option>
-                        <option>Emergency Exit Devices</option>
-                        <option>Master Key Systems</option>
-                        <option>Access Control</option>
-                        <option>Car Key Replacement</option>
-                        <option>Car Fob Programming</option>
-                        <option>Car Key Duplicate</option>
-                        <option>Car Key Cutting</option>
-                        <option>Ignition Lock Cylinder</option>
-                    </select>
-                </div>
+                    <!-- Service Type & Needed -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="service_type" class="block text-sm font-medium mb-1">Service Type <span class="text-red-500">*</span></label>
+                            <select id="service_type" name="service_type" class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                                <option value="" disabled selected>Select Service Type</option>
+                                <option>Emergency Locksmith</option>
+                                <option>Residential Locksmith</option>
+                                <option>Commercial Locksmith</option>
+                                <option>Auto Locksmith</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="needed" class="block text-sm font-medium mb-1">When Needed? <span class="text-red-500">*</span></label>
+                            <select id="needed" name="needed" class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                                <option value="" disabled selected>Select Time Frame</option>
+                                <option>ASAP</option>
+                                <option>Same Day</option>
+                                <option>Within a few days</option>
+                                <option>In a few weeks</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <!-- Service Type -->
-                <div class="flex gap-8 items-center">
-                <span class="font-semibold text-gray-700">Service Type:</span>
-                <label class="flex items-center gap-2 cursor-pointer">
-                    <input type="radio" name="service_type" value="Emergency" class="accent-gradient-red">
-                    Emergency
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer">
-                    <input type="radio" name="service_type" value="Scheduled" class="accent-gradient-red">
-                    Scheduled
-                </label>
-                </div>
+                    <!-- Additional Notes -->
+                    <div>
+                        <label for="notes" class="block text-sm font-medium mb-1">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Any extra details..."
+                            class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none"></textarea>
+                    </div>
 
-                <!-- Date & Time -->
-                <div class="grid md:grid-cols-2 gap-6">
-                <div class="relative">
-                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Preferred Date</label>
-                    <input type="date" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
-                </div>
-                <div class="relative">
-                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Preferred Time</label>
-                    <input type="time" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
-                </div>
-                </div>
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            Request Service
+                        </button>
+                    </div>
 
-                <!-- Address -->
-                <div class="relative">
-                <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Service Address</label>
-                <input type="text" placeholder="Street, City, Zip" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
-                </div>
-
-                <!-- Contact Info -->
-                <div class="grid md:grid-cols-2 gap-6">
-                <div class="relative">
-                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Full Name</label>
-                    <input type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
-                </div>
-                <div class="relative">
-                    <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Phone Number</label>
-                    <input type="tel" placeholder="(574) 318-7797" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md">
-                </div>
-                </div>
-
-                <!-- Notes -->
-                <div class="relative">
-                <label class="absolute left-4 -top-3.5 bg-white px-1 text-sm text-gray-600 font-medium">Special Requirements / Notes</label>
-                <textarea placeholder="Additional information..." rows="4" class="w-full border border-gray-300 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gradient-red transition shadow-sm hover:shadow-md"></textarea>
-                </div>
-
-                <!-- Submit -->
-                <div class="text-center">
-                <button type="submit" class="bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white px-12 py-4 rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                    Book Service
-                </button>
-                </div>
-
-            </form>
+                </form>
             </div>
         </div>
     </section>
+
 
     <!-- Service Options Display -->
     <section class="py-20 bg-gray-50">
@@ -849,6 +826,116 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("booking-form");
+
+            const name = document.getElementById("name");
+            const phone = document.getElementById("phone");
+            const address = document.getElementById("address");
+            const serviceType = document.getElementById("service_type");
+            const needed = document.getElementById("needed");
+
+            function showError(input, message) {
+                let error = input.nextElementSibling;
+                if (!error || !error.classList.contains("error-message")) {
+                    error = document.createElement("p");
+                    error.classList.add("text-red-500", "text-sm", "mt-1", "error-message");
+                    input.after(error);
+                }
+                error.textContent = message;
+                input.classList.add("border-red-500");
+                input.classList.remove("border-green-500");
+            }
+
+            function showSuccess(input) {
+                const error = input.nextElementSibling;
+                if (error && error.classList.contains("error-message")) {
+                    error.remove();
+                }
+                input.classList.remove("border-red-500");
+                input.classList.add("border-green-500");
+            }
+
+            function validateName() {
+                const pattern = /^[A-Za-z\s]+$/;
+                if (name.value.trim() === "") {
+                    showError(name, "Name is required.");
+                    return false;
+                } else if (!pattern.test(name.value.trim())) {
+                    showError(name, "Name can only contain letters and spaces.");
+                    return false;
+                } else {
+                    showSuccess(name);
+                    return true;
+                }
+            }
+
+            function validatePhone() {
+                const pattern = /^[0-9-]+$/; // only numbers and optional dashes
+                if (phone.value.trim() === "") {
+                    showError(phone, "Phone number is required.");
+                    return false;
+                } else if (!pattern.test(phone.value.trim())) {
+                    showError(phone, "Phone can only contain numbers.");
+                    return false;
+                } else {
+                    showSuccess(phone);
+                    return true;
+                }
+            }
+
+            function validateAddress() {
+                if (address.value.trim() === "") {
+                    showError(address, "Address is required.");
+                    return false;
+                } else {
+                    showSuccess(address);
+                    return true;
+                }
+            }
+
+            function validateServiceType() {
+                if (serviceType.value === "") {
+                    showError(serviceType, "Select a service type.");
+                    return false;
+                } else {
+                    showSuccess(serviceType);
+                    return true;
+                }
+            }
+
+            function validateNeeded() {
+                if (needed.value === "") {
+                    showError(needed, "Select when service is needed.");
+                    return false;
+                } else {
+                    showSuccess(needed);
+                    return true;
+                }
+            }
+
+            // Real-time validation
+            name.addEventListener("input", validateName);
+            phone.addEventListener("input", validatePhone);
+            address.addEventListener("input", validateAddress);
+            serviceType.addEventListener("change", validateServiceType);
+            needed.addEventListener("change", validateNeeded);
+
+            // Form submit
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const isValid = validateName() & validatePhone() & validateAddress() & validateServiceType() & validateNeeded();
+                if (isValid) {
+                    alert("Booking submitted successfully!");
+                    form.reset();
+                    document.querySelectorAll(".error-message").forEach(el => el.remove());
+                    document.querySelectorAll("input, select, textarea").forEach(el => el.classList.remove("border-green-500"));
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
