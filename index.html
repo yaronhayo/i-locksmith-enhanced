@@ -920,63 +920,222 @@
         </div>
     </section>
 
+    <section class="bg-white py-16 px-4 md:px-10">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+                Frequently Asked Questions
+            </h2>
+            <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
+            <span class="font-medium text-[#DC143C]">Find answers to common questions about our services.</span>
+            </p>
+        </div>
+
+    <div class="max-w-4xl mx-auto space-y-4" x-data="{ selected: null }">
+
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
+        <button @click="selected !== 2 ? selected = 2 : selected = null" 
+                class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
+            <span class="font-semibold text-lg md:text-xl text-gray-800">Can you help right now?</span>
+            <div class="flex-shrink-0 ml-4">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
+                <span class="material-icons text-white text-sm expand-icon" 
+                    :class="selected === 2 ? 'rotate-45' : ''">add</span>
+            </div>
+            </div>
+        </button>
+        <div x-show="selected === 2" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 max-h-0"
+            x-transition:enter-end="opacity-100 max-h-96"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 max-h-96"
+            x-transition:leave-end="opacity-0 max-h-0"
+            class="faq-content overflow-hidden" x-cloak>
+            <div class="px-6 pb-6 pt-0">
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
+                <p class="text-gray-700 text-base leading-relaxed">
+                Yes, we provide responsive emergency service throughout our service area.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
+        <button @click="selected !== 3 ? selected = 3 : selected = null" 
+                class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
+            <span class="font-semibold text-lg md:text-xl text-gray-800">Do you provide free estimates?</span>
+            <div class="flex-shrink-0 ml-4">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
+                <span class="material-icons text-white text-sm expand-icon" 
+                    :class="selected === 3 ? 'rotate-45' : ''">add</span>
+            </div>
+            </div>
+        </button>
+        <div x-show="selected === 3" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 max-h-0"
+            x-transition:enter-end="opacity-100 max-h-96"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 max-h-96"
+            x-transition:leave-end="opacity-0 max-h-0"
+            class="faq-content overflow-hidden" x-cloak>
+            <div class="px-6 pb-6 pt-0">
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
+                <p class="text-gray-700 text-base leading-relaxed">
+                Yes, we provide free estimates for all our services. Contact us to get a quote.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
+        <button @click="selected !== 4 ? selected = 4 : selected = null" 
+                class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
+            <span class="font-semibold text-lg md:text-xl text-gray-800">Do you offer warranties on your work?</span>
+            <div class="flex-shrink-0 ml-4">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
+                <span class="material-icons text-white text-sm expand-icon" 
+                    :class="selected === 4 ? 'rotate-45' : ''">add</span>
+            </div>
+            </div>
+        </button>
+        <div x-show="selected === 4" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 max-h-0"
+            x-transition:enter-end="opacity-100 max-h-96"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 max-h-96"
+            x-transition:leave-end="opacity-0 max-h-0"
+            class="faq-content overflow-hidden" x-cloak>
+            <div class="px-6 pb-6 pt-0">
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
+                <p class="text-gray-700 text-base leading-relaxed">
+                Yes, we provide warranties on all our workmanship and installed products.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
+        <button @click="selected !== 5 ? selected = 5 : selected = null" 
+                class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
+            <span class="font-semibold text-lg md:text-xl text-gray-800">Do you work with smart home security systems?</span>
+            <div class="flex-shrink-0 ml-4">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
+                <span class="material-icons text-white text-sm expand-icon" 
+                    :class="selected === 5 ? 'rotate-45' : ''">add</span>
+            </div>
+            </div>
+        </button>
+        <div x-show="selected === 5" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 max-h-0"
+            x-transition:enter-end="opacity-100 max-h-96"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 max-h-96"
+            x-transition:leave-end="opacity-0 max-h-0"
+            class="faq-content overflow-hidden" x-cloak>
+            <div class="px-6 pb-6 pt-0">
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
+                <p class="text-gray-700 text-base leading-relaxed">
+                Yes, we install and service various smart home security systems and smart locks.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Read More Link -->
+        <div class="flex justify-center">
+        <a href="/key-kong-locksmith-2025-main/nav/faq.html" class="call-button flex items-center justify-center space-x-2 
+                    bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                    hover:from-[#FF4500] hover:to-[#DC143C] hover:text-white
+                    transition-all duration-300 rounded-xl px-6 py-3 
+                    font-bold text-white text-base shadow-lg">
+            <span class="material-icons text-xl">menu_book</span>
+            <span>Read All Our FAQ</span>
+        </a>
+        </div>
+    </div>
+    </section>
+
+
     <section class="bg-white py-20 px-4 sm:px-6">
         <div class="container mx-auto text-center max-w-6xl">
             <!-- Header -->
             <div class="mb-12">
-            <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+            <h2
+                class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
                 What our Client Says
             </h2>
             <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
-                Don't just take our word for it — here's what our satisfied customers have to say.
+                Don't just take our word for it — here's what our satisfied customers
+                have to say.
             </p>
             </div>
 
             <!-- Swiper Container -->
             <div class="swiper mySwiper px-2">
-                <div class="swiper-wrapper">
-
-                    <!-- Card 1 -->
-                    <div class="swiper-slide flex justify-center">
-                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                            <div>
-                                <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">PM</div>
-                                <div class="text-left">
-                                    <p class="text-lg font-bold text-[#1C1C1C]">Thomas P.</p>
-                                    <p class="text-sm text-[#666666] flex items-center mt-1">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Port St. Lucie, FL
-                                    </p>
-                                </div>
-                                </div>
-                                <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
-                                    Left my keys in the trunk while shopping. They came right away and helped me get back into my car safely.
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500] text-lg">star</span>
-                                <span class="material-icons text-[#FF4500] text-lg">star</span>
-                                <span class="material-icons text-[#FF4500] text-lg">star</span>
-                                <span class="material-icons text-[#FF4500] text-lg">star</span>
-                                <span class="material-icons text-[#FF4500] text-lg">star</span>
-                                </div>
-                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] font-semibold text-sm">Car Lockout</span>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+            <div class="swiper-slide flex justify-center">
+            <div
+                class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                <div
+                class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                <div>
+                    <div class="flex items-center mb-6">
+                    <div
+                        class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">PM</div>
+                    <div class="text-left">
+                        <p class="text-lg font-bold text-[#1C1C1C]">Thomas P.</p>
+                        <p class="text-sm text-[#666666] flex items-center mt-1">
+                        <span
+                            class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span>
+                        Port St. Lucie, FL
+                        </p>
                     </div>
-
+                    </div>
+                    <div class="mb-6 relative">
+                    <div
+                        class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                        <p
+                        class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+                        Left my keys in the trunk while shopping. They came right
+                        away and helped me get back into my car safely.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    </div>
+                    <div
+                    class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span
+                        class="text-[#DC143C] font-semibold text-sm">Car Lockout</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
                     <!-- Card 2 -->
                     <div class="swiper-slide flex justify-center">
                         <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
@@ -1173,9 +1332,22 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Pagination Dots -->
-                <div class="swiper-pagination mt-6"></div>
+            </div>
+            </div>
+
+            <!-- Pagination Outside -->
+            <div class="swiper-pagination !static mt-8 flex justify-center relative z-10"></div>
+
+            <!-- View All Reviews Button -->
+            <div class="mt-8 flex justify-center">
+                <a href="reviews.html"
+                    class="inline-block px-6 py-3 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                            hover:from-[#FF4500] hover:to-[#DC143C] hover:text-white
+                            transition-all duration-300 rounded-xl 
+                            font-bold text-white text-base shadow-lg flex items-center space-x-2">
+                    <span class="material-icons text-xl">rate_review</span>
+                    <span>View All Reviews</span>
+                </a>
             </div>
         </div>
     </section>
@@ -1311,27 +1483,27 @@
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-consent" class="fixed bottom-0 left-0 w-full bg-[#1C1C1C] text-gray-300 px-6 py-4 shadow-lg z-50 hidden">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        
-        <!-- Message -->
-        <p class="text-sm text-center md:text-left">
-        We use cookies to improve your browsing experience, personalize content, and analyze site traffic. 
-        By clicking <span class="font-semibold">"Accept"</span>, you agree to our use of cookies. 
-        <a href="privacy-policy.html" class="underline hover:text-[#FF4500]">Learn more</a>.
-        </p>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- Message -->
+            <p class="text-sm text-center md:text-left">
+            We use cookies to improve your browsing experience, personalize content, and analyze site traffic. 
+            By clicking <span class="font-semibold">"Accept"</span>, you agree to our use of cookies. 
+            <a href="privacy-policy.html" class="underline hover:text-[#FF4500]">Learn more</a>.
+            </p>
 
-        <!-- Buttons -->
-        <div class="flex items-center gap-3">
-        <button id="accept-cookies" 
-            class="px-5 py-2 rounded-lg text-white font-medium bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:opacity-90 transition">
-            Accept
-        </button>
-        <button id="decline-cookies" 
-            class="px-5 py-2 rounded-lg border border-gray-500 text-gray-300 hover:text-white hover:border-white transition">
-            Decline
-        </button>
+            <!-- Buttons -->
+            <div class="flex items-center gap-3">
+            <button id="accept-cookies" 
+                class="px-5 py-2 rounded-lg text-white font-medium bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:opacity-90 transition">
+                Accept
+            </button>
+            <button id="decline-cookies" 
+                class="px-5 py-2 rounded-lg border border-gray-500 text-gray-300 hover:text-white hover:border-white transition">
+                Decline
+            </button>
+            </div>
         </div>
-    </div>
     </div>
 
     <script>
