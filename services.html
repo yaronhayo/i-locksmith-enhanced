@@ -665,7 +665,7 @@
                     <span class="material-icons text-sm text-[#DC143C]">store</span> Storage Unit Lockout
                     </li>
                 </ul>
-                <a href="../services/emergency-locksmith.html"
+                <a href="./services/emergency-locksmith.html"
                     class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
                     Learn More
                 </a>
@@ -695,7 +695,7 @@
                     <li class="flex items-center gap-2 text-gray-700"><span
                         class="material-icons text-sm text-[#DC143C]">lock</span> Gate Locks</li>
                 </ul>
-                <a href="../services/residential-locksmith.html"
+                <a href="./services/residential-locksmith.html"
                     class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
                     Learn More
                 </a>
@@ -725,7 +725,7 @@
                     <li class="flex items-center gap-2 text-gray-700"><span
                         class="material-icons text-sm text-[#DC143C]">exit_to_app</span> Emergency Exit Devices</li>
                 </ul>
-                <a href="../services/commercial-locksmith.html"
+                <a href="./services/commercial-locksmith.html"
                     class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
                     Learn More
                 </a>
@@ -754,7 +754,7 @@
                             <li class="flex items-center gap-2 text-gray-700"><span
                                 class="material-icons text-sm text-[#DC143C]">build</span> Ignition Repair</li>
                         </ul>
-                        <a href="../services/auto-locksmith.html"
+                        <a href="./services/auto-locksmith.html"
                             class="mt-auto inline-block bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-semibold py-2 px-5 rounded-lg text-sm transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
                             Learn More
                         </a>
@@ -881,36 +881,7 @@
         </div>
 
         <div class="max-w-4xl mx-auto space-y-4" x-data="{ selected: null }">
-            <!-- FAQ Item 1 -->
-            <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
-            <button @click="selected !== 1 ? selected = 1 : selected = null" 
-                    class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
-                <span class="font-semibold text-lg md:text-xl text-gray-800">What areas do you serve?</span>
-                <div class="flex-shrink-0 ml-4">
-                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
-                    <span class="material-icons text-white text-sm expand-icon" 
-                        :class="selected === 1 ? 'rotate-45' : ''">add</span>
-                </div>
-                </div>
-            </button>
-            <div x-show="selected === 1" 
-                x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 max-h-0"
-                x-transition:enter-end="opacity-100 max-h-96"
-                x-transition:leave="transition ease-in duration-200"
-                x-transition:leave-start="opacity-100 max-h-96"
-                x-transition:leave-end="opacity-0 max-h-0"
-                class="faq-content overflow-hidden" x-cloak>
-                <div class="px-6 pb-6 pt-0">
-                <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
-                    <p class="text-gray-700 text-base leading-relaxed">
-                    We serve North Bergen and surrounding areas including Jersey City, Los Angeles, Dallas, Miami, Atlanta, Columbus, and San Francisco.
-                    </p>
-                </div>
-                </div>
-            </div>
-            </div>
-
+        
             <!-- FAQ Item 2 -->
             <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
             <button @click="selected !== 2 ? selected = 2 : selected = null" 
@@ -1033,7 +1004,7 @@
 
             <!-- Read More Link -->
             <div class="flex justify-center">
-            <a href="/key-kong-locksmith-2025-main/nav/faq.html" class="call-button flex items-center justify-center space-x-2 
+            <a href="faq.html" class="call-button flex items-center justify-center space-x-2 
                         bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
                         hover:from-[#FF4500] hover:to-[#DC143C] hover:text-white
                         transition-all duration-300 rounded-xl px-6 py-3 
@@ -1066,7 +1037,7 @@
             </a>
 
             <!-- Book Service Button -->
-            <a href="book-service.html"
+            <a href="book.html"
                 class="flex items-center justify-center bg-[#DC143C] hover:bg-[#E25C6F] text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg">
                 <span class="material-icons mr-2">calendar_today</span>
                 Book Service

@@ -306,7 +306,7 @@
                 <img src="./images/i-locksmith-logo.webp" 
                     alt="i-locksmith Logo" 
                     class="h-10 object-contain">
-            
+            </div>
 
             <!-- Mobile Menu Items -->
             <div class="p-4 space-y-4">
@@ -537,60 +537,70 @@
         </div>
     </section>
 
-    <!-- Quick Booking Form Section (Wider Version) -->
-    <section class="py-20 bg-gray-50" id="booking-form">
-        <div class="max-w-6xl mx-auto px-6 flex justify-center"> <!-- Increased max-w -->
-            <div class="flex-1 relative z-10 bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/50 p-8 sm:p-10 md:p-12 text-[#1C1C1C] w-full max-w-3xl"> <!-- Wider max-w -->
-                
+    <!-- Quick Booking Form Section (Professional Look) -->
+    <section class="py-20 bg-gray-100" id="booking-form">
+        <div class="max-w-6xl mx-auto px-6 flex justify-center">
+            <div class="flex-1 relative z-10 bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl border border-gray-200 p-8 sm:p-10 md:p-12 w-full max-w-3xl">
+
                 <!-- Header -->
-                <h3 class="text-xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                <h3 class="text-2xl md:text-4xl font-extrabold mb-10 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
                     Book a Locksmith Now
                 </h3>
 
-                <form class="space-y-4" novalidate>
-                    
+                <form class="space-y-6" novalidate>
                     <!-- Name & Phone Row -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="name" class="block text-sm font-medium mb-1">Your Name <span class="text-red-500">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name"
-                                class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="relative">
+                            <input type="text" id="name" name="name" placeholder=" " 
+                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
+                            <label for="name" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Your Name <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">person</span>
                         </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-medium mb-1">Phone Number <span class="text-red-500">*</span></label>
-                            <input type="text" id="phone" name="phone" placeholder="(574) 318-7797"
-                                class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        <div class="relative">
+                            <input type="text" id="phone" name="phone" placeholder=" " 
+                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
+                            <label for="phone" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Phone Number <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">phone</span>
                         </div>
                     </div>
 
                     <!-- Address -->
-                    <div>
-                        <label for="address" class="block text-sm font-medium mb-1">Service Address <span class="text-red-500">*</span></label>
-                        <input type="text" id="address" name="address" placeholder="Street, City, Zip"
-                            class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
-                    </div>
-
-                    <!-- Map Preview -->
-                    <div>
-                        <label class="block text-sm font-medium mb-1">Map Preview</label>
-                        <div id="map" class="w-full h-32 rounded-lg border border-gray-300"></div> <!-- Slightly taller map -->
+                    <div class="relative">
+                        <input type="text" id="address" name="address" placeholder=" "
+                            class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
+                        <label for="address" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Service Address <span class="text-red-500">*</span></label>
+                        <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">location_on</span>
                     </div>
 
                     <!-- Service Type & Needed -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label for="service_type" class="block text-sm font-medium mb-1">Service Type <span class="text-red-500">*</span></label>
-                            <select id="service_type" name="service_type" class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="relative">
+                            <select id="service_type" name="service_type" class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none appearance-none transition-all">
                                 <option value="" disabled selected>Select Service Type</option>
-                                <option>Emergency Locksmith</option>
-                                <option>Residential Locksmith</option>
-                                <option>Commercial Locksmith</option>
-                                <option>Auto Locksmith</option>
+                                <option>Car Lockout</option>
+                                <option>House Lockout</option>
+                                <option>Business Lockout</option>
+                                <option>Storage Unit Lockout</option>
+                                <option>Lock Replacement</option>
+                                <option>Lock Rekey</option>
+                                <option>Lock Repair</option>
+                                <option>Gate Locks</option>
+                                <option>Commercial Lock Replacement</option>
+                                <option>Commercial Rekey</option>
+                                <option>Emergency Exit Devices</option>
+                                <option>Master Key Systems</option>
+                                <option>Access Control</option>
+                                <option>Car Key Replacement</option>
+                                <option>Car Key Duplicate</option>
+                                <option>Car Key Cutting</option>
+                                <option>Key Fob Programming</option>
+                                <option>Ignition Lock Cylinder</option>
                             </select>
+                            <label for="service_type" class="absolute left-4 -top-2 text-gray-500 text-xs bg-white px-1 font-medium">Service Type <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400">build</span>
                         </div>
-                        <div>
-                            <label for="needed" class="block text-sm font-medium mb-1">When Needed? <span class="text-red-500">*</span></label>
-                            <select id="needed" name="needed" class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        <div class="relative">
+                            <select id="needed" name="needed" class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none appearance-none transition-all">
                                 <option value="" disabled selected>Select Time Frame</option>
                                 <option>ASAP</option>
                                 <option>Same Day</option>
@@ -598,27 +608,31 @@
                                 <option>In a few weeks</option>
                                 <option>Other</option>
                             </select>
+                            <label for="needed" class="absolute left-4 -top-2 text-gray-500 text-xs bg-white px-1 font-medium">When Needed? <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400">schedule</span>
                         </div>
                     </div>
 
                     <!-- Additional Notes -->
-                    <div>
-                        <label for="notes" class="block text-sm font-medium mb-1">Additional Notes</label>
-                        <textarea id="notes" name="notes" rows="3" placeholder="Any extra details..."
-                            class="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none"></textarea>
+                    <div class="relative">
+                        <textarea id="notes" name="notes" rows="3" placeholder=" "
+                            class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all"></textarea>
+                        <label for="notes" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Additional Notes</label>
+                        <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">note_add</span>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="text-center">
-                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                            <span class="material-icons text-white">send</span>
                             Request Service
                         </button>
                     </div>
-
                 </form>
             </div>
         </div>
     </section>
+
 
 
     <!-- Service Options Display -->
