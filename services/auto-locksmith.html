@@ -459,15 +459,16 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col items-center justify-center text-white px-4 sm:px-6 lg:px-12 pt-28 md:pt-32 relative overflow-hidden bg-cover bg-center" style="background-image: url('../images/emergency-locksmith.webp');">
+    <section class="min-h-screen flex flex-col items-center justify-center text-white px-4 sm:px-6 lg:px-12 pt-28 md:pt-32 relative overflow-hidden bg-cover bg-center" style="background-image: url('./images/auto-locksmith.webp');">
         <!-- Dark lightly blurred overlay -->
-        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 bg-black/60 "></div>
 
         <div class="relative z-10 max-w-3xl mx-auto text-center">
             <!-- H1 -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug sm:leading-tight">
-                <span class="text-[#DC143C]">Auto Locksmith Services in South Bend, IN</span>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug sm:leading-tight text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                Auto Locksmith Services in South Bend, IN
             </h1>
+
 
             <!-- Supporting paragraph with updated keywords -->
             <p class="text-base sm:text-lg md:text-xl mb-6 text-gray-200 max-w-xl mx-auto">
@@ -505,76 +506,99 @@
         </div>
     </section>
 
-    <!-- Booking Form Section -->
-    <section class="bg-gray-100 py-20">
-        <div class="max-w-3xl mx-auto px-6">
-            <!-- Section Heading -->
-            <h2 class="text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent mb-4">
-                Book Auto I Locksmith Service
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto rounded-full mb-12"></div>
+    <!-- Quick Booking Form Section (Professional Look) -->
+    <section class="py-20 bg-gray-100" id="booking-form">
+        <div class="max-w-6xl mx-auto px-6 flex justify-center">
+            <div class="flex-1 relative z-10 bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl border border-gray-200 p-8 sm:p-10 md:p-12 w-full max-w-3xl">
 
-            <!-- Form -->
-            <form class="bg-white p-8 rounded-xl shadow-lg space-y-6">
-                <!-- Name -->
-                <div>
-                    <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
-                    <input id="name" type="text" placeholder="John Doe" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C]" />
-                </div>
+                <!-- Header -->
+                <h3 class="text-2xl md:text-4xl font-extrabold mb-10 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
+                    Book a Residential I Locksmith Now
+                </h3>
 
-                <!-- Phone -->
-                <div>
-                    <label for="phone" class="block text-gray-700 font-medium mb-1">Phone</label>
-                    <input id="phone" type="tel" placeholder="(123) 456-7890" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C]" />
-                </div>
+                <form class="space-y-6" novalidate>
+                    <!-- Name & Phone Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="relative">
+                            <input type="text" id="name" name="name" placeholder=" " 
+                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
+                            <label for="name" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Your Name <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">person</span>
+                        </div>
+                        <div class="relative">
+                            <input type="text" id="phone" name="phone" placeholder=" " 
+                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
+                            <label for="phone" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Phone Number <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">phone</span>
+                        </div>
+                    </div>
 
-                <!-- Service Type -->
-                <div>
-                    <label for="service" class="block text-gray-700 font-medium mb-1">Service Type</label>
-                    <select id="service" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C]">
-                        <option value="">Select a Service</option>
-                        <option>Emergency Lockout</option>
-                        <option>Lock Repair</option>
-                        <option>Lock Replacement</option>
-                        <option>Key Duplication</option>
-                    </select>
-                </div>
+                    <!-- Address -->
+                    <div class="relative">
+                        <input type="text" id="address" name="address" placeholder=" "
+                            class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
+                        <label for="address" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Service Address <span class="text-red-500">*</span></label>
+                        <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">location_on</span>
+                    </div>
 
-                <!-- Location / Address -->
-                <div>
-                    <label for="location" class="block text-gray-700 font-medium mb-1">Location / Address</label>
-                    <input id="location" type="text" placeholder="123 Main St, City, State" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C]" />
-                </div>
+                    <!-- Service Type & Needed -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="relative">
+                            <select id="service_type" name="service_type" class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none appearance-none transition-all">
+                                <option value="" disabled selected>Select Service Type</option>
+                                <option>Car Lockout</option>
+                                <option>House Lockout</option>
+                                <option>Business Lockout</option>
+                                <option>Storage Unit Lockout</option>
+                                <option>Lock Replacement</option>
+                                <option>Lock Rekey</option>
+                                <option>Lock Repair</option>
+                                <option>Gate Locks</option>
+                                <option>Commercial Lock Replacement</option>
+                                <option>Commercial Rekey</option>
+                                <option>Emergency Exit Devices</option>
+                                <option>Master Key Systems</option>
+                                <option>Access Control</option>
+                                <option>Car Key Replacement</option>
+                                <option>Car Key Duplicate</option>
+                                <option>Car Key Cutting</option>
+                                <option>Key Fob Programming</option>
+                                <option>Ignition Lock Cylinder</option>
+                            </select>
+                            <label for="service_type" class="absolute left-4 -top-2 text-gray-500 text-xs bg-white px-1 font-medium">Service Type <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400">build</span>
+                        </div>
+                        <div class="relative">
+                            <select id="needed" name="needed" class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none appearance-none transition-all">
+                                <option value="" disabled selected>Select Time Frame</option>
+                                <option>ASAP</option>
+                                <option>Same Day</option>
+                                <option>Within a few days</option>
+                                <option>In a few weeks</option>
+                                <option>Other</option>
+                            </select>
+                            <label for="needed" class="absolute left-4 -top-2 text-gray-500 text-xs bg-white px-1 font-medium">When Needed? <span class="text-red-500">*</span></label>
+                            <span class="material-icons absolute right-4 top-4 text-gray-400">schedule</span>
+                        </div>
+                    </div>
 
-                <!-- Urgency Level -->
-                <div>
-                    <label for="urgency" class="block text-gray-700 font-medium mb-1">Urgency Level</label>
-                    <select id="urgency" required
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C]">
-                        <option value="">Select Urgency</option>
-                        <option>High - Locked Out</option>
-                        <option>Medium - Urgent Repair</option>
-                        <option>Low - Scheduled Service</option>
-                    </select>
-                </div>
+                    <!-- Additional Notes -->
+                    <div class="relative">
+                        <textarea id="notes" name="notes" rows="3" placeholder=" "
+                            class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all"></textarea>
+                        <label for="notes" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Additional Notes</label>
+                        <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">note_add</span>
+                    </div>
 
-                <!-- Additional Details -->
-                <div>
-                    <label for="details" class="block text-gray-700 font-medium mb-1">Additional Details</label>
-                    <textarea id="details" rows="3" placeholder="Any extra information..."
-                        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C]"></textarea>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit"
-                    class="w-full bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] text-white py-3 rounded-lg font-bold transition-all duration-300">
-                    Submit Emergency Request
-                </button>
-            </form>
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                            <span class="material-icons text-white">send</span>
+                            Request Service
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -592,7 +616,7 @@
                 <!-- Car Key Replacement  -->
                 <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg hover:shadow-2xl">
                     <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 ">
                             <span class="material-icons text-2xl text-white pointer-events-none">key</span>
                         </div>
                         <h3 class="text-xl sm:text-2xl font-bold text-[#1C1C1C] mb-4 text-center">Car Key Replacement</h3>
@@ -607,7 +631,7 @@
                 <!-- Car Key Cutting  -->
                 <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg hover:shadow-2xl">
                     <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 ">
                             <span class="material-icons text-2xl text-white pointer-events-none">content_cut</span>
                         </div>
                         <h3 class="text-xl sm:text-2xl font-bold text-[#1C1C1C] mb-4 text-center">Car Key Cutting</h3>
@@ -622,7 +646,7 @@
                 <!-- Car Key Duplicate -->
                 <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg hover:shadow-2xl">
                     <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110">
                             <span class="material-icons text-2xl text-white pointer-events-none">content_copy</span>
                         </div>
                         <h3 class="text-xl sm:text-2xl font-bold text-[#1C1C1C] mb-4 text-center">Car Key Duplicate</h3>
@@ -640,7 +664,7 @@
                 <!-- Key Fob Programming -->
                 <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg hover:shadow-2xl">
                     <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 ">
                             <span class="material-icons text-2xl text-white pointer-events-none">smartphone</span>
                         </div>
                         <h3 class="text-xl sm:text-2xl font-bold text-[#1C1C1C] mb-4 text-center">Key Fob Programming</h3>
@@ -655,7 +679,7 @@
                 <!-- Ignition Lock Cylinder -->
                 <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg hover:shadow-2xl">
                     <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                        <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 ">
                             <span class="material-icons text-2xl text-white pointer-events-none">settings</span>
                         </div>
                         <h3 class="text-xl sm:text-2xl font-bold text-[#1C1C1C] mb-4 text-center">Ignition Lock Cylinder</h3>
@@ -685,7 +709,7 @@
             <!-- Average Response Times -->
             <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg">
                 <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 ">
                     <span class="material-icons text-2xl text-white pointer-events-none">speed</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1C1C1C] mb-4">Average Response Times</h3>
@@ -696,7 +720,7 @@
             <!-- 24/7 Availability -->
             <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg">
                 <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110">
                     <span class="material-icons text-2xl text-white pointer-events-none">schedule</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1C1C1C] mb-4">24/7 Availability</h3>
@@ -707,7 +731,7 @@
             <!-- Mobile Service -->
             <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-[2px] hover:-translate-y-2 transform transition duration-300 shadow-lg">
                 <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between">
-                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 animate-pulse">
+                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transform transition duration-500 hover:scale-110 ">
                     <span class="material-icons text-2xl text-white pointer-events-none">directions_car</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1C1C1C] mb-4">Mobile Service</h3>
@@ -735,7 +759,7 @@
             <!-- Call -->
             <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-0.5 hover:-translate-y-2 transform transition duration-300 shadow-lg">
                 <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between shadow-inner">
-                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 ">
                     <span class="material-icons text-2xl text-white pointer-events-none">call</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1C1C1C] mb-2">Call</h3>
@@ -748,7 +772,7 @@
             <!-- Dispatch -->
             <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-0.5 hover:-translate-y-2 transform transition duration-300 shadow-lg">
                 <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between shadow-inner">
-                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 ">
                     <span class="material-icons text-2xl text-white pointer-events-none">navigation</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1C1C1C] mb-2">Dispatch</h3>
@@ -759,7 +783,7 @@
             <!-- Arrive -->
             <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-0.5 hover:-translate-y-2 transform transition duration-300 shadow-lg">
                 <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between shadow-inner">
-                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 ">
                     <span class="material-icons text-2xl text-white pointer-events-none">place</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1C1C1C] mb-2">Arrive</h3>
@@ -770,7 +794,7 @@
             <!-- Resolve -->
             <div class="rounded-xl bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] p-0.5 hover:-translate-y-2 transform transition duration-300 shadow-lg">
                 <div class="p-6 rounded-xl bg-white w-full h-full flex flex-col justify-between shadow-inner">
-                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+                <div class="bg-gradient-to-r from-[#FF4500] via-[#DC143C] to-[#FF4500] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 ">
                     <span class="material-icons text-2xl text-white pointer-events-none">check_circle</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#1C1C1C] mb-2">Resolve</h3>
