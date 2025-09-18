@@ -686,21 +686,20 @@
         <div class="container mx-auto text-center max-w-6xl">
             <!-- Header -->
             <div class="mb-12">
-            <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
-                What our Client Says
-            </h2>
-            <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
-                Don't just take our word for it — here's what our satisfied customers have to say.
-            </p>
+                <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
+                    What our Client Says
+                </h2>
+                <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
+                    Don't just take our word for it — here's what our satisfied customers have to say.
+                </p>
             </div>
 
-            <!-- Cards container: 3 columns, 2 rows -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Cards container -->
+            <div id="reviews" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-            <!-- Review 1 -->
+            <!--  FIRST 12 REVIEWS cards -->
             <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
                 <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
-                <!-- Avatar + Name -->
                 <div class="flex items-center mb-6">
                     <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">PM</div>
                     <div class="text-left">
@@ -710,7 +709,6 @@
                     </p>
                     </div>
                 </div>
-                <!-- Quote -->
                 <div class="mb-6 relative flex-grow">
                     <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
                     <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
@@ -721,7 +719,6 @@
                     </p>
                     </div>
                 </div>
-                <!-- Stars + Tag -->
                 <div class="flex justify-between items-center mt-auto">
                     <div class="flex space-x-1">
                     <span class="material-icons text-[#FF4500] text-lg">star</span>
@@ -737,7 +734,6 @@
                 </div>
             </div>
 
-            <!-- Review 2 -->
             <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
                 <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
                 <div class="flex items-center mb-6">
@@ -774,114 +770,114 @@
                 </div>
             </div>
 
-            <!-- Review 3 -->
+            <!-- Review 5 -->
             <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
                 <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
-                <div class="flex items-center mb-6">
+                    <div class="flex items-center mb-6">
                     <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">ML</div>
                     <div class="text-left">
-                    <p class="text-lg font-bold text-[#1C1C1C]">Maria Lopez</p>
-                    <p class="text-sm text-[#666666] flex items-center mt-1">
-                        <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Hoboken, NJ
-                    </p>
+                        <p class="text-lg font-bold text-[#1C1C1C]">Emily Smith</p>
+                        <p class="text-sm text-[#666666] flex items-center mt-1">
+                        <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Jersey City, NJ
+                        </p>
                     </div>
-                </div>
-                <div class="mb-6 relative flex-grow">
+                    </div>
+                    <div class="mb-6 relative flex-grow">
                     <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
                     </div>
                     <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
-                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
                         Quick and reliable service for residential locks. Friendly staff and reasonable pricing.
-                    </p>
+                        </p>
                     </div>
-                </div>
-                <div class="flex justify-between items-center mt-auto">
+                    </div>
+                    <div class="flex justify-between items-center mt-auto">
                     <div class="flex space-x-1">
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
                     </div>
                     <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                    <span class="text-[#DC143C] font-semibold text-sm">Residential Locks</span>
+                        <span class="text-[#DC143C] font-semibold text-sm">Residential Locks</span>
                     </div>
-                </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Review 4 -->
             <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
                 <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
-                <div class="flex items-center mb-6">
+                    <div class="flex items-center mb-6">
                     <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">RB</div>
                     <div class="text-left">
-                    <p class="text-lg font-bold text-[#1C1C1C]">Robert Brown</p>
-                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                        <p class="text-lg font-bold text-[#1C1C1C]">Robert Brown</p>
+                        <p class="text-sm text-[#666666] flex items-center mt-1">
                         <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Union City, NJ
-                    </p>
+                        </p>
                     </div>
-                </div>
-                <div class="mb-6 relative flex-grow">
+                    </div>
+                    <div class="mb-6 relative flex-grow">
                     <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
                     </div>
                     <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
-                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
-                        They rekeyed all our office doors in a day. Efficient, professional, and highly recommended for commercial spaces.
-                    </p>
+                        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                         Amazing service for my safe installation. The team explained everything clearly and finished on time.
+                        </p>
                     </div>
-                </div>
-                <div class="flex justify-between items-center mt-auto">
+                    </div>
+                    <div class="flex justify-between items-center mt-auto">
                     <div class="flex space-x-1">
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
                     </div>
                     <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                    <span class="text-[#DC143C] font-semibold text-sm">Office Rekeying</span>
+                        <span class="text-[#DC143C] font-semibold text-sm">Office Rekeying</span>
                     </div>
-                </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Review 5 -->
             <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
                 <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
-                <div class="flex items-center mb-6">
-                    <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">ES</div>
+                    <div class="flex items-center mb-6">
+                    <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">RB</div>
                     <div class="text-left">
-                    <p class="text-lg font-bold text-[#1C1C1C]">Emily Smith</p>
-                    <p class="text-sm text-[#666666] flex items-center mt-1">
-                        <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Jersey City, NJ
-                    </p>
+                        <p class="text-lg font-bold text-[#1C1C1C]">Maria Lopez</p>
+                        <p class="text-sm text-[#666666] flex items-center mt-1">
+                        <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Union City, NJ
+                        </p>
                     </div>
-                </div>
-                <div class="mb-6 relative flex-grow">
+                    </div>
+                    <div class="mb-6 relative flex-grow">
                     <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
                     </div>
                     <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
-                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
-                        Amazing service for my safe installation. The team explained everything clearly and finished on time.
-                    </p>
+                        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                        They rekeyed all our office doors in a day. Efficient, professional, and highly recommended for commercial spaces.
+                        </p>
                     </div>
-                </div>
-                <div class="flex justify-between items-center mt-auto">
+                    </div>
+                    <div class="flex justify-between items-center mt-auto">
                     <div class="flex space-x-1">
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
                     </div>
                     <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                    <span class="text-[#DC143C] font-semibold text-sm">Safe Installation</span>
+                        <span class="text-[#DC143C] font-semibold text-sm">Office Rekeying</span>
                     </div>
-                </div>
+                    </div>
                 </div>
             </div>
 
@@ -889,39 +885,721 @@
             <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
                 <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
                     <div class="flex items-center mb-6">
-                        <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">KH</div>
-                        <div class="text-left">
+                    <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">KH</div>
+                    <div class="text-left">
                         <p class="text-lg font-bold text-[#1C1C1C]">Kevin Harris</p>
                         <p class="text-sm text-[#666666] flex items-center mt-1">
-                            <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Bayonne, NJ
+                        <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Bayonne, NJ
                         </p>
-                        </div>
+                    </div>
                     </div>
                     <div class="mb-6 relative flex-grow">
-                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                            <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
-                        </div>
-                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
-                            <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
-                                Fast and professional locksmith service. They rekeyed all my doors and gave great advice for security upgrades.
-                            </p>
-                        </div>
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
                     </div>
-                        <div class="flex justify-between items-center mt-auto">
-                            <div class="flex space-x-1">
-                            <span class="material-icons text-[#FF4500] text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] text-lg">star</span>
-                            <span class="material-icons text-[#FF4500] text-lg">star</span>
-                            </div>
-                            <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                            <span class="text-[#DC143C] font-semibold text-sm">Door Rekeying</span>
-                            </div>
-                        </div>
+                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                        Fast and professional locksmith service. They rekeyed all my doors and gave great advice for security upgrades.
+                        </p>
+                    </div>
+                    </div>
+                    <div class="flex justify-between items-center mt-auto">
+                    <div class="flex space-x-1">
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                        <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    </div>
+                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                        <span class="text-[#DC143C] font-semibold text-sm">Door Rekeying</span>
+                    </div>
                     </div>
                 </div>
-            </div> 
+            </div>
+
+            <!-- Review 7 -->
+            <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+            <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+                <div class="flex items-center mb-6">
+                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">LS</div>
+                <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Laura Stevens</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                    <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Union City, NJ
+                    </p>
+                </div>
+                </div>
+                <div class="mb-6 relative flex-grow">
+                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                    Quick service for lock installation at my apartment. Professional and courteous staff.
+                    </p>
+                </div>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+                <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                </div>
+                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm"> Lock Installation</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+            <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+                <div class="flex items-center mb-6">
+                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">TM</div>
+                <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Thomas Miller</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                    <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Hoboken, NJ
+                    </p>
+                </div>
+                </div>
+                <div class="mb-6 relative flex-grow">
+                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                    Rekeyed my storage unit quickly. Affordable and friendly service. Highly recommend.
+                    </p>
+                </div>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+                <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                </div>
+                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm">Storage Rekeying</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Review 9 -->
+            <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+            <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+                <div class="flex items-center mb-6">
+                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">JS</div>
+                <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Jessica Sanders</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                    <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Jersey City, NJ
+                    </p>
+                </div>
+                </div>
+                <div class="mb-6 relative flex-grow">
+                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                    Emergency lockout service was amazing. Arrived on time and resolved my issue fast.
+                    </p>
+                </div>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+                <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                </div>
+                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm">Emergency Lockout</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Review 10 -->
+            <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+            <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+                <div class="flex items-center mb-6">
+                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">MW</div>
+                <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Michael White</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                    <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Weehawken, NJ
+                    </p>
+                </div>
+                </div>
+                <div class="mb-6 relative flex-grow">
+                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                    Installed a high-security lock system at my office. Very knowledgeable and efficient.
+                    </p>
+                </div>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+                <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                </div>
+                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm">High-Security Locks</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Review 11 -->
+            <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+            <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+                <div class="flex items-center mb-6">
+                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AC</div>
+                <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Angela Cooper</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                    <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>North Bergen, NJ
+                    </p>
+                </div>
+                </div>
+                <div class="mb-6 relative flex-grow">
+                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                    Replaced my lock and it works perfectly. Affordable and professional service.
+                    </p>
+                </div>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+                <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                </div>
+                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm">Lock Replacement</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Review 12 -->
+            <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+            <div class="review-card bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+                <div class="flex items-center mb-6">
+                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">RB</div>
+                <div class="text-left">
+                    <p class="text-lg font-bold text-[#1C1C1C]">Rachel Brooks</p>
+                    <p class="text-sm text-[#666666] flex items-center mt-1">
+                    <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Hoboken, NJ
+                    </p>
+                </div>
+                </div>
+                <div class="mb-6 relative flex-grow">
+                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                    <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                    <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                    My front door lock was replaced quickly and professionally. Great communication throughout the process.
+                    </p>
+                </div>
+                </div>
+                <div class="flex justify-between items-center mt-auto">
+                <div class="flex space-x-1">
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                </div>
+                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                    <span class="text-[#DC143C] font-semibold text-sm">Front Door Lock Replacement</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+
+        <!-- Repeat for Reviews 3–12 -->
+
+        <!-- ===================== NEXT 12 REVIEWS (HIDDEN) ===================== -->
+        <div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+            <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+            <div class="flex items-center mb-6">
+                <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">KH</div>
+                <div class="text-left">
+                <p class="text-lg font-bold text-[#1C1C1C]">Kevin Harris</p>
+                <p class="text-sm text-[#666666] flex items-center mt-1">
+                    <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Bayonne, NJ
+                </p>
+                </div>
+            </div>
+            <div class="mb-6 relative flex-grow">
+                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+                <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+                    Fast and professional locksmith service. They rekeyed all my doors and gave great advice for security upgrades.
+                </p>
+                </div>
+            </div>
+            <div class="flex justify-between items-center mt-auto">
+                <div class="flex space-x-1">
+                <span class="material-icons text-[#FF4500] text-lg">star</span>
+                <span class="material-icons text-[#FF4500] text-lg">star</span>
+                <span class="material-icons text-[#FF4500] text-lg">star</span>
+                <span class="material-icons text-[#FF4500] text-lg">star</span>
+                <span class="material-icons text-[#FF4500] text-lg">star</span>
+                </div>
+                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                <span class="text-[#DC143C] font-semibold text-sm">Door Rekeying</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Review 14 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">LS</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Laura Smith</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Jersey City, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Rekeyed all my apartment locks quickly and efficiently. Excellent service!
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Apartment Rekeying</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 15 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">TM</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Thomas Miller</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Union City, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Professional and fast service for my office locks. Highly recommend!
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Office Lock Service</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 16 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">JD</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Julia Davis</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Bayonne, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Installed a new high-security lock at my home. Very satisfied with the service.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">High-Security Lock Installation</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 17 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">MC</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Michael Clark</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Hoboken, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Rekeyed all my commercial locks. Fast, professional, and reliable service.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Commercial Rekeying</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 18 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">ES</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Ethan Scott</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>North Bergen, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Changed all my house locks and the service was exceptional. Friendly and professional team.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">House Lock Replacement</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 19 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AR</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Amy Rogers</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Weehawken, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Prompt and courteous service for my front door lock replacement. Highly recommended!
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Front Door Lock</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 20 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">BL</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Brian Lee</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Hoboken, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          The team was amazing! Repaired my office locks efficiently with great advice.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Office Lock Repair</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 21 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">CS</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Catherine Smith</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Union City, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Rekeyed my home locks quickly. Excellent communication and service!
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Home Rekeying</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 22 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">DL</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Daniel Lee</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Bayonne, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Replaced my mailbox and front door locks. Professional and fast.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Lock Replacement</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 23 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">EM</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Emily Martinez</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>Jersey City, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Locked out of my apartment, and they came within 20 minutes! Amazing service.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Emergency Lockout</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Review 24 -->
+<div class="review-card hidden p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 overflow-visible">
+  <div class="bg-[#F5F5F5] hover:bg-white p-8 rounded-3xl shadow-xl flex flex-col backdrop-blur-sm transition-all duration-300 relative h-full">
+    <div class="flex items-center mb-6">
+      <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">RS</div>
+      <div class="text-left">
+        <p class="text-lg font-bold text-[#1C1C1C]">Rachel Stevens</p>
+        <p class="text-sm text-[#666666] flex items-center mt-1">
+          <span class="material-icons text-sm mr-2 text-[#DC143C]" aria-hidden="true">location_on</span>North Bergen, NJ
+        </p>
+      </div>
+    </div>
+    <div class="mb-6 relative flex-grow">
+      <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+        <span class="material-icons text-2xl quote-icon text-[#DC143C]" aria-hidden="true">format_quote</span>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30 w-full h-full">
+        <p class="text-[#1C1C1C] leading-relaxed text-left text-base font-medium italic">
+          Amazing locksmith! Replaced locks on my garage and home. Friendly and reliable.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-auto">
+      <div class="flex space-x-1">
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+        <span class="material-icons text-[#FF4500] text-lg">star</span>
+      </div>
+      <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+        <span class="text-[#DC143C] font-semibold text-sm">Garage & Home Locks</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+
+            <!-- Show More / Show Less Button -->
+            <div class="flex justify-center mt-8">
+                <button id="showMoreBtn" class="call-button flex items-center justify-center space-x-2 
+                                bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                                hover:from-[#FF4500] hover:to-[#DC143C] hover:text-white
+                                transition-all duration-300 rounded-xl px-6 py-3 
+                                font-bold text-white text-base shadow-lg">
+                    <span class="material-icons text-xl">expand_more</span>
+                    <span>Show More</span>
+                </button>
+            </div>
         </div>
     </section>
 
@@ -1071,6 +1749,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const showMoreBtn = document.getElementById("showMoreBtn");
+        const hiddenReviews = document.querySelectorAll("#reviews .review-card.hidden");
+        const icon = showMoreBtn.querySelector(".material-icons");
+        const text = showMoreBtn.querySelector("span:last-child");
+
+        let expanded = false;
+
+        showMoreBtn.addEventListener("click", () => {
+            hiddenReviews.forEach(card => {
+                if (expanded) {
+                    card.classList.add("hidden"); // Hide cards
+                } else {
+                    card.classList.remove("hidden"); // Show cards
+                }
+            });
+
+            expanded = !expanded;
+            text.textContent = expanded ? "Show Less" : "Show More";
+            icon.textContent = expanded ? "expand_less" : "expand_more";
+        });
+    </script>
 
     <script src="script.js"></script>
     <script src="validation.js"></script>
