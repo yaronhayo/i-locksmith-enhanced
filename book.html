@@ -270,14 +270,24 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="lg:hidden flex items-center space-x-2">
-                    <a href="tel:5743187797" class="p-2 bg-emergency-orange hover:bg[#E65C00] text-clean-white rounded-lg transition-colors duration-300">
+                <div class="lg:hidden flex items-center space-x-3">
+                    <!-- Call -->
+                    <a href="tel:5743187797" 
+                    class="flex items-center gap-1 px-3 py-2 bg-emergency-orange hover:bg-[#E65C00] text-clean-white rounded-lg transition-colors duration-300">
                         <span class="material-icons text-lg">phone</span>
+                        <span class="text-sm font-medium">Call</span>
                     </a>
-                    <a href="book.html" class="p-2 bg-brand-red hover:bg-[#E25C6F] text-clean-white rounded-lg transition-colors duration-300">
+
+                    <!-- Book -->
+                    <a href="book.html" 
+                    class="flex items-center gap-1 px-3 py-2 bg-brand-red hover:bg-[#E25C6F] text-clean-white rounded-lg transition-colors duration-300">
                         <span class="material-icons text-lg">calendar_today</span>
+                        <span class="text-sm font-medium">Book</span>
                     </a>
-                    <button onclick="toggleMobileMenu()" class="p-2 text-professional-black hover:text-brand-red transition-colors duration-300">
+
+                    <!-- Menu -->
+                    <button onclick="toggleMobileMenu()" 
+                            class="p-2 text-professional-black hover:text-brand-red transition-colors duration-300">
                         <span class="material-icons text-2xl">menu</span>
                     </button>
                 </div>
@@ -807,19 +817,20 @@
         </div>
 
         <!-- Bottom Bar -->
-        <div class="mt-12 pt-6 border-t border-[#333] text-center text-gray-400 text-sm">
-            <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6 gap-4">
-            <div class="flex flex-wrap items-center gap-6">
-                <span class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-1">verified</span> Licensed & Insured</span>
-                <span class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-1">star</span> 5.0★ Rated</span>
-            </div>
-            <div class="text-center md:text-right">
-                <p>© 2025 iLocksmithIN</p>
-                <div class="space-x-4 mt-1">
+        <div class="mt-12 pt-6 border-t border-[#FF4500] text-center text-gray-400 text-sm">
+            <div class="flex flex-col items-center justify-center max-w-7xl mx-auto px-6 gap-2">
+                <p>© 2025 iLocksmithIN. All rights reserved.</p>
+                <p>
+                Made with 
+                <span class="text-red-600 animate-pulse">❤️</span> 
+                by 
+                <a href="https://gettmarketing.com/" target="_blank" class="hover:text-[#FF4500] font-semibold">Gett Marketing</a>
+                </p>
+                <div class="space-x-4">
                 <a href="privacy-policy.html" class="hover:text-[#FF4500]">Privacy Policy</a>
                 <a href="terms-condition.html" class="hover:text-[#FF4500]">Terms of Service</a>
+                <a href="accessibility-policy.html" class="hover:text-[#FF4500]">Accessibilty</a>
                 </div>
-            </div>
             </div>
         </div>
     </footer>

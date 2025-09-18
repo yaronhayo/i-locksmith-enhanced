@@ -260,14 +260,24 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="lg:hidden flex items-center space-x-2">
-                    <a href="tel:5743187797" class="p-2 bg-emergency-orange hover:bg[#E65C00] text-clean-white rounded-lg transition-colors duration-300">
+                <div class="lg:hidden flex items-center space-x-3">
+                    <!-- Call -->
+                    <a href="tel:5743187797" 
+                    class="flex items-center gap-1 px-3 py-2 bg-emergency-orange hover:bg-[#E65C00] text-clean-white rounded-lg transition-colors duration-300">
                         <span class="material-icons text-lg">phone</span>
+                        <span class="text-sm font-medium">Call</span>
                     </a>
-                    <a href="book.html" class="p-2 bg-brand-red hover:bg-[#E25C6F] text-clean-white rounded-lg transition-colors duration-300">
+
+                    <!-- Book -->
+                    <a href="book.html" 
+                    class="flex items-center gap-1 px-3 py-2 bg-brand-red hover:bg-[#E25C6F] text-clean-white rounded-lg transition-colors duration-300">
                         <span class="material-icons text-lg">calendar_today</span>
+                        <span class="text-sm font-medium">Book</span>
                     </a>
-                    <button onclick="toggleMobileMenu()" class="p-2 text-professional-black hover:text-brand-red transition-colors duration-300">
+
+                    <!-- Menu -->
+                    <button onclick="toggleMobileMenu()" 
+                            class="p-2 text-professional-black hover:text-brand-red transition-colors duration-300">
                         <span class="material-icons text-2xl">menu</span>
                     </button>
                 </div>
@@ -464,20 +474,27 @@
 
                 <!-- Subtext -->
                 <div class="flex justify-center md:justify-start">
-                    <span class="inline-block bg-white/10 border border-[#FF4500]/50 rounded-full px-4 py-1.5 text-xs sm:text-sm md:text-base shadow-md backdrop-blur">
+                    <span class="inline-flex items-center gap-2 bg-white/10 border border-[#FF4500]/50 rounded-full px-4 py-1.5 text-xs sm:text-sm md:text-base shadow-md backdrop-blur text-white">
+                        <span class="material-icons text-[#FF4500] text-sm md:text-base">support_agent</span>
                         24/7 Emergency Mobile Service • Licensed & Insured
                     </span>
                 </div>
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mx-auto md:mx-0">
+                    <!-- Call Button -->
                     <a href="tel:+5743187797" 
-                    class="flex items-center justify-center gap-2 bg-[#FF4500] hover:bg-gradient-to-r hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 rounded-lg px-5 py-3 font-semibold text-white text-sm sm:text-base transform hover:scale-105 shadow-lg">
+                    class="flex items-center justify-center gap-2 bg-[#FF4500] hover:bg-gradient-to-r hover:from-[#FF4500] hover:to-[#DC143C] transition-all duration-300 rounded-lg px-5 py-3 font-semibold text-white text-sm sm:text-base transform hover:scale-105 shadow-lg min-w-[200px]">
                         <span class="material-icons text-sm sm:text-lg">call</span>
                         <span>Call (574) 318-7797</span>
                     </a>
+
+                    <!-- Services Button -->
                     <a href="services.html" 
-                    class="flex items-center justify-center gap-2 border border-[#FF4500] rounded-lg px-5 py-3 font-semibold text-white text-sm sm:text-base hover:bg-[#FF4500] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-md">
+                    class="group flex items-center justify-center gap-2 border border-[#FF4500] rounded-lg px-5 py-3 font-semibold text-[#FFFFFF] text-sm sm:text-base hover:bg-gradient-to-r hover:from-[#FF4500] hover:to-[#DC143C] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg min-w-[200px]">
+                        <span class="material-icons text-sm sm:text-lg transform transition-transform duration-300 group-hover:translate-x-1">
+                            arrow_forward
+                        </span>
                         <span>Our Services</span>
                     </a>
                 </div>
@@ -509,52 +526,73 @@
             </div>
 
             <!-- Quick Booking Form -->
-            <div class="flex-1 relative z-10 bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 text-[#1C1C1C] w-full max-w-lg mt-8 md:mt-0">
-                <h3 class="text-lg sm:text-xl font-bold mb-3 text-center">Book a Locksmith Now</h3>
-                <form id="booking-form" class="space-y-2" novalidate>
+            <div class="flex-1 relative z-10 bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl p-8 sm:p-10 text-[#1C1C1C] w-full max-w-lg mt-12 md:mt-0 border border-gray-100">
+                
+                <!-- Heading -->
+                <h3 class="text-2xl sm:text-3xl font-extrabold mb-8 text-center text-[#1C1C1C]">
+                    Book a <span class="text-[#DC143C]">Locksmith</span> Now
+                </h3>
+                
+                <!-- Form -->
+                <form id="booking-form" class="space-y-6" novalidate>
                     
                     <!-- Name & Phone Row -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                            <label for="name" class="block text-sm font-medium mb-1">Your Name <span class="text-red-500">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name"
-                                class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="relative">
+                            <input type="text" id="name" name="name" placeholder=" " required
+                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent">
+                            <label for="name" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
+                                Your Name *
+                            </label>
                         </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-medium mb-1">Phone Number <span class="text-red-500">*</span></label>
-                            <input type="text" id="phone" name="phone" placeholder="574-318-7797"
-                                class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        <div class="relative">
+                            <input type="tel" id="phone" name="phone" placeholder=" " required
+                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent">
+                            <label for="phone" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
+                                Phone Number *
+                            </label>
                         </div>
                     </div>
 
                     <!-- Address -->
-                    <div>
-                        <label for="address" class="block text-sm font-medium mb-1">Service Address <span class="text-red-500">*</span></label>
-                        <input type="text" id="address" name="address" placeholder="219 N Dixie Way Ste 209, South Bend, IN 46637"
-                            class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
-                    </div>
-
-                    <!-- Map Preview -->
-                    <div>
-                        <label class="block text-sm font-medium mb-1">Map Preview</label>
-                        <div id="map" class="w-full h-24 rounded-lg border border-gray-300"></div>
+                    <div class="relative">
+                        <input type="text" id="address" name="address" placeholder=" " required
+                            class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent">
+                        <label for="address" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
+                            Service Address *
+                        </label>
                     </div>
 
                     <!-- Service Type & Needed -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                            <label for="service_type" class="block text-sm font-medium mb-1">Service Type <span class="text-red-500">*</span></label>
-                            <select id="service_type" name="service_type" class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="relative">
+                            <select id="service_type" name="service_type" required
+                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-white focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition">
                                 <option value="" disabled selected>Select Service Type</option>
-                                <option>Emergency Locksmith</option>
-                                <option>Residential Locksmith</option>
-                                <option>Commercial Locksmith</option>
-                                <option>Auto Locksmith</option>
+                                <option>Car Lockout</option>
+                                <option>House Lockout</option>
+                                <option>Business Lockout</option>
+                                <option>Storage Unit Lockout</option>
+                                <option>Lock Replacement</option>
+                                <option>Lock Rekey</option>
+                                <option>Lock Repair</option>
+                                <option>Gate Locks</option>
+                                <option>Commercial Lock Replacement</option>
+                                <option>Commercial Rekey</option>
+                                <option>Emergency Exit Devices</option>
+                                <option>Master Key Systems</option>
+                                <option>Access Control</option>
+                                <option>Car Key Replacement</option>
+                                <option>Car Key Duplicate</option>
+                                <option>Car Key Cutting</option>
+                                <option>Key Fob Programming</option>
+                                <option>Ignition Lock Cylinder</option>
                             </select>
+                            <label for="service_type" class="block mt-1 text-xs text-gray-500">Service Type *</label>
                         </div>
-                        <div>
-                            <label for="needed" class="block text-sm font-medium mb-1">When Needed? <span class="text-red-500">*</span></label>
-                            <select id="needed" name="needed" class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none">
+                        <div class="relative">
+                            <select id="needed" name="needed" required
+                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-white focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition">
                                 <option value="" disabled selected>Select Time Frame</option>
                                 <option>ASAP</option>
                                 <option>Same Day</option>
@@ -562,18 +600,23 @@
                                 <option>In a few weeks</option>
                                 <option>Other</option>
                             </select>
+                            <label for="needed" class="block mt-1 text-xs text-gray-500">When Needed? *</label>
                         </div>
                     </div>
 
                     <!-- Additional Notes -->
-                    <div>
-                        <label for="notes" class="block text-sm font-medium mb-1">Additional Notes</label>
-                        <textarea id="notes" name="notes" rows="1" placeholder="Any extra details..."
-                            class="w-full border rounded-lg p-2 text-sm focus:ring-2 focus:ring-[#DC143C] focus:outline-none"></textarea>
+                    <div class="relative">
+                        <textarea id="notes" name="notes" rows="2" placeholder=" " 
+                            class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent"></textarea>
+                        <label for="notes" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
+                            Additional Notes
+                        </label>
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="submit" class="w-full py-2 bg-[#DC143C] text-white font-semibold rounded-lg hover:bg-[#B01030] transition text-sm">
+                    <button type="submit" 
+                            class="w-full py-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 text-lg tracking-wide">
+                        <span class="material-icons text-xl animate-pulse">send</span>
                         Request Service
                     </button>
                 </form>
@@ -697,39 +740,37 @@
         </div>
     </section>
 
-         <!-- 24/7 Emergency Response Available -->
-    <section class="bg-[#f5f5f5] text-[#1C1C1C] py-16 px-4 md:px-8 relative">
+    <!-- 24/7 Emergency Response Available -->
+    <section class="relative bg-gradient-to-r from-[#f9f9f9] to-[#f5f5f5] text-[#1C1C1C] py-20 px-6 md:px-12 overflow-hidden">
 
-        <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <!-- Decorative background effect -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 right-0 w-72 h-72 bg-[#FF4500]/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#DC143C]/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
 
             <!-- Left Side: Text -->
-            <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-4 md:space-y-6 max-w-xl">
-                <h2 class="text-3xl md:text-5xl font-bold leading-snug
-                        bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
-                    24/7 Emergency Response Available
-                </h2>
+            <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-5 max-w-xl">
+            <h2 class="text-3xl md:text-5xl font-extrabold leading-snug
+                        bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent drop-shadow-md">
+                24/7 Emergency Response Available
+            </h2>
 
-                <p class="text-lg md:text-xl text-[#666666] font-medium">
-                    Our team responds quickly to any lockout or urgent locksmith need.
-                </p>
-                <p class="text-sm md:text-base text-[#1C1C1C] font-semibold">
-                    Average Response Time: <span class="text-[#FF4500]">30 Minutes</span>
-                </p>
+            <p class="text-lg md:text-xl text-[#444] font-medium leading-relaxed">
+                Locked out or facing an urgent security issue? Our professional team is always ready to help — anytime, anywhere.
+            </p>
             </div>
 
             <!-- Right Side: Emergency Call -->
             <div class="flex flex-col items-center md:items-end space-y-4">
-                <a href="tel:+5743187797"
-                class="flex items-center justify-center gap-3 bg-[#FF4500] hover:bg-[#E65C00] transition-all duration-300 rounded-xl px-6 py-4 font-bold text-white text-lg shadow-lg transform hover:scale-105">
-                    <span class="material-icons text-xl">call</span>
-                    <span>Call (574) 318-7797</span>
-                </a>
-                <p class="text-sm text-[#666666] text-center md:text-right">
-                    Licensed & Insured Professional Technicians
-                </p>
+            <a href="tel:+5743187797" class="flex items-center justify-center gap-3 bg-[#FF4500] hover:bg-[#E65C00] transition-all duration-300 rounded-xl px-6 py-4 font-bold text-white text-lg shadow-lg transform hover:scale-105"> <span class="material-icons text-xl">call</span> <span>Call (574) 318-7797</span> </a>
+            <p class="text-sm text-gray-500 italic">Immediate response guaranteed</p>
             </div>
         </div>
     </section>
+
 
     <!-- Why Choose I Locksmith -->
     <section class="py-12 px-4 sm:px-8 md:px-16 bg-white">
@@ -1250,19 +1291,20 @@
         </div>
 
         <!-- Bottom Bar -->
-        <div class="mt-12 pt-6 border-t border-[#333] text-center text-gray-400 text-sm">
-            <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6 gap-4">
-            <div class="flex flex-wrap items-center gap-6">
-                <span class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-1">verified</span> Licensed & Insured</span>
-                <span class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-1">star</span> 5.0★ Rated</span>
-            </div>
-            <div class="text-center md:text-right">
-                <p>© 2025 iLocksmithIN</p>
-                <div class="space-x-4 mt-1">
+        <div class="mt-12 pt-6 border-t border-[#FF4500] text-center text-gray-400 text-sm">
+            <div class="flex flex-col items-center justify-center max-w-7xl mx-auto px-6 gap-2">
+                <p>© 2025 iLocksmithIN. All rights reserved.</p>
+                <p>
+                Made with 
+                <span class="text-red-600 animate-pulse">❤️</span> 
+                by 
+                <a href="https://gettmarketing.com/" target="_blank" class="hover:text-[#FF4500] font-semibold">Gett Marketing</a>
+                </p>
+                <div class="space-x-4">
                 <a href="privacy-policy.html" class="hover:text-[#FF4500]">Privacy Policy</a>
                 <a href="terms-condition.html" class="hover:text-[#FF4500]">Terms of Service</a>
+                <a href="accessibility-policy.html" class="hover:text-[#FF4500]">Accessibilty</a>
                 </div>
-            </div>
             </div>
         </div>
     </footer>
