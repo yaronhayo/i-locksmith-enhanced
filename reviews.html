@@ -489,139 +489,41 @@
         </div>
     </div>
 
-    <!-- Page Header with Booking Form -->
-    <section class="relative bg-cover bg-center text-white py-16 md:py-20"
-            style="background-image: url('./images/feedback.webp');">
+    <!-- Page Header -->
+<section class="relative bg-cover bg-center text-white min-h-screen flex items-center justify-center text-center px-6"
+        style="background-image: url('./images/feedback.webp');">
 
-        <!-- Dark overlay for readability -->
-        <div class="absolute inset-0 bg-black/70"></div>
+    <!-- Dark overlay for readability -->
+    <div class="absolute inset-0 bg-black/70"></div>
 
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <!-- Breadcrumb -->
-            <nav class="text-sm bg-transparent mt-6 relative z-10">
-                <ol class="flex items-center space-x-2 text-gray-400">
-                    <li>
-                        <a href="/" class="hover:underline hover:text-[#FF4500] transition">Home</a>
-                    </li>
-                    <li><span class="mx-1 text-gray-500">/</span></li>
-                    <li class="text-gray-200">Locksmith Reviews</li>
-                </ol>
-            </nav>
+    <!-- Content Wrapper -->
+    <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+        <!-- Breadcrumb -->
+        <nav class="text-sm mb-6 bg-transparent">
+            <ol class="flex items-center justify-center space-x-2 text-gray-400">
+                <li>
+                    <a href="/" class="hover:underline hover:text-[#FF4500] transition">Home</a>
+                </li>
+                <li><span class="mx-1 text-gray-500">/</span></li>
+                <li class="text-gray-200">Locksmith Reviews</li>
+            </ol>
+        </nav>
 
-            <!-- Header Content -->
-            <div class="grid lg:grid-cols-2 gap-10 items-center">
-                <!-- Left: Headline & Description -->
-                <div class="space-y-6">
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4">
-                        Customer Reviews & Testimonials
-                        <span class="bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent block mt-2">
-                            I Locksmith South Bend
-                        </span>
-                    </h1>
+        <!-- Header Content -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
+             Customer Reviews & Testimonials
+            <span class="bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent block mt-2">
+                 I Locksmith South Bend
+            </span>
+        </h1>
 
-                    <p class="text-lg text-gray-100 leading-relaxed">
-                        Read what our clients have to say about <strong>I Locksmith</strong> — the trusted South Bend locksmith. Discover real customer reviews, testimonials, and feedback from homeowners, businesses, and drivers who rely on our professional mobile locksmith services.
-                    </p>
-                </div>
+        <p class="text-lg text-gray-100 leading-relaxed">
+            Read what our clients have to say about <strong>I Locksmith</strong> — the trusted South Bend locksmith. Discover real customer reviews, testimonials, and feedback from homeowners, businesses, and drivers who rely on our professional mobile locksmith services.
+        </p>
+    </div>
+</section>
 
-                <div class="flex-1 relative z-10 bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl p-8 sm:p-10 text-[#1C1C1C] w-full max-w-xl mt-12 md:mt-0 border border-gray-100">
-   
-                <!-- Heading -->
-                <h3 class="text-2xl sm:text-3xl font-extrabold mb-8 text-center text-[#1C1C1C]">
-                    Book a <span class="text-[#DC143C]">Locksmith</span> Now
-                </h3>
-                
-                <!-- Form -->
-                <form id="booking-form" class="space-y-6" novalidate>
-                    
-                    <!-- Name & Phone Row -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div class="relative">
-                            <input type="text" id="name" name="name" placeholder=" " required
-                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent">
-                            <label for="name" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
-                                Your Name *
-                            </label>
-                        </div>
-                        <div class="relative">
-                            <input type="tel" id="phone" name="phone" placeholder=" " required
-                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent">
-                            <label for="phone" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
-                                Phone Number *
-                            </label>
-                        </div>
-                    </div>
 
-                    <!-- Address -->
-                    <div class="relative">
-                        <input type="text" id="address" name="address" placeholder=" " required
-                            class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent">
-                        <label for="address" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
-                            Service Address *
-                        </label>
-                    </div>
-
-                    <!-- Service Type & Needed -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div class="relative">
-                            <select id="service_type" name="service_type" required
-                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-white focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition">
-                                <option value="" disabled selected>Select Service Type</option>
-                                <option>Car Lockout</option>
-                                <option>House Lockout</option>
-                                <option>Business Lockout</option>
-                                <option>Storage Unit Lockout</option>
-                                <option>Lock Replacement</option>
-                                <option>Lock Rekey</option>
-                                <option>Lock Repair</option>
-                                <option>Gate Locks</option>
-                                <option>Commercial Lock Replacement</option>
-                                <option>Commercial Rekey</option>
-                                <option>Emergency Exit Devices</option>
-                                <option>Master Key Systems</option>
-                                <option>Access Control</option>
-                                <option>Car Key Replacement</option>
-                                <option>Car Key Duplicate</option>
-                                <option>Car Key Cutting</option>
-                                <option>Key Fob Programming</option>
-                                <option>Ignition Lock Cylinder</option>
-                            </select>
-                            <label for="service_type" class="block mt-1 text-xs text-gray-500">Service Type *</label>
-                        </div>
-                        <div class="relative">
-                            <select id="needed" name="needed" required
-                                class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-white focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition">
-                                <option value="" disabled selected>Select Time Frame</option>
-                                <option>ASAP</option>
-                                <option>Same Day</option>
-                                <option>Within a few days</option>
-                                <option>In a few weeks</option>
-                                <option>Other</option>
-                            </select>
-                            <label for="needed" class="block mt-1 text-xs text-gray-500">When Needed? *</label>
-                        </div>
-                    </div>
-
-                    <!-- Additional Notes -->
-                    <div class="relative">
-                        <textarea id="notes" name="notes" rows="2" placeholder=" " 
-                            class="peer w-full border rounded-xl p-3 text-sm shadow-sm bg-transparent focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition placeholder-transparent"></textarea>
-                        <label for="notes" class="absolute left-3 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-8px] peer-focus:text-xs peer-focus:text-[#DC143C] bg-white px-1">
-                            Additional Notes
-                        </label>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit" 
-                            class="w-full py-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 text-lg tracking-wide">
-                        <span class="material-icons text-xl animate-pulse">send</span>
-                        Request Service
-                    </button>
-                </form>
-            </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Review Summary Dashboard -->
     <section class="bg-gradient-to-br from-white to-[#F5F5F5] py-20">
@@ -1721,7 +1623,7 @@
                 </p>
                 <div class="space-x-4">
                 <a href="privacy-policy.html" class="hover:text-[#FF4500]">Privacy Policy</a>
-                <a href="terms-condition.html" class="hover:text-[#FF4500]">Terms of Service</a>
+                <a href="terms-and-conditions.html" class="hover:text-[#FF4500]">Terms and Conditions</a>
                 <a href="accessibility-policy.html" class="hover:text-[#FF4500]">Accessibilty</a>
                 </div>
             </div>
