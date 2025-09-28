@@ -1020,10 +1020,13 @@
                     });
                     map.fitBounds(bounds);
 
-                    // Ensure minimum zoom level
+                    // Ensure optimal zoom level to show all service areas
                     google.maps.event.addListenerOnce(map, 'bounds_changed', () => {
-                        if (map.getZoom() > 11) {
-                            map.setZoom(11);
+                        if (map.getZoom() > 10) {
+                            map.setZoom(10);
+                        }
+                        if (map.getZoom() < 8) {
+                            map.setZoom(8);
                         }
                     });
                 }
