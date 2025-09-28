@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XRNH2QG');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Residential Locksmith South Bend | Home Lock Services | I Locksmith</title>
-    <meta name="description" content="Professional residential locksmith services in South Bend, IN. Lock installation, replacement, rekeying, and repair for homes. Mobile service available. ">
+    <title>Residential Locksmith South Bend IN | Home Security & Lock Services | I Locksmith</title>
+    <meta name="description" content="Professional residential locksmith services in South Bend, IN. Home lock installation, rekeying, repair, and security upgrades. Licensed home locksmith specialists."/>
+    <meta name="keywords" content="residential locksmith South Bend, home locksmith, lock installation, lock rekeying, home security, lock repair, house locksmith, home lock replacement"/>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+    <meta name="bingbot" content="index, follow"/>
+    <meta property="og:title" content="Residential Locksmith South Bend IN | Home Lock Services"/>
+    <meta property="og:description" content="Professional residential locksmith services in South Bend, IN. Home security, lock installation, rekeying, and repair services."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://ilocksmithindiana.com/services/residential-locksmith"/>
+    <meta property="og:image" content="https://ilocksmithindiana.com/images/i-locksmith-logo.webp"/>
+    <link rel="canonical" href="https://ilocksmithindiana.com/services/residential-locksmith"/>
     <link rel="icon" href="../images/i-locksmith-logo.webp" type="image/webp">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -460,7 +477,7 @@
 
     <!-- Emergency Hero Section -->
     <section class="relative overflow-hidden bg-cover bg-center text-white px-4 sm:px-6 lg:px-12 py-24 lg:py-32"
-            style="background-image: url('./images/emergency-locksmith.webp');">
+            style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80');">
 
         <!-- Dark lightly blurred overlay -->
         <div class="absolute inset-0 bg-black/60"></div>
@@ -1191,13 +1208,7 @@
             
             <!-- Map Embed -->
             <div class="w-full h-96 rounded-2xl overflow-hidden shadow-xl mb-12 hover:shadow-2xl transition-shadow duration-300">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17929396.52388705!2d-80.7612819058832!3d42.888225130435956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bcd9f81b1d%3A0x7e102fcecb32ec72!2sIndiana%2C%20USA!5e1!3m2!1sen!2sph!4v1757860374511!5m2!1sen!2sph" 
-                    class="w-full h-full border-0" 
-                    allowfullscreen 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div id="residentialMap" class="w-full h-full"></div>
             </div>
             
             <!-- Response Time Cards -->
@@ -1387,6 +1398,180 @@
         </div>
     </footer>
 
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPityG_sxBDoXzvAKqbLDbeSZi9nzkyNc&libraries=geometry"></script>
+    <script>
+        function initResidentialMap() {
+            // Service areas data with coordinates
+            const serviceAreas = [
+                {
+                    name: "South Bend",
+                    lat: 41.6764,
+                    lng: -86.2520,
+                    url: "../service-areas/locksmith-south-bend-indiana.html",
+                    description: "Residential locksmith services in South Bend, IN"
+                },
+                {
+                    name: "Mishawaka",
+                    lat: 41.6620,
+                    lng: -86.1586,
+                    url: "../service-areas/locksmith-mishawaka-indiana.html",
+                    description: "Professional residential locksmith services in Mishawaka, IN"
+                },
+                {
+                    name: "Granger",
+                    lat: 41.7531,
+                    lng: -86.1111,
+                    url: "../service-areas/locksmith-granger-indiana.html",
+                    description: "Reliable residential locksmith services in Granger, IN"
+                },
+                {
+                    name: "Elkhart",
+                    lat: 41.6818,
+                    lng: -85.9767,
+                    url: "../service-areas/locksmith-elkhart-indiana.html",
+                    description: "Expert residential locksmith services in Elkhart, IN"
+                },
+                {
+                    name: "Notre Dame",
+                    lat: 41.7001,
+                    lng: -86.2379,
+                    url: "../service-areas/locksmith-notre-dame-indiana.html",
+                    description: "Trusted residential locksmith services in Notre Dame, IN"
+                },
+                {
+                    name: "Osceola",
+                    lat: 41.6706,
+                    lng: -86.0750,
+                    url: "../service-areas/locksmith-osceola-indiana.html",
+                    description: "Fast residential locksmith services in Osceola, IN"
+                },
+                {
+                    name: "Niles",
+                    lat: 41.8297,
+                    lng: -86.2542,
+                    url: "../service-areas/locksmith-niles-michigan.html",
+                    description: "Residential locksmith services in Niles, MI"
+                },
+                {
+                    name: "Buchanan",
+                    lat: 41.8267,
+                    lng: -86.3611,
+                    url: "../service-areas/locksmith-buchanan-michigan.html",
+                    description: "Professional residential locksmith services in Buchanan, MI"
+                },
+                {
+                    name: "Edwardsburg",
+                    lat: 41.7942,
+                    lng: -86.0847,
+                    url: "../service-areas/locksmith-edwardsburg-michigan.html",
+                    description: "Reliable residential locksmith services in Edwardsburg, MI"
+                },
+                {
+                    name: "Cassopolis",
+                    lat: 41.9119,
+                    lng: -86.0097,
+                    url: "../service-areas/locksmith-cassopolis-michigan.html",
+                    description: "Expert residential locksmith services in Cassopolis, MI"
+                }
+            ];
+            // Calculate map bounds
+            const bounds = new google.maps.LatLngBounds();
+            serviceAreas.forEach(area => {
+                bounds.extend(new google.maps.LatLng(area.lat, area.lng));
+            });
+            // Initialize map
+            const map = new google.maps.Map(document.getElementById('residentialMap'), {
+                center: { lat: 41.7, lng: -86.15 },
+                zoom: 10,
+                styles: [
+                    {
+                        featureType: "all",
+                        elementType: "geometry.fill",
+                        stylers: [{ saturation: -15 }, { lightness: 15 }]
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "geometry",
+                        stylers: [{ color: "#e8f4fd" }]
+                    }
+                ]
+            });
+            // Fit map to show all markers
+            map.fitBounds(bounds);
+            // Add some padding to the bounds
+            const padding = { top: 50, right: 50, bottom: 50, left: 50 };
+            map.fitBounds(bounds, padding);
+            // Create custom marker icon (SVG)
+            const customIcon = {
+                url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" fill="url(#gradient)" stroke="white" stroke-width="2"/>
+                        <circle cx="20" cy="20" r="8" fill="white"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#DC143C;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FF4500;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                `),
+                scaledSize: new google.maps.Size(40, 40),
+                anchor: new google.maps.Point(20, 20)
+            };
+            // Add markers for each service area
+            serviceAreas.forEach(area => {
+                const marker = new google.maps.Marker({
+                    position: { lat: area.lat, lng: area.lng },
+                    map: map,
+                    title: area.name,
+                    icon: customIcon,
+                    animation: google.maps.Animation.DROP
+                });
+                // Create info window
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div style="padding: 10px; font-family: 'Montserrat', sans-serif;">
+                            <h3 style="margin: 0 0 8px 0; color: #DC143C; font-weight: 600;">${area.name}</h3>
+                            <p style="margin: 0 0 10px 0; color: #666; font-size: 14px;">${area.description}</p>
+                            <a href="${area.url}" style="display: inline-block; background: linear-gradient(to right, #DC143C, #FF4500); color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600;">
+                                View Services
+                            </a>
+                        </div>
+                    `
+                });
+                // Add click listener to marker
+                marker.addListener('click', () => {
+                    // Close any open info windows
+                    if (window.currentInfoWindow) {
+                        window.currentInfoWindow.close();
+                    }
+                    infoWindow.open(map, marker);
+                    window.currentInfoWindow = infoWindow;
+                });
+                // Add click listener to redirect to service area page
+                google.maps.event.addListener(infoWindow, 'domready', function() {
+                    const link = document.querySelector(`a[href="${area.url}"]`);
+                    if (link) {
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            window.location.href = area.url;
+                        });
+                    }
+                });
+            });
+        }
+        // Initialize map when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof google !== 'undefined' && google.maps) {
+                initResidentialMap();
+            } else {
+                // Fallback if Google Maps fails to load
+                console.warn('Google Maps failed to load');
+            }
+        });
+    </script>
 
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>

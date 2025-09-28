@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XRNH2QG');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title> Locksmith in North Liberty, IN | Residential & Auto Service </title>
-    <meta name="description" content=" Professional locksmith services in North Liberty, Indiana. Residential and automotive locksmith solutions with mobile service convenience.">
+    <title>Locksmith North Liberty IN | Residential & Auto Locksmith Services | I Locksmith</title>
+    <meta name="description" content="Professional locksmith services in North Liberty, IN. Residential and automotive locksmith solutions. Emergency lockouts, key replacement, lock repair."/>
+    <meta name="keywords" content="locksmith North Liberty IN, North Liberty locksmith, emergency locksmith North Liberty, car lockout North Liberty, house lockout North Liberty, residential locksmith North Liberty"/>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+    <meta name="bingbot" content="index, follow"/>
+    <meta property="og:title" content="Locksmith in North Liberty, IN | Residential & Auto Service"/>
+    <meta property="og:description" content="Professional locksmith services in North Liberty, Indiana. Residential and automotive locksmith solutions with mobile service convenience."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana"/>
+    <meta property="og:image" content="https://ilocksmithindiana.com/images/i-locksmith-logo.webp"/>
+    <link rel="canonical" href="https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana"/>
     <link rel="icon" href="../images/i-locksmith-logo.webp" type="image/webp">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
@@ -472,7 +489,7 @@
     </div>
 
     <!-- Local Hero with Booking Section -->
-    <section class="relative bg-cover bg-center bg-no-repeat pt-32 pb-16" style="background-image: url('./images/north-liberty.webp');">
+    <section class="relative bg-cover bg-center bg-no-repeat pt-32 pb-16" style="background-image: url('https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
         <!-- Overlay for readability -->
         <div class="absolute inset-0 bg-black/70"></div>
 
@@ -897,17 +914,8 @@
 
                 <!-- Right Map -->
                 <div class="relative w-full h-96 lg:h-[400px] rounded-2xl overflow-hidden shadow-inner">
-                    <!-- Google Maps Embed -->
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71331.57608478326!2d-86.23137772107433!3d41.73023422073465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816d0a0eab3edeb%3A0x1a2b3c4d5e6f7890!2sNorth%20Liberty%2C%20IN%2C%20USA!5e1!3m2!1sen!2sph!4v1757870659082!5m2!1sen!2sph" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        class="w-full h-full border-0"
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <!-- Interactive Google Map -->
+                    <div id="northLibertyMap" class="w-full h-full"></div>
 
                     <!-- Overlay for styling -->
                     <div class="absolute inset-0 bg-[#DC143C]/10"></div>
@@ -1402,6 +1410,97 @@
                 slidesPerView: 3,
             },
             },
+        });
+    </script>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPityG_sxBDoXzvAKqbLDbeSZi9nzkyNc&libraries=geometry"></script>
+
+    <script>
+        function initNorthLibertyMap() {
+            // North Liberty coordinates
+            const northLibertyLocation = {
+                lat: 41.5367,
+                lng: -86.4742
+            };
+
+            // Initialize map
+            const map = new google.maps.Map(document.getElementById('northLibertyMap'), {
+                center: northLibertyLocation,
+                zoom: 12,
+                styles: [
+                    {
+                        featureType: "all",
+                        elementType: "geometry.fill",
+                        stylers: [{ saturation: -15 }, { lightness: 15 }]
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "geometry",
+                        stylers: [{ color: "#e8f4fd" }]
+                    }
+                ]
+            });
+
+            // Create custom marker icon (SVG)
+            const customIcon = {
+                url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="23" fill="url(#gradient)" stroke="white" stroke-width="2"/>
+                        <circle cx="25" cy="25" r="10" fill="white"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#DC143C;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FF4500;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                `),
+                scaledSize: new google.maps.Size(50, 50),
+                anchor: new google.maps.Point(25, 25)
+            };
+
+            // Add marker for North Liberty
+            const marker = new google.maps.Marker({
+                position: northLibertyLocation,
+                map: map,
+                title: "I Locksmith - North Liberty, IN",
+                icon: customIcon,
+                animation: google.maps.Animation.DROP
+            });
+
+            // Create info window
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="padding: 15px; font-family: 'Montserrat', sans-serif; max-width: 250px;">
+                        <h3 style="margin: 0 0 8px 0; color: #DC143C; font-weight: 600; font-size: 16px;">I Locksmith - North Liberty</h3>
+                        <p style="margin: 0 0 8px 0; color: #666; font-size: 13px;">Professional locksmith services in North Liberty, IN</p>
+                        <div style="margin: 8px 0; color: #444; font-size: 12px;">
+                            <div style="margin-bottom: 4px;"><strong>Phone:</strong> (574) 318-7797</div>
+                        </div>
+                        <a href="tel:+5743187797" style="display: inline-block; background: linear-gradient(to right, #DC143C, #FF4500); color: white; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 600;">
+                            Call Now
+                        </a>
+                    </div>
+                `
+            });
+
+            // Add click listener to marker
+            marker.addListener('click', () => {
+                infoWindow.open(map, marker);
+            });
+
+            // Open info window by default
+            infoWindow.open(map, marker);
+        }
+
+        // Initialize map when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof google !== 'undefined' && google.maps) {
+                initNorthLibertyMap();
+            } else {
+                console.warn('Google Maps failed to load');
+            }
         });
     </script>
 </body>

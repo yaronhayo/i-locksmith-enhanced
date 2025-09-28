@@ -1,0 +1,90 @@
+# Robots.txt for I Locksmith - South Bend, IN
+# Professional locksmith services website optimized for search engines
+
+# Global rules for all robots
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block malicious bots and scrapers
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: 008
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: ScreamingFrogSEOSpider
+Disallow: /
+
+User-agent: SiteAuditBot
+Disallow: /
+
+User-agent: Cliqzbot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+# Block admin and sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /*.log
+Disallow: /*.bak
+Disallow: /*?*utm_*
+Disallow: /*?*session*
+Disallow: /*?*sid*
+
+# Important pages for indexing
+Allow: /index.html
+Allow: /services/
+Allow: /service-areas/
+Allow: /about.html
+Allow: /contact.html
+Allow: /faq.html
+Allow: /blog/
+Allow: /images/
+Allow: /sitemap.xml
+
+# Crawl delay for respectful indexing
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://ilocksmithindiana.com/sitemap.xml
+
+# Host preference (optional)
+# Host: ilocksmithindiana.com
