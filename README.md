@@ -72,7 +72,7 @@ Ready for deployment to Vercel, Netlify, or any static hosting provider.
 ├── 🗂️ js/
 │   └── 📄 form-handler.js          # Advanced form validation system
 ├── 🗂️ api/
-│   └── 📄 submit-form.js           # Server-side email processing
+│   └── 📄 form-handler.js          # Server-side email processing
 ├── 🗂️ service-areas/               # 10 local service area pages
 ├── 🗂️ services/                    # 19 service-specific pages
 ├── 🗂️ blog-posts/                  # SEO-optimized blog content
