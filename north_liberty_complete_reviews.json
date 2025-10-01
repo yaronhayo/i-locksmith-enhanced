@@ -1,0 +1,350 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-steven-c-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Steven C."
+        },
+        "datePublished": "2024-07-28",
+        "reviewBody": "Emergency lockout at 2am and they came right out to North Liberty. Fast professional service and reasonable rates. Got me back inside my house quickly without any damage to the door.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-betty-lou-w-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Betty Lou W."
+        },
+        "datePublished": "2024-09-26",
+        "reviewBody": "Had all my North Liberty home locks rekeyed after a break-in attempt. The technician was thorough and tested each lock multiple times. Now I feel secure again.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-tyler-b-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Tyler B."
+        },
+        "datePublished": "2024-11-05",
+        "reviewBody": "Needed replacement keys for my North Liberty apartment. Fast service and all keys work perfectly. Much better quality than hardware store keys.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-taylor-j-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Taylor J."
+        },
+        "datePublished": "2024-06-22",
+        "reviewBody": "Great lock installation service for my new North Liberty home. Recommended high-quality locks and installed everything perfectly. Very satisfied with the workmanship.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-katarzyna-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Katarzyna M."
+        },
+        "datePublished": "2024-08-01",
+        "reviewBody": "Locked out of my North Liberty house with groceries melting in the car. They arrived in 25 minutes and had me inside quickly. No damage and very reasonable pricing.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-dmitri-v-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Dmitri V."
+        },
+        "datePublished": "2024-02-14",
+        "reviewBody": "Our North Liberty office had a lock malfunction during busy season. They understood the urgency and had us operational within 30 minutes. Excellent commercial lockout service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-patricia-d-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Patricia D."
+        },
+        "datePublished": "2024-04-18",
+        "reviewBody": "My North Liberty home lock was jamming and difficult to operate. The technician repaired it expertly rather than pushing an expensive replacement. Honest and skilled lock repair service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-marcus-h-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Marcus H."
+        },
+        "datePublished": "2024-10-07",
+        "reviewBody": "Lost my car key fob and needed it reprogrammed for my vehicle. The North Liberty technician had the right equipment and programming knowledge. Works perfectly now.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-rachel-t-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Rachel T."
+        },
+        "datePublished": "2024-12-03",
+        "reviewBody": "Forgot the combination to my home safe in North Liberty. The technician opened it professionally without damage and helped me set a new combination I won't forget.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-james-p-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "James P."
+        },
+        "datePublished": "2024-05-15",
+        "reviewBody": "Wanted extra security for my North Liberty home and had a high-grade deadbolt installed. The installation was clean and professional. The lock operates smoothly and looks great.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-linda-s-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Linda S."
+        },
+        "datePublished": "2024-03-29",
+        "reviewBody": "Setup a master key system for our North Liberty duplex rental. Perfect solution - we can access both units while tenants have individual keys. Professional installation and advice.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana#review-michael-e-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - North Liberty",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "North Liberty",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Michael E."
+        },
+        "datePublished": "2024-01-11",
+        "reviewBody": "Complete security system upgrade for our North Liberty home including smart locks and cameras. The technician explained everything thoroughly and the system works flawlessly. Great investment in home security.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

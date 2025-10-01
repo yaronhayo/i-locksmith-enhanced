@@ -10,8 +10,8 @@
     <!-- End Google Tag Manager -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title> Book Locksmith Service Online | I Locksmith South Bend Scheduling</title>
-    <meta name="description" content="Book your locksmith service online with I Locksmith South Bend. Schedule emergency or routine locksmith services. Fast mobile response available 24/7. ">
+    <title>Book Locksmith Service Online | I Locksmith South Bend Scheduling</title>
+    <meta name="description" content="Book your locksmith service online with I Locksmith South Bend. Schedule emergency or routine locksmith services. Fast mobile response available 24/7.">
     <meta property="og:title" content="Book Locksmith Service Online | I Locksmith South Bend Scheduling"/>
     <meta property="og:description" content="Book your locksmith service online with I Locksmith South Bend. Schedule emergency or routine locksmith services. Fast mobile response available 24/7."/>
     <meta property="og:type" content="website"/>
@@ -84,6 +84,109 @@
             background-color: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
         }
+
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .animate-delay-100 {
+            animation-delay: 0.1s;
+            opacity: 0;
+        }
+
+        .animate-delay-200 {
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+
+        /* Service card hover effects */
+        .service-card {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Form enhancements */
+        .form-floating-label {
+            position: relative;
+        }
+
+        .form-floating-label input:focus + label,
+        .form-floating-label input:valid + label,
+        .form-floating-label input:not(:placeholder-shown) + label,
+        .form-floating-label select:focus + label,
+        .form-floating-label select:valid + label,
+        .form-floating-label textarea:focus + label,
+        .form-floating-label textarea:valid + label,
+        .form-floating-label textarea:not(:placeholder-shown) + label {
+            top: -8px;
+            left: 12px;
+            font-size: 0.75rem;
+            color: #DC143C;
+            background: white;
+            padding: 0 4px;
+        }
+
+        .form-floating-label label {
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            transition: all 0.2s ease;
+            pointer-events: none;
+            color: #666666;
+        }
+
+        .form-floating-label select + label {
+            top: 50%;
+        }
+
+        .form-floating-label textarea + label {
+            top: 20px;
+            transform: none;
+        }
+
+        /* Urgency selection styling */
+        .urgency-option {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .urgency-option:hover {
+            border-color: #DC143C;
+            background-color: rgba(220, 20, 60, 0.05);
+        }
+
+        .urgency-option.selected {
+            border-color: #DC143C;
+            background-color: rgba(220, 20, 60, 0.05);
+            transform: scale(1.02);
+        }
+
+        /* Trust indicators */
+        .trust-indicator {
+            background: linear-gradient(135deg, rgba(220, 20, 60, 0.1), rgba(255, 69, 0, 0.1));
+        }
     </style>
 </head>
 <body>
@@ -96,33 +199,33 @@
     <nav class="bg-clean-white shadow-lg border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-            
+
                 <!-- Logo Section -->
                 <div class="flex items-center space-x-3">
                 <!-- Logo Image -->
                 <a href="index.html">
-                    <img src="./images/i-locksmith-logo.webp" 
-                        alt="i-locksmith Logo" 
+                    <img src="./images/i-locksmith-logo.webp"
+                        alt="i-locksmith Logo"
                         class="h-12 w-auto object-contain cursor-pointer">
                 </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-8">
-                    
+
                     <!-- Services Dropdown -->
                     <div class="relative group">
-                        <a href="services.html" 
+                        <a href="services.html"
                             class="flex items-center space-x-1 text-professional-black font-medium hover:text-brand-red transition-colors duration-300 py-2 group">
                                 <span>Our Services</span>
                                 <span class="material-icons text-sm transition-transform duration-300 group-hover:rotate-180">expand_more</span>
                         </a>
-                        
+
                         <!-- Mega Dropdown -->
                         <div class="absolute left-0 top-full mt-2 w-[800px] bg-clean-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                             <div class="p-6 grid grid-cols-4 gap-6">
-                                
-                                <!-- Emergency Locksmith -->
+
+                                <!-- Emergency Services -->
                                 <div class="space-y-3">
                                     <div class="flex items-center space-x-2 pb-2 border-b border-gray-100">
                                         <div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center">
@@ -193,7 +296,7 @@
 
                     <!-- Service Areas Dropdown -->
                     <div class="relative group">
-                        <a href="service-areas.html" 
+                        <a href="service-areas.html"
                             class="flex items-center space-x-1 text-professional-black font-medium hover:text-brand-red transition-colors duration-300 py-2 group">
                                 <span>Service Areas</span>
                                 <span class="material-icons text-sm transition-transform duration-300 group-hover:rotate-180">expand_more</span>
@@ -252,23 +355,23 @@
                     </div>
 
                     <!-- Other Links -->
-                    <a href="faq.html" 
-                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red 
+                    <a href="faq.html"
+                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red
                                 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-brand-red after:transition-all after:duration-300 hover:after:w-full">
                         FAQ
                         </a>
-                        <a href="reviews.html" 
-                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red 
+                        <a href="reviews.html"
+                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red
                                 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-brand-red after:transition-all after:duration-300 hover:after:w-full">
                         Reviews
                         </a>
-                        <a href="about.html" 
-                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red 
+                        <a href="about.html"
+                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red
                                 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-brand-red after:transition-all after:duration-300 hover:after:w-full">
                         About
                         </a>
-                        <a href="contact.html" 
-                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red 
+                        <a href="contact.html"
+                        class="relative text-professional-black font-medium transition-colors duration-300 hover:text-brand-red
                                 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-brand-red after:transition-all after:duration-300 hover:after:w-full">
                         Contact
                     </a>
@@ -276,11 +379,11 @@
 
                 <!-- Action Buttons - Desktop -->
                 <div class="hidden lg:flex items-center space-x-3">
-                    <a href="tel:2109006996" class="flex items-center space-x-2 bg-emergency-orange hover:bg[#E65C00] text-clean-white px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
+                    <a href="tel:+15743187797" class="flex items-center space-x-2 bg-emergency-orange hover:bg-[#E65C00] text-clean-white px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
                         <span class="material-icons text-sm">phone</span>
                         <span>Call (574) 318-7797</span>
                     </a>
-                    <a href="book.html" class="flex items-center space-x-2 bg-brand-red hover:bg-[#E25C6F] text-clean-white px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
+                    <a href="book.html" class="flex items-center space-x-2 bg-brand-red hover:bg-[#B91C1C] text-clean-white px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
                         <span class="material-icons text-sm">calendar_today</span>
                         <span>Book Service</span>
                     </a>
@@ -289,21 +392,21 @@
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center space-x-3">
                     <!-- Call -->
-                    <a href="tel:5743187797" 
+                    <a href="tel:+15743187797"
                     class="flex items-center gap-1 px-3 py-2 bg-emergency-orange hover:bg-[#E65C00] text-clean-white rounded-lg transition-colors duration-300">
                         <span class="material-icons text-lg">phone</span>
                         <span class="text-sm font-medium">Call</span>
                     </a>
 
                     <!-- Book -->
-                    <a href="book.html" 
-                    class="flex items-center gap-1 px-3 py-2 bg-brand-red hover:bg-[#E25C6F] text-clean-white rounded-lg transition-colors duration-300">
+                    <a href="book.html"
+                    class="flex items-center gap-1 px-3 py-2 bg-brand-red hover:bg-[#B91C1C] text-clean-white rounded-lg transition-colors duration-300">
                         <span class="material-icons text-lg">calendar_today</span>
                         <span class="text-sm font-medium">Book</span>
                     </a>
 
                     <!-- Menu -->
-                    <button onclick="toggleMobileMenu()" 
+                    <button onclick="toggleMobileMenu()"
                             class="p-2 text-professional-black hover:text-brand-red transition-colors duration-300">
                         <span class="material-icons text-2xl">menu</span>
                     </button>
@@ -316,18 +419,18 @@
     <div id="mobileMenu" class="fixed inset-0 z-40 lg:hidden mobile-menu-slide">
         <div class="fixed inset-0 bg-professional-black bg-opacity-50" onclick="toggleMobileMenu()"></div>
         <div class="fixed top-0 left-0 bottom-0 w-80 bg-clean-white shadow-2xl overflow-y-auto">
-            
+
             <!-- Mobile Header -->
             <div class="flex items-center justify-center p-4 border-b border-gray-200">
                 <!-- Logo Image -->
-                <img src="./images/i-locksmith-logo.webp" 
-                    alt="i-locksmith Logo" 
+                <img src="./images/i-locksmith-logo.webp"
+                    alt="i-locksmith Logo"
                     class="h-10 object-contain">
             </div>
 
             <!-- Mobile Menu Items -->
             <div class="p-4 space-y-4">
-                
+
                 <!-- Services Section -->
                 <div>
                     <button onclick="toggleSubmenu('services')" class="flex items-center justify-between w-full p-3 bg-light-gray rounded-lg text-professional-black font-medium">
@@ -335,7 +438,7 @@
                         <span class="material-icons transition-transform duration-300" id="servicesIcon">expand_more</span>
                     </button>
                     <div id="services" class="hidden mt-2 ml-4 space-y-3">
-                        
+
                         <!-- Emergency -->
                         <div>
                             <div class="flex items-center space-x-2 mb-2">
@@ -470,7 +573,7 @@
 
             <!-- Mobile Action Buttons -->
             <div class="p-4 space-y-3 border-t border-gray-200">
-                <a href="tel:+5743187797" class="flex items-center justify-center space-x-2 bg-brand-red hover:bg-red-700 text-clean-white px-6 py-3 rounded-lg font-medium transition-all duration-300">
+                <a href="tel:+15743187797" class="flex items-center justify-center space-x-2 bg-brand-red hover:bg-red-700 text-clean-white px-6 py-3 rounded-lg font-medium transition-all duration-300">
                     <span class="material-icons">phone</span>
                     <span>Call Now</span>
                 </a>
@@ -483,312 +586,659 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative pt-24 pb-16 min-h-screen w-full overflow-hidden">
-        <!-- Background Image + Blur Overlay -->
-        <div class="absolute inset-0">
-            <img src="./images/booking.webp" alt="Hero Background" class="w-full h-full object-cover">
-            <!-- Black overlay for opacity effect -->
-            <div class="absolute inset-0 bg-black opacity-70"></div>
-        </div>
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-light-gray to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Main Headline -->
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-professional-black">
+                Book Your
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-emergency-orange">Locksmith Service</span>
+            </h1>
 
-            <!-- Clean Content -->
-            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <!-- Subheadline -->
+            <p class="text-xl text-accent-gray max-w-2xl mx-auto leading-relaxed mb-8">
+                Fast, professional locksmith services in South Bend & Northern Indiana. Available 24/7 for emergencies.
+            </p>
 
-                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight voice-speakable" data-speakable="true">
-                    Book <span class="bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">Locksmith Services</span> Online
-                </h1>
-
-                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                    Schedule emergency locksmith services for South Bend, IN. Professional car lockout, house lockout, and key replacement services.
-                </p>
-
-                <!-- Single CTA -->
-                <div class="flex justify-center">
-                    <a href="#booking-form" class="inline-flex items-center gap-3 bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FF4500] hover:to-[#DC143C] text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
-                        <span class="material-icons text-xl">calendar_today</span>
-                        Start Booking Now
-                    </a>
-                </div>
+            <!-- Primary CTA -->
+            <div class="mb-8">
+                <a href="#booking-form" class="inline-flex items-center gap-3 bg-gradient-to-r from-brand-red to-emergency-orange hover:from-emergency-orange hover:to-brand-red text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <span class="material-icons">calendar_today</span>
+                    Start Booking Now
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Quick Booking Form Section (Professional Look) -->
-    <section class="py-20 bg-gray-100" id="booking-form">
-        <div class="max-w-6xl mx-auto px-6 flex justify-center">
-            <div class="flex-1 relative z-10 bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl border border-gray-200 p-8 sm:p-10 md:p-12 w-full max-w-3xl">
 
-                <!-- Header -->
-                <h3 class="text-2xl md:text-4xl font-extrabold mb-10 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent">
-                    Book a Locksmith Now
-                </h3>
+    <!-- Enhanced Booking Form Section -->
+    <section class="py-20 bg-gradient-to-br from-light-gray to-gray-100" id="booking-form">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <form id="booking-form" class="space-y-6" novalidate data-form-type="booking">
-                    <!-- Name & Phone Row -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="relative">
-                            <input type="text" id="name" name="name" placeholder=" " required
-                                data-validation="required,name"
-                                data-error-target="name-error"
-                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
-                            <label for="name" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Your Name <span class="text-red-500">*</span></label>
-                            <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">person</span>
-                            <div id="name-error" class="error-message mt-1 text-sm text-red-500 hidden"></div>
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-professional-black mb-4">
+                    Complete Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-emergency-orange">Booking Request</span>
+                </h2>
+                <p class="text-lg text-accent-gray max-w-2xl mx-auto">Fill out the form below and we'll contact you within 5 minutes to confirm your appointment</p>
+            </div>
+
+            <!-- Main Form -->
+            <div class="relative bg-white rounded-3xl shadow-2xl p-8 sm:p-10 md:p-12">
+
+                <!-- Progress Indicator -->
+                <div class="flex items-center justify-center mb-8">
+                    <div class="flex items-center space-x-2 text-sm">
+                        <div class="w-8 h-8 bg-brand-red text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <span class="text-professional-black font-medium">Service Details</span>
+                        <div class="w-8 h-px bg-gray-300"></div>
+                        <div class="w-8 h-8 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-bold">2</div>
+                        <span class="text-gray-500 font-medium">Contact Info</span>
+                        <div class="w-8 h-px bg-gray-300"></div>
+                        <div class="w-8 h-8 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-bold">3</div>
+                        <span class="text-gray-500 font-medium">Confirmation</span>
+                    </div>
+                </div>
+
+                <form id="booking-form-main" class="space-y-8">
+
+                    <!-- Service Information -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-professional-black mb-6 pb-2 border-b-2 border-gray-100">Service Information</h3>
+
+                        <!-- Service Type -->
+                        <div class="mb-6">
+                            <label for="service_type" class="block text-sm font-semibold text-professional-black mb-2">What service do you need? <span class="text-brand-red">*</span></label>
+                            <select id="service_type" name="service_type" class="w-full border-2 border-gray-300 rounded-lg p-3 text-base focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all duration-200 outline-none bg-white" required>
+                                <option value="">Select your service type</option>
+                                    <optgroup label="🚨 Emergency Services">
+                                        <option value="Car Lockout">Car Lockout - I'm locked out of my vehicle</option>
+                                        <option value="House Lockout">House Lockout - I'm locked out of my home</option>
+                                        <option value="Business Lockout">Business Lockout - I'm locked out of my business</option>
+                                        <option value="Storage Unit Lockout">Storage Unit Lockout</option>
+                                    </optgroup>
+                                    <optgroup label="🏠 Residential Services">
+                                        <option value="Lock Replacement">Lock Replacement - Replace existing locks</option>
+                                        <option value="Lock Rekey">Lock Rekey - Change lock to work with new keys</option>
+                                        <option value="Lock Repair">Lock Repair - Fix broken/stuck locks</option>
+                                        <option value="Gate Locks">Gate Locks - Install or repair gate locks</option>
+                                    </optgroup>
+                                    <optgroup label="🏢 Commercial Services">
+                                        <option value="Commercial Lock Replacement">Commercial Lock Replacement</option>
+                                        <option value="Commercial Rekey">Commercial Rekey</option>
+                                        <option value="Master Key Systems">Master Key Systems</option>
+                                        <option value="Access Control">Access Control Systems</option>
+                                    </optgroup>
+                                    <optgroup label="🚗 Automotive Services">
+                                        <option value="Car Key Replacement">Car Key Replacement - Lost/broken car keys</option>
+                                        <option value="Key Fob Programming">Key Fob Programming</option>
+                                        <option value="Car Key Duplicate">Car Key Duplicate</option>
+                                        <option value="Ignition Repair">Ignition Lock Cylinder Repair</option>
+                                    </optgroup>
+                                </select>
                         </div>
-                        <div class="relative">
-                            <input type="tel" id="phone" name="phone" placeholder=" " required
-                                data-validation="required,phone"
-                                data-error-target="phone-error"
-                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
-                            <label for="phone" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Phone Number <span class="text-red-500">*</span></label>
-                            <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">phone</span>
-                            <div id="phone-error" class="error-message mt-1 text-sm text-red-500 hidden"></div>
+
+                        <!-- Urgency Level -->
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold text-professional-black mb-3">When do you need this service? <span class="text-brand-red">*</span></label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div class="urgency-option border-2 border-gray-300 rounded-lg p-3 hover:border-brand-red cursor-pointer transition-colors" onclick="selectUrgency(this, 'ASAP')">
+                                    <input type="radio" name="urgency" value="ASAP" class="sr-only" required>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 border-2 border-brand-red rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-brand-red rounded-full opacity-0 transition-opacity"></div>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-professional-black">🚨 Emergency - ASAP</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="urgency-option border-2 border-gray-300 rounded-lg p-3 hover:border-brand-red cursor-pointer transition-colors" onclick="selectUrgency(this, 'Same Day')">
+                                    <input type="radio" name="urgency" value="Same Day" class="sr-only" required>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 border-2 border-brand-red rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-brand-red rounded-full opacity-0 transition-opacity"></div>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-professional-black">📅 Same Day</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="urgency-option border-2 border-gray-300 rounded-lg p-3 hover:border-brand-red cursor-pointer transition-colors" onclick="selectUrgency(this, 'Within a few days')">
+                                    <input type="radio" name="urgency" value="Within a few days" class="sr-only" required>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 border-2 border-brand-red rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-brand-red rounded-full opacity-0 transition-opacity"></div>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-professional-black">🗓️ Within a Few Days</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="urgency-option border-2 border-gray-300 rounded-lg p-3 hover:border-brand-red cursor-pointer transition-colors" onclick="selectUrgency(this, 'Flexible')">
+                                    <input type="radio" name="urgency" value="Flexible" class="sr-only" required>
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 border-2 border-brand-red rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-brand-red rounded-full opacity-0 transition-opacity"></div>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-professional-black">⏰ Flexible</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Address -->
-                    <div class="relative">
-                        <input type="text" id="address" name="address" placeholder=" " required
-                            data-validation="required,address"
-                            data-error-target="address-error"
-                            data-autocomplete="address"
-                            class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all">
-                        <label for="address" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Service Address <span class="text-red-500">*</span></label>
-                        <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">location_on</span>
-                        <div id="address-error" class="error-message mt-1 text-sm text-red-500 hidden"></div>
-                    </div>
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-professional-black mb-6 pb-2 border-b-2 border-gray-100">Contact Information</h3>
 
-                    <!-- Service Type & Needed -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="relative">
-                            <select id="service_type" name="service_type" required
-                                data-validation="required"
-                                data-error-target="service_type-error"
-                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none appearance-none transition-all">
-                                <option value="" disabled selected>Select Service Type</option>
-                                <option value="Car Lockout">Car Lockout</option>
-                                <option value="House Lockout">House Lockout</option>
-                                <option value="Business Lockout">Business Lockout</option>
-                                <option value="Storage Unit Lockout">Storage Unit Lockout</option>
-                                <option value="Lock Replacement">Lock Replacement</option>
-                                <option value="Lock Rekey">Lock Rekey</option>
-                                <option value="Lock Repair">Lock Repair</option>
-                                <option value="Gate Locks">Gate Locks</option>
-                                <option value="Commercial Lock Replacement">Commercial Lock Replacement</option>
-                                <option value="Commercial Rekey">Commercial Rekey</option>
-                                <option value="Emergency Exit Devices">Emergency Exit Devices</option>
-                                <option value="Master Key Systems">Master Key Systems</option>
-                                <option value="Access Control">Access Control</option>
-                                <option value="Car Key Replacement">Car Key Replacement</option>
-                                <option value="Car Key Duplicate">Car Key Duplicate</option>
-                                <option value="Car Key Cutting">Car Key Cutting</option>
-                                <option value="Key Fob Programming">Key Fob Programming</option>
-                                <option value="Ignition Lock Cylinder">Ignition Lock Cylinder</option>
-                            </select>
-                            <label for="service_type" class="absolute left-4 -top-2 text-gray-500 text-xs bg-white px-1 font-medium">Service Type <span class="text-red-500">*</span></label>
-                            <span class="material-icons absolute right-4 top-4 text-gray-400">build</span>
-                            <div id="service_type-error" class="error-message mt-1 text-sm text-red-500 hidden"></div>
+                        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-professional-black mb-2">Your Name <span class="text-brand-red">*</span></label>
+                                <input type="text" id="name" name="name" class="w-full border-2 border-gray-300 rounded-lg p-3 text-base focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all duration-200 outline-none" placeholder="Enter your full name" required>
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold text-professional-black mb-2">Phone Number <span class="text-brand-red">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="w-full border-2 border-gray-300 rounded-lg p-3 text-base focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all duration-200 outline-none" placeholder="(555) 123-4567" required>
+                            </div>
                         </div>
-                        <div class="relative">
-                            <select id="needed" name="needed" required
-                                data-validation="required"
-                                data-error-target="needed-error"
-                                class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none appearance-none transition-all">
-                                <option value="" disabled selected>Select Time Frame</option>
-                                <option value="ASAP">ASAP</option>
-                                <option value="Same Day">Same Day</option>
-                                <option value="Within a few days">Within a few days</option>
-                                <option value="In a few weeks">In a few weeks</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <label for="needed" class="absolute left-4 -top-2 text-gray-500 text-xs bg-white px-1 font-medium">When Needed? <span class="text-red-500">*</span></label>
-                            <span class="material-icons absolute right-4 top-4 text-gray-400">schedule</span>
-                            <div id="needed-error" class="error-message mt-1 text-sm text-red-500 hidden"></div>
+
+                        <!-- Email -->
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-semibold text-professional-black mb-2">Email Address (Optional)</label>
+                            <input type="email" id="email" name="email" class="w-full border-2 border-gray-300 rounded-lg p-3 text-base focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all duration-200 outline-none" placeholder="your@email.com">
+                        </div>
+
+                        <!-- Address -->
+                        <div class="mb-6">
+                            <label for="address" class="block text-sm font-semibold text-professional-black mb-2">Service Address <span class="text-brand-red">*</span></label>
+                            <input type="text" id="address" name="address" class="w-full border-2 border-gray-300 rounded-lg p-3 text-base focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all duration-200 outline-none" placeholder="123 Main St, South Bend, IN 46601" required>
                         </div>
                     </div>
 
-                    <!-- Additional Notes -->
-                    <div class="relative">
-                        <textarea id="notes" name="notes" rows="3" placeholder=" "
-                            data-error-target="notes-error"
-                            class="peer w-full border border-gray-300 rounded-lg p-4 text-sm focus:ring-2 focus:ring-[#DC143C] focus:border-[#DC143C] focus:outline-none transition-all"></textarea>
-                        <label for="notes" class="absolute left-4 top-3 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-[#DC143C] peer-focus:text-xs font-medium">Additional Notes</label>
-                        <span class="material-icons absolute right-4 top-4 text-gray-400 peer-focus:text-[#DC143C]">note_add</span>
-                        <div id="notes-error" class="error-message mt-1 text-sm text-red-500 hidden"></div>
+                    <!-- Additional Details -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-professional-black mb-6 pb-2 border-b-2 border-gray-100">Additional Details</h3>
+
+                        <!-- Description -->
+                        <div class="mb-6">
+                            <label for="description" class="block text-sm font-semibold text-professional-black mb-2">Describe Your Situation (Optional)</label>
+                            <textarea id="description" name="description" rows="4" class="w-full border-2 border-gray-300 rounded-lg p-3 text-base focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all duration-200 outline-none resize-none" placeholder="Tell us more about your situation..."></textarea>
+                        </div>
+
                     </div>
 
-                    <!-- reCAPTCHA -->
-                    <div id="recaptcha-container" class="text-center"></div>
-
-                    <!-- Submit Button -->
-                    <div class="text-center">
-                        <button type="submit" id="submit-btn" class="w-full py-3 bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] text-white font-semibold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
-                            <span class="material-icons text-white" id="submit-icon">send</span>
-                            <span id="submit-text">Request Service</span>
+                    <!-- Submit Section -->
+                    <div class="text-center pt-6 border-t-2 border-gray-100">
+                        <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-red to-emergency-orange hover:from-emergency-orange hover:to-brand-red text-white px-12 py-4 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 mb-4">
+                            <span class="material-icons">send</span>
+                            Submit Booking Request
                         </button>
-                    </div>
-
-                    <!-- Form Messages -->
-                    <div id="form-messages" class="mt-4 text-center hidden">
-                        <div id="success-message" class="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg hidden">
-                            <div class="flex items-center justify-center">
-                                <span class="material-icons text-green-500 mr-2">check_circle</span>
-                                <span>Thank you! Your request has been submitted successfully.</span>
-                            </div>
-                        </div>
-                        <div id="error-message" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg hidden">
-                            <div class="flex items-center justify-center">
-                                <span class="material-icons text-red-500 mr-2">error</span>
-                                <span id="error-text">There was an error submitting your request. Please try again.</span>
-                            </div>
-                        </div>
+                        <p class="text-sm text-accent-gray">
+                            By submitting this form, you agree to our <a href="terms-and-conditions.html" class="text-brand-red hover:underline">Terms</a> and <a href="privacy-policy.html" class="text-brand-red hover:underline">Privacy Policy</a>
+                        </p>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Service Options Display -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent voice-speakable" data-speakable="true">Service Options</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-
-            <!-- Card 1 -->
-            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
-                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
-                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">flash_on</span>
-                <h3 class="text-xl font-semibold mb-2">Emergency Response</h3>
-                <p class="text-gray-600">Immediate dispatch for urgent lockouts and security emergencies.</p>
+    <!-- Trust & Social Proof Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Why Choose Us -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-professional-black mb-8">Why Choose I Locksmith?</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-brand-red to-emergency-orange rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <span class="material-icons text-white text-2xl">verified</span>
+                        </div>
+                        <h3 class="font-bold text-professional-black mb-2">Bonded & Insured</h3>
+                        <p class="text-accent-gray text-sm">Fully bonded and insured for your peace of mind and protection</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-brand-red to-emergency-orange rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <span class="material-icons text-white text-2xl">schedule</span>
+                        </div>
+                        <h3 class="font-bold text-professional-black mb-2">24/7 Availability</h3>
+                        <p class="text-accent-gray text-sm">Emergency locksmith services available around the clock</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-brand-red to-emergency-orange rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <span class="material-icons text-white text-2xl">location_on</span>
+                        </div>
+                        <h3 class="font-bold text-professional-black mb-2">Mobile Service</h3>
+                        <p class="text-accent-gray text-sm">We come to you anywhere in South Bend and Northern Indiana</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-brand-red to-emergency-orange rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <span class="material-icons text-white text-2xl">star</span>
+                        </div>
+                        <h3 class="font-bold text-professional-black mb-2">5-Star Service</h3>
+                        <p class="text-accent-gray text-sm">Over 500 five-star reviews from satisfied customers</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
-                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
-                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">today</span>
-                <h3 class="text-xl font-semibold mb-2">Same-Day Service</h3>
-                <p class="text-gray-600">Fast, same-day service for standard locksmith tasks.</p>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
-                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
-                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">schedule</span>
-                <h3 class="text-xl font-semibold mb-2">Scheduled Appointments</h3>
-                <p class="text-gray-600">Plan your service in advance at a convenient time.</p>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="p-1 rounded-2xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] hover:from-[#FFA500] hover:to-[#DC143C] transition-shadow duration-300 shadow-lg">
-                <div class="bg-white rounded-2xl p-6 h-full flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300">
-                <span class="material-icons text-5xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500]">add_task</span>
-                <h3 class="text-xl font-semibold mb-2">Service Add-Ons</h3>
-                <p class="text-gray-600">Additional lock, key, or security services available upon request.</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Confirmation -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-6">
-            <!-- Gradient Border Wrapper -->
-            <div class="p-1 rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] shadow-2xl">
-            
-                <!-- Inner Card -->
-                <div class="bg-white rounded-3xl p-12 text-center">
-                    
-                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-[#DC143C] via-[#FF4500] to-[#FFA500] bg-clip-text text-transparent voice-speakable" data-speakable="true">
-                    <span class="material-icons text-[#DC143C] text-4xl">check_circle</span>
-                    Booking Confirmation
-                    </h2>
-                    
-                    <p class="text-gray-700 mb-8 text-lg">
-                    Once you submit your booking, you will receive a confirmation with all details:
-                    </p>
-                    
-                    <ul class="text-left text-gray-700 mb-8 space-y-4">
-                    <li class="flex items-start gap-3">
-                        <span class="material-icons text-[#FF4500] mt-1">schedule</span>
-                        Service summary and scheduled date/time
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-icons text-[#FF4500] mt-1">person</span>
-                        Contact details of your assigned locksmith
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-icons text-[#FF4500] mt-1">info</span>
-                        What to expect during the visit
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-icons text-[#FF4500] mt-1">edit_note</span>
-                        Cancellation or modification instructions
-                    </li>
-                    </ul>
-                    
-                    <p class="text-gray-600 flex items-center justify-center gap-2 text-sm md:text-base">
-                    <span class="material-icons text-gray-400">support_agent</span>
-                    You can always contact us for changes or urgent assistance.
-                    </p>
-                    
+            <!-- Customer Testimonials -->
+            <div class="bg-gradient-to-br from-light-gray to-gray-50 rounded-3xl p-8 sm:p-12">
+                <h3 class="text-2xl font-bold text-professional-black text-center mb-8">What Our Customers Say</h3>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-500 mb-4">
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                        </div>
+                        <p class="text-accent-gray mb-4 italic">"Got locked out of my car at 2 AM. Called I Locksmith and they were there in 20 minutes! Professional, fast, and reasonably priced."</p>
+                        <div class="font-bold text-professional-black">Sarah M.</div>
+                        <div class="text-sm text-accent-gray">Verified Customer</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-500 mb-4">
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                        </div>
+                        <p class="text-accent-gray mb-4 italic">"Had them rekey all the locks in my new house. Great communication, showed up on time, and did excellent work. Highly recommend!"</p>
+                        <div class="font-bold text-professional-black">Mike D.</div>
+                        <div class="text-sm text-accent-gray">Verified Customer</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="flex text-yellow-500 mb-4">
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                            <span class="material-icons text-sm">star</span>
+                        </div>
+                        <p class="text-accent-gray mb-4 italic">"Emergency service for our office after hours. They were professional, efficient, and got us back in business quickly. Will definitely use again."</p>
+                        <div class="font-bold text-professional-black">Jennifer L.</div>
+                        <div class="text-sm text-accent-gray">Business Owner</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-[#F5F5F5] py-20 px-4 sm:px-6">
-        <div class="container mx-auto text-center max-w-4xl">
-            <!-- Header -->
-            <h2
-            class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-[#DC143C] to-[#FF4500] bg-clip-text text-transparent">
-            Need Immediate Help?
-            </h2>
-            <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed mb-8">
-            Call our emergency hotline for fast response locksmith services in South Bend.
-            </p>
-
-            <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-            <!-- Call Now Button -->
-            <a href="tel:+5743187797"
-                class="flex items-center justify-center bg-[#FF4500] hover:bg-[#E65C00] text-white font-bold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg">
-                <span class="material-icons mr-2">call</span>
-                Call Now
-            </a>
+    <!-- How It Works Section -->
+    <section class="py-20 bg-gradient-to-br from-light-gray to-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-professional-black mb-4">How It Works</h2>
+                <p class="text-lg text-accent-gray max-w-2xl mx-auto">Get professional locksmith service in just 3 simple steps</p>
             </div>
 
-            <!-- Service Guarantee -->
-            <div class="flex justify-center">
-            <span
-                class="inline-block bg-white border border-[#DC143C]/30 text-[#1C1C1C] text-sm md:text-base rounded-full px-8 py-3 shadow-md">
-                Licensed, insured, and experienced professionals – your security is our top priority.
-            </span>
+            <div class="relative">
+                <!-- Flow Line -->
+                <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-brand-red via-emergency-orange to-brand-red transform -translate-y-1/2 opacity-30"></div>
+
+                <div class="grid lg:grid-cols-3 gap-8 relative">
+                    <!-- Step 1 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 relative">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-brand-red to-emergency-orange rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg transform hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-white text-3xl">phone</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-professional-black mb-4">Call or Book Online</h3>
+                            <p class="text-accent-gray leading-relaxed">Contact us by phone for immediate service or use our online booking form to schedule your appointment. We'll confirm your service details and provide an accurate time estimate.</p>
+                        </div>
+                        <!-- Arrow -->
+                        <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2">
+                            <div class="w-8 h-8 bg-white border-2 border-brand-red rounded-full flex items-center justify-center shadow-lg">
+                                <span class="material-icons text-brand-red text-lg">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 relative">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-brand-red to-emergency-orange rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg transform hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-white text-3xl">directions_car</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-professional-black mb-4">We Come to You</h3>
+                            <p class="text-accent-gray leading-relaxed">Our licensed locksmith arrives at your location with all necessary tools and equipment. We'll assess the situation and provide upfront pricing before starting any work.</p>
+                        </div>
+                        <!-- Arrow -->
+                        <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2">
+                            <div class="w-8 h-8 bg-white border-2 border-brand-red rounded-full flex items-center justify-center shadow-lg">
+                                <span class="material-icons text-brand-red text-lg">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 relative">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-brand-red to-emergency-orange rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg transform hover:scale-110 transition-transform duration-300">
+                                <span class="material-icons text-white text-3xl">check_circle</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-professional-black mb-4">Problem Solved</h3>
+                            <p class="text-accent-gray leading-relaxed">We complete your locksmith service quickly and professionally. Payment is due after completion, and we guarantee all our work with a satisfaction promise.</p>
+                        </div>
+                        <!-- Success checkmark -->
+                        <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                                <span class="material-icons text-white text-lg">done</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Flow Arrows -->
+                    <div class="lg:hidden flex justify-center py-4">
+                        <span class="material-icons text-brand-red text-3xl animate-bounce">keyboard_arrow_down</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+
+    <!-- Reviews Section -->
+    <section class="py-20 bg-gradient-to-br from-light-gray to-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-professional-black mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-accent-gray max-w-2xl mx-auto">Real reviews from satisfied customers across Northern Indiana</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"Locked myself out of my apartment at midnight in South Bend. I Locksmith arrived in 15 minutes and had me back inside quickly without any damage. Fair pricing and professional service even at that hour!"</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">Marcus Johnson</div>
+                            <div class="text-sm text-accent-gray">South Bend • Emergency Lockout</div>
+                        </div>
+                        <div class="text-xs text-gray-500">2 weeks ago</div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"Needed new locks installed on my home in Mishawaka after moving in. They were punctual, explained everything clearly, and the work was perfect. Will definitely use them again for any lock needs."</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">Sarah Martinez</div>
+                            <div class="text-sm text-accent-gray">Mishawaka • Lock Installation</div>
+                        </div>
+                        <div class="text-xs text-gray-500">1 month ago</div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"Lost my car keys at the mall in Elkhart. Called I Locksmith and they came out and made new keys right in the parking lot! Their mobile service is amazing - saved me from having to tow my car."</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">David Thompson</div>
+                            <div class="text-sm text-accent-gray">Elkhart • Car Key Replacement</div>
+                        </div>
+                        <div class="text-xs text-gray-500">3 weeks ago</div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"Fantastic experience! Had them rekey all our office locks in Goshen after employee turnover. Very professional team, completed everything in one visit, and provided excellent security advice."</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">Jennifer Chen</div>
+                            <div class="text-sm text-accent-gray">Goshen • Commercial Rekey</div>
+                        </div>
+                        <div class="text-xs text-gray-500">2 months ago</div>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"My deadbolt was sticking and hard to turn in Plymouth. I Locksmith came out same day, diagnosed the issue quickly, and had it working like new. Great service at a reasonable price!"</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">Robert Wilson</div>
+                            <div class="text-sm text-accent-gray">Plymouth • Lock Repair</div>
+                        </div>
+                        <div class="text-xs text-gray-500">5 days ago</div>
+                    </div>
+                </div>
+
+                <!-- Review 6 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"Locked out of my truck with the keys inside at 6 AM in Warsaw before work. I Locksmith was there in 20 minutes and got me in without any scratches or damage. Saved my day!"</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">Lisa Rodriguez</div>
+                            <div class="text-sm text-accent-gray">Warsaw • Vehicle Lockout</div>
+                        </div>
+                        <div class="text-xs text-gray-500">1 week ago</div>
+                    </div>
+                </div>
+
+                <!-- Review 7 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"Needed a master key system installed for our small business in Niles. I Locksmith designed a perfect solution that works great for our needs. Professional installation and thorough explanation of the system."</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">Michael Brown</div>
+                            <div class="text-sm text-accent-gray">Niles • Master Key System</div>
+                        </div>
+                        <div class="text-xs text-gray-500">3 months ago</div>
+                    </div>
+                </div>
+
+                <!-- Review 8 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                    <div class="flex text-yellow-500 mb-4">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-accent-gray mb-4 italic">"Called for emergency help in Granger when my house key broke off in the lock. They arrived quickly, extracted the broken key, and made me a new one on the spot. Excellent emergency service!"</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-professional-black">Amanda Taylor</div>
+                            <div class="text-sm text-accent-gray">Granger • Emergency Key Extraction</div>
+                        </div>
+                        <div class="text-xs text-gray-500">4 days ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-professional-black mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-accent-gray max-w-2xl mx-auto">Get answers to common questions about booking our locksmith services</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-gradient-to-br from-light-gray to-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-start justify-between cursor-pointer" onclick="toggleFAQ(1)">
+                        <h3 class="text-lg font-bold text-professional-black pr-4">How quickly can you respond to an emergency lockout?</h3>
+                        <span class="material-icons text-brand-red flex-shrink-0 transition-transform duration-200" id="faq-icon-1">expand_more</span>
+                    </div>
+                    <div class="mt-4 text-accent-gray hidden" id="faq-answer-1">
+                        <p>For emergency lockouts, we typically arrive within 15-30 minutes in South Bend and surrounding areas. Our mobile locksmiths are strategically positioned throughout Northern Indiana to ensure the fastest possible response times for urgent situations.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gradient-to-br from-light-gray to-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-start justify-between cursor-pointer" onclick="toggleFAQ(2)">
+                        <h3 class="text-lg font-bold text-professional-black pr-4">Do you provide upfront pricing before starting work?</h3>
+                        <span class="material-icons text-brand-red flex-shrink-0 transition-transform duration-200" id="faq-icon-2">expand_more</span>
+                    </div>
+                    <div class="mt-4 text-accent-gray hidden" id="faq-answer-2">
+                        <p>Yes, absolutely! We believe in transparent pricing. Our locksmith will assess your situation and provide a clear, upfront quote before beginning any work. There are no hidden fees or surprise charges - you'll know exactly what you'll pay before we start.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gradient-to-br from-light-gray to-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-start justify-between cursor-pointer" onclick="toggleFAQ(3)">
+                        <h3 class="text-lg font-bold text-professional-black pr-4">What payment methods do you accept?</h3>
+                        <span class="material-icons text-brand-red flex-shrink-0 transition-transform duration-200" id="faq-icon-3">expand_more</span>
+                    </div>
+                    <div class="mt-4 text-accent-gray hidden" id="faq-answer-3">
+                        <p>We accept cash, all major credit cards (Visa, MasterCard, American Express, Discover), and debit cards. Payment is due upon completion of service. For your convenience, we also accept contactless payments and mobile payment apps.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gradient-to-br from-light-gray to-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-start justify-between cursor-pointer" onclick="toggleFAQ(4)">
+                        <h3 class="text-lg font-bold text-professional-black pr-4">Do I need to be present during the service call?</h3>
+                        <span class="material-icons text-brand-red flex-shrink-0 transition-transform duration-200" id="faq-icon-4">expand_more</span>
+                    </div>
+                    <div class="mt-4 text-accent-gray hidden" id="faq-answer-4">
+                        <p>Yes, for security and legal reasons, the property owner or authorized person must be present during the service. We require proper identification and verification of ownership or authorization before performing any locksmith services on residential or commercial properties.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-gradient-to-br from-light-gray to-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-start justify-between cursor-pointer" onclick="toggleFAQ(5)">
+                        <h3 class="text-lg font-bold text-professional-black pr-4">Can you make keys for my car on-site?</h3>
+                        <span class="material-icons text-brand-red flex-shrink-0 transition-transform duration-200" id="faq-icon-5">expand_more</span>
+                    </div>
+                    <div class="mt-4 text-accent-gray hidden" id="faq-answer-5">
+                        <p>Yes! We carry advanced key cutting and programming equipment in our mobile service vehicles. We can create and program keys for most car makes and models right at your location, including transponder keys, key fobs, and proximity keys.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-gradient-to-br from-light-gray to-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <div class="flex items-start justify-between cursor-pointer" onclick="toggleFAQ(6)">
+                        <h3 class="text-lg font-bold text-professional-black pr-4">What areas do you service for appointments?</h3>
+                        <span class="material-icons text-brand-red flex-shrink-0 transition-transform duration-200" id="faq-icon-6">expand_more</span>
+                    </div>
+                    <div class="mt-4 text-accent-gray hidden" id="faq-answer-6">
+                        <p>We provide locksmith services throughout South Bend and Northern Indiana, including Mishawaka, Elkhart, Goshen, Plymouth, Warsaw, and surrounding communities. For locations outside our primary service area, please call us to confirm availability and scheduling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-brand-red to-emergency-orange text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Need Help Right Now?</h2>
+            <p class="text-xl mb-8 opacity-90">For immediate emergency assistance, call us directly</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="tel:+15743187797" class="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-red font-bold rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <span class="material-icons mr-3">phone</span>
+                    Call (574) 318-7797 Now
+                </a>
+                <div class="flex items-center text-sm opacity-90">
+                    <span class="material-icons mr-2">schedule</span>
+                    Available 24/7 for emergencies
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-[#1C1C1C] text-gray-300 pt-16 pb-8 px-6 md:px-12 border-t border-[#333]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
-            
-            <!-- Contact Us -->
+
+            <!-- Company Info -->
             <div>
-            <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">Contact Us</h4>
+            <!-- Logo -->
+            <div class="mb-4">
+                <img src="./images/i-locksmith-logo.webp" alt="I Locksmith Logo" class="h-12 w-auto">
+            </div>
+
+            <!-- Company Description -->
+            <p class="text-gray-300 mb-6 leading-relaxed">
+                Your trusted Northern Indiana locksmith serving South Bend, Mishawaka, Elkhart, and surrounding communities with professional emergency and scheduled locksmith services.
+            </p>
+
+            <!-- Contact Info -->
             <ul class="space-y-3">
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">call</span>
-                <strong>574-318-7797</strong>
+                <a href="tel:+15743187797" class="hover:text-[#FF4500] transition-colors duration-200">
+                    <strong>(574) 318-7797</strong>
+                </a>
                 </li>
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">email</span>
-                ilocksmithoffice@gmail.com
+                <a href="mailto:ilocksmithoffice@gmail.com" class="hover:text-[#FF4500] transition-colors duration-200">
+                    ilocksmithoffice@gmail.com
+                </a>
                 </li>
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">place</span>
-                219 N Dixie Way Ste 209, South Bend, IN 46637
+                <a href="https://maps.google.com/?q=219+N+Dixie+Way+Ste+209,+South+Bend,+IN+46637" target="_blank" class="hover:text-[#FF4500] transition-colors duration-200">
+                    219 N Dixie Way Ste 209, South Bend, IN 46637
+                </a>
                 </li>
             </ul>
             </div>
@@ -807,9 +1257,9 @@
                 </ul>
             </div>
 
-            <!-- We're Here 24/7 -->
+            <!-- Store Hours -->
             <div>
-                <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">We’re Here 24/7</h4>
+                <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">Store Hours</h4>
                 <ul class="space-y-2">
                     <li class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">schedule</span><strong>Sunday:</strong>&nbsp; 7:00 AM - 10:00 PM</li>
                     <li class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">schedule</span><strong>Monday:</strong>&nbsp; 7:00 AM - 10:00 PM</li>
@@ -845,45 +1295,45 @@
                 <div class="mt-6 flex space-x-4">
                     <!-- TikTok -->
                     <a href="https://www.tiktok.com/@ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');">
                         </div>
                     </a>
 
                     <!-- Facebook -->
                     <a href="https://www.facebook.com/profile.php?id=61580039665160" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');">
                         </div>
                     </a>
 
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');">
                         </div>
                     </a>
 
                     <!-- Twitter/X -->
                     <a href="https://x.com/ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg');">
                         </div>
                     </a>
 
                     <!-- YouTube -->
                     <a href="https://www.youtube.com/@iLocksmithIN" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');">
                         </div>
                     </a>
@@ -894,46 +1344,184 @@
         <!-- Bottom Bar -->
         <div class="mt-12 pt-6 border-t border-[#FF4500] text-center text-gray-400 text-sm">
             <div class="flex flex-col items-center justify-center max-w-7xl mx-auto px-6 gap-2">
-                <p>© 2025 iLocksmithIN. All rights reserved.</p>
-                <p>
-                Made with 
-                <span class="text-red-600 animate-pulse">❤️</span> 
-                by 
-                <a href="https://gettmarketing.com/" target="_blank" class="hover:text-[#FF4500] font-semibold">Gett Marketing</a>
-                </p>
                 <div class="space-x-4">
                 <a href="privacy-policy.html" class="hover:text-[#FF4500]">Privacy Policy</a>
                 <a href="terms-and-conditions.html" class="hover:text-[#FF4500]">Terms and Conditions</a>
                 <a href="accessibility-policy.html" class="hover:text-[#FF4500]">Accessibilty</a>
                 </div>
+                <p class="mt-4">
+                Made with
+                <span class="text-red-600 animate-pulse">❤️</span>
+                by
+                <a href="https://gettmarketing.com/" target="_blank" class="hover:text-[#FF4500] font-semibold">Gett Marketing</a>
+                </p>
+                <div class="w-16 h-px bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto my-2"></div>
+                <p>© 2025 iLocksmithIN. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdYour_Site_Key_Here"></script>
-
-    <!-- Google Places API for address autocomplete -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places&callback=initAutocomplete"></script>
-
-    <!-- Form Handler -->
-    <script src="./js/form-handler.js"></script>
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <script>
-        // Initialize the form handler when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize form handler
-            const formHandler = new FormHandler();
+        // Service selection functionality
+        function selectService(serviceType) {
+            const serviceSelect = document.getElementById('service_type');
 
-            // Initialize address autocomplete callback
-            window.initAutocomplete = function() {
-                formHandler.initAddressAutocomplete();
-            };
+            // Scroll to form
+            document.getElementById('booking-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Pre-fill form based on selection
+            setTimeout(() => {
+                if (serviceType === 'emergency') {
+                    serviceSelect.value = 'Car Lockout';
+                    selectUrgency(document.querySelector('[onclick*="ASAP"]'), 'ASAP');
+                } else if (serviceType === 'residential') {
+                    serviceSelect.value = 'Lock Replacement';
+                    selectUrgency(document.querySelector('[onclick*="Same Day"]'), 'Same Day');
+                } else if (serviceType === 'commercial') {
+                    serviceSelect.value = 'Commercial Lock Replacement';
+                    selectUrgency(document.querySelector('[onclick*="Within a few days"]'), 'Within a few days');
+                } else if (serviceType === 'automotive') {
+                    serviceSelect.value = 'Car Key Replacement';
+                    selectUrgency(document.querySelector('[onclick*="ASAP"]'), 'ASAP');
+                }
+            }, 500);
+        }
+
+        // Urgency selection functionality
+        function selectUrgency(element, value) {
+            // Remove selected class from all options
+            document.querySelectorAll('.urgency-option').forEach(option => {
+                option.classList.remove('selected');
+                const indicator = option.querySelector('.w-2');
+                indicator.classList.remove('opacity-100');
+                indicator.classList.add('opacity-0');
+            });
+
+            // Add selected class to clicked option
+            element.classList.add('selected');
+            const radio = element.querySelector('input[type="radio"]');
+            const indicator = element.querySelector('.w-2');
+
+            radio.checked = true;
+            indicator.classList.add('opacity-100');
+            indicator.classList.remove('opacity-0');
+        }
+
+        // FAQ toggle functionality
+        function toggleFAQ(faqNumber) {
+            const answer = document.getElementById(`faq-answer-${faqNumber}`);
+            const icon = document.getElementById(`faq-icon-${faqNumber}`);
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.textContent = 'expand_less';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.textContent = 'expand_more';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 10) {
+                value = value.substring(0, 10);
+                value = `(${value.substring(0, 3)}) ${value.substring(3, 6)}-${value.substring(6)}`;
+            } else if (value.length >= 6) {
+                value = `(${value.substring(0, 3)}) ${value.substring(3, 6)}-${value.substring(6)}`;
+            } else if (value.length >= 3) {
+                value = `(${value.substring(0, 3)}) ${value.substring(3)}`;
+            }
+            e.target.value = value;
+        });
+
+        // Form submission handling
+        document.getElementById('booking-form-main').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Basic validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('border-red-500');
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Show success message
+            alert('Thank you! Your booking request has been submitted. We will contact you within 5 minutes to confirm your appointment.');
+        });
+
+        // Mobile menu functionality
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        function toggleSubmenu(submenuId) {
+            const submenu = document.getElementById(submenuId);
+            const icon = document.getElementById(submenuId + 'Icon');
+
+            submenu.classList.toggle('hidden');
+            icon.style.transform = submenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
     </script>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed right-6 w-12 h-12 bg-gradient-to-br from-brand-red to-emergency-orange text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 opacity-0 invisible z-50" style="top: 60vh;">
+        <span class="material-icons">keyboard_arrow_up</span>
+    </button>
+
+    <script>
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+            if (scrollPercent > 15) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,350 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-michael-d-south-bend",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Michael D."
+        },
+        "datePublished": "2024-12-01",
+        "reviewBody": "Emergency lockout at 3am in South Bend and they arrived within 20 minutes. Professional service that covers the entire Michiana area. Got me back inside quickly without any damage.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-patricia-r-mishawaka",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Patricia R."
+        },
+        "datePublished": "2024-11-18",
+        "reviewBody": "Had all my Mishawaka home locks rekeyed after moving. Their service area coverage is impressive - they serve the entire northern Indiana region with professional expertise.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-robert-k-granger",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Robert K."
+        },
+        "datePublished": "2024-10-25",
+        "reviewBody": "Needed replacement keys made for our Granger business. Amazing how they cover such a wide service area from Elkhart to Bremen. Fast service and perfectly cut keys.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-sarah-j-elkhart",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Sarah J."
+        },
+        "datePublished": "2024-09-12",
+        "reviewBody": "Excellent lock installation service at our new Elkhart home. Their technicians travel throughout the entire service area and provide consistent quality everywhere.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-david-m-goshen",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "David M."
+        },
+        "datePublished": "2024-08-19",
+        "reviewBody": "Called from Goshen for a house lockout emergency. They serve the entire northern Indiana corridor and arrived faster than I expected. Professional and reliable service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-jessica-t-osceola",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jessica T."
+        },
+        "datePublished": "2024-07-08",
+        "reviewBody": "Our Osceola office needed commercial lockout assistance. Impressed by their coverage area - they serve everywhere from South Bend to Elkhart and all points between.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-anthony-l-new-carlisle",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Anthony L."
+        },
+        "datePublished": "2024-06-15",
+        "reviewBody": "Lock repair service in New Carlisle was outstanding. Their service area spans the entire region and they maintain the same high quality standards everywhere they go.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-maria-s-north-liberty",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Maria S."
+        },
+        "datePublished": "2024-05-22",
+        "reviewBody": "Key programming service for our vehicle in North Liberty. Their comprehensive service area coverage means they reach even smaller communities with full professional service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-christopher-w-wakarusa",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Christopher W."
+        },
+        "datePublished": "2024-04-11",
+        "reviewBody": "Safe opening service in Wakarusa was expertly handled. They cover the entire northern Indiana region and bring the same expertise to every location in their service area.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-amanda-k-bremen",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Amanda K."
+        },
+        "datePublished": "2024-03-28",
+        "reviewBody": "Deadbolt installation at our Bremen home was perfect. Their service territory is extensive, covering all the communities throughout northern Indiana with consistent quality.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-stephen-p-regional",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Stephen P."
+        },
+        "datePublished": "2024-02-16",
+        "reviewBody": "Master key system installation for our properties across multiple cities. They serve the entire Michiana region - from South Bend to Elkhart and everywhere in between. Truly comprehensive coverage.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-caroline-b-statewide",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Caroline B."
+        },
+        "datePublished": "2024-01-09",
+        "reviewBody": "Complete security system upgrade for our business with locations in multiple cities. Their service area spans all of northern Indiana, providing unified security solutions across the entire region.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

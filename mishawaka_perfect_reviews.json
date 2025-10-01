@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana#review-david-r",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Mishawaka",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mishawaka",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "David R."
+        },
+        "datePublished": "2024-11-08",
+        "reviewBody": "Called for emergency lockout assistance and was impressed by how fast they responded. Professional team that handled everything smoothly. Great local service in Mishawaka.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana#review-patricia-h",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Mishawaka",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mishawaka",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Patricia H."
+        },
+        "datePublished": "2024-10-16",
+        "reviewBody": "Had my locks rekeyed for security reasons. The technician was knowledgeable, efficient, and explained the entire process. Great local service in Mishawaka.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana#review-miguel-r",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Mishawaka",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mishawaka",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Miguel R."
+        },
+        "datePublished": "2024-09-21",
+        "reviewBody": "Professional key replacement service with same-day availability. The new keys are high quality and work flawlessly. Great local service in Mishawaka.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana#review-jessica-v",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Mishawaka",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mishawaka",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jessica V."
+        },
+        "datePublished": "2024-08-14",
+        "reviewBody": "Had new locks installed and was impressed by the quality of work. Professional installation with attention to detail. Great local service in Mishawaka.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana#review-francois-d",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Mishawaka",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mishawaka",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "François D."
+        },
+        "datePublished": "2024-07-29",
+        "reviewBody": "Called for house lockout assistance and received prompt, professional service. Fair pricing and quick resolution. Great local service in Mishawaka.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana#review-aisha-j",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Mishawaka",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mishawaka",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Aisha J."
+        },
+        "datePublished": "2024-06-18",
+        "reviewBody": "Excellent business lockout service that minimized downtime. Professional technicians who understand commercial needs. Great local service in Mishawaka.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

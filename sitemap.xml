@@ -1,243 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Homepage -->
-    <url>
-        <loc>https://ilocksmithindiana.com/</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://ilocksmithindiana.com/images/i-locksmith-logo.webp</image:loc>
-            <image:title>I Locksmith South Bend - Professional Locksmith Services</image:title>
-            <image:caption>Licensed emergency locksmith services in South Bend, Indiana</image:caption>
-        </image:image>
-    </url>
+  <!-- Main Pages -->
+  <url>
+    <loc>https://ilocksmithindiana.com/</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-    <!-- Main Service Pages -->
-    <url>
-        <loc>https://ilocksmithindiana.com/services.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/about</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <!-- Service Category Pages -->
-    <url>
-        <loc>https://ilocksmithindiana.com/services/residential-locksmith.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/contact</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/commercial-locksmith.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/book</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/auto-locksmith.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/emergency-locksmith.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/reviews</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <!-- Individual Service Pages -->
-    <url>
-        <loc>https://ilocksmithindiana.com/services/car-lockout.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/faq</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/house-lockout.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/blog</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/business-lockout.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <!-- Service Category Pages -->
+  <url>
+    <loc>https://ilocksmithindiana.com/services/emergency-locksmith</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/lock-rekey.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/residential-locksmith</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/car-key-replacement.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/commercial-locksmith</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/key-fob-programming.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/auto-locksmith</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/lock-replacement.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <!-- Emergency Services -->
+  <url>
+    <loc>https://ilocksmithindiana.com/services/car-lockout</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/services/lock-repair.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/house-lockout</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <!-- Service Area Pages -->
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/business-lockout</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/storage-unit-lockout</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <!-- Residential Services -->
+  <url>
+    <loc>https://ilocksmithindiana.com/services/lock-replacement</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/lock-rekey</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/lock-repair</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/gate-locks</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <!-- Commercial Services -->
+  <url>
+    <loc>https://ilocksmithindiana.com/services/commercial-lock-replacement</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/commercial-lock-rekey</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/emergency-exit-devices</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/master-key-systems</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <!-- Information Pages -->
-    <url>
-        <loc>https://ilocksmithindiana.com/about.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/access-control</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/contact.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <!-- Automotive Services -->
+  <url>
+    <loc>https://ilocksmithindiana.com/services/car-key-replacement</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/faq.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/key-fob-programming</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    <!-- Blog Posts -->
-    <url>
-        <loc>https://ilocksmithindiana.com/blog-posts/emergency-locksmith-vs-diy.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/car-key-duplicate</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-    <!-- Legal Pages -->
-    <url>
-        <loc>https://ilocksmithindiana.com/privacy-policy.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/car-key-cutting</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/terms-and-conditions.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
+  <url>
+    <loc>https://ilocksmithindiana.com/services/ignition-lock-cylinder</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-    <url>
-        <loc>https://ilocksmithindiana.com/accessibility-policy.html</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
+  <!-- Service Areas -->
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-mishawaka-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-north-liberty-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/emergency-locksmith-vs-diy</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/smart-locks-vs-traditional-locks</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/10-signs-you-need-to-replace-your-home-locks</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/choose-commercial-grade-locks</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/modern-car-key-technology</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/ignition-problems-when-to-call-locksmith</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/master-key-systems-benefits-small-businesses</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/home-security-emergency-kit</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/blog-posts/emergency-key-plan-family</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://ilocksmithindiana.com/privacy-policy</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/terms-and-conditions</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ilocksmithindiana.com/accessibility-policy</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
 </urlset>

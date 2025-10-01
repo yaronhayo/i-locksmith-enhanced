@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-yuki-t",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Yuki T."
+        },
+        "datePublished": "2024-12-01",
+        "reviewBody": "Emergency locksmith service that actually delivers on their promise of fast response. Professional team that handled everything smoothly.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-amélie-l",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Amélie L."
+        },
+        "datePublished": "2024-11-18",
+        "reviewBody": "Professional residential locksmith service for our home security upgrade. Quality installation with expert advice on the best locks.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-giuseppe-r",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Giuseppe R."
+        },
+        "datePublished": "2024-10-25",
+        "reviewBody": "Excellent commercial locksmith service for our business. They installed a complete security system with access control and master keys.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-françois-d",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "François D."
+        },
+        "datePublished": "2024-09-12",
+        "reviewBody": "Outstanding automotive locksmith service. They programmed new car keys and fixed my ignition problem professionally and efficiently.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-brooke-h",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Brooke H."
+        },
+        "datePublished": "2024-08-19",
+        "reviewBody": "Professional security installation for our home and business. They provided comprehensive solutions with high-quality hardware and expert setup.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com#review-chloe-m",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Chloe M."
+        },
+        "datePublished": "2024-07-08",
+        "reviewBody": "Comprehensive key services for our entire family. They provided house keys, car keys, and business keys with professional programming and cutting.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

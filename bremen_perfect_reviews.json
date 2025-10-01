@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-richard-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Richard M."
+        },
+        "datePublished": "2024-10-06",
+        "reviewBody": "Called for emergency assistance and was impressed by how quickly they responded. Excellent service and fair pricing. Great local service in Bremen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-dorothy-g-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Dorothy G."
+        },
+        "datePublished": "2024-10-20",
+        "reviewBody": "Had my locks rekeyed for security purposes. The technician was skilled, efficient, and explained everything clearly. Great local service in Bremen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-isabella-c-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Isabella C."
+        },
+        "datePublished": "2024-05-23",
+        "reviewBody": "Fast and reliable key replacement. The technician was professional and the new keys work better than the originals. Great local service in Bremen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-kayla-d-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Kayla D."
+        },
+        "datePublished": "2024-12-04",
+        "reviewBody": "Quality lock installation with professional service throughout. The new locks work smoothly and look great. Great local service in Bremen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-am-lie-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Amélie L."
+        },
+        "datePublished": "2024-12-03",
+        "reviewBody": "Called for house lockout help and they arrived quickly. Professional service with no damage to my property. Great local service in Bremen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-omar-a-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Omar A."
+        },
+        "datePublished": "2024-04-20",
+        "reviewBody": "Reliable commercial lockout service with technicians who understand business urgency. Quick and professional. Great local service in Bremen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

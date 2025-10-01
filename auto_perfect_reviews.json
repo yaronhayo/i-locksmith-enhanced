@@ -1,0 +1,170 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/auto-locksmith#review-r-thompson",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Auto Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "R. Thompson"
+        },
+        "datePublished": "2024-11-25",
+        "reviewBody": "Locked my keys in the car and they came right away to help. Professional automotive service with no damage.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/auto-locksmith#review-svetlana-k",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Auto Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Svetlana K."
+        },
+        "datePublished": "2024-10-17",
+        "reviewBody": "Fast and reliable key replacement for my vehicle. The technician was professional and the new keys work better than the originals.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/auto-locksmith#review-dmitri-v",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Auto Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Dmitri V."
+        },
+        "datePublished": "2024-09-13",
+        "reviewBody": "Needed a new car key programmed and they handled it perfectly. Professional automotive service with quality results.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/auto-locksmith#review-lars-e",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Auto Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Lars E."
+        },
+        "datePublished": "2024-08-09",
+        "reviewBody": "Professional car key cutting service. They had the right equipment and created perfect working keys in minutes.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/auto-locksmith#review-fatima-h",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Auto Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Fatima H."
+        },
+        "datePublished": "2024-07-26",
+        "reviewBody": "My car had ignition problems and they diagnosed and repaired it expertly. Professional automotive locksmith service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/auto-locksmith#review-omar-a",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Auto Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Omar A."
+        },
+        "datePublished": "2024-06-18",
+        "reviewBody": "Excellent transponder key service for my vehicle. They programmed the key perfectly and tested it thoroughly.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

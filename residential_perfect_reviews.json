@@ -1,0 +1,170 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/residential-locksmith#review-trevor-f",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Residential Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Trevor F."
+        },
+        "datePublished": "2024-11-20",
+        "reviewBody": "Got locked out of my house and they responded quickly to get me back inside. Professional residential service with no damage to my door.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/residential-locksmith#review-caleb-w",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Residential Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Caleb W."
+        },
+        "datePublished": "2024-10-14",
+        "reviewBody": "Rekeyed multiple locks and provided excellent service throughout. The new keys work perfectly and the price was fair.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/residential-locksmith#review-zachary-g",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Residential Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Zachary G."
+        },
+        "datePublished": "2024-09-08",
+        "reviewBody": "Excellent door lock installation service. They recommended the right locks for my home and installed them perfectly.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/residential-locksmith#review-brooke-h",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Residential Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Brooke H."
+        },
+        "datePublished": "2024-08-25",
+        "reviewBody": "Professional home security consultation and upgrades. They enhanced our family's safety with quality locks and security features.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/residential-locksmith#review-s-williams",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Residential Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "S. Williams"
+        },
+        "datePublished": "2024-07-12",
+        "reviewBody": "Reliable residential key service for our family home. They provided multiple keys and tested all locks for smooth operation.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/residential-locksmith#review-kwame-b",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Residential Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Kwame B."
+        },
+        "datePublished": "2024-06-30",
+        "reviewBody": "Outstanding lock repair service for our old house. They restored the original hardware while ensuring modern security standards.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

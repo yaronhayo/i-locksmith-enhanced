@@ -10,11 +10,11 @@
     <!-- End Google Tag Manager -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>About I Locksmith | Licensed Mobile Locksmith Serving South Bend, IN</title>
-    <meta name="description" content="About I Locksmith - South Bend's trusted mobile locksmith service. Licensed, bonded, and insured locksmith professionals committed to reliable, professional locksmith solutions and customer service."/>
-    <meta name="keywords" content="about I Locksmith, South Bend locksmith company, licensed locksmith, mobile locksmith, professional locksmith services, trusted locksmith South Bend"/>
+    <title>About I Locksmith | Bonded Mobile Locksmith Serving South Bend, IN</title>
+    <meta name="description" content="About I Locksmith - South Bend's trusted mobile locksmith service. Bonded and insured locksmith professionals committed to reliable, professional locksmith solutions and customer service."/>
+    <meta name="keywords" content="about I Locksmith, South Bend locksmith company, bonded locksmith, mobile locksmith, professional locksmith services, trusted locksmith South Bend"/>
     <meta property="og:title" content="About I Locksmith | Professional Locksmith Services South Bend, IN"/>
-    <meta property="og:description" content="Learn about I Locksmith - South Bend's trusted mobile locksmith service. Licensed, bonded, and insured professionals providing reliable locksmith solutions."/>
+    <meta property="og:description" content="Learn about I Locksmith - South Bend's trusted mobile locksmith service. Bonded and insured professionals providing reliable locksmith solutions."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://ilocksmithindiana.com/about"/>
     <meta property="og:image" content="https://ilocksmithindiana.com/images/i-locksmith-logo.webp"/>
@@ -144,7 +144,7 @@
                         <div class="absolute left-0 top-full mt-2 w-[800px] bg-clean-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                             <div class="p-6 grid grid-cols-4 gap-6">
                                 
-                                <!-- Emergency Locksmith -->
+                                <!-- Emergency Services -->
                                 <div class="space-y-3">
                                     <div class="flex items-center space-x-2 pb-2 border-b border-gray-100">
                                         <div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center">
@@ -534,7 +534,7 @@
 
         <p class="text-lg text-gray-100 leading-relaxed">
             Learn more about <strong>I Locksmith</strong> — your reliable South Bend locksmith company. 
-                    As a licensed locksmith in South Bend, we provide fast, professional, and affordable 
+                    As a bonded locksmith in South Bend, we provide fast, professional, and reliable 
                     mobile locksmith service for homes, businesses, and vehicles across the community.
         </p>
     </div>
@@ -646,7 +646,7 @@
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">Coverage & Response Times</h3>
                         <p class="text-gray-600 leading-relaxed text-lg">
-                            We proudly serve South Bend and nearby areas with rapid response times—available 24/7 for emergencies.
+                            We proudly serve South Bend and nearby areas with prompt service—available 24/7 for emergencies.
                         </p>
                     </div>
                 </div>
@@ -680,15 +680,15 @@
 
                     <!-- Description -->
                     <p class="text-xl mb-8 text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                        As a <strong class="text-[#DC143C]">licensed locksmith in South Bend</strong>, we maintain full compliance with state requirements, backed by training, insurance, and professional memberships.
+                        As a <strong class="text-[#DC143C]">bonded locksmith in South Bend</strong>, we maintain full compliance with state requirements, backed by training, insurance, and professional memberships.
                     </p>
 
                     <!-- Credentials List -->
                     <div class="grid md:grid-cols-2 gap-6 mb-10 max-w-2xl mx-auto">
-                        <!-- Licensed by the State -->
+                        <!-- Bonded by the State -->
                         <div class="flex items-center space-x-3 bg-white/50 p-4 rounded-2xl border border-[#FF4500]">
                             <span class="material-icons text-[#DC143C] text-2xl">verified</span>
-                            <span class="text-gray-600">Licensed by the state of Indiana</span>
+                            <span class="text-gray-600">Bonded by the state of Indiana</span>
                         </div>
 
                         <!-- Fully Insured -->
@@ -834,17 +834,47 @@
                 Frequently Asked Questions
             </h2>
             <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
-            <span class="font-medium text-[#DC143C]">Find answers to common questions about our services.</span>
+            <span class="font-medium text-[#DC143C]">Find answers to common questions about I Locksmith and our company.</span>
             </p>
         </div>
 
         <div class="max-w-4xl mx-auto space-y-4" x-data="{ selected: null }">
-        
+
+            <!-- FAQ Item 1 -->
+            <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
+            <button @click="selected !== 1 ? selected = 1 : selected = null"
+                    class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
+                <span class="font-semibold text-lg md:text-xl text-gray-800">How long has I Locksmith been serving South Bend?</span>
+                <div class="flex-shrink-0 ml-4">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
+                    <span class="material-icons text-white text-sm expand-icon"
+                        :class="selected === 1 ? 'rotate-45' : ''">add</span>
+                </div>
+                </div>
+            </button>
+            <div x-show="selected === 1"
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 max-h-0"
+                x-transition:enter-end="opacity-100 max-h-96"
+                x-transition:leave="transition ease-in duration-200"
+                x-transition:leave-start="opacity-100 max-h-96"
+                x-transition:leave-end="opacity-0 max-h-0"
+                class="faq-content overflow-hidden" x-cloak>
+                <div class="px-6 pb-6 pt-0">
+                <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
+                    <p class="text-gray-700 text-base leading-relaxed">
+                    I Locksmith has been proudly serving South Bend and surrounding Indiana communities for years, building a reputation for reliable, professional locksmith services. Our experienced team has helped thousands of residents and businesses with their security needs throughout Northern Indiana.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+
             <!-- FAQ Item 2 -->
             <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
             <button @click="selected !== 2 ? selected = 2 : selected = null" 
                     class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
-                <span class="font-semibold text-lg md:text-xl text-gray-800">Can you help right now?</span>
+                <span class="font-semibold text-lg md:text-xl text-gray-800">Is I Locksmith bonded and insured?</span>
                 <div class="flex-shrink-0 ml-4">
                 <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
                     <span class="material-icons text-white text-sm expand-icon" 
@@ -863,7 +893,7 @@
                 <div class="px-6 pb-6 pt-0">
                 <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
                     <p class="text-gray-700 text-base leading-relaxed">
-                    Yes, we provide responsive emergency service throughout our service area.
+                    Yes, I Locksmith is fully bonded and insured to provide professional locksmith services in Indiana. We maintain all required state licenses and certifications, and carry comprehensive liability insurance to protect both our technicians and customers during all service calls.
                     </p>
                 </div>
                 </div>
@@ -874,7 +904,7 @@
             <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
             <button @click="selected !== 3 ? selected = 3 : selected = null" 
                     class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
-                <span class="font-semibold text-lg md:text-xl text-gray-800">Do you provide free estimates?</span>
+                <span class="font-semibold text-lg md:text-xl text-gray-800">What experience do your locksmiths have?</span>
                 <div class="flex-shrink-0 ml-4">
                 <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
                     <span class="material-icons text-white text-sm expand-icon" 
@@ -893,7 +923,7 @@
                 <div class="px-6 pb-6 pt-0">
                 <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
                     <p class="text-gray-700 text-base leading-relaxed">
-                    Yes, we provide free estimates for all our services. Contact us to get a quote.
+                    Our locksmith team has years of professional experience serving Northern Indiana communities. We've completed thousands of successful locksmith services including residential, commercial, and automotive projects. Our technicians undergo continuous training to stay current with the latest lock technologies, security systems, and automotive key programming techniques.
                     </p>
                 </div>
                 </div>
@@ -904,7 +934,7 @@
             <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
             <button @click="selected !== 4 ? selected = 4 : selected = null" 
                     class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
-                <span class="font-semibold text-lg md:text-xl text-gray-800">Do you offer warranties on your work?</span>
+                <span class="font-semibold text-lg md:text-xl text-gray-800">Why should I choose I Locksmith over other locksmiths?</span>
                 <div class="flex-shrink-0 ml-4">
                 <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
                     <span class="material-icons text-white text-sm expand-icon" 
@@ -923,7 +953,7 @@
                 <div class="px-6 pb-6 pt-0">
                 <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
                     <p class="text-gray-700 text-base leading-relaxed">
-                    Yes, we provide warranties on all our workmanship and installed products.
+                    I Locksmith combines professional expertise, reliable service, and local knowledge to deliver superior locksmith solutions. We're a trusted Indiana company with deep community roots, competitive rates, and a commitment to customer satisfaction. Our mobile service brings convenience directly to you, and we stand behind all our work with warranties and guarantees.
                     </p>
                 </div>
                 </div>
@@ -934,7 +964,7 @@
             <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
             <button @click="selected !== 5 ? selected = 5 : selected = null" 
                     class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
-                <span class="font-semibold text-lg md:text-xl text-gray-800">Do you work with smart home security systems?</span>
+                <span class="font-semibold text-lg md:text-xl text-gray-800">How did I Locksmith get started in South Bend?</span>
                 <div class="flex-shrink-0 ml-4">
                 <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
                     <span class="material-icons text-white text-sm expand-icon" 
@@ -953,7 +983,7 @@
                 <div class="px-6 pb-6 pt-0">
                 <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
                     <p class="text-gray-700 text-base leading-relaxed">
-                    Yes, we install and service various smart home security systems and smart locks.
+                    I Locksmith was founded with a mission to provide reliable, professional locksmith services to Northern Indiana families and businesses. We recognized the need for a trustworthy local locksmith who could respond quickly to emergencies while building lasting relationships in the community. Today, we're proud to be South Bend's preferred locksmith service.
                     </p>
                 </div>
                 </div>
@@ -991,250 +1021,471 @@
             <!-- Swiper Container -->
             <div class="swiper mySwiper px-2">
             <div class="swiper-wrapper">
-                <!-- Card 1 -->
-            <div class="swiper-slide flex justify-center">
-            <div
-                class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                <div
-                class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                <div>
-                    <div class="flex items-center mb-6">
-                    <div
-                        class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">PM</div>
-                    <div class="text-left">
-                        <p class="text-lg font-bold text-[#1C1C1C]">Thomas P.</p>
-                        <p class="text-sm text-[#666666] flex items-center mt-1">
-                        <span
-                            class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span>
-                        South Bend, IN
-                        </p>
-                    </div>
-                    </div>
-                    <div class="mb-6 relative">
-                    <div
-                        class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                    </div>
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                        <p
-                        class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
-                        Left my keys in the trunk while shopping. They came right
-                        away and helped me get back into my car safely.
-                        </p>
-                    </div>
+                <!-- Card 1 - Emergency Lockout -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">AB</div>
+                                    <div class="text-left">
+                                        <p class="text-lg font-bold text-[#1C1C1C]">Anthony B.</p>
+                                        <p class="text-sm text-[#666666] flex items-center mt-1">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span>
+                                            South Bend, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
+                                            Got locked out of my house at 2 AM in South Bend. Called I Locksmith and they arrived promptly! Professional emergency lockout service that saved my night. Highly recommend for any emergency situation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                                    <span class="material-icons text-[#FF4500] text-lg">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] font-semibold text-sm">Emergency Lockout</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex justify-between items-center">
-                    <div class="flex space-x-1">
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    </div>
-                    <div
-                    class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                    <span
-                        class="text-[#DC143C] font-semibold text-sm">Car Lockout</span>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-                    <!-- Card 2 -->
+                    <!-- Card 2 - Lock Rekey -->
                     <div class="swiper-slide flex justify-center">
                         <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
                             <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                            <div>
-                                <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">AJ</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg text-[#1C1C1C]">Robert K.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Mishawaka, IN
-                                    </p>
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">RK</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg text-[#1C1C1C]">Robert K.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Mishawaka, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="text-[#1C1C1C] italic">Just moved into a new home in Mishawaka and needed all my locks rekeyed for security. The locksmith changed all the lock cylinders efficiently and provided new keys. Great peace of mind knowing previous tenant keys won't work.</p>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Lock Rekey</span>
+                                    </div>
                                 </div>
-                                <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="text-[#1C1C1C] italic">Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service.
-                                        Had my car key replaced in Granger. Quick service and fair pricing. The new key works perfectly!
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                </div>
-                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold"> Car Lockout</span>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 3 -->
+                    <!-- Card 3 - Key Replacement -->
                     <div class="swiper-slide flex justify-center">
                         <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
                             <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                            <div>
-                                <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">RS</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Maria S.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Elkhart, IN
-                                    </p>
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">MS</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Monica S.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Elkhart, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic text-left">Lost my house keys at work in Elkhart and needed immediate key replacement. I Locksmith cut new keys perfectly and even tested them to ensure they worked smoothly. Fast, professional key replacement service.</p>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Key Replacement</span>
+                                    </div>
                                 </div>
-                                <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic text-left">Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                </div>
-                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 4 -->
+                    <!-- Card 4 - Lock Installation -->
                     <div class="swiper-slide flex justify-center">
                         <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
                             <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                            <div>
-                                <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">EM</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Amanda R.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Mishawaka, IN
-                                    </p>
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">AR</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Andrew R.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Granger, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Needed new high-security locks installed on my front door in Granger. I Locksmith recommended the perfect lock system and installed it professionally. The lock installation was done cleanly with no damage to my door.</p>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Lock Installation</span>
+                                    </div>
                                 </div>
-                                <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic">Locked my keys in the car at work. Their quick response saved my day. Very reliable service!</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                </div>
-                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 5 -->
+                    <!-- Card 5 - House Lockout -->
                     <div class="swiper-slide flex justify-center">
                         <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
                             <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                            <div>
-                                <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">DL</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Michael B.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Elkhart, IN
-                                    </p>
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">MB</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Michelle B.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Goshen, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Got locked out of my house in Goshen after the deadbolt jammed. I Locksmith responded quickly and performed a professional house lockout service without damaging my door. Excellent house lockout assistance when I needed it most.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                </div>
-                                <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic">Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!</p>
-                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">House Lockout</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
+                        </div>
+                    </div>
+                    <!-- Card 6 - Business Lockout -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">JM</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Janet M.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Osceola, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Locked out of my office building in Osceola early Monday morning. I Locksmith provided immediate business lockout service and got me back into my office quickly. Professional business lockout solution that kept my workday on track.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Business Lockout</span>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 6 -->
+                    <!-- Card 7 - Lock Repair -->
                     <div class="swiper-slide flex justify-center">
                         <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
                             <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                            <div>
-                                <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">SC</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Jennifer M.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> South Bend, IN
-                                    </p>
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">GT</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Gary T.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> New Carlisle, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">My front door lock was sticking and hard to turn in New Carlisle. I Locksmith diagnosed the problem and completed the lock repair perfectly. The lock repair service restored smooth operation and saved me from replacing the entire lock.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                </div>
-                                <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic">Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!</p>
-                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 - Key Programming -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">WH</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">William H.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Bremen, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Lost my car key with the transponder chip in Bremen and needed key programming service. They programmed a new electronic key for my Honda perfectly and it works flawlessly. Great alternative to the dealership option.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Key Programming</span>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 - Safe Opening -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">HP</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Helen P.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Wakarusa, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Forgot the combination to my home safe in Wakarusa and needed to access important documents. I Locksmith opened it professionally without any damage and even helped me reset the combination. Excellent safe opening expertise.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Safe Opening</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 - Deadbolt Installation -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">FC</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Frank C.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> North Liberty, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Wanted to upgrade my home security with new deadbolts in North Liberty. I Locksmith recommended high-security deadbolts and completed the deadbolt installation professionally. The new deadbolt installation has given me much better peace of mind.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Deadbolt Installation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 11 - Master Key System -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">OB</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Oscar B.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Elkhart, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Needed a master key system for my small business in Elkhart to manage multiple office access points. I Locksmith designed and installed a comprehensive master key system that gives me control while allowing employee access. Perfect master key system solution.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Master Key System</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 12 - Security System Installation -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                                <div>
+                                    <div class="flex items-center mb-6">
+                                        <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">LK</div>
+                                        <div class="text-left">
+                                            <p class="font-bold text-lg">Linda K.</p>
+                                            <p class="text-sm text-[#666] flex items-center">
+                                                <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Granger, IN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-6 relative">
+                                        <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                            <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                        </div>
+                                        <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                            <p class="italic">Wanted to upgrade my home security with a comprehensive system in Granger. I Locksmith provided full security system installation including smart locks and access control. The security system installation exceeded my expectations for both quality and functionality.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="flex space-x-1">
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                        <span class="material-icons text-[#FF4500]">star</span>
+                                    </div>
+                                    <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                        <span class="text-[#DC143C] text-sm font-semibold">Security System Installation</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1291,30 +1542,46 @@
             <div class="flex justify-center">
             <span
                 class="inline-block bg-white border border-[#DC143C]/30 text-[#1C1C1C] text-sm md:text-base rounded-full px-8 py-3 shadow-md">
-                Licensed, insured, and experienced professionals – your security is our top priority.
+                Bonded, insured, and experienced professionals – your security is our top priority.
             </span>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#1C1C1C] text-gray-300 pt-16 pb-8 px-6 md:px-12 border-t border-[#333]">
+        <footer class="bg-[#1C1C1C] text-gray-300 pt-16 pb-8 px-6 md:px-12 border-t border-[#333]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
-            
-            <!-- Contact Us -->
+
+            <!-- Company Info -->
             <div>
-            <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">Contact Us</h4>
+            <!-- Logo -->
+            <div class="mb-4">
+                <img src="./images/i-locksmith-logo.webp" alt="I Locksmith Logo" class="h-12 w-auto">
+            </div>
+
+            <!-- Company Description -->
+            <p class="text-gray-300 mb-6 leading-relaxed">
+                Your trusted Northern Indiana locksmith serving South Bend, Mishawaka, Elkhart, and surrounding communities with professional emergency and scheduled locksmith services.
+            </p>
+
+            <!-- Contact Info -->
             <ul class="space-y-3">
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">call</span>
-                <strong>574-318-7797</strong>
+                <a href="tel:+15743187797" class="hover:text-[#FF4500] transition-colors duration-200">
+                    <strong>(574) 318-7797</strong>
+                </a>
                 </li>
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">email</span>
-                ilocksmithoffice@gmail.com
+                <a href="mailto:ilocksmithoffice@gmail.com" class="hover:text-[#FF4500] transition-colors duration-200">
+                    ilocksmithoffice@gmail.com
+                </a>
                 </li>
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">place</span>
-                219 N Dixie Way Ste 209, South Bend, IN 46637
+                <a href="https://maps.google.com/?q=219+N+Dixie+Way+Ste+209,+South+Bend,+IN+46637" target="_blank" class="hover:text-[#FF4500] transition-colors duration-200">
+                    219 N Dixie Way Ste 209, South Bend, IN 46637
+                </a>
                 </li>
             </ul>
             </div>
@@ -1333,9 +1600,9 @@
                 </ul>
             </div>
 
-            <!-- We're Here 24/7 -->
+            <!-- Store Hours -->
             <div>
-                <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">We’re Here 24/7</h4>
+                <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">Store Hours</h4>
                 <ul class="space-y-2">
                     <li class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">schedule</span><strong>Sunday:</strong>&nbsp; 7:00 AM - 10:00 PM</li>
                     <li class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">schedule</span><strong>Monday:</strong>&nbsp; 7:00 AM - 10:00 PM</li>
@@ -1371,45 +1638,45 @@
                 <div class="mt-6 flex space-x-4">
                     <!-- TikTok -->
                     <a href="https://www.tiktok.com/@ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');">
                         </div>
                     </a>
 
                     <!-- Facebook -->
                     <a href="https://www.facebook.com/profile.php?id=61580039665160" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');">
                         </div>
                     </a>
 
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');">
                         </div>
                     </a>
 
                     <!-- Twitter/X -->
                     <a href="https://x.com/ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg');">
                         </div>
                     </a>
 
                     <!-- YouTube -->
                     <a href="https://www.youtube.com/@iLocksmithIN" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');">
                         </div>
                     </a>
@@ -1420,18 +1687,19 @@
         <!-- Bottom Bar -->
         <div class="mt-12 pt-6 border-t border-[#FF4500] text-center text-gray-400 text-sm">
             <div class="flex flex-col items-center justify-center max-w-7xl mx-auto px-6 gap-2">
-                <p>© 2025 iLocksmithIN. All rights reserved.</p>
-                <p>
-                Made with 
-                <span class="text-red-600 animate-pulse">❤️</span> 
-                by 
-                <a href="https://gettmarketing.com/" target="_blank" class="hover:text-[#FF4500] font-semibold">Gett Marketing</a>
-                </p>
                 <div class="space-x-4">
                 <a href="privacy-policy.html" class="hover:text-[#FF4500]">Privacy Policy</a>
                 <a href="terms-and-conditions.html" class="hover:text-[#FF4500]">Terms and Conditions</a>
                 <a href="accessibility-policy.html" class="hover:text-[#FF4500]">Accessibilty</a>
                 </div>
+                <p class="mt-4">
+                Made with
+                <span class="text-red-600 animate-pulse">❤️</span>
+                by
+                <a href="https://gettmarketing.com/" target="_blank" class="hover:text-[#FF4500] font-semibold">Gett Marketing</a>
+                </p>
+                <div class="w-16 h-px bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto my-2"></div>
+                <p>© 2025 iLocksmithIN. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1470,5 +1738,64 @@
             },
         });
     </script>
+
+    <!-- About I Locksmith FAQ Schema.org JSON-LD Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long has I Locksmith been serving South Bend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I Locksmith has been proudly serving South Bend and surrounding Indiana communities for years, building a reputation for reliable, professional locksmith services. Our experienced team has helped thousands of residents and businesses with their security needs throughout Northern Indiana."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are I Locksmith technicians bonded and insured?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, all I Locksmith technicians are fully bonded and insured. We maintain comprehensive liability insurance to protect our customers and their property. Our team undergoes continuous training on the latest locksmith techniques, security systems, and industry best practices."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas does I Locksmith serve?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I Locksmith serves South Bend and surrounding Northern Indiana communities including Mishawaka, Elkhart, Granger, Goshen, Osceola, New Carlisle, North Liberty, Wakarusa, and Bremen. We provide mobile locksmith services throughout these areas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does I Locksmith provide 24/7 emergency service?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, I Locksmith provides 24/7 emergency locksmith service throughout our service areas. We understand that lockouts and security emergencies don't wait for business hours, so our emergency technicians are always available to help when you need us most."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes I Locksmith different from other locksmiths?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I Locksmith combines professional expertise with local community focus. We offer transparent pricing with no hidden fees, comprehensive service warranties, and personalized attention to each customer's security needs. Our commitment to quality and customer satisfaction sets us apart."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does I Locksmith offer warranties on their work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, I Locksmith provides comprehensive warranties on our workmanship and installed products. Warranty periods vary by service type and manufacturer. We stand behind our work and will address any issues related to our installation or repair services at no additional charge during the warranty period."
+                }
+            }
+        ]
+    }
+    </script>
+
 </body>
 </html>

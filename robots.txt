@@ -69,14 +69,24 @@ Disallow: /*?*utm_*
 Disallow: /*?*session*
 Disallow: /*?*sid*
 
+# Block system and form result pages
+Disallow: /thank-you.html
+Disallow: /apply-optimizations.html
+Disallow: /api/
+Disallow: /.env*
+Disallow: /*.py
+
 # Important pages for indexing
 Allow: /index.html
 Allow: /services/
 Allow: /service-areas/
 Allow: /about.html
 Allow: /contact.html
+Allow: /book.html
 Allow: /faq.html
-Allow: /blog/
+Allow: /reviews.html
+Allow: /blog.html
+Allow: /blog-posts/
 Allow: /images/
 Allow: /sitemap.xml
 
@@ -86,5 +96,5 @@ Crawl-delay: 1
 # Sitemap location
 Sitemap: https://ilocksmithindiana.com/sitemap.xml
 
-# Host preference (optional)
-# Host: ilocksmithindiana.com
+# Host preference
+Host: ilocksmithindiana.com

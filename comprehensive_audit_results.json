@@ -1,0 +1,1344 @@
+{
+  "all_reviews": {
+    "service-areas/locksmith-osceola-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Osceola, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Key Programming"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Osceola, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Key Programming"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Osceola, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Key Programming"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Osceola, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Key Programming"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Osceola, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Key Programming"
+        }
+      ],
+      "all_service_tags": [
+        "Key Programming",
+        "Key Programming",
+        "Key Programming",
+        "Key Programming",
+        "Key Programming"
+      ]
+    },
+    "service-areas/locksmith-goshen-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Goshen, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Goshen, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Goshen, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Goshen, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Goshen, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "House Lockout"
+        }
+      ],
+      "all_service_tags": [
+        "House Lockout",
+        "House Lockout",
+        "House Lockout",
+        "House Lockout",
+        "House Lockout"
+      ]
+    },
+    "service-areas/locksmith-bremen-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Bremen, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Lock Repair"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Bremen, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Lock Repair"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Bremen, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Lock Repair"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Bremen, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Lock Repair"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Bremen, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Lock Repair"
+        }
+      ],
+      "all_service_tags": [
+        "Lock Repair",
+        "Lock Repair",
+        "Lock Repair",
+        "Lock Repair",
+        "Lock Repair"
+      ]
+    },
+    "service-areas/locksmith-elkhart-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Elkhart, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Elkhart, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Lock Installation"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Elkhart, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Elkhart, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Lock Repair"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Elkhart, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Key Programming"
+        },
+        {
+          "customer_name": "David W.",
+          "location": "Elkhart, IN",
+          "review_text": "My office building in Elkhart needed new master key system. Professional installation and training for all staff. Excellent commercial locksmith service!",
+          "service_tag": "Commercial"
+        },
+        {
+          "customer_name": "Lisa M.",
+          "location": "Elkhart, IN",
+          "review_text": "Needed new locks installed after buying our house in Elkhart. The locksmith was punctual, professional, and the locks work perfectly. Highly recommend!",
+          "service_tag": "Residential"
+        },
+        {
+          "customer_name": "Christopher J.",
+          "location": "Elkhart, IN",
+          "review_text": "My key fob stopped working completely in Elkhart. They programmed a new one on-site and showed me how to program spares myself. Great mobile service!",
+          "service_tag": "Automotive"
+        },
+        {
+          "customer_name": "Elizabeth B.",
+          "location": "Elkhart, IN",
+          "review_text": "Had all my locks rekeyed after a break-in attempt in Elkhart. They responded immediately and made me feel secure again. Professional and compassionate service!",
+          "service_tag": "Emergency"
+        },
+        {
+          "customer_name": "Steven T.",
+          "location": "Elkhart, IN",
+          "review_text": "My car ignition cylinder was completely stuck in Elkhart. They diagnosed the issue immediately and replaced it the same day. Back on the road quickly!",
+          "service_tag": "Automotive"
+        },
+        {
+          "customer_name": "Nancy K.",
+          "location": "Elkhart, IN",
+          "review_text": "Locked out of my house in Elkhart during winter. They arrived in freezing weather and got me inside quickly and safely. True professionals!",
+          "service_tag": "Emergency"
+        }
+      ],
+      "all_service_tags": [
+        "Key Replacement",
+        "Lock Installation",
+        "House Lockout",
+        "Lock Repair",
+        "Key Programming",
+        "Commercial",
+        "Residential",
+        "Automotive",
+        "Emergency",
+        "Automotive",
+        "Emergency"
+      ]
+    },
+    "service-areas/locksmith-granger-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Granger, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Granger, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Granger, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Granger, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Granger, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Key Replacement"
+        }
+      ],
+      "all_service_tags": [
+        "Key Replacement",
+        "Key Replacement",
+        "Key Replacement",
+        "Key Replacement",
+        "Key Replacement"
+      ]
+    },
+    "service-areas/locksmith-new-carlisle-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "New Carlisle, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Deadbolt Installation"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "New Carlisle, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Deadbolt Installation"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "New Carlisle, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Deadbolt Installation"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "New Carlisle, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Deadbolt Installation"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "New Carlisle, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Deadbolt Installation"
+        }
+      ],
+      "all_service_tags": [
+        "Deadbolt Installation",
+        "Deadbolt Installation",
+        "Deadbolt Installation",
+        "Deadbolt Installation",
+        "Deadbolt Installation"
+      ]
+    },
+    "service-areas/locksmith-wakarusa-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Wakarusa, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Emergency Lockout"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Wakarusa, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Emergency Lockout"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Wakarusa, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Emergency Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Wakarusa, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Emergency Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Wakarusa, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Emergency Lockout"
+        }
+      ],
+      "all_service_tags": [
+        "Emergency Lockout",
+        "Emergency Lockout",
+        "Emergency Lockout",
+        "Emergency Lockout",
+        "Emergency Lockout"
+      ]
+    },
+    "service-areas/locksmith-north-liberty-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "North Liberty, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Safe Opening"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "North Liberty, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Safe Opening"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "North Liberty, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Safe Opening"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "North Liberty, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Safe Opening"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "North Liberty, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Safe Opening"
+        }
+      ],
+      "all_service_tags": [
+        "Safe Opening",
+        "Safe Opening",
+        "Safe Opening",
+        "Safe Opening",
+        "Safe Opening"
+      ]
+    },
+    "service-areas/locksmith-south-bend-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "South Bend, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "South Bend, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Lock Installation"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "South Bend, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "South Bend, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Lock Repair"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "South Bend, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Key Programming"
+        }
+      ],
+      "all_service_tags": [
+        "Key Replacement",
+        "Lock Installation",
+        "House Lockout",
+        "Lock Repair",
+        "Key Programming"
+      ]
+    },
+    "service-areas/locksmith-mishawaka-indiana.html": {
+      "category": "service_area_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Mishawaka, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in South Bend. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Business Lockout"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Mishawaka, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Safe Opening"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Mishawaka, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Safe Opening"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Mishawaka, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Safe Opening"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Mishawaka, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Safe Opening"
+        }
+      ],
+      "all_service_tags": [
+        "Business Lockout",
+        "Safe Opening",
+        "Safe Opening",
+        "Safe Opening",
+        "Safe Opening"
+      ]
+    },
+    "services/residential-locksmith.html": {
+      "category": "service_category_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Osceola, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Mishawaka. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Lock Installation"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "South Bend, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Osceola, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Lock Repair"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "South Bend, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Lock Replacement"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "North Liberty, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Key Duplicate"
+        }
+      ],
+      "all_service_tags": [
+        "Lock Installation",
+        "House Lockout",
+        "Lock Repair",
+        "Lock Replacement",
+        "Key Duplicate"
+      ]
+    },
+    "services/auto-locksmith.html": {
+      "category": "service_category_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Mishawaka, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Granger. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Elkhart, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Key Programming"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Mishawaka, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Key Cutting"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Elkhart, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Ignition Repair"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "South Bend, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Transponder Keys"
+        }
+      ],
+      "all_service_tags": [
+        "Key Replacement",
+        "Key Programming",
+        "Key Cutting",
+        "Ignition Repair",
+        "Transponder Keys"
+      ]
+    },
+    "services/commercial-locksmith.html": {
+      "category": "service_category_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Bremen, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Wakarusa. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Office Lock Rekey"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "New Carlisle, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Master Key System"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Bremen, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Access Control System"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "New Carlisle, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Electronic Lock Installation"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Goshen, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Security System Installation"
+        }
+      ],
+      "all_service_tags": [
+        "Office Lock Rekey",
+        "Master Key System",
+        "Access Control System",
+        "Electronic Lock Installation",
+        "Security System Installation"
+      ]
+    },
+    "services/car-lockout.html": {
+      "category": "individual_service_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Wakarusa, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Professional response and great customer service. Had my car key replaced in South Bend. Professional service and fair pricing. The new key works perfectly!",
+          "service_tag": "Car Lockout"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Osceola, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived efficiently and were very professional.",
+          "service_tag": "Car Lockout"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Wakarusa, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Car Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Osceola, IN",
+          "review_text": "Professional and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Car Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "North Liberty, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived promptly and got me back in my car efficiently!",
+          "service_tag": "Car Lockout"
+        }
+      ],
+      "all_service_tags": [
+        "Car Lockout",
+        "Car Lockout",
+        "Car Lockout",
+        "Car Lockout",
+        "Car Lockout"
+      ]
+    },
+    "services/house-lockout.html": {
+      "category": "individual_service_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Bremen, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Professional response and great customer service. Had my car key replaced in North Liberty. Professional service and fair pricing. The new key works perfectly!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "New Carlisle, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived efficiently and were very professional.",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Bremen, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "New Carlisle, IN",
+          "review_text": "Professional and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Goshen, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived promptly and got me back in my car efficiently!",
+          "service_tag": "House Lockout"
+        }
+      ],
+      "all_service_tags": [
+        "House Lockout",
+        "House Lockout",
+        "House Lockout",
+        "House Lockout",
+        "House Lockout"
+      ]
+    },
+    "services/business-lockout.html": {
+      "category": "individual_service_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Mishawaka, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Granger. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Business Lockout"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Elkhart, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Business Lockout"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Mishawaka, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Business Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Elkhart, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Business Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "South Bend, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Business Lockout"
+        }
+      ],
+      "all_service_tags": [
+        "Business Lockout",
+        "Business Lockout",
+        "Business Lockout",
+        "Business Lockout",
+        "Business Lockout"
+      ]
+    },
+    "services/storage-unit-lockout.html": {
+      "category": "individual_service_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Elkhart, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Goshen. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Storage Unit Lockout"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Granger, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Storage Unit Lockout"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Elkhart, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Storage Unit Lockout"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Granger, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Storage Unit Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Mishawaka, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Storage Unit Lockout"
+        }
+      ],
+      "all_service_tags": [
+        "Storage Unit Lockout",
+        "Storage Unit Lockout",
+        "Storage Unit Lockout",
+        "Storage Unit Lockout",
+        "Storage Unit Lockout"
+      ]
+    },
+    "services/lock-rekey.html": {
+      "category": "individual_service_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Bremen, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in North Liberty. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Lock Rekey"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "New Carlisle, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Lock Rekey"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Bremen, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Lock Rekey"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "New Carlisle, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Lock Rekey"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Goshen, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Lock Rekey"
+        }
+      ],
+      "all_service_tags": [
+        "Lock Rekey",
+        "Lock Rekey",
+        "Lock Rekey",
+        "Lock Rekey",
+        "Lock Rekey"
+      ]
+    },
+    "services/lock-replacement.html": {
+      "category": "individual_service_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Elkhart, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Goshen. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Lock Replacement"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Granger, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Lock Replacement"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Elkhart, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Lock Replacement"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Granger, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Lock Replacement"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Mishawaka, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Lock Replacement"
+        }
+      ],
+      "all_service_tags": [
+        "Lock Replacement",
+        "Lock Replacement",
+        "Lock Replacement",
+        "Lock Replacement",
+        "Lock Replacement"
+      ]
+    },
+    "services/car-key-replacement.html": {
+      "category": "individual_service_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Mishawaka, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Granger. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Elkhart, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Mishawaka, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Elkhart, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "South Bend, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Key Replacement"
+        }
+      ],
+      "all_service_tags": [
+        "Key Replacement",
+        "Key Replacement",
+        "Key Replacement",
+        "Key Replacement",
+        "Key Replacement"
+      ]
+    },
+    "index.html": {
+      "category": "main_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Mishawaka, IN",
+          "review_text": "Our office needed new master key system after expansion. I Locksmith designed a perfect solution that gives management access while maintaining security. Professional installation and great follow-up service.",
+          "service_tag": "Commercial"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Elkhart, IN",
+          "review_text": "Called them for emergency lockout at 2 AM when I got locked out of my apartment. They arrived in 20 minutes and got me back inside quickly. Lifesaver!",
+          "service_tag": "Emergency"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Granger, IN",
+          "review_text": "Lost my car keys at the mall and needed new ones programmed. The mobile locksmith came right to me and had new transponder keys working in 30 minutes. Amazing service!",
+          "service_tag": "Automotive"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Goshen, IN",
+          "review_text": "Had all the locks rekeyed after buying our new house. The locksmith was thorough, explained everything, and made sure we had perfect working keys. Professional service at a great price.",
+          "service_tag": "Residential"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Bremen, IN",
+          "review_text": "My ignition started acting up and my key wouldn't turn. The locksmith diagnosed the issue quickly and fixed the ignition cylinder the same day. Car runs perfect now!",
+          "service_tag": "Automotive"
+        },
+        {
+          "customer_name": "David M.",
+          "location": "New Carlisle, IN",
+          "review_text": "Locked out of my business on a Sunday morning before opening. I Locksmith came out immediately and had me back inside in 10 minutes. Saved my entire day!",
+          "service_tag": "Emergency"
+        },
+        {
+          "customer_name": "Sarah L.",
+          "location": "North Liberty, IN",
+          "review_text": "My car key fob stopped working completely. The locksmith programmed a new one right in my driveway and showed me how to program additional keys myself. Great service!",
+          "service_tag": "Automotive"
+        },
+        {
+          "customer_name": "Carol W.",
+          "location": "Wakarusa, IN",
+          "review_text": "Our office building needed a complete security upgrade. I Locksmith installed new access control systems and trained all our staff. Professional from start to finish.",
+          "service_tag": "Commercial"
+        },
+        {
+          "customer_name": "James H.",
+          "location": "Osceola, IN",
+          "review_text": "Moved into a rental property and wanted fresh locks. They replaced all door locks with matching keys and deadbolts. Fast, clean work with no mess left behind.",
+          "service_tag": "Residential"
+        },
+        {
+          "customer_name": "Lisa T.",
+          "location": "South Bend, IN",
+          "review_text": "Had my car keys duplicated and they work perfectly! The locksmith explained the difference between basic and chip keys. Fair pricing and excellent quality work.",
+          "service_tag": "Automotive"
+        },
+        {
+          "customer_name": "Paul R.",
+          "location": "Mishawaka, IN",
+          "review_text": "Called at midnight when I broke my key in the door lock trying to get home. They arrived quickly and extracted the broken key without damaging the lock. Lifesaver!",
+          "service_tag": "Emergency"
+        }
+      ],
+      "all_service_tags": [
+        "Commercial",
+        "Emergency",
+        "Automotive",
+        "Residential",
+        "Automotive",
+        "Emergency",
+        "Automotive",
+        "Commercial",
+        "Residential",
+        "Automotive",
+        "Emergency"
+      ]
+    },
+    "about.html": {
+      "category": "main_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Mishawaka, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Granger. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Expert Installation"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "Elkhart, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Reliable Support"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Mishawaka, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Quick Response"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "Elkhart, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Damage-Free Service"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "South Bend, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Fast Response"
+        }
+      ],
+      "all_service_tags": [
+        "Expert Installation",
+        "Reliable Support",
+        "Quick Response",
+        "Damage-Free Service",
+        "Fast Response"
+      ]
+    },
+    "services.html": {
+      "category": "main_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Bremen, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in North Liberty. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Lock Installation"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "New Carlisle, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Bremen, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Lock Rekey"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "New Carlisle, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "Business Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Goshen, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Lock Installation"
+        }
+      ],
+      "all_service_tags": [
+        "Lock Installation",
+        "Key Replacement",
+        "Lock Rekey",
+        "Business Lockout",
+        "Lock Installation"
+      ]
+    },
+    "service-areas.html": {
+      "category": "main_pages",
+      "reviews": [
+        {
+          "customer_name": "Robert K.",
+          "location": "Osceola, IN",
+          "review_text": "Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service. Had my car key replaced in Mishawaka. Quick service and fair pricing. The new key works perfectly!",
+          "service_tag": "Lock Rekey"
+        },
+        {
+          "customer_name": "Maria S.",
+          "location": "South Bend, IN",
+          "review_text": "Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.",
+          "service_tag": "Key Replacement"
+        },
+        {
+          "customer_name": "Amanda R.",
+          "location": "Osceola, IN",
+          "review_text": "Locked my keys in the car at work. Their quick response saved my day. Very reliable service!",
+          "service_tag": "Lock Installation"
+        },
+        {
+          "customer_name": "Michael B.",
+          "location": "South Bend, IN",
+          "review_text": "Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!",
+          "service_tag": "House Lockout"
+        },
+        {
+          "customer_name": "Jennifer M.",
+          "location": "Wakarusa, IN",
+          "review_text": "Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!",
+          "service_tag": "Business Lockout"
+        }
+      ],
+      "all_service_tags": [
+        "Lock Rekey",
+        "Key Replacement",
+        "Lock Installation",
+        "House Lockout",
+        "Business Lockout"
+      ]
+    }
+  },
+  "duplicate_names": {
+    "Robert K.": [
+      "service-areas/locksmith-osceola-indiana.html",
+      "service-areas/locksmith-goshen-indiana.html",
+      "service-areas/locksmith-bremen-indiana.html",
+      "service-areas/locksmith-elkhart-indiana.html",
+      "service-areas/locksmith-granger-indiana.html",
+      "service-areas/locksmith-new-carlisle-indiana.html",
+      "service-areas/locksmith-wakarusa-indiana.html",
+      "service-areas/locksmith-north-liberty-indiana.html",
+      "service-areas/locksmith-south-bend-indiana.html",
+      "service-areas/locksmith-mishawaka-indiana.html",
+      "services/residential-locksmith.html",
+      "services/auto-locksmith.html",
+      "services/commercial-locksmith.html",
+      "services/car-lockout.html",
+      "services/house-lockout.html",
+      "services/business-lockout.html",
+      "services/storage-unit-lockout.html",
+      "services/lock-rekey.html",
+      "services/lock-replacement.html",
+      "services/car-key-replacement.html",
+      "index.html",
+      "about.html",
+      "services.html",
+      "service-areas.html"
+    ],
+    "Maria S.": [
+      "service-areas/locksmith-osceola-indiana.html",
+      "service-areas/locksmith-goshen-indiana.html",
+      "service-areas/locksmith-bremen-indiana.html",
+      "service-areas/locksmith-elkhart-indiana.html",
+      "service-areas/locksmith-granger-indiana.html",
+      "service-areas/locksmith-new-carlisle-indiana.html",
+      "service-areas/locksmith-wakarusa-indiana.html",
+      "service-areas/locksmith-north-liberty-indiana.html",
+      "service-areas/locksmith-south-bend-indiana.html",
+      "service-areas/locksmith-mishawaka-indiana.html",
+      "services/residential-locksmith.html",
+      "services/auto-locksmith.html",
+      "services/commercial-locksmith.html",
+      "services/car-lockout.html",
+      "services/house-lockout.html",
+      "services/business-lockout.html",
+      "services/storage-unit-lockout.html",
+      "services/lock-rekey.html",
+      "services/lock-replacement.html",
+      "services/car-key-replacement.html",
+      "index.html",
+      "about.html",
+      "services.html",
+      "service-areas.html"
+    ],
+    "Amanda R.": [
+      "service-areas/locksmith-osceola-indiana.html",
+      "service-areas/locksmith-goshen-indiana.html",
+      "service-areas/locksmith-bremen-indiana.html",
+      "service-areas/locksmith-elkhart-indiana.html",
+      "service-areas/locksmith-granger-indiana.html",
+      "service-areas/locksmith-new-carlisle-indiana.html",
+      "service-areas/locksmith-wakarusa-indiana.html",
+      "service-areas/locksmith-north-liberty-indiana.html",
+      "service-areas/locksmith-south-bend-indiana.html",
+      "service-areas/locksmith-mishawaka-indiana.html",
+      "services/residential-locksmith.html",
+      "services/auto-locksmith.html",
+      "services/commercial-locksmith.html",
+      "services/car-lockout.html",
+      "services/house-lockout.html",
+      "services/business-lockout.html",
+      "services/storage-unit-lockout.html",
+      "services/lock-rekey.html",
+      "services/lock-replacement.html",
+      "services/car-key-replacement.html",
+      "index.html",
+      "about.html",
+      "services.html",
+      "service-areas.html"
+    ],
+    "Michael B.": [
+      "service-areas/locksmith-osceola-indiana.html",
+      "service-areas/locksmith-goshen-indiana.html",
+      "service-areas/locksmith-bremen-indiana.html",
+      "service-areas/locksmith-elkhart-indiana.html",
+      "service-areas/locksmith-granger-indiana.html",
+      "service-areas/locksmith-new-carlisle-indiana.html",
+      "service-areas/locksmith-wakarusa-indiana.html",
+      "service-areas/locksmith-north-liberty-indiana.html",
+      "service-areas/locksmith-south-bend-indiana.html",
+      "service-areas/locksmith-mishawaka-indiana.html",
+      "services/residential-locksmith.html",
+      "services/auto-locksmith.html",
+      "services/commercial-locksmith.html",
+      "services/car-lockout.html",
+      "services/house-lockout.html",
+      "services/business-lockout.html",
+      "services/storage-unit-lockout.html",
+      "services/lock-rekey.html",
+      "services/lock-replacement.html",
+      "services/car-key-replacement.html",
+      "index.html",
+      "about.html",
+      "services.html",
+      "service-areas.html"
+    ],
+    "Jennifer M.": [
+      "service-areas/locksmith-osceola-indiana.html",
+      "service-areas/locksmith-goshen-indiana.html",
+      "service-areas/locksmith-bremen-indiana.html",
+      "service-areas/locksmith-elkhart-indiana.html",
+      "service-areas/locksmith-granger-indiana.html",
+      "service-areas/locksmith-new-carlisle-indiana.html",
+      "service-areas/locksmith-wakarusa-indiana.html",
+      "service-areas/locksmith-north-liberty-indiana.html",
+      "service-areas/locksmith-south-bend-indiana.html",
+      "service-areas/locksmith-mishawaka-indiana.html",
+      "services/residential-locksmith.html",
+      "services/auto-locksmith.html",
+      "services/commercial-locksmith.html",
+      "services/car-lockout.html",
+      "services/house-lockout.html",
+      "services/business-lockout.html",
+      "services/storage-unit-lockout.html",
+      "services/lock-rekey.html",
+      "services/lock-replacement.html",
+      "services/car-key-replacement.html",
+      "index.html",
+      "about.html",
+      "services.html",
+      "service-areas.html"
+    ]
+  },
+  "similar_reviews": 1265,
+  "tag_issues": [
+    {
+      "page": "service-areas/locksmith-osceola-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 1 unique service tags",
+      "tags": [
+        "Key Programming"
+      ]
+    },
+    {
+      "page": "service-areas/locksmith-goshen-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 1 unique service tags",
+      "tags": [
+        "House Lockout"
+      ]
+    },
+    {
+      "page": "service-areas/locksmith-bremen-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 1 unique service tags",
+      "tags": [
+        "Lock Repair"
+      ]
+    },
+    {
+      "page": "service-areas/locksmith-granger-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 1 unique service tags",
+      "tags": [
+        "Key Replacement"
+      ]
+    },
+    {
+      "page": "service-areas/locksmith-new-carlisle-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 1 unique service tags",
+      "tags": [
+        "Deadbolt Installation"
+      ]
+    },
+    {
+      "page": "service-areas/locksmith-wakarusa-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 1 unique service tags",
+      "tags": [
+        "Emergency Lockout"
+      ]
+    },
+    {
+      "page": "service-areas/locksmith-north-liberty-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 1 unique service tags",
+      "tags": [
+        "Safe Opening"
+      ]
+    },
+    {
+      "page": "service-areas/locksmith-mishawaka-indiana.html",
+      "category": "service_area_pages",
+      "issue": "Insufficient service diversity: only 2 unique service tags",
+      "tags": [
+        "Business Lockout",
+        "Safe Opening"
+      ]
+    },
+    {
+      "page": "services/residential-locksmith.html",
+      "category": "service_category_pages",
+      "issue": "Unexpected service tags for category",
+      "unexpected_tags": [
+        "Key Duplicate",
+        "Lock Installation"
+      ],
+      "all_tags": [
+        "Lock Replacement",
+        "Key Duplicate",
+        "Lock Repair",
+        "Lock Installation",
+        "House Lockout"
+      ]
+    },
+    {
+      "page": "services/auto-locksmith.html",
+      "category": "service_category_pages",
+      "issue": "Unexpected service tags for category",
+      "unexpected_tags": [
+        "Key Replacement",
+        "Transponder Keys"
+      ],
+      "all_tags": [
+        "Key Replacement",
+        "Transponder Keys",
+        "Key Cutting",
+        "Ignition Repair",
+        "Key Programming"
+      ]
+    },
+    {
+      "page": "services/commercial-locksmith.html",
+      "category": "service_category_pages",
+      "issue": "Unexpected service tags for category",
+      "unexpected_tags": [
+        "Security System Installation",
+        "Electronic Lock Installation"
+      ],
+      "all_tags": [
+        "Office Lock Rekey",
+        "Access Control System",
+        "Master Key System",
+        "Security System Installation",
+        "Electronic Lock Installation"
+      ]
+    }
+  ]
+}

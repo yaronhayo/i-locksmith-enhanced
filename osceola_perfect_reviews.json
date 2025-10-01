@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana#review-austin-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Osceola",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Osceola",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Austin M."
+        },
+        "datePublished": "2024-03-26",
+        "reviewBody": "Emergency locksmith service that actually delivers on their promise of fast response. Professional team that handled everything smoothly. Great local service in Osceola.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana#review-jordan-r-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Osceola",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Osceola",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jordan R."
+        },
+        "datePublished": "2024-02-26",
+        "reviewBody": "Had my locks rekeyed for security purposes. The technician was skilled, efficient, and explained everything clearly. Great local service in Osceola.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana#review-logan-t-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Osceola",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Osceola",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Logan T."
+        },
+        "datePublished": "2024-03-25",
+        "reviewBody": "Excellent key cutting service. They had the right blanks and created perfect working keys in minutes. Great local service in Osceola.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana#review-hunter-s-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Osceola",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Osceola",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Hunter S."
+        },
+        "datePublished": "2024-01-09",
+        "reviewBody": "Excellent lock installation service. They recommended the right locks for my needs and installed them perfectly. Great local service in Osceola.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana#review-r--thompson",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Osceola",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Osceola",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "R. Thompson"
+        },
+        "datePublished": "2024-11-06",
+        "reviewBody": "Professional house lockout service with fast response time. They handled everything efficiently and courteously. Great local service in Osceola.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-osceola-indiana#review-lars-e-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Osceola",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Osceola",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Lars E."
+        },
+        "datePublished": "2024-11-21",
+        "reviewBody": "Reliable commercial lockout service with technicians who understand business urgency. Quick and professional. Great local service in Osceola.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

@@ -155,7 +155,7 @@
                         <div class="absolute left-0 top-full mt-2 w-[800px] bg-clean-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                             <div class="p-6 grid grid-cols-4 gap-6">
                                 
-                                <!-- Emergency Locksmith -->
+                                <!-- Emergency Services -->
                                 <div class="space-y-3">
                                     <div class="flex items-center space-x-2 pb-2 border-b border-gray-100">
                                         <div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center">
@@ -530,7 +530,7 @@
             </h1>
 
             <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-xl sm:max-w-2xl mx-auto animate-fade-in delay-200 leading-relaxed">
-                Need a <strong>lock repair South Bend</strong> expert? We provide fast and reliable <strong>door lock repair</strong>, <strong>fix broken lock</strong> services, and <strong>lock maintenance</strong> to keep your home or business secure.
+                Need a <strong>lock repair expert</strong> in South Bend? We provide fast and reliable door lock repair services and maintenance to keep your home or business secure.
             </p>
 
             <!-- Buttons -->
@@ -548,7 +548,7 @@
             <!-- Feature Badges -->
             <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-6 animate-fade-in delay-600">
                 <span class="flex items-center gap-1 sm:gap-2 bg-black/40 backdrop-blur-md text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C] hover:bg-black/60 transition-all duration-300">
-                    <span class="material-icons text-[#DC143C] text-xs sm:text-base">verified</span> Licensed & Insured
+                    <span class="material-icons text-[#DC143C] text-xs sm:text-base">verified</span> Bonded & Insured
                 </span>
                 <span class="flex items-center gap-1 sm:gap-2 bg-black/40 backdrop-blur-md text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border border-[#DC143C] hover:bg-black/60 transition-all duration-300">
                     <span class="material-icons text-[#DC143C] text-xs sm:text-base">schedule</span> Available 24/7
@@ -590,7 +590,7 @@
                 <h3 class="text-xl font-semibold mb-2">Quick response time to your location</h3>
             </div>
 
-            <!-- Licensed Experts -->
+            <!-- Bonded Experts -->
             <div class="group bg-[#DC143C] p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 text-center text-white">
                 <div class="flex items-center justify-center w-14 h-14 bg-white/20 border-2 border-white rounded-full mb-4 mx-auto group-hover:scale-110 transition-transform">
                 <span class="material-icons text-white">build_circle</span>
@@ -646,7 +646,7 @@
                             <h3 class="text-xl sm:text-2xl font-semibold text-[#DC143C]">Trusted Professionals</h3>
                         </div>
                         <p class="text-gray-600">
-                            Licensed, bonded, and insured technicians with proven expertise and customer-first service.
+                            Bonded and insured technicians with proven expertise and customer-first service.
                         </p>
                     </div>
                 </div>
@@ -882,25 +882,25 @@
                 Frequently Asked Questions
             </h2>
             <p class="text-sm md:text-base text-[#666666] max-w-3xl mx-auto leading-relaxed">
-            <span class="font-medium text-[#DC143C]">Find answers to common questions about our services.</span>
+            <span class="font-medium text-[#DC143C]">Find answers to common questions about our lock repair services.</span>
             </p>
         </div>
 
         <div class="max-w-4xl mx-auto space-y-4" x-data="{ selected: null }">
         
-            <!-- FAQ Item 2 -->
+            <!-- FAQ Item 1: What types of lock problems can you repair? -->
             <div class="faq-item border border-[#DC143C]/40 rounded-xl shadow-md bg-white/90 backdrop-blur-sm overflow-hidden">
-            <button @click="selected !== 2 ? selected = 2 : selected = null" 
+            <button @click="selected !== 1 ? selected = 1 : selected = null"
                     class="flex justify-between items-center w-full p-6 text-left hover:bg-red-50 transition-colors">
-                <span class="font-semibold text-lg md:text-xl text-gray-800">Can you help right now?</span>
+                <span class="font-semibold text-lg md:text-xl text-gray-800">What types of lock problems can you repair?</span>
                 <div class="flex-shrink-0 ml-4">
                 <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#DC143C] to-[#FF4500] flex items-center justify-center">
-                    <span class="material-icons text-white text-sm expand-icon" 
-                        :class="selected === 2 ? 'rotate-45' : ''">add</span>
+                    <span class="material-icons text-white text-sm expand-icon"
+                        :class="selected === 1 ? 'rotate-45' : ''">add</span>
                 </div>
                 </div>
             </button>
-            <div x-show="selected === 2" 
+            <div x-show="selected === 1"
                 x-transition:enter="transition ease-out duration-300"
                 x-transition:enter-start="opacity-0 max-h-0"
                 x-transition:enter-end="opacity-100 max-h-96"
@@ -911,7 +911,7 @@
                 <div class="px-6 pb-6 pt-0">
                 <div class="bg-gradient-to-r from-red-50 to-orange-50 p-4 rounded-lg border-l-4 border-[#DC143C]">
                     <p class="text-gray-700 text-base leading-relaxed">
-                    Yes, we provide responsive emergency service throughout our service area.
+                    We repair a wide range of lock problems including sticky or jammed locks, broken keys in locks, worn-out lock cylinders, misaligned door latches, faulty deadbolts, and damaged lock mechanisms. Our technicians can fix residential, commercial, and automotive locks using professional tools and replacement parts when needed.
                     </p>
                 </div>
                 </div>
@@ -1040,252 +1040,472 @@
             <div class="swiper mySwiper px-2">
             <div class="swiper-wrapper">
                 <!-- Card 1 -->
-            <div class="swiper-slide flex justify-center">
-            <div
-                class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                <div
-                class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                <div>
-                    <div class="flex items-center mb-6">
-                    <div
-                        class="avatar w-14 h-14 rounded-full bg-[#DC143C] flex items-center justify-center mr-4 font-bold text-white text-lg shadow-lg">PM</div>
-                    <div class="text-left">
-                        <p class="text-lg font-bold text-[#1C1C1C]">Thomas P.</p>
-                        <p class="text-sm text-[#666666] flex items-center mt-1">
-                        <span
-                            class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span>
-                        Goshen, IN
-                        </p>
-                    </div>
-                    </div>
-                    <div class="mb-6 relative">
-                    <div
-                        class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                    </div>
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                        <p
-                        class="text-[#1C1C1C] leading-relaxed text-left text-base italic">
-                        Left my keys in the trunk while shopping. They came right
-                        away and helped me get back into my car safely.
-                        </p>
-                    </div>
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">DR</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">David R.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> South Bend, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">My front door lock was sticking and wouldn't turn properly. The locksmith diagnosed the issue quickly and repaired it on the spot. Now it works like new!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex justify-between items-center">
-                    <div class="flex space-x-1">
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    <span class="material-icons text-[#FF4500] text-lg">star</span>
-                    </div>
-                    <div
-                    class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                    <span
-                        class="text-[#DC143C] font-semibold text-sm">Car Lockout</span>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">LT</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Lisa T.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Mishawaka, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">The deadbolt on my back door wasn't latching correctly. Instead of replacing the whole lock, they repaired the mechanism and saved me money. Excellent lock repair service!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">KM</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Kevin M.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Elkhart, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">My office door handle was loose and the lock cylinder wasn't engaging properly. They fixed both issues during one service call. Professional lock repair at a professional service!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-                    <!-- Card 2 -->
-                    <div class="swiper-slide flex justify-center">
-                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
-                            <div>
-                                <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">AJ</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg text-[#1C1C1C]">Robert K.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Bremen, IN
-                                    </p>
-                                </div>
-                                </div>
-                                <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="text-[#1C1C1C] italic">Professional car lockout service when I accidentally left my keys inside. Fast response and great customer service.
-                                        Had my car key replaced in North Liberty. Quick service and fair pricing. The new key works perfectly!
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                </div>
-                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold"> Car Lockout</span>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Card 3 -->
-                    <div class="swiper-slide flex justify-center">
-                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                <!-- Card 4 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
                             <div>
                                 <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">RS</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Maria S.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> New Carlisle, IN
-                                    </p>
-                                </div>
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">SM</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Sarah M.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Granger, IN
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic text-left">Excellent service when I got locked out of my vehicle at night. They arrived quickly and were very professional.</p>
-                                </div>
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">My bedroom door lock started jamming and I couldn't lock it from the inside. They repaired the internal mechanism and tested it thoroughly. Great lock repair work!</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
                                 </div>
                                 <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 4 -->
-                    <div class="swiper-slide flex justify-center">
-                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                <!-- Card 5 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
                             <div>
                                 <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">EM</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Amanda R.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Bremen, IN
-                                    </p>
-                                </div>
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">JW</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">James W.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Bremen, IN
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic">Locked my keys in the car at work. Their quick response saved my day. Very reliable service!</p>
-                                </div>
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">The lock on my garage door was sticking and hard to turn. They lubricated and adjusted the mechanism, and now it operates smoothly. Excellent repair service!</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
                                 </div>
                                 <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 5 -->
-                    <div class="swiper-slide flex justify-center">
-                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                <!-- Card 6 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
                             <div>
                                 <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">DL</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Michael B.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> New Carlisle, IN
-                                    </p>
-                                </div>
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">AN</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Angela N.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> New Carlisle, IN
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic">Fast and efficient car lockout service. They got me back in my car without any damage. Highly recommend!</p>
-                                </div>
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">My patio door lock was completely seized and wouldn't budge. They disassembled it, cleaned all components, and rebuilt it perfectly. Outstanding lock repair expertise!</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
                                 </div>
                                 <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 6 -->
-                    <div class="swiper-slide flex justify-center">
-                        <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
-                            <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                <!-- Card 7 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
                             <div>
                                 <div class="flex items-center mb-6">
-                                <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">SC</div>
-                                <div class="text-left">
-                                    <p class="font-bold text-lg">Jennifer M.</p>
-                                    <p class="text-sm text-[#666] flex items-center">
-                                    <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Goshen, IN
-                                    </p>
-                                </div>
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">MB</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Michael B.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Goshen, IN
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="mb-6 relative">
-                                <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
-                                    <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
-                                </div>
-                                <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
-                                    <p class="italic">Got locked out of my car at the mall. They arrived within 15 minutes and got me back in my car quickly!</p>
-                                </div>
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">The lock on my basement door was making grinding noises and getting harder to turn. They diagnosed worn springs and replaced them quickly. Perfect lock repair solution!</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex space-x-1">
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
-                                <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
                                 </div>
                                 <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
-                                <span class="text-[#DC143C] text-sm font-semibold">Car Lockout</span>
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">CT</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Christine T.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Wakarusa, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">My storm door lock broke during winter weather. They came out the same day and repaired the latch mechanism. Now it locks securely again. Reliable service!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">RP</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Robert P.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> North Liberty, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">The knob on my front door was wobbling and the lock wasn't engaging properly. They tightened everything and repaired the internal components. Works perfectly now!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">JH</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Jennifer H.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Osceola, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">My bathroom door lock wouldn't unlock from the inside, trapping me in the room. They quickly repaired the thumb turn mechanism. Professional and efficient lock repair!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">TK</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Thomas K.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Elkhart, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">The lock cylinder in my entry door was turning but not engaging the bolt. They repaired the cam connection and lubricated everything. Excellent diagnostic and repair work!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="p-[3px] rounded-3xl bg-gradient-to-r from-[#DC143C] to-[#FF4500] w-80 md:w-96 flex">
+                        <div class="review-card bg-[#F5F5F5] p-8 rounded-3xl shadow-xl w-full flex flex-col justify-between h-[28rem]">
+                            <div>
+                                <div class="flex items-center mb-6">
+                                    <div class="avatar w-14 h-14 bg-[#DC143C] text-white flex items-center justify-center mr-4 font-bold rounded-full">DS</div>
+                                    <div class="text-left">
+                                        <p class="font-bold text-lg">Diane S.</p>
+                                        <p class="text-sm text-[#666] flex items-center">
+                                            <span class="material-icons text-sm mr-2 text-[#DC143C]">location_on</span> Mishawaka, IN
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mb-6 relative">
+                                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-[#DC143C]/20 to-[#FF4500]/20 rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-2xl text-[#DC143C]">format_quote</span>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl border border-[#DC143C]/30">
+                                        <p class="italic">My sliding door lock wasn't catching and the door kept sliding open. They adjusted the strike plate and repaired the locking mechanism. Now it stays securely locked!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex space-x-1">
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                    <span class="material-icons text-[#FF4500]">star</span>
+                                </div>
+                                <div class="service-tag bg-[#DC143C]/20 px-4 py-2 rounded-full">
+                                    <span class="text-[#DC143C] text-sm font-semibold">Lock Repair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             </div>
 
@@ -1336,24 +1556,40 @@
         </div>
     </section>
     
-    <footer class="bg-[#1C1C1C] text-gray-300 pt-16 pb-8 px-6 md:px-12 border-t border-[#333]">
+        <footer class="bg-[#1C1C1C] text-gray-300 pt-16 pb-8 px-6 md:px-12 border-t border-[#333]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
-            
-            <!-- Contact Us -->
+
+            <!-- Company Info -->
             <div>
-            <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">Contact Us</h4>
+            <!-- Logo -->
+            <div class="mb-4">
+                <img src="./images/i-locksmith-logo.webp" alt="I Locksmith Logo" class="h-12 w-auto">
+            </div>
+
+            <!-- Company Description -->
+            <p class="text-gray-300 mb-6 leading-relaxed">
+                Your trusted Northern Indiana locksmith serving South Bend, Mishawaka, Elkhart, and surrounding communities with professional emergency and scheduled locksmith services.
+            </p>
+
+            <!-- Contact Info -->
             <ul class="space-y-3">
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">call</span>
-                <strong>574-318-7797</strong>
+                <a href="tel:+15743187797" class="hover:text-[#FF4500] transition-colors duration-200">
+                    <strong>(574) 318-7797</strong>
+                </a>
                 </li>
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">email</span>
-                ilocksmithoffice@gmail.com
+                <a href="mailto:ilocksmithoffice@gmail.com" class="hover:text-[#FF4500] transition-colors duration-200">
+                    ilocksmithoffice@gmail.com
+                </a>
                 </li>
                 <li class="flex items-center">
                 <span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-xl mr-2">place</span>
-                219 N Dixie Way Ste 209, South Bend, IN 46637
+                <a href="https://maps.google.com/?q=219+N+Dixie+Way+Ste+209,+South+Bend,+IN+46637" target="_blank" class="hover:text-[#FF4500] transition-colors duration-200">
+                    219 N Dixie Way Ste 209, South Bend, IN 46637
+                </a>
                 </li>
             </ul>
             </div>
@@ -1362,19 +1598,19 @@
             <div>
             <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">Quick Links</h4>
             <ul class="space-y-3">
-                <li><a href="../services.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">build</span> Services</a></li>
-                <li><a href="../service-areas.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">build</span> Service Areas</a></li>
-                <li><a href="../faq.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">help</span> FAQ</a></li>
-                <li><a href="../reviews.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">star</span> Reviews</a></li>
-                <li><a href="../about.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">info</span> About Us</a></li>
-                <li><a href="../blog.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">article</span> Blog</a></li>
-                <li><a href="../contact.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">call</span> Contact</a></li>
+                <li><a href="services.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">build</span> Services</a></li>
+                <li><a href="service-areas.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">build</span> Service Areas</a></li>
+                <li><a href="faq.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">help</span> FAQ</a></li>
+                <li><a href="reviews.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">star</span> Reviews</a></li>
+                <li><a href="about.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">info</span> About Us</a></li>
+                <li><a href="blog.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">article</span> Blog</a></li>
+                <li><a href="contact.html" class="flex items-center hover:text-[#FF4500] transition"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">call</span> Contact</a></li>
                 </ul>
             </div>
 
-            <!-- We're Here 24/7 -->
+            <!-- Store Hours -->
             <div>
-                <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">We’re Here 24/7</h4>
+                <h4 class="text-white font-semibold text-base mb-4 border-b-2 border-[#DC143C] inline-block pb-1">Store Hours</h4>
                 <ul class="space-y-2">
                     <li class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">schedule</span><strong>Sunday:</strong>&nbsp; 7:00 AM - 10:00 PM</li>
                     <li class="flex items-center"><span class="material-icons text-transparent bg-clip-text bg-gradient-to-r from-[#DC143C] to-[#FF4500] text-lg mr-2">schedule</span><strong>Monday:</strong>&nbsp; 7:00 AM - 10:00 PM</li>
@@ -1410,45 +1646,45 @@
                 <div class="mt-6 flex space-x-4">
                     <!-- TikTok -->
                     <a href="https://www.tiktok.com/@ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');">
                         </div>
                     </a>
 
                     <!-- Facebook -->
                     <a href="https://www.facebook.com/profile.php?id=61580039665160" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');">
                         </div>
                     </a>
 
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');">
                         </div>
                     </a>
 
                     <!-- Twitter/X -->
                     <a href="https://x.com/ilocksmithin" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg');">
                         </div>
                     </a>
 
                     <!-- YouTube -->
                     <a href="https://www.youtube.com/@iLocksmithIN" target="_blank" class="hover:scale-110 transition">
-                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500] 
+                        <div class="w-6 h-6 bg-gradient-to-r from-[#DC143C] to-[#FF4500]
                                     mask mask-center mask-no-repeat mask-contain"
-                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg'); 
+                            style="mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
                                     -webkit-mask-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');">
                         </div>
                     </a>
@@ -1459,18 +1695,19 @@
         <!-- Bottom Bar -->
         <div class="mt-12 pt-6 border-t border-[#FF4500] text-center text-gray-400 text-sm">
             <div class="flex flex-col items-center justify-center max-w-7xl mx-auto px-6 gap-2">
-                <p>© 2025 iLocksmithIN. All rights reserved.</p>
-                <p>
-                Made with 
-                <span class="text-red-600 animate-pulse">❤️</span> 
-                by 
+                <div class="space-x-4">
+                <a href="privacy-policy.html" class="hover:text-[#FF4500]">Privacy Policy</a>
+                <a href="terms-and-conditions.html" class="hover:text-[#FF4500]">Terms and Conditions</a>
+                <a href="accessibility-policy.html" class="hover:text-[#FF4500]">Accessibilty</a>
+                </div>
+                <p class="mt-4">
+                Made with
+                <span class="text-red-600 animate-pulse">❤️</span>
+                by
                 <a href="https://gettmarketing.com/" target="_blank" class="hover:text-[#FF4500] font-semibold">Gett Marketing</a>
                 </p>
-                <div class="space-x-4">
-                <a href="../privacy-policy.html" class="hover:text-[#FF4500]">Privacy Policy</a>
-                <a href="../terms-and-conditions.html" class="hover:text-[#FF4500]">Terms and Conditions</a>
-                <a href="../accessibility-policy.html" class="hover:text-[#FF4500]">Accessibilty</a>
-                </div>
+                <div class="w-16 h-px bg-gradient-to-r from-[#DC143C] to-[#FF4500] mx-auto my-2"></div>
+                <p>© 2025 iLocksmithIN. All rights reserved.</p>
             </div>
         </div>
     </footer>

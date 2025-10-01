@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana#review-michael-j",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - South Bend",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Michael J."
+        },
+        "datePublished": "2024-11-15",
+        "reviewBody": "Got locked out during an emergency and these professionals arrived within minutes. Quick, efficient service with fair pricing. Great local service in South Bend.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana#review-linda-s",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - South Bend",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Linda S."
+        },
+        "datePublished": "2024-10-22",
+        "reviewBody": "Needed all my locks rekeyed after moving into a new home. Professional service with attention to detail and fair pricing. Great local service in South Bend.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana#review-carlos-m",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - South Bend",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Carlos M."
+        },
+        "datePublished": "2024-12-03",
+        "reviewBody": "Lost my keys and needed quick replacement service. They created new keys on-site and everything works perfectly. Great local service in South Bend.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana#review-ashley-n",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - South Bend",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ashley N."
+        },
+        "datePublished": "2024-09-18",
+        "reviewBody": "Professional lock installation service that enhanced my home security. Quality hardware and expert installation. Great local service in South Bend.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana#review-giovanni-b",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - South Bend",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Giovanni B."
+        },
+        "datePublished": "2024-08-27",
+        "reviewBody": "Locked out of my house and they responded quickly to get me back inside. Professional service with no damage to my door. Great local service in South Bend.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-south-bend-indiana#review-priya-p",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - South Bend",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "South Bend",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Priya P."
+        },
+        "datePublished": "2024-07-14",
+        "reviewBody": "Locked out of my business and needed immediate access. Professional commercial service with quick response time. Great local service in South Bend.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

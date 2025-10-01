@@ -1,0 +1,350 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-charles-b-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Charles B."
+        },
+        "datePublished": "2024-02-22",
+        "reviewBody": "Got locked out of my house at midnight and called their emergency line. Technician arrived in 20 minutes and had me back inside quickly without any damage. Outstanding emergency lockout service right here in New Carlisle!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-nancy-f-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Nancy F."
+        },
+        "datePublished": "2024-07-20",
+        "reviewBody": "Had all my home locks rekeyed after moving to New Carlisle. Professional service with thorough testing of each lock. All keys work perfectly and I feel much more secure in my new home.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-sofia-v-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Sofia V."
+        },
+        "datePublished": "2024-12-16",
+        "reviewBody": "Needed several replacement keys cut and was amazed by the precision. Each key works perfectly in all my locks. Fast service and reasonable pricing for New Carlisle residents.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-megan-p-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Megan P."
+        },
+        "datePublished": "2024-11-09",
+        "reviewBody": "Excellent lock installation service for our new front door. The technician explained everything clearly and the lock feels very secure. Great workmanship in New Carlisle.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-ingrid-n-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ingrid N."
+        },
+        "datePublished": "2024-12-16",
+        "reviewBody": "Locked myself out of my house while taking groceries inside. Called and they had someone here within 30 minutes. No damage to my door and very reasonable rates for New Carlisle area.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-fatima-h-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Fatima H."
+        },
+        "datePublished": "2024-03-16",
+        "reviewBody": "Our New Carlisle office door malfunctioned and we couldn't access important files. They understood the urgency and had us back in business within an hour. Excellent commercial lockout service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-derek-j-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Derek J."
+        },
+        "datePublished": "2024-09-05",
+        "reviewBody": "My front door lock was sticking and hard to turn. The technician diagnosed and repaired it quickly without needing replacement. Saved me money and works like new. Great lock repair service in New Carlisle.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-olivia-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Olivia M."
+        },
+        "datePublished": "2024-08-12",
+        "reviewBody": "Needed my car key fob reprogrammed after battery replacement. The technician was knowledgeable and had it working perfectly in minutes. Excellent key programming service for New Carlisle residents.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-benjamin-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Benjamin L."
+        },
+        "datePublished": "2024-06-30",
+        "reviewBody": "Called when I couldn't remember the combination to my home safe. The technician opened it professionally without any damage and reset the combination. Outstanding safe opening service in New Carlisle.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-sarah-k-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Sarah K."
+        },
+        "datePublished": "2024-10-18",
+        "reviewBody": "Had a new deadbolt installed on my back door for extra security. The installation was clean and professional, and the lock operates smoothly. Very satisfied with the deadbolt installation service in New Carlisle.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-carlos-r-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Carlos R."
+        },
+        "datePublished": "2024-05-25",
+        "reviewBody": "Set up a master key system for our New Carlisle rental properties. Now we can access all units with one key while tenants have individual keys. Perfect solution and expert installation.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-new-carlisle-indiana#review-amanda-w-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - New Carlisle",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "New Carlisle",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Amanda W."
+        },
+        "datePublished": "2024-04-14",
+        "reviewBody": "Upgraded our home security system with smart locks and security cameras. The technician was thorough and explained all the features. Feel much safer in our New Carlisle home now.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

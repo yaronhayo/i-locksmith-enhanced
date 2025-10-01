@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana#review-mason-c-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Elkhart",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Elkhart",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Mason C."
+        },
+        "datePublished": "2024-12-25",
+        "reviewBody": "Called for emergency assistance and was impressed by how quickly they responded. Excellent service and fair pricing. Great local service in Elkhart.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana#review-ethan-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Elkhart",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Elkhart",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ethan L."
+        },
+        "datePublished": "2024-02-10",
+        "reviewBody": "Had my locks rekeyed for security purposes. The technician was skilled, efficient, and explained everything clearly. Great local service in Elkhart.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana#review-chloe-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Elkhart",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Elkhart",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Chloe M."
+        },
+        "datePublished": "2024-10-19",
+        "reviewBody": "Excellent key cutting service. They had the right blanks and created perfect working keys in minutes. Great local service in Elkhart.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana#review-grace-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Elkhart",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Elkhart",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Grace L."
+        },
+        "datePublished": "2024-07-19",
+        "reviewBody": "Professional installation of new locks with expert advice on the best options for my security needs. Great local service in Elkhart.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana#review-p--anderson",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Elkhart",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Elkhart",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "P. Anderson"
+        },
+        "datePublished": "2024-12-07",
+        "reviewBody": "Professional house lockout service with fast response time. They handled everything efficiently and courteously. Great local service in Elkhart.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-elkhart-indiana#review-astrid-o-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Elkhart",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Elkhart",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Astrid O."
+        },
+        "datePublished": "2024-09-02",
+        "reviewBody": "Called for commercial lockout assistance and received fast, professional service. They got us back to business quickly. Great local service in Elkhart.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

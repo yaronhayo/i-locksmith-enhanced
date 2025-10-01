@@ -1,0 +1,170 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/commercial-locksmith#review-k-johnson",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Commercial Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "K. Johnson"
+        },
+        "datePublished": "2024-11-12",
+        "reviewBody": "Excellent business lockout service that minimized downtime. Professional technicians who understand commercial needs.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/commercial-locksmith#review-m-davis",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Commercial Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "M. Davis"
+        },
+        "datePublished": "2024-10-08",
+        "reviewBody": "Installed a master key system for my business and was impressed by their professional approach and quality work.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/commercial-locksmith#review-stanislaw-k",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Commercial Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Stanisław K."
+        },
+        "datePublished": "2024-09-19",
+        "reviewBody": "Professional access control system installation that improved our business security significantly. Quality service throughout.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/commercial-locksmith#review-ingrid-n",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Commercial Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Ingrid N."
+        },
+        "datePublished": "2024-08-15",
+        "reviewBody": "Upgraded all our office locks with high-security hardware. Professional installation with expert advice on commercial security.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/commercial-locksmith#review-katarzyna-m",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Commercial Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Katarzyna M."
+        },
+        "datePublished": "2024-07-22",
+        "reviewBody": "Excellent security installation for our retail business. They designed a system that perfectly fits our commercial needs.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/services/commercial-locksmith#review-j-mitchell",
+        "itemReviewed": {
+            "@type": "Service",
+            "name": "Commercial Locksmith Services",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "I Locksmith"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "J. Mitchell"
+        },
+        "datePublished": "2024-06-11",
+        "reviewBody": "Professional commercial key service for our office building. They provided master keys and tested all access points thoroughly.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

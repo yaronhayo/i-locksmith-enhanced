@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana#review-william-t-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Goshen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Goshen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "William T."
+        },
+        "datePublished": "2024-06-08",
+        "reviewBody": "Found myself locked out during an emergency and they came right away. Courteous, professional, and got the situation resolved immediately. Great local service in Goshen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana#review-susan-d-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Goshen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Goshen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Susan D."
+        },
+        "datePublished": "2024-03-18",
+        "reviewBody": "Professional lock rekey service that gave me peace of mind. Quality workmanship and reasonable rates. Great local service in Goshen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana#review-roberto-s-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Goshen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Goshen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Roberto S."
+        },
+        "datePublished": "2024-07-24",
+        "reviewBody": "Excellent key cutting service. They had the right blanks and created perfect working keys in minutes. Great local service in Goshen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana#review-samantha-k-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Goshen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Goshen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Samantha K."
+        },
+        "datePublished": "2024-04-08",
+        "reviewBody": "Excellent lock installation service. They recommended the right locks for my needs and installed them perfectly. Great local service in Goshen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana#review-giuseppe-r-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Goshen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Goshen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Giuseppe R."
+        },
+        "datePublished": "2024-05-13",
+        "reviewBody": "Called for house lockout help and they arrived quickly. Professional service with no damage to my property. Great local service in Goshen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-goshen-indiana#review-yuki-t-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Goshen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Goshen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Yuki T."
+        },
+        "datePublished": "2024-10-28",
+        "reviewBody": "Reliable commercial lockout service with technicians who understand business urgency. Quick and professional. Great local service in Goshen.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

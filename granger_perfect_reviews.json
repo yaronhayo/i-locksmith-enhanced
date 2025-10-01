@@ -1,0 +1,176 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana#review-james-w-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Granger",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Granger",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "James W."
+        },
+        "datePublished": "2024-04-13",
+        "reviewBody": "Found myself locked out during an emergency and they came right away. Courteous, professional, and got the situation resolved immediately. Great local service in Granger.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana#review-barbara-k-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Granger",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Granger",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Barbara K."
+        },
+        "datePublished": "2024-05-22",
+        "reviewBody": "Professional lock rekey service that gave me peace of mind. Quality workmanship and reasonable rates. Great local service in Granger.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana#review-antonio-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Granger",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Granger",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Antonio L."
+        },
+        "datePublished": "2024-06-08",
+        "reviewBody": "Excellent key cutting service. They had the right blanks and created perfect working keys in minutes. Great local service in Granger.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana#review-brittany-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Granger",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Granger",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Brittany M."
+        },
+        "datePublished": "2024-03-19",
+        "reviewBody": "Excellent lock installation service. They recommended the right locks for my needs and installed them perfectly. Great local service in Granger.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana#review-klaus-h-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Granger",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Granger",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Klaus H."
+        },
+        "datePublished": "2024-09-12",
+        "reviewBody": "Professional house lockout service with fast response time. They handled everything efficiently and courteously. Great local service in Granger.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-granger-indiana#review-wei-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Granger",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Granger",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Wei L."
+        },
+        "datePublished": "2024-08-12",
+        "reviewBody": "Reliable commercial lockout service with technicians who understand business urgency. Quick and professional. Great local service in Granger.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

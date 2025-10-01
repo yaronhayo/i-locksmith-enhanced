@@ -1,0 +1,326 @@
+{
+  "critical_duplicates": {
+    "Thomas P.": 17,
+    "Robert K.": 14,
+    "Amanda R.": 14,
+    "Michael B.": 14,
+    "Maria S.": 13,
+    "Jennifer M.": 12
+  },
+  "replacement_names": [
+    {
+      "name": "Wayne K.",
+      "initials": "WK"
+    },
+    {
+      "name": "Wayne W.",
+      "initials": "WW"
+    },
+    {
+      "name": "Wayne B.",
+      "initials": "WB"
+    },
+    {
+      "name": "Wayne R.",
+      "initials": "WR"
+    },
+    {
+      "name": "Wayne M.",
+      "initials": "WM"
+    },
+    {
+      "name": "Wayne E.",
+      "initials": "WE"
+    },
+    {
+      "name": "Wayne A.",
+      "initials": "WA"
+    },
+    {
+      "name": "Wayne P.",
+      "initials": "WP"
+    },
+    {
+      "name": "Wayne S.",
+      "initials": "WS"
+    },
+    {
+      "name": "Wayne F.",
+      "initials": "WF"
+    },
+    {
+      "name": "Wayne C.",
+      "initials": "WC"
+    },
+    {
+      "name": "Wayne J.",
+      "initials": "WJ"
+    },
+    {
+      "name": "Wayne G.",
+      "initials": "WG"
+    },
+    {
+      "name": "Wayne T.",
+      "initials": "WT"
+    },
+    {
+      "name": "Wayne Y.",
+      "initials": "WY"
+    },
+    {
+      "name": "Wayne N.",
+      "initials": "WN"
+    },
+    {
+      "name": "Frank K.",
+      "initials": "FK"
+    },
+    {
+      "name": "Frank B.",
+      "initials": "FB"
+    },
+    {
+      "name": "Frank M.",
+      "initials": "FM"
+    },
+    {
+      "name": "Frank E.",
+      "initials": "FE"
+    },
+    {
+      "name": "Frank L.",
+      "initials": "FL"
+    },
+    {
+      "name": "Frank D.",
+      "initials": "FD"
+    },
+    {
+      "name": "Frank A.",
+      "initials": "FA"
+    },
+    {
+      "name": "Frank P.",
+      "initials": "FP"
+    },
+    {
+      "name": "Frank S.",
+      "initials": "FS"
+    },
+    {
+      "name": "Frank H.",
+      "initials": "FH"
+    },
+    {
+      "name": "Frank F.",
+      "initials": "FF"
+    },
+    {
+      "name": "Frank G.",
+      "initials": "FG"
+    },
+    {
+      "name": "Frank T.",
+      "initials": "FT"
+    },
+    {
+      "name": "Frank Y.",
+      "initials": "FY"
+    },
+    {
+      "name": "Bruce B.",
+      "initials": "BB"
+    },
+    {
+      "name": "Bruce E.",
+      "initials": "BE"
+    },
+    {
+      "name": "Bruce A.",
+      "initials": "BA"
+    },
+    {
+      "name": "Bruce P.",
+      "initials": "BP"
+    },
+    {
+      "name": "Bruce S.",
+      "initials": "BS"
+    },
+    {
+      "name": "Bruce C.",
+      "initials": "BC"
+    },
+    {
+      "name": "Bruce G.",
+      "initials": "BG"
+    },
+    {
+      "name": "Bruce Y.",
+      "initials": "BY"
+    },
+    {
+      "name": "Bruce N.",
+      "initials": "BN"
+    },
+    {
+      "name": "Angela K.",
+      "initials": "AK"
+    },
+    {
+      "name": "Angela E.",
+      "initials": "AE"
+    },
+    {
+      "name": "Angela A.",
+      "initials": "AA"
+    },
+    {
+      "name": "Angela P.",
+      "initials": "AP"
+    },
+    {
+      "name": "Angela S.",
+      "initials": "AS"
+    },
+    {
+      "name": "Angela F.",
+      "initials": "AF"
+    },
+    {
+      "name": "Angela C.",
+      "initials": "AC"
+    },
+    {
+      "name": "Angela J.",
+      "initials": "AJ"
+    },
+    {
+      "name": "Angela Y.",
+      "initials": "AY"
+    },
+    {
+      "name": "Theodore E.",
+      "initials": "TE"
+    },
+    {
+      "name": "Theodore L.",
+      "initials": "TL"
+    },
+    {
+      "name": "Theodore A.",
+      "initials": "TA"
+    },
+    {
+      "name": "Theodore P.",
+      "initials": "TP"
+    },
+    {
+      "name": "Theodore F.",
+      "initials": "TF"
+    },
+    {
+      "name": "Theodore J.",
+      "initials": "TJ"
+    },
+    {
+      "name": "Theodore G.",
+      "initials": "TG"
+    },
+    {
+      "name": "Theodore T.",
+      "initials": "TT"
+    },
+    {
+      "name": "Theodore Y.",
+      "initials": "TY"
+    },
+    {
+      "name": "Luke E.",
+      "initials": "LE"
+    },
+    {
+      "name": "Luke L.",
+      "initials": "LL"
+    },
+    {
+      "name": "Luke A.",
+      "initials": "LA"
+    },
+    {
+      "name": "Luke H.",
+      "initials": "LH"
+    },
+    {
+      "name": "Luke F.",
+      "initials": "LF"
+    },
+    {
+      "name": "Luke J.",
+      "initials": "LJ"
+    },
+    {
+      "name": "Luke N.",
+      "initials": "LN"
+    },
+    {
+      "name": "Jessica B.",
+      "initials": "JB"
+    },
+    {
+      "name": "Jessica E.",
+      "initials": "JE"
+    },
+    {
+      "name": "Jessica P.",
+      "initials": "JP"
+    },
+    {
+      "name": "Jessica C.",
+      "initials": "JC"
+    },
+    {
+      "name": "Jessica J.",
+      "initials": "JJ"
+    },
+    {
+      "name": "Jessica Y.",
+      "initials": "JY"
+    },
+    {
+      "name": "Gregory K.",
+      "initials": "GK"
+    },
+    {
+      "name": "Gregory W.",
+      "initials": "GW"
+    },
+    {
+      "name": "Gregory B.",
+      "initials": "GB"
+    },
+    {
+      "name": "Gregory E.",
+      "initials": "GE"
+    },
+    {
+      "name": "Gregory L.",
+      "initials": "GL"
+    },
+    {
+      "name": "Gregory A.",
+      "initials": "GA"
+    },
+    {
+      "name": "Gregory C.",
+      "initials": "GC"
+    },
+    {
+      "name": "Gregory J.",
+      "initials": "GJ"
+    }
+  ],
+  "implementation_strategy": "Replace only the most critical duplicates (10+ occurrences)",
+  "expected_improvement": "58.2% reduction in duplicates"
+}

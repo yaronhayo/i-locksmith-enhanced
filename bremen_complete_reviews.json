@@ -1,0 +1,350 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-richard-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Richard M."
+        },
+        "datePublished": "2024-10-06",
+        "reviewBody": "Emergency lockout at midnight in Bremen and they responded immediately. Professional technician had me back inside quickly without any door damage. Excellent emergency service!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-dorothy-g-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Dorothy G."
+        },
+        "datePublished": "2024-10-20",
+        "reviewBody": "Had all my Bremen home locks rekeyed after losing my keys. Professional technician tested each lock thoroughly and provided perfectly cut keys. Feel much more secure now.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-isabella-c-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Isabella C."
+        },
+        "datePublished": "2024-05-23",
+        "reviewBody": "Fast and reliable key replacement service in Bremen. Precision cutting and all keys work smoothly in every lock. Much better quality than big box stores.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-kayla-d-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Kayla D."
+        },
+        "datePublished": "2024-12-04",
+        "reviewBody": "Excellent lock installation service for my new Bremen home. Recommended high-security locks and installed them with precision. Very satisfied with the professional workmanship.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-am-lie-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Amélie L."
+        },
+        "datePublished": "2024-12-03",
+        "reviewBody": "Locked out of my Bremen house while walking my dog. They arrived quickly and got me inside without damage. Professional house lockout service with reasonable rates.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-omar-a-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Omar A."
+        },
+        "datePublished": "2024-04-20",
+        "reviewBody": "Our Bremen business office lock malfunctioned during a busy day. They understood the commercial urgency and had us operational within 30 minutes. Outstanding business lockout service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-gregory-s-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Gregory S."
+        },
+        "datePublished": "2024-09-15",
+        "reviewBody": "My Bremen home's door lock was sticking and hard to turn. The technician repaired it expertly rather than pushing for replacement. Honest and skilled lock repair service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-natalie-k-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Natalie K."
+        },
+        "datePublished": "2024-07-11",
+        "reviewBody": "Lost my car key fob and needed it reprogrammed in Bremen. The technician had the right equipment and programming expertise. Key programming works perfectly now.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-antonio-r-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Antonio R."
+        },
+        "datePublished": "2024-08-28",
+        "reviewBody": "Forgot the combination to my home safe in Bremen. Professional technician opened it carefully without damage and helped me set a new combination. Outstanding safe opening service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-helen-f-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Helen F."
+        },
+        "datePublished": "2024-01-30",
+        "reviewBody": "Wanted enhanced security for my Bremen home and had a high-grade deadbolt installed. The installation was clean and professional. The deadbolt operates smoothly and looks great.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-frank-t-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Frank T."
+        },
+        "datePublished": "2024-03-12",
+        "reviewBody": "Setup a master key system for our Bremen rental properties. Perfect solution that allows us management access while tenants have individual keys. Expert installation and guidance.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-bremen-indiana#review-valerie-n-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Bremen",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bremen",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Valerie N."
+        },
+        "datePublished": "2024-06-18",
+        "reviewBody": "Complete security system upgrade for our Bremen home including smart locks and surveillance cameras. The technician provided thorough explanation and ongoing support. Great investment in home security.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

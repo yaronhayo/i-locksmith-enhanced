@@ -1,0 +1,350 @@
+[
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-kenneth-l-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Kenneth L."
+        },
+        "datePublished": "2024-09-02",
+        "reviewBody": "Emergency lockout situation at 11pm in Wakarusa and they responded immediately. Professional technician had me back inside within 15 minutes. Excellent emergency service!",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-carol-ann-p-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Carol Ann P."
+        },
+        "datePublished": "2024-09-27",
+        "reviewBody": "Excellent lock rekeying service for my Wakarusa home after getting new roommates. Professional technician tested every lock and provided new keys that work perfectly.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-brandon-k-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Brandon K."
+        },
+        "datePublished": "2024-09-14",
+        "reviewBody": "Needed replacement keys for my Wakarusa house and truck. Fast service with precise cuts that work smoothly in all locks. Much better than big box stores.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-amanda-r-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Amanda R."
+        },
+        "datePublished": "2024-05-13",
+        "reviewBody": "Outstanding lock installation service for my new Wakarusa home. Recommended high-security locks and installed them with precision. Feel much more secure now.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-j--mitchell",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "J. Mitchell"
+        },
+        "datePublished": "2024-01-12",
+        "reviewBody": "Locked out of my Wakarusa house on a cold winter morning. They arrived quickly and got me inside without any damage to my door. Professional house lockout service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-svetlana-k-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Svetlana K."
+        },
+        "datePublished": "2024-04-10",
+        "reviewBody": "Our Wakarusa business office lock failed during important client meetings. They understood the urgency and had us operational again within 45 minutes. Excellent commercial lockout service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-robert-m-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Robert M."
+        },
+        "datePublished": "2024-07-08",
+        "reviewBody": "My Wakarusa home's front door lock was sticking and becoming unreliable. The technician repaired it perfectly rather than pushing for an expensive replacement. Honest lock repair service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-jennifer-g-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Jennifer G."
+        },
+        "datePublished": "2024-11-20",
+        "reviewBody": "Lost my car key fob in Wakarusa and needed programming for a replacement. The technician had all the right equipment and knowledge. Key programming works perfectly now.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-daniel-w-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Daniel W."
+        },
+        "datePublished": "2024-03-25",
+        "reviewBody": "Inherited my grandmother's Wakarusa house and couldn't access her old safe. Professional technician opened it carefully without damage and helped me reset the combination. Outstanding safe opening service.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-melissa-t-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Melissa T."
+        },
+        "datePublished": "2024-08-16",
+        "reviewBody": "Wanted better security for my Wakarusa home and had a high-grade deadbolt installed. The installation was professional and clean. The deadbolt operates smoothly and looks great.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-thomas-h-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Thomas H."
+        },
+        "datePublished": "2024-06-01",
+        "reviewBody": "Setup a master key system for our Wakarusa rental properties. Perfect solution that allows us access while tenants have individual keys. Expert installation and professional advice.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "@id": "https://ilocksmithindiana.com/service-areas/locksmith-wakarusa-indiana#review-susan-b-",
+        "itemReviewed": {
+            "@type": "LocalBusiness",
+            "name": "I Locksmith - Wakarusa",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Wakarusa",
+                "addressRegion": "IN"
+            }
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Susan B."
+        },
+        "datePublished": "2024-12-05",
+        "reviewBody": "Complete security system installation for our Wakarusa home including smart locks and cameras. The technician explained all features thoroughly and provided excellent ongoing support. Great investment in home security.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Locksmith"
+        }
+    }
+]

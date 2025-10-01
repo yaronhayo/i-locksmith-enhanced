@@ -7,21 +7,121 @@ class LocksmithFormHandler {
     constructor() {
         this.forms = [];
         this.recaptchaLoaded = false;
+        this.config = null;
+        this.configCache = null;
+        this.configCacheTime = 0;
+        this.cacheDuration = 15 * 60 * 1000; // 15 minutes
         this.init();
     }
 
     init() {
         // Initialize all forms on page load
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', async () => {
+            await this.loadConfig();
             this.initializeForms();
             this.loadRecaptcha();
             this.initializeAddressAutocomplete();
         });
     }
 
+    async loadConfig() {
+        // Check cache first
+        const now = Date.now();
+        if (this.configCache && (now - this.configCacheTime) < this.cacheDuration) {
+            this.config = this.configCache;
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/get-config.php');
+            if (response.ok) {
+                this.config = await response.json();
+                this.configCache = this.config;
+                this.configCacheTime = now;
+            } else {
+                console.warn('Failed to load configuration, using defaults');
+                this.config = this.getDefaultConfig();
+            }
+        } catch (error) {
+            console.warn('Error loading configuration:', error);
+            this.config = this.getDefaultConfig();
+        }
+    }
+
+    getDefaultConfig() {
+        return {
+            RECAPTCHA_SITE_KEY: '',
+            WEBSITE_URL: '',
+            THANK_YOU_URL: '/thank-you.html'
+        };
+    }
+
+    // Analytics tracking methods
+    trackEvent(eventName, formType, additionalData = {}) {
+        try {
+            // Google Analytics 4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, {
+                    'form_type': formType,
+                    'page_location': window.location.href,
+                    'page_title': document.title,
+                    ...additionalData
+                });
+            }
+
+            // Facebook Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', eventName, {
+                    form_type: formType,
+                    ...additionalData
+                });
+            }
+
+            // Custom analytics endpoint (optional)
+            this.sendAnalyticsEvent(eventName, formType, additionalData);
+        } catch (error) {
+            console.warn('Analytics tracking error:', error);
+        }
+    }
+
+    async sendAnalyticsEvent(eventName, formType, data) {
+        try {
+            await fetch('/api/analytics.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    event: eventName,
+                    form_type: formType,
+                    timestamp: Date.now(),
+                    url: window.location.href,
+                    user_agent: navigator.userAgent,
+                    ...data
+                })
+            });
+        } catch (error) {
+            // Silently fail - analytics shouldn't break functionality
+        }
+    }
+
+    getFormType(form) {
+        const formId = form.id || '';
+        const formClass = form.className || '';
+        const dataType = form.dataset.formType || '';
+
+        if (dataType) return dataType;
+        if (formId.includes('booking')) return 'booking';
+        if (formId.includes('contact')) return 'contact';
+        if (formId.includes('service-area')) return 'service-area';
+        if (formClass.includes('booking')) return 'booking';
+
+        return 'unknown';
+    }
+
     initializeForms() {
-        // Find all booking forms on the page
-        const forms = document.querySelectorAll('form[id*="booking"], form[class*="booking"], form.service-form');
+        // Find all forms on the page that need handling
+        const forms = document.querySelectorAll('form[id*="booking"], form[class*="booking"], form.service-form, form[id*="contact"], form[id*="service-area"]');
 
         forms.forEach(form => {
             this.setupForm(form);
@@ -33,8 +133,12 @@ class LocksmithFormHandler {
             element: form,
             isValid: false,
             fields: {},
-            recaptchaId: null
+            recaptchaId: null,
+            formType: this.getFormType(form)
         };
+
+        // Track form initialization
+        this.trackEvent('form_view', formData.formType);
 
         // Setup field validation
         this.setupFieldValidation(formData);
@@ -227,7 +331,7 @@ class LocksmithFormHandler {
             const recaptchaContainer = formData.element.querySelector('.g-recaptcha');
             if (recaptchaContainer && window.grecaptcha) {
                 formData.recaptchaId = grecaptcha.render(recaptchaContainer, {
-                    sitekey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', // Test key - replace with actual
+                    sitekey: this.config.RECAPTCHA_SITE_KEY || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', // Fallback to test key
                     theme: 'light',
                     size: 'normal'
                 });
@@ -287,6 +391,9 @@ class LocksmithFormHandler {
         const form = formData.element;
         const submitButton = form.querySelector('button[type="submit"]');
 
+        // Track submission attempt
+        this.trackEvent('form_submit_attempt', formData.formType);
+
         // Disable submit button
         this.setSubmitButtonState(submitButton, 'loading');
 
@@ -322,15 +429,33 @@ class LocksmithFormHandler {
             const success = await this.submitForm(submissionData);
 
             if (success) {
+                // Track successful submission
+                this.trackEvent('form_submit_success', formData.formType, {
+                    'conversion': true,
+                    'value': 1
+                });
+
                 // Redirect to thank you page
-                window.location.href = '/thank-you.html';
+                window.location.href = this.config.THANK_YOU_URL || '/thank-you.html';
             } else {
+                // Track failed submission
+                this.trackEvent('form_submit_error', formData.formType, {
+                    'error_type': 'api_error'
+                });
+
                 this.setSubmitButtonState(submitButton, 'error');
                 this.showFormError(form, 'There was an error submitting your request. Please try again or call us directly at (574) 318-7797.');
             }
 
         } catch (error) {
             console.error('Form submission error:', error);
+
+            // Track exception error
+            this.trackEvent('form_submit_error', formData.formType, {
+                'error_type': 'exception',
+                'error_message': error.message
+            });
+
             this.setSubmitButtonState(submitButton, 'error');
             this.showFormError(form, 'There was an unexpected error. Please call us directly at (574) 318-7797.');
         }
@@ -368,7 +493,7 @@ class LocksmithFormHandler {
 
     async submitForm(data) {
         try {
-            const response = await fetch('/api/submit-form', {
+            const response = await fetch('/api/submit-form.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
