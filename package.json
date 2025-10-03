@@ -1,0 +1,22 @@
+{
+  "name": "i-locksmith",
+  "version": "1.0.0",
+  "description": "I Locksmith website - Professional locksmith services in South Bend, IN",
+  "scripts": {
+    "build": "node build-replace-env.js",
+    "vercel-build": "node build-replace-env.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaronhayo/i-locksmith-enhanced.git"
+  },
+  "keywords": [
+    "locksmith",
+    "south-bend",
+    "indiana",
+    "emergency-locksmith"
+  ],
+  "author": "I Locksmith",
+  "license": "UNLICENSED",
+  "private": true
+}
