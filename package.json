@@ -4,7 +4,7 @@
   "description": "I Locksmith website - Professional locksmith services in South Bend, IN",
   "scripts": {
     "build": "node build-replace-env.js",
-    "vercel-build": "node build-replace-env.js"
+    "vercel-build": "node debug-env.js && node build-replace-env.js"
   },
   "repository": {
     "type": "git",
