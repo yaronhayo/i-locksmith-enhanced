@@ -869,8 +869,7 @@
     ]
     </script>
 
-    <!-- Google reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Google reCAPTCHA - Lazy loaded when form is visible -->
 
     <!-- Google Compliance - Enhanced LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -3101,10 +3100,32 @@
         }
     </script>
 
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=__GOOGLE_MAPS_API_KEY__&libraries=geometry"></script>
+    <!-- Google Maps API - Lazy loaded when map section is visible -->
 
     <script>
+        // Lazy load Google Maps when map container is visible
+        let mapsLoaded = false;
+
+        function loadGoogleMapsScript(callback) {
+            if (mapsLoaded) {
+                callback();
+                return;
+            }
+
+            const script = document.createElement('script');
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=__GOOGLE_MAPS_API_KEY__&libraries=geometry';
+            script.async = true;
+            script.defer = true;
+            script.onload = () => {
+                mapsLoaded = true;
+                callback();
+            };
+            script.onerror = () => {
+                console.warn('Google Maps failed to load');
+            };
+            document.head.appendChild(script);
+        }
+
         function initHomepageMap() {
             // Service areas data with coordinates
             const serviceAreas = [
@@ -3276,16 +3297,70 @@
             });
         }
 
-        // Initialize map when page loads
+        // Lazy load map when it becomes visible (Intersection Observer)
         document.addEventListener('DOMContentLoaded', function() {
-            if (typeof google !== 'undefined' && google.maps) {
-                initHomepageMap();
-            } else {
-                // Fallback if Google Maps fails to load
-                console.warn('Google Maps failed to load');
-            }
+            const mapContainer = document.getElementById('homepageMap');
+
+            if (!mapContainer) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Load Google Maps script when map container is visible
+                        loadGoogleMapsScript(() => {
+                            if (typeof google !== 'undefined' && google.maps) {
+                                initHomepageMap();
+                            }
+                        });
+                        observer.unobserve(mapContainer);
+                    }
+                });
+            }, {
+                rootMargin: '50px' // Start loading 50px before it's visible
+            });
+
+            observer.observe(mapContainer);
         });
     </script>
+
+    <!-- Lazy load reCAPTCHA when form is visible -->
+    <script>
+        let recaptchaLoaded = false;
+
+        function loadReCaptcha() {
+            if (recaptchaLoaded) return;
+
+            const script = document.createElement('script');
+            script.src = 'https://www.google.com/recaptcha/api.js';
+            script.async = true;
+            script.defer = true;
+            script.onload = () => {
+                recaptchaLoaded = true;
+            };
+            document.head.appendChild(script);
+        }
+
+        // Lazy load reCAPTCHA when form becomes visible
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookingForm = document.getElementById('booking-form');
+
+            if (!bookingForm) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        loadReCaptcha();
+                        observer.unobserve(bookingForm);
+                    }
+                });
+            }, {
+                rootMargin: '100px' // Start loading 100px before form is visible
+            });
+
+            observer.observe(bookingForm);
+        });
+    </script>
+
     <script src="/js/form-handler.js"></script>
     <script>new LocksmithFormHandler();</script>
 </body>
