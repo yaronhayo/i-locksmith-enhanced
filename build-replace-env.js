@@ -19,12 +19,12 @@ if (GOOGLE_MAPS_API_KEY) {
 }
 
 if (!GOOGLE_MAPS_API_KEY) {
-  console.error('❌ ERROR: GOOGLE_MAPS_API_KEY environment variable not set!');
-  console.error('');
-  console.error('Please set GOOGLE_MAPS_API_KEY in your Vercel project settings:');
-  console.error('https://vercel.com/gettmarketing/i-locksmith/settings/environment-variables');
-  console.error('');
-  process.exit(1);
+  console.warn('⚠️  WARNING: GOOGLE_MAPS_API_KEY environment variable not set!');
+  console.warn('');
+  console.warn('Maps will not work until you set GOOGLE_MAPS_API_KEY in Vercel:');
+  console.warn('https://vercel.com/gettmarketing/i-locksmith/settings/environment-variables');
+  console.warn('');
+  console.warn('Build will continue without replacing the placeholder...\n');
 }
 
 // Find all HTML files that contain the placeholder
