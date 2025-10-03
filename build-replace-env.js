@@ -10,8 +10,21 @@ const path = require('path');
 const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || '';
 const PLACEHOLDER = '__GOOGLE_MAPS_API_KEY__';
 
+// Debug: Log all environment variables related to Google
+console.log('🔍 Debug: Environment check');
+console.log('- GOOGLE_MAPS_API_KEY present:', !!GOOGLE_MAPS_API_KEY);
+console.log('- GOOGLE_MAPS_API_KEY length:', GOOGLE_MAPS_API_KEY.length);
+if (GOOGLE_MAPS_API_KEY) {
+  console.log('- GOOGLE_MAPS_API_KEY (first 10 chars):', GOOGLE_MAPS_API_KEY.substring(0, 10) + '...');
+}
+
 if (!GOOGLE_MAPS_API_KEY) {
-  console.warn('⚠️  Warning: GOOGLE_MAPS_API_KEY environment variable not set');
+  console.error('❌ ERROR: GOOGLE_MAPS_API_KEY environment variable not set!');
+  console.error('');
+  console.error('Please set GOOGLE_MAPS_API_KEY in your Vercel project settings:');
+  console.error('https://vercel.com/gettmarketing/i-locksmith/settings/environment-variables');
+  console.error('');
+  process.exit(1);
 }
 
 // Find all HTML files that contain the placeholder

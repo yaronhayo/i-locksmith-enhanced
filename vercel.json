@@ -1,6 +1,4 @@
 {
-  "buildCommand": "node build-replace-env.js",
-  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false
 }
