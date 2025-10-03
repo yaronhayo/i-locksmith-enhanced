@@ -1558,7 +1558,7 @@
             <div>
             <!-- Logo -->
             <div class="mb-4">
-                <img src="./images/i-locksmith-logo.webp" alt="I Locksmith Logo" class="h-12 w-auto">
+                <img src="../images/i-locksmith-logo.webp" alt="I Locksmith Logo" class="h-12 w-auto">
             </div>
 
             <!-- Company Description -->
@@ -1775,6 +1775,10 @@
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
             pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -1791,6 +1795,17 @@
             },
             },
         });
+
+        // Pause autoplay on hover
+        const swiperContainer = document.querySelector('.mySwiper');
+        if (swiperContainer) {
+            swiperContainer.addEventListener('mouseenter', () => {
+                swiper.autoplay.stop();
+            });
+            swiperContainer.addEventListener('mouseleave', () => {
+                swiper.autoplay.start();
+            });
+        }
     </script>
 </body>
 </html>
