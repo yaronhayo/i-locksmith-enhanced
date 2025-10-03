@@ -2010,6 +2010,10 @@
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
             pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -2026,6 +2030,17 @@
             },
             },
         });
+
+        // Pause autoplay on hover
+        const swiperContainer = document.querySelector('.mySwiper');
+        if (swiperContainer) {
+            swiperContainer.addEventListener('mouseenter', () => {
+                swiper.autoplay.stop();
+            });
+            swiperContainer.addEventListener('mouseleave', () => {
+                swiper.autoplay.start();
+            });
+        }
     </script>
 
     <!-- Google Maps API -->
